@@ -1,0 +1,1 @@
+import{n as e}from"./preload-helper-B1aYs6KY.js";import{t}from"./index-CL5z0Nv_.js";import{t as n}from"./page-F65aNFDf.js";var r=e();function i(){return(0,r.jsx)(n,{kw:t.useLoaderData()})}export{i as component};
