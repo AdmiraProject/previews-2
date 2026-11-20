@@ -1,0 +1,51 @@
+/* Legal Kitchen skin — olive / gold / ivory. Fonts: Playfair Display + Montserrat (+ Cinzel labels). */
+:root{
+  --f-display:'Playfair Display',Georgia,serif;--w-display:600;--w-display-b:700;--ls-display:-.005em;
+  --f-body:'Montserrat',Arial,sans-serif;--f-label:'Cinzel',Georgia,serif;--f-num:'Playfair Display',Georgia,serif;--f-quote:'Playfair Display',Georgia,serif;
+  --c-text:#20251B;--c-text2:#2A3022;--c-muted:#55594C;--c-muted2:#85887C;--c-nav:#20251B;
+  --c-brand:#2D3620;--c-brand-dark:#20251B;--c-brand-faint:rgba(45,54,32,.28);--c-brand-30:rgba(165,137,85,.35);--c-link:#7E6837;
+  --c-cta:#A58955;--c-cta-hover:#8B7340;--c-cta-ink:#fff;
+  --c-hero-bg:#E9E3D4;--c-pill-line:#CDC4AE;--c-pill-glow:rgba(45,54,32,.15);
+  --c-bar-bg:#F4F0E6;--c-bar-ink:#4A4E42;--c-bar-badge:#2D3620;--c-bar-badge-ink:#F4F0E6;
+  --c-strip-bg:#F7F4EC;--c-logo:#6B6E62;
+  --c-line:#E6E0D2;--c-line2:#D9D2C2;--c-line3:#E8E3D7;--c-line-strong:#C9C1AE;
+  --c-grid-line:#E2DCCD;--c-grid-border:rgba(226,220,205,.5);--c-card-bg:#FDFCF8;--c-more-bg:#F5F1E7;
+  --c-hover:#2D3620;--c-hover-ink:#fff;--c-icon:#A58955;--c-verified:#7E6837;
+  --c-side-bg:#FDFCF8;--c-photo-bg:#E4DED0;--c-tile-bg:#2D3620;--c-tile-ink:#D9C6A0;--c-wm:#2D3620;
+  --c-g50:#FBF9F2;--c-g90:#F7F4EC;--c-g100:#F1ECE0;
+  --c-dark-grad:linear-gradient(0deg,rgba(0,0,0,.2),rgba(0,0,0,.2)),linear-gradient(272deg,#3D482C 1.5%,#2D3620 40%,#1C2117 100%);
+  --c-dark-deco:radial-gradient(60% 80% at 75% 40%,rgba(165,137,85,.28),transparent 70%),linear-gradient(120deg,transparent 55%,rgba(255,255,255,.04) 55%,rgba(255,255,255,.04) 70%,transparent 70%);
+  --c-rank-badge:#A58955;--c-rank-badge-ink:#fff;--c-dark-muted:#D9D3C3;--c-dark-accent:#D2B67E;
+  --c-tbl1:linear-gradient(9deg,rgba(165,137,85,.25) 0%,rgba(61,72,44,.3) 100%),linear-gradient(rgba(45,54,32,.5) 5%,rgba(29,33,23,.6));
+  --c-tbl2:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),linear-gradient(95deg,rgba(45,54,32,.3),rgba(0,0,0,.2));
+  --c-hl:linear-gradient(81deg,#B39561 0%,#7E6837 100%);--c-glow:#A58955;
+  --c-tab-bg:#F3EFE4;--c-ptab:#ECE7DA;--c-scard:#F7F4EC;
+  --c-cta-card:linear-gradient(to right,#2D3620 0%,#1C2117 100%);
+  --c-cta-deco:linear-gradient(135deg,transparent 40%,rgba(165,137,85,.18) 40%,rgba(165,137,85,.18) 58%,transparent 58%),linear-gradient(45deg,transparent 62%,rgba(255,255,255,.05) 62%);
+  --c-overlay:rgba(45,54,32,.72);--c-overlay2:rgba(45,54,32,.5);
+  --c-q1:rgba(229,222,205,.35);--c-quote:#A58955;--c-quote2:#A58955;--c-quote-bg:#1C2117;--c-star:#A58955;
+  --c-foot:#2D3620;--c-modal-bg:rgba(32,37,27,.8)
+}
+.hero__visual .vis{mix-blend-mode:multiply}
+.hero__visual .vis{-webkit-mask-image:linear-gradient(to right,transparent 0,transparent 16%,#000 38%,#000 86%,transparent 100%);mask-image:linear-gradient(to right,transparent 0,transparent 16%,#000 38%,#000 86%,transparent 100%)}
+.hero h1 em,.h2 em,.rank h2 em{font-style:italic;font-weight:600}
+.bar__badge{font-family:'Cinzel',serif}
+.wm{font-family:'Cinzel',serif;letter-spacing:.06em}
+.lg b{font-family:'Cinzel',serif;font-weight:700}
+.tr .v{font-family:'Playfair Display',serif}
+.quote__in p{font-style:italic;font-weight:400}
+.qcard blockquote h3{font-style:italic}
+.st__c{font-weight:400}
+:root{--c-tm-bg:radial-gradient(circle at 50% 38%,#3D482C 0%,#262C1C 70%);--c-tm-ink:#E5D5B3;--c-tm-line:rgba(210,182,126,.55);--c-tm-price:#F4F0E6}
+.hero__visual .vis{-webkit-mask-image:linear-gradient(to right,transparent 0,transparent 16%,#000 38%,#000 86%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 22%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0,transparent 16%,#000 38%,#000 86%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 22%);mask-composite:intersect}
+/* typographic restaurant wordmarks (built from names; not copied brand art) */
+.rw,.rwm{white-space:nowrap}
+.w-terra{font-family:'Playfair Display',serif!important;font-style:italic;font-weight:600!important;font-size:22px!important;letter-spacing:0!important;text-transform:none}
+.w-sal{font-family:'Cinzel',serif!important;font-weight:700!important;font-size:18px!important;letter-spacing:.12em!important}
+.w-nix{font-family:'Montserrat',sans-serif!important;font-weight:700!important;font-size:17px!important;letter-spacing:.2em!important;text-transform:uppercase}
+.w-brasa{font-family:'Playfair Display',serif!important;font-weight:700!important;font-size:21px!important;letter-spacing:-.01em!important}
+.w-olivar{font-family:'Montserrat',sans-serif!important;font-weight:300!important;font-size:20px!important;letter-spacing:.35em!important;text-transform:lowercase}
+.w-kaiseki{font-family:'Cinzel',serif!important;font-weight:600!important;font-size:18px!important;letter-spacing:.3em!important}
+.w-canaria{font-family:'Playfair Display',serif!important;font-style:italic;font-weight:400!important;font-size:21px!important}
+.w-azotea{font-family:'Montserrat',sans-serif!important;font-weight:600!important;font-size:18px!important;letter-spacing:.08em!important;text-transform:uppercase}
+.rwm.w-terra,.rwm.w-sal,.rwm.w-nix{font-size:16px!important}

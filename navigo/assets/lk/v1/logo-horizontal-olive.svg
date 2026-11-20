@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 150" role="img" aria-label="Legal Kitchen">
+  <g transform="translate(10 15)">
+<g fill="none" stroke="#2D3620" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="58" cy="58" r="48"/>
+  <path d="M19 26v31c0 11 5 22 14 29l16-26-16-26"/>
+  <path d="M97 26v31c0 11-5 22-14 29L67 60l16-26"/>
+  <ellipse cx="58" cy="58" rx="18" ry="34"/>
+</g>
+<g fill="#2D3620">
+  <circle cx="46" cy="22" r="3.2"/><circle cx="58" cy="18" r="3.2"/><circle cx="70" cy="22" r="3.2"/>
+  <circle cx="45" cy="96" r="3.2"/><circle cx="58" cy="101" r="3.2"/><circle cx="71" cy="96" r="3.2"/>
+</g></g>
+  <text x="150" y="98" fill="#A58955" font-family="Georgia, 'Times New Roman', serif" font-size="66" letter-spacing="2">LEGAL KITCHEN</text>
+</svg>
