@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QiHealth — Versiones del sitio</title>
+<link rel="icon" href="assets/img/logo/qihealth-favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#092334;--blue:#2B51F0;--mist:#E6EAEC;--paper:#F9FAFB}
+*{box-sizing:border-box;margin:0}
+body{font-family:Inter,sans-serif;background:var(--paper);color:var(--navy);min-height:100vh;padding:56px 24px}
+.wrap{max-width:1180px;margin:0 auto}
+.logo{width:150px;aspect-ratio:1538/348;background:var(--navy);-webkit-mask:url(assets/img/logo/Logo_Blanco.png) center/contain no-repeat;mask:url(assets/img/logo/Logo_Blanco.png) center/contain no-repeat}
+h1{font:500 44px/1.05 'Space Grotesk',sans-serif;letter-spacing:-.02em;margin:40px 0 8px}
+p.lead{color:#5C6B77;font-size:16px;margin-bottom:36px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+a.card{display:block;background:#fff;border-radius:20px;overflow:hidden;text-decoration:none;color:inherit;border:1px solid var(--mist);transition:transform .3s,box-shadow .3s}
+a.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(9,35,52,.12)}
+.card video,.card img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block;background:#000}
+.card div{padding:20px 22px 24px}
+.card b{font:500 22px/1.2 'Space Grotesk',sans-serif;display:block}
+.card span{color:#5C6B77;font-size:14px}
+@media(max-width:860px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body><div class="wrap">
+<div class="logo" role="img" aria-label="QiHealth"></div>
+<h1>Sitio web — 3 versiones</h1>
+<p class="lead">Tres propuestas con material real de QiHealth.</p>
+<div class="grid">
+ <a class="card" href="v1/"><video src="assets/video/ring_studio_w.mp4" poster="assets/video/ring_studio_w.jpg" autoplay muted loop playsinline></video><div><b>Versión 1</b><span>Carrusel de producto, batería en scroll, bento de specs</span></div></a>
+ <a class="card" href="v2/"><img src="assets/img/store/qi-hero-fallback@800.webp" alt="" loading="lazy"><div><b>Versión 2</b><span>Categorías por necesidad, héroe de producto, pasos</span></div></a>
+ <a class="card" href="v3/"><img src="assets/img/store/qiband-pro_13@800.webp" alt="" loading="lazy" style="object-position:50% 58%"><div><b>Versión 3</b><span>Band Pro como protagonista, storytelling de sueño</span></div></a>
+</div>
+</div></body>
+</html>

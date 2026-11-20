@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QiHealth · Band Pro, QiTrax y Ring Pro</title>
+<meta name="description" content="QiHealth Band Pro ya está disponible: banda inteligente sin pantalla con 15+ días de batería. QiTrax, sensor CGM de 15 días, y Ring Pro.">
+<link rel="icon" href="../assets/img/logo/qihealth-favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,400&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap">
+<link rel="preload" as="image" href="assets/img/camp_band.webp" media="(min-width:768px)" fetchpriority="high"><link rel="preload" as="image" href="assets/img/camp_band_m.webp" media="(max-width:767px)" fetchpriority="high">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../shop/cart.css">
+<link rel="stylesheet" href="../shop/ugc.css">
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<div class="splash" aria-hidden="true"></div>
+
+<!-- shared SVG symbols -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-flag-mx" viewBox="0 0 18 18"><clipPath id="fc"><circle cx="9" cy="9" r="9"/></clipPath><g clip-path="url(#fc)"><rect width="6" height="18" fill="#006847"/><rect x="6" width="6" height="18" fill="#fff"/><rect x="12" width="6" height="18" fill="#ce1126"/><circle cx="9" cy="9" r="1.7" fill="#8c6a2d"/><path d="M7.4 10.2c.9.8 2.3.8 3.2 0" stroke="#3f7a3a" stroke-width=".6" fill="none"/></g></symbol>
+  <symbol id="i-cart" viewBox="0 0 32 32"><path d="M10.5 12.5h11l-.9 11.6a1 1 0 0 1-1 .9h-7.2a1 1 0 0 1-1-.9z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M13 12.5V11a3 3 0 0 1 6 0v1.5" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 14 14"><path d="M5.5 3.5 9 7l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 26 26"><path d="M4 6.5A3.5 3.5 0 0 1 7.5 3h8A3.5 3.5 0 0 1 19 6.5v4a3.5 3.5 0 0 1-3.5 3.5H10l-4 3v-3.2A3.5 3.5 0 0 1 4 10.5z" fill="#fff"/><path d="M21 9.6a3.3 3.3 0 0 1 1.9 3v3.6a3.3 3.3 0 0 1-2 3V22l-3.4-2.6h-4.9a3.3 3.3 0 0 1-3-1.9" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+  <symbol id="i-apple" viewBox="0 0 16 16"><path d="M11.2 8.5c0-1.6 1.3-2.3 1.3-2.4-.7-1-1.8-1.2-2.2-1.2-.9-.1-1.8.6-2.3.6-.5 0-1.2-.5-2-.5C4.9 5 3.9 5.6 3.4 6.6c-1.1 1.9-.3 4.7.8 6.2.5.8 1.1 1.6 1.9 1.5.8 0 1.1-.5 2-.5s1.2.5 2 .5c.8 0 1.3-.8 1.8-1.5.6-.8.8-1.6.8-1.7 0 0-1.5-.6-1.5-2.6zM9.8 3.9c.4-.5.7-1.2.6-1.9-.6 0-1.3.4-1.8.9-.4.4-.7 1.1-.6 1.8.7.1 1.3-.3 1.8-.8z" fill="currentColor"/></symbol>
+  <symbol id="i-play-store" viewBox="0 0 16 16"><path d="M3 1.8 10.3 9 3 16.2c-.3-.2-.5-.5-.5-.9V2.7c0-.4.2-.7.5-.9zm8.1 6.4 1.9-1.9 2.2 1.3c.6.4.6 1.2 0 1.6L13 10.5zM4 1.2l8.3 4.7-1.9 1.9zm6.4 9 1.9 1.9L4 16.8z" fill="currentColor" transform="scale(.9) translate(.5 -.4)"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><path d="M7 5h3.5v14H7zm6.5 0H17v14h-3.5z" fill="currentColor"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M7 7l10 10M17 7 7 17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 20 20"><path d="M10 2.2a7.8 7.8 0 0 0-6.7 11.8L2.2 17.8l3.9-1A7.8 7.8 0 1 0 10 2.2zm0 14.2a6.4 6.4 0 0 1-3.3-.9l-.2-.1-2.3.6.6-2.2-.2-.3A6.4 6.4 0 1 1 10 16.4zm3.5-4.8c-.2-.1-1.1-.6-1.3-.6-.2-.1-.3-.1-.4.1l-.6.7c-.1.1-.2.1-.4 0a5.2 5.2 0 0 1-2.6-2.3c-.2-.3.2-.3.6-1.1v-.3l-.6-1.4c-.1-.4-.3-.3-.4-.3h-.4a.7.7 0 0 0-.5.2 2.1 2.1 0 0 0-.7 1.6 3.7 3.7 0 0 0 .8 1.9 8.4 8.4 0 0 0 3.2 2.8c1.2.5 1.7.6 2.3.5.4-.1 1.1-.5 1.3-.9.2-.4.2-.8.1-.9z" fill="currentColor"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 20 20"><rect x="3" y="3" width="14" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="10" cy="10" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="14.2" cy="5.8" r="1" fill="currentColor"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 20 20"><path d="M11.2 17v-6h2l.3-2.4h-2.3V7.1c0-.7.2-1.1 1.2-1.1h1.2V3.9c-.2 0-1-.1-1.8-.1-1.8 0-3 1.1-3 3.1v1.7H6.8V11h2v6z" fill="currentColor"/></symbol>
+  <symbol id="i-tt" viewBox="0 0 20 20"><path d="M13.6 2.5c.3 1.9 1.4 3 3.2 3.1v2.3a5.4 5.4 0 0 1-3.2-1v5.2c0 3.7-4 5.9-7 3.9-2-1.3-2.6-3.9-1.4-6 .9-1.6 2.6-2.5 4.4-2.4v2.4c-.5-.2-1.1-.2-1.6 0-1.5.5-1.9 2.5-.7 3.5 1.2 1 3.1.2 3.1-1.5V2.5z" fill="currentColor"/></symbol>
+  <!-- feature icons (line, 32px) -->
+  <symbol id="f-batt" viewBox="0 0 32 32"><rect x="5" y="10" width="20" height="12" rx="3" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="25.5" y="13.5" width="2" height="5" rx="1" fill="currentColor"/><rect x="8" y="13" width="11" height="6" rx="1.2" fill="currentColor"/></symbol>
+  <symbol id="f-data" viewBox="0 0 32 32"><ellipse cx="16" cy="9" rx="9" ry="3.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M7 9v7c0 1.9 4 3.5 9 3.5s9-1.6 9-3.5V9M7 16v7c0 1.9 4 3.5 9 3.5s9-1.6 9-3.5v-7" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+  <symbol id="f-drop" viewBox="0 0 32 32"><path d="M16 5c4 5.2 7.5 9.3 7.5 13.3a7.5 7.5 0 0 1-15 0C8.5 14.3 12 10.2 16 5z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12.5 19a3.5 3.5 0 0 0 3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="f-shield" viewBox="0 0 32 32"><path d="M16 4.5 25 8v7.5c0 5.5-3.8 10-9 12-5.2-2-9-6.5-9-12V8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m12 16 3 3 5.5-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="f-wave" viewBox="0 0 32 32"><path d="M3 18h5l3-8 4 13 4-10 2.5 5H29" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="f-meal" viewBox="0 0 32 32"><circle cx="16" cy="17" r="8" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="16" cy="17" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5 6v6m-2-6v4a2 2 0 0 0 4 0V6M27 6c-1.8 1.2-2.5 3.2-2.5 6H27v14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="f-doc" viewBox="0 0 32 32"><rect x="7" y="4.5" width="18" height="23" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 21l3-4 3 2.5 4-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 9.5h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="f-care" viewBox="0 0 32 32"><path d="M16 26s-10-6.1-10-13a5.5 5.5 0 0 1 10-3.2A5.5 5.5 0 0 1 26 13c0 6.9-10 13-10 13z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+  <symbol id="wm-full" viewBox="0 0 186 42"><path d="M41.5268 25.3669C41.5129 25.4367 41.4989 25.5042 41.4826 25.5716C41.192 26.7509 40.2411 27.672 39.0437 27.9185C39.0414 27.9185 39.0391 27.9185 39.0367 27.9185C38.8321 27.9604 38.6159 27.9836 38.3974 27.9836C36.642 27.9836 35.2214 26.5601 35.2214 24.804C35.2214 24.6249 35.2354 24.4505 35.2656 24.2784C35.2865 24.1807 35.3074 24.083 35.3284 23.983C35.3284 23.9783 35.3284 23.9737 35.3307 23.9667C35.5353 22.9805 35.6376 21.9571 35.6329 20.9057C35.5864 13.13 29.0067 6.47541 21.2319 6.34981C12.913 6.2149 6.14497 13.0253 6.34957 21.3663C6.54255 29.3048 13.1409 35.6965 21.0808 35.65C21.9154 35.643 22.7338 35.5709 23.5313 35.4291C23.7638 35.3872 23.9963 35.343 24.2265 35.2895C24.2288 35.2895 24.2335 35.2872 24.2358 35.2872C24.4404 35.2453 24.6496 35.2244 24.8659 35.2244C26.6189 35.2244 28.0395 36.6455 28.0395 38.3993C28.0395 39.9321 26.9537 41.2114 25.5099 41.5091C25.5076 41.5091 25.5052 41.5091 25.5029 41.5091C25.2611 41.5626 25.017 41.6115 24.7729 41.6557C23.343 41.9162 21.862 42.0325 20.3437 41.986C9.12097 41.6533 0.0836976 32.3937 -2.41306e-06 21.1592C-0.0860274 9.42241 9.45112 -0.107079 21.1854 -8.4312e-05C32.3524 0.104584 41.571 9.06886 41.9662 20.2358C42.0267 22.0012 41.8732 23.7201 41.5268 25.3646V25.3669Z"/><path d="M39.9923 36.7989C39.9923 38.5225 38.595 39.9181 36.8745 39.9181C36.0794 39.9181 35.3539 39.6203 34.8029 39.1296L27.6931 32.0168C27.2025 31.4655 26.9049 30.7398 26.9049 29.9443C26.9049 28.2208 28.3022 26.8252 30.0227 26.8252C30.8574 26.8252 31.6153 27.1532 32.1757 27.6881C32.1757 27.6881 39.0949 34.6079 39.1135 34.6288C39.6575 35.1894 39.9923 35.9546 39.9923 36.7989Z"/><path d="M46.7883 35.315V19.7775C46.7883 18.2842 47.9973 17.0747 49.4899 17.0747C50.9826 17.0747 52.1916 18.2842 52.1916 19.7775V35.315C52.1916 36.8082 50.9826 38.0177 49.4899 38.0177C47.9973 38.0177 46.7883 36.8082 46.7883 35.315ZM49.4713 14.5627C48.5762 14.5627 47.8043 14.237 47.1463 13.5788C46.4907 12.9229 46.1629 12.1483 46.1629 11.2528C46.1629 10.3573 46.4884 9.57581 47.1463 8.90825C47.802 8.23837 48.5762 7.90576 49.4713 7.90576C50.3665 7.90576 51.1802 8.2407 51.8359 8.90825C52.4915 9.57813 52.8193 10.3597 52.8193 11.2528C52.8193 12.146 52.4892 12.9205 51.8359 13.5788C51.1802 14.2347 50.3897 14.5627 49.4713 14.5627Z"/><path d="M79.594 19.8708H63.3911V6.1709H62.1124C60.622 6.1709 59.4154 7.37808 59.4154 8.86902V37.3668H63.3911V23.0318H79.594V37.3668H83.5698V6.1709H82.2911C80.8031 6.1709 79.594 7.37808 79.594 8.86902V19.8708Z"/><path d="M104.539 16.3145C102.974 15.3632 101.091 14.8794 98.9473 14.8794C96.8037 14.8794 94.8275 15.3702 93.1697 16.3378C91.5143 17.3054 90.2077 18.6637 89.2846 20.3803C88.3593 22.0992 87.8896 24.1391 87.8896 26.4395C87.8896 28.7398 88.3663 30.7704 89.3056 32.4753C90.2449 34.1756 91.5515 35.5224 93.1907 36.4737C94.8344 37.4273 96.7549 37.9111 98.9009 37.9111C100.633 37.9111 102.186 37.5925 103.521 36.9621C104.853 36.3318 105.99 35.4712 106.897 34.4036C107.724 33.429 108.34 32.3102 108.731 31.0751H104.755C104.281 32.159 103.553 33.0359 102.595 33.6802C101.584 34.3594 100.328 34.7036 98.8567 34.7036C97.6361 34.7036 96.4619 34.4012 95.3692 33.8081C94.2671 33.2103 93.3836 32.3102 92.7396 31.1333C92.1839 30.1145 91.8654 28.8771 91.7933 27.4536L91.777 27.1605H109.433C109.454 26.8628 109.47 26.5744 109.482 26.2929C109.496 25.9347 109.505 25.6068 109.505 25.3067C109.505 23.3994 109.068 21.6433 108.203 20.0896C107.338 18.5381 106.106 17.2682 104.539 16.3145ZM91.8119 24.5438L91.8468 24.2344C91.9724 23.0947 92.2746 22.1038 92.7442 21.2898C93.3883 20.1733 94.2648 19.322 95.3506 18.7545C96.4294 18.1916 97.6244 17.9055 98.9032 17.9055C100.719 17.9055 102.267 18.4707 103.511 19.5872C104.758 20.7083 105.436 22.2783 105.532 24.2507L105.546 24.5438H91.8142H91.8119Z"/><path d="M131.583 19.4825L131.135 18.7917C130.437 17.7147 129.423 16.7844 128.121 16.0214C126.826 15.2655 125.218 14.8794 123.344 14.8794C121.139 14.8794 119.205 15.3841 117.596 16.3796C115.987 17.3728 114.741 18.7545 113.89 20.485C113.037 22.2225 112.604 24.2112 112.604 26.3953C112.604 28.5793 113.037 30.568 113.89 32.3055C114.741 34.0361 115.964 35.4177 117.531 36.4109C119.096 37.4064 120.947 37.9111 123.027 37.9111C124.873 37.9111 126.52 37.5111 127.924 36.7226C129.326 35.9317 130.467 34.8362 131.314 33.4616L131.395 33.329H131.946L132.265 37.3668H135.627V15.426H134.141C132.876 15.426 131.825 16.3983 131.728 17.6589L131.586 19.4825H131.583ZM130.712 30.6518C130.086 31.8706 129.198 32.8452 128.07 33.5499C126.943 34.2547 125.61 34.6129 124.113 34.6129C122.616 34.6129 121.284 34.2547 120.156 33.5499C119.028 32.8452 118.147 31.8683 117.538 30.6471C116.931 29.433 116.624 28.0025 116.624 26.3953C116.624 24.788 116.931 23.3506 117.538 22.1201C118.15 20.8827 119.031 19.9058 120.158 19.215C121.288 18.5265 122.618 18.1753 124.113 18.1753C125.608 18.1753 126.938 18.5242 128.068 19.215C129.196 19.9058 130.084 20.8804 130.712 22.1178C131.332 23.3459 131.648 24.7857 131.648 26.3953C131.648 28.0048 131.332 29.4376 130.712 30.6518Z"/><path d="M140.625 37.3668H144.601V5.94531H143.322C141.834 5.94531 140.625 7.15249 140.625 8.64344V37.3691V37.3668Z"/><path d="M155.801 9.79932H151.834L151.825 15.4235H147.972V18.3589H151.827V30.3865C151.827 32.1449 152.106 33.5498 152.655 34.5616C153.194 35.5571 153.973 36.2805 154.968 36.7061C155.987 37.1434 157.217 37.3644 158.621 37.3644H161.969V34.2499H159.709C158.295 34.2499 157.314 33.9894 156.712 33.4544C156.101 32.9101 155.803 31.9216 155.803 30.433V18.3589H162.241V15.4235H155.803V9.79932H155.801Z"/><path d="M182.127 15.9563C180.89 15.2445 179.404 14.8817 177.709 14.8817C176.163 14.8817 174.738 15.2445 173.471 15.9563C172.203 16.6703 171.148 17.7147 170.329 19.0568L170.248 19.1917H169.676V5.94531H168.442C166.951 5.94531 165.745 7.15249 165.745 8.64344V37.3668H169.72V25.9882C169.72 24.3484 170.013 22.9319 170.59 21.7805C171.171 20.6175 171.985 19.7174 173.008 19.1033C174.029 18.4893 175.184 18.1776 176.44 18.1776C178.334 18.1776 179.767 18.787 180.697 19.9872C181.608 21.1664 182.071 22.8946 182.071 25.1252V37.3645H186V24.6694C186 22.4853 185.658 20.6385 184.984 19.1847C184.317 17.7496 183.356 16.661 182.127 15.9516V15.9563Z"/></symbol>
+</svg>
+
+<!-- ============ HEADER ============ -->
+<header class="hdr" id="hdr">
+  <div class="hdr-banner"><div class="hdr-banner-in">
+    <a class="ann" href="ring-pro/comprar/"><span class="ann-d">QiHealth Band Pro y Ring Pro ya están disponibles. Envío gratis en zonas seleccionadas.</span><span class="ann-m">Band Pro y Ring Pro, ya disponibles.</span><svg class="ann-chev" aria-hidden="true"><use href="#i-chev"/></svg></a>
+  </div></div>
+  <div class="hdr-bar" id="hdrBar">
+    <div class="hdr-inner">
+      <div class="hdr-left">
+        <button class="ic-btn burger" id="burger" data-mega="more" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+        <nav aria-label="Principal"><ul class="nav-list">
+          <li><button class="nav-btn" data-mega="band"><span class="nav-label">Band Pro</span></button></li>
+          <li><button class="nav-btn" data-mega="qitrax"><span class="nav-label">QiTrax</span></button></li>
+          <li><button class="nav-btn" data-mega="ring"><span class="nav-label">Ring Pro</span></button></li>
+          <li><a class="nav-btn" href="#app"><span class="nav-label">App</span></a></li>
+        </ul></nav>
+      </div>
+      <a class="hdr-logo" href="./" aria-label="QiHealth, inicio"><svg class="wm" viewBox="0 0 186 42" aria-hidden="true"><g class="wm-qi"><path d="M41.5268 25.3669C41.5129 25.4367 41.4989 25.5042 41.4826 25.5716C41.192 26.7509 40.2411 27.672 39.0437 27.9185C39.0414 27.9185 39.0391 27.9185 39.0367 27.9185C38.8321 27.9604 38.6159 27.9836 38.3974 27.9836C36.642 27.9836 35.2214 26.5601 35.2214 24.804C35.2214 24.6249 35.2354 24.4505 35.2656 24.2784C35.2865 24.1807 35.3074 24.083 35.3284 23.983C35.3284 23.9783 35.3284 23.9737 35.3307 23.9667C35.5353 22.9805 35.6376 21.9571 35.6329 20.9057C35.5864 13.13 29.0067 6.47541 21.2319 6.34981C12.913 6.2149 6.14497 13.0253 6.34957 21.3663C6.54255 29.3048 13.1409 35.6965 21.0808 35.65C21.9154 35.643 22.7338 35.5709 23.5313 35.4291C23.7638 35.3872 23.9963 35.343 24.2265 35.2895C24.2288 35.2895 24.2335 35.2872 24.2358 35.2872C24.4404 35.2453 24.6496 35.2244 24.8659 35.2244C26.6189 35.2244 28.0395 36.6455 28.0395 38.3993C28.0395 39.9321 26.9537 41.2114 25.5099 41.5091C25.5076 41.5091 25.5052 41.5091 25.5029 41.5091C25.2611 41.5626 25.017 41.6115 24.7729 41.6557C23.343 41.9162 21.862 42.0325 20.3437 41.986C9.12097 41.6533 0.0836976 32.3937 -2.41306e-06 21.1592C-0.0860274 9.42241 9.45112 -0.107079 21.1854 -8.4312e-05C32.3524 0.104584 41.571 9.06886 41.9662 20.2358C42.0267 22.0012 41.8732 23.7201 41.5268 25.3646V25.3669Z"/><path d="M39.9923 36.7989C39.9923 38.5225 38.595 39.9181 36.8745 39.9181C36.0794 39.9181 35.3539 39.6203 34.8029 39.1296L27.6931 32.0168C27.2025 31.4655 26.9049 30.7398 26.9049 29.9443C26.9049 28.2208 28.3022 26.8252 30.0227 26.8252C30.8574 26.8252 31.6153 27.1532 32.1757 27.6881C32.1757 27.6881 39.0949 34.6079 39.1135 34.6288C39.6575 35.1894 39.9923 35.9546 39.9923 36.7989Z"/><path d="M46.7883 35.315V19.7775C46.7883 18.2842 47.9973 17.0747 49.4899 17.0747C50.9826 17.0747 52.1916 18.2842 52.1916 19.7775V35.315C52.1916 36.8082 50.9826 38.0177 49.4899 38.0177C47.9973 38.0177 46.7883 36.8082 46.7883 35.315ZM49.4713 14.5627C48.5762 14.5627 47.8043 14.237 47.1463 13.5788C46.4907 12.9229 46.1629 12.1483 46.1629 11.2528C46.1629 10.3573 46.4884 9.57581 47.1463 8.90825C47.802 8.23837 48.5762 7.90576 49.4713 7.90576C50.3665 7.90576 51.1802 8.2407 51.8359 8.90825C52.4915 9.57813 52.8193 10.3597 52.8193 11.2528C52.8193 12.146 52.4892 12.9205 51.8359 13.5788C51.1802 14.2347 50.3897 14.5627 49.4713 14.5627Z"/></g><g class="wm-l" style="--i:0"><path d="M79.594 19.8708H63.3911V6.1709H62.1124C60.622 6.1709 59.4154 7.37808 59.4154 8.86902V37.3668H63.3911V23.0318H79.594V37.3668H83.5698V6.1709H82.2911C80.8031 6.1709 79.594 7.37808 79.594 8.86902V19.8708Z"/></g><g class="wm-l" style="--i:1"><path d="M104.539 16.3145C102.974 15.3632 101.091 14.8794 98.9473 14.8794C96.8037 14.8794 94.8275 15.3702 93.1697 16.3378C91.5143 17.3054 90.2077 18.6637 89.2846 20.3803C88.3593 22.0992 87.8896 24.1391 87.8896 26.4395C87.8896 28.7398 88.3663 30.7704 89.3056 32.4753C90.2449 34.1756 91.5515 35.5224 93.1907 36.4737C94.8344 37.4273 96.7549 37.9111 98.9009 37.9111C100.633 37.9111 102.186 37.5925 103.521 36.9621C104.853 36.3318 105.99 35.4712 106.897 34.4036C107.724 33.429 108.34 32.3102 108.731 31.0751H104.755C104.281 32.159 103.553 33.0359 102.595 33.6802C101.584 34.3594 100.328 34.7036 98.8567 34.7036C97.6361 34.7036 96.4619 34.4012 95.3692 33.8081C94.2671 33.2103 93.3836 32.3102 92.7396 31.1333C92.1839 30.1145 91.8654 28.8771 91.7933 27.4536L91.777 27.1605H109.433C109.454 26.8628 109.47 26.5744 109.482 26.2929C109.496 25.9347 109.505 25.6068 109.505 25.3067C109.505 23.3994 109.068 21.6433 108.203 20.0896C107.338 18.5381 106.106 17.2682 104.539 16.3145ZM91.8119 24.5438L91.8468 24.2344C91.9724 23.0947 92.2746 22.1038 92.7442 21.2898C93.3883 20.1733 94.2648 19.322 95.3506 18.7545C96.4294 18.1916 97.6244 17.9055 98.9032 17.9055C100.719 17.9055 102.267 18.4707 103.511 19.5872C104.758 20.7083 105.436 22.2783 105.532 24.2507L105.546 24.5438H91.8142H91.8119Z"/></g><g class="wm-l" style="--i:2"><path d="M131.583 19.4825L131.135 18.7917C130.437 17.7147 129.423 16.7844 128.121 16.0214C126.826 15.2655 125.218 14.8794 123.344 14.8794C121.139 14.8794 119.205 15.3841 117.596 16.3796C115.987 17.3728 114.741 18.7545 113.89 20.485C113.037 22.2225 112.604 24.2112 112.604 26.3953C112.604 28.5793 113.037 30.568 113.89 32.3055C114.741 34.0361 115.964 35.4177 117.531 36.4109C119.096 37.4064 120.947 37.9111 123.027 37.9111C124.873 37.9111 126.52 37.5111 127.924 36.7226C129.326 35.9317 130.467 34.8362 131.314 33.4616L131.395 33.329H131.946L132.265 37.3668H135.627V15.426H134.141C132.876 15.426 131.825 16.3983 131.728 17.6589L131.586 19.4825H131.583ZM130.712 30.6518C130.086 31.8706 129.198 32.8452 128.07 33.5499C126.943 34.2547 125.61 34.6129 124.113 34.6129C122.616 34.6129 121.284 34.2547 120.156 33.5499C119.028 32.8452 118.147 31.8683 117.538 30.6471C116.931 29.433 116.624 28.0025 116.624 26.3953C116.624 24.788 116.931 23.3506 117.538 22.1201C118.15 20.8827 119.031 19.9058 120.158 19.215C121.288 18.5265 122.618 18.1753 124.113 18.1753C125.608 18.1753 126.938 18.5242 128.068 19.215C129.196 19.9058 130.084 20.8804 130.712 22.1178C131.332 23.3459 131.648 24.7857 131.648 26.3953C131.648 28.0048 131.332 29.4376 130.712 30.6518Z"/></g><g class="wm-l" style="--i:3"><path d="M140.625 37.3668H144.601V5.94531H143.322C141.834 5.94531 140.625 7.15249 140.625 8.64344V37.3691V37.3668Z"/></g><g class="wm-l" style="--i:4"><path d="M155.801 9.79932H151.834L151.825 15.4235H147.972V18.3589H151.827V30.3865C151.827 32.1449 152.106 33.5498 152.655 34.5616C153.194 35.5571 153.973 36.2805 154.968 36.7061C155.987 37.1434 157.217 37.3644 158.621 37.3644H161.969V34.2499H159.709C158.295 34.2499 157.314 33.9894 156.712 33.4544C156.101 32.9101 155.803 31.9216 155.803 30.433V18.3589H162.241V15.4235H155.803V9.79932H155.801Z"/></g><g class="wm-l" style="--i:5"><path d="M182.127 15.9563C180.89 15.2445 179.404 14.8817 177.709 14.8817C176.163 14.8817 174.738 15.2445 173.471 15.9563C172.203 16.6703 171.148 17.7147 170.329 19.0568L170.248 19.1917H169.676V5.94531H168.442C166.951 5.94531 165.745 7.15249 165.745 8.64344V37.3668H169.72V25.9882C169.72 24.3484 170.013 22.9319 170.59 21.7805C171.171 20.6175 171.985 19.7174 173.008 19.1033C174.029 18.4893 175.184 18.1776 176.44 18.1776C178.334 18.1776 179.767 18.787 180.697 19.9872C181.608 21.1664 182.071 22.8946 182.071 25.1252V37.3645H186V24.6694C186 22.4853 185.658 20.6385 184.984 19.1847C184.317 17.7496 183.356 16.661 182.127 15.9516V15.9563Z"/></g></svg></a>
+      <div class="hdr-right">
+        <a class="slim-cta-m" href="band-pro/comprar/" data-buy="band-pro">Comprar</a>
+        <button class="locale" aria-label="País: México"><svg class="flag"><use href="#i-flag-mx"/></svg><span class="locale-l">MX</span></button>
+        <button class="ic-btn cart" aria-label="Carrito" data-cart-open><span class="cart-n" data-cart-count hidden></span><svg><use href="#i-cart"/></svg></button>
+        <a class="slim-cta" href="band-pro/comprar/" data-buy="band-pro">Comprar</a>
+        <button class="ic-btn burger-m" id="burgerM" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </div>
+    <!-- mega menu -->
+    <div class="mega" id="mega" aria-hidden="true">
+      <div class="mega-surface"><div class="mega-clip">
+        <div class="mega-panel" data-panel="band">
+          <div class="mega-intro"><span class="mega-label">Band Pro</span><p class="mega-tag">Tu sueño, tu HRV y tu recuperación, sin pantalla.</p></div>
+          <article class="mega-card"><div class="mega-img"><picture><img src="../assets/img/store/hd/bp-qiband-pro_00@800.webp" alt="QiHealth Band Pro negra" loading="lazy" width="900" height="1113" style="object-position:50% 52%"></picture></div>
+            <div class="mega-copy"><span class="mega-ct">Band Pro · $3,500 MXN</span><span class="mega-cd">Banda inteligente sin pantalla: 7 señales 24/7 y 15+ días de batería.</span>
+            <div class="mega-ctas"><a class="mcta mcta-o" href="band-pro/comprar/" data-buy="band-pro">Comprar</a><a class="mcta mcta-t" href="band-pro/comprar/">Explorar</a></div></div></article>
+          <article class="mega-card"><div class="mega-img mega-img-ui"><picture><source type="image/webp" srcset="../assets/img/app/glucosa_Group_4574@800.webp"><img src="../assets/img/app/glucosa_Group_4574.png" alt="Widget de glucosa en la app QiHealth" loading="lazy" width="1600" height="1099"></picture></div>
+            <div class="mega-copy"><span class="mega-ct">App QiHealth con QiCoach</span><span class="mega-cd">Tus datos de Band Pro y QiTrax, organizados en un solo lugar.</span>
+            <div class="mega-ctas"><a class="mcta mcta-o" href="#app">Descargar</a><a class="mcta mcta-t" href="#app">Explorar</a></div></div></article>
+        </div>
+        <div class="mega-panel" data-panel="qitrax">
+          <div class="mega-intro"><span class="mega-label">QiTrax</span><p class="mega-tag">Tu glucosa, minuto a minuto, durante 15 días.</p></div>
+          <article class="mega-card"><div class="mega-img"><picture><source type="image/webp" srcset="../assets/img/product/qitrax_caja_aplicador_sensor@800.webp"><img src="../assets/img/product/qitrax_caja_aplicador_sensor.jpg" alt="Caja QiTrax con aplicador y sensor" loading="lazy" width="2000" height="1333"></picture></div>
+            <div class="mega-copy"><span class="mega-ct">QiTrax · $1,380 MXN</span><span class="mega-cd">Un sensor CGM, 15 días, 1,440 lecturas al día.</span>
+            <div class="mega-ctas"><a class="mcta mcta-o" href="qitrax/comprar/" data-buy="qitrax" data-variant="48612182819051">Comprar</a><a class="mcta mcta-t" href="qitrax/comprar/">Explorar</a></div></div></article>
+          <article class="mega-card"><div class="mega-img"><picture><source type="image/webp" srcset="../assets/img/product/qitrax_cajas_par@800.webp"><img src="../assets/img/product/qitrax_cajas_par.jpg" alt="Dos cajas de QiTrax" loading="lazy" width="2000" height="1333"></picture></div>
+            <div class="mega-copy"><span class="mega-ct">Pack 6 · $5,999 MXN</span><span class="mega-cd">Seis sensores: 90 días de lecturas continuas.</span>
+            <div class="mega-ctas"><a class="mcta mcta-o" href="qitrax/comprar/" data-buy="qitrax" data-variant="48612182917355">Comprar</a><a class="mcta mcta-t" href="qitrax/comprar/">Explorar</a></div></div></article>
+        </div>
+        <div class="mega-panel" data-panel="ring">
+          <div class="mega-intro"><span class="mega-label">Ring Pro</span><p class="mega-tag">Elige el anillo hecho para ti.</p></div>
+          <article class="mega-card"><div class="mega-img"><picture><img src="../assets/img/store/qihealth-ring-pro_00@800.webp" alt="QiHealth Ring Pro dorado" loading="lazy" width="800" height="1000" style="object-position:50% 55%"></picture></div>
+            <div class="mega-copy"><span class="mega-ct">Ring Pro · $5,999 MXN</span><span class="mega-cd">Dorado, plateado o negro. Tus datos de bienestar en un anillo, sincronizados con la app.</span>
+            <div class="mega-ctas"><a class="mcta mcta-o" href="ring-pro/comprar/" data-buy="ring-pro">Comprar</a><a class="mcta mcta-t" href="ring-pro/comprar/">Explorar</a></div></div></article>
+          <article class="mega-card"><div class="mega-img"><picture><img src="../assets/img/store/kit-ring-pro-2-sensores-qitrax_00@800.webp" alt="Kit Ring Pro + 2 sensores QiTrax" loading="lazy" width="900" height="856" style="object-position:50% 50%"></picture></div><div class="mega-copy"><span class="mega-ct">Kit Ring Pro + 2 QiTrax · $9,279 MXN</span><span class="mega-cd">Ring Pro y 2 sensores QiTrax de 15 días.</span><div class="mega-ctas"><a class="mcta mcta-o" href="ring-pro/comprar/" data-buy="kit-ring">Comprar</a><a class="mcta mcta-t" href="ring-pro/comprar/">Explorar</a></div></div></article>
+        </div>
+        <div class="mega-panel mega-more" data-panel="more">
+          <ul class="more-primary">
+            <li><a href="#bandpro">Band Pro</a></li><li><a href="#qitrax">QiTrax</a></li><li><a href="ring-pro/comprar/">Ring Pro</a></li><li><a href="#app">App QiHealth</a></li>
+          </ul>
+          <div class="more-cols">
+            <div class="more-g"><h4>Ayuda</h4><ul><li><a href="#">Cómo funciona</a></li><li><a href="#">Preguntas frecuentes</a></li><li><a href="#">Envíos</a></li><li><a href="#">Devoluciones</a></li></ul></div>
+            <div class="more-g"><h4>Contacto</h4><ul><li><a href="https://wa.me/525547914540">WhatsApp +52 55 4791 4540</a></li><li><a href="#">Aviso de privacidad</a></li><li><a href="#">Términos y condiciones</a></li><li><a href="#">Garantía</a></li></ul></div>
+          </div>
+        </div>
+      </div></div>
+    </div>
+  </div>
+</header>
+<div class="scrim" id="scrim"></div>
+
+<!-- mobile drawer -->
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-sheet"></div>
+  <div class="drawer-inner"><div class="drawer-track" id="drawerTrack">
+    <div class="drawer-slide">
+      <ul class="drawer-root">
+        <li><button class="d-root" data-sub="band"><span>Band Pro</span><svg><use href="#i-chev"/></svg></button></li>
+        <li><button class="d-root" data-sub="qitrax"><span>QiTrax</span><svg><use href="#i-chev"/></svg></button></li>
+        <li><button class="d-root" data-sub="ring"><span>Ring Pro</span><svg><use href="#i-chev"/></svg></button></li>
+        <li><a class="d-root" href="#app">App</a></li>
+        <li><a class="d-root" href="#app">App QiHealth</a></li>
+        <li class="d-more">
+          <div class="d-group"><h3>Ayuda</h3><ul><li><a href="#">Cómo funciona</a></li><li><a href="#">Preguntas frecuentes</a></li><li><a href="#">Envíos</a></li><li><a href="#">Devoluciones</a></li></ul></div>
+          <div class="d-group"><h3>Contacto</h3><ul><li><a href="https://wa.me/525547914540">WhatsApp +52 55 4791 4540</a></li><li><a href="#">Aviso de privacidad</a></li></ul></div>
+        </li>
+      </ul>
+    </div>
+    <div class="drawer-slide drawer-sub" id="drawerSub">
+      <button class="d-back" id="dBack"><svg><use href="#i-chev"/></svg>Volver</button>
+      <div class="d-sub" data-sub="band"><p class="d-sub-t">Band Pro</p><a href="#bandpro">Band Pro · $3,500 MXN</a><a href="#app">App QiHealth con QiCoach</a></div>
+      <div class="d-sub" data-sub="qitrax"><p class="d-sub-t">QiTrax</p><a href="#qitrax">QiTrax · $1,380 MXN</a><a href="#qitrax">Pack 6 · $5,999 MXN</a></div>
+      <div class="d-sub" data-sub="ring"><p class="d-sub-t">Ring Pro</p><a href="ring-pro/comprar/">Ring Pro · $5,999 MXN</a><a href="ring-pro/comprar/">Kit Ring Pro + 2 QiTrax · $9,279 MXN</a></div>
+    </div>
+  </div></div>
+</aside>
+
+<main id="main">
+
+<!-- ============ 1. CAMPAIGN CARD (Band Pro) ============ -->
+<section class="camp" aria-labelledby="camp-h">
+  <picture class="camp-media camp-pic" aria-hidden="true"><source media="(max-width:767px)" srcset="assets/img/camp_band_m.webp"><img src="assets/img/camp_band.webp" alt="" width="2840" height="1114" decoding="async" fetchpriority="high"></picture>
+  <div class="camp-head" aria-hidden="true">
+    <span class="echo" style="--x:36px;--o:.06">Band Pro</span><span class="echo" style="--x:-37px;--o:.06">Band Pro</span>
+    <span class="echo" style="--x:25px;--o:.11">Band Pro</span><span class="echo" style="--x:-26px;--o:.11">Band Pro</span>
+    <span class="echo" style="--x:17px;--o:.17">Band Pro</span><span class="echo" style="--x:-18px;--o:.17">Band Pro</span>
+    <span class="echo" style="--x:11px;--o:.25">Band Pro</span><span class="echo" style="--x:-12px;--o:.25">Band Pro</span>
+    <span class="echo" style="--x:6px;--o:.34">Band Pro</span><span class="echo" style="--x:-6px;--o:.34">Band Pro</span>
+    <span class="echo" style="--x:2.7px;--o:.45">Band Pro</span><span class="echo" style="--x:-3.6px;--o:.45">Band Pro</span>
+  </div>
+  <h1 class="camp-h" id="camp-h">Band Pro</h1>
+  <div class="camp-scrim"></div>
+  <div class="camp-copy">
+    <p class="camp-offer">Band Pro $3,500 MXN, sin pantalla</p>
+    <div class="camp-ctas"><a class="pill pill-white" href="band-pro/comprar/" data-buy="band-pro">Comprar Band Pro</a></div>
+  </div>
+</section>
+
+<!-- ============ 2. BAND PRO PRODUCT HERO ============ -->
+<section class="bph" id="bandpro-hero" aria-labelledby="bph-h">
+  <div class="bph-bg" aria-hidden="true"><div class="bph-rise"><picture><source media="(max-width:767px)" srcset="assets/img/hero_bandpro_m.webp"><img class="bph-img" src="assets/img/hero_bandpro.webp" alt="" width="2840" height="1780" decoding="async" fetchpriority="high"></picture></div></div>
+  <div class="bph-fade"></div>
+  <div class="bph-copy">
+    <h2 class="bph-t anim-copy" id="bph-h">Tu cuerpo, sin pantalla.</h2>
+    <p class="bph-b anim-copy" style="animation-delay:.06s">Sueño, HRV, recuperación y más, 24/7. Hasta 15+ días de batería con uso normal<sup>*</sup></p>
+    <div class="bph-ctas anim-copy" style="animation-delay:.12s"><a class="pill pill-blue" href="band-pro/comprar/" data-buy="band-pro">Comprar Band Pro</a><a class="pill pill-glass" href="https://wa.me/525547914540?text=Hola%2C%20tengo%20dudas%20sobre%20Band%20Pro" target="_blank" rel="noopener">Escríbenos</a></div>
+    <div class="bph-badges anim-copy" style="animation-delay:.18s"><span class="bdg"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1.5 4.5h8v6h-8zM9.5 6.5h3l2 2.2v1.8h-5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><circle cx="4.5" cy="11.5" r="1.3" fill="#fff" stroke="currentColor" stroke-width="1.1"/><circle cx="12" cy="11.5" r="1.3" fill="#fff" stroke="currentColor" stroke-width="1.1"/></svg>Envío gratis en zonas seleccionadas</span><span class="bdg"><svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-wa"/></svg>Soporte por WhatsApp</span></div>
+  </div>
+  <ul class="bph-ben">
+    <li><span class="bt">Envío gratis</span><span class="bs">En zonas seleccionadas</span></li>
+    <li><span class="bt">~30 días</span><span class="bs">En espera</span></li>
+    <li><span class="bt">12 meses</span><span class="bs">De garantía</span></li>
+  </ul>
+</section>
+
+<!-- ============ 3. STAT STRIP ============ -->
+<section class="stats" aria-label="Band Pro en números">
+  <ul class="stats-row">
+    <li class="st rv"><span class="st-v"><span class="cnt" data-to="15">15</span>+ días<a class="st-fn" href="#disc" aria-label="Ver nota">*</a></span><span class="st-l">De batería con uso normal</span></li>
+    <li class="st-div" aria-hidden="true"></li>
+    <li class="st rv" style="--rd:.06s"><span class="st-v"><span class="cnt" data-to="7">7</span> señales</span><span class="st-l">Medidas 24/7</span></li>
+    <li class="st-div" aria-hidden="true"></li>
+    <li class="st rv" style="--rd:.12s"><span class="st-v">IP<span class="cnt" data-to="68">68</span></span><span class="st-l">Resistencia al agua y al polvo</span></li>
+    <li class="st-div" aria-hidden="true"></li>
+    <li class="st rv" style="--rd:.18s"><span class="st-v"><span class="cnt" data-to="12">12</span> meses</span><span class="st-l">De garantía</span></li>
+  </ul>
+</section>
+
+<!-- ============ 4. PROOF GRID ============ -->
+<section class="proof" aria-labelledby="proof-h">
+  <div class="proof-in">
+    <header class="proof-head"><p class="proof-eb rv">Respaldo</p><h2 class="proof-t rv" id="proof-h" style="--rd:.06s">Respaldado por datos.</h2></header>
+    <ul class="proof-grid">
+      <li class="pc"><a class="pc-card" href="#qitrax"><span class="pc-top"><span class="pc-mark">QiTrax · reseñas <em class="validar">[VALIDAR fecha]</em></span><q class="pc-q">4.78★ en 85 reseñas de QiTrax.</q></span><span class="pc-read">Ver QiTrax <svg class="arr" viewBox="0 0 14 14" aria-hidden="true"><path d="M4 10 10 4M5 4h5v5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+      <li class="pc pc-hm"><a class="pc-card" href="#qitrax"><span class="pc-top"><span class="pc-mark">Ensayo clínico · 2022</span><q class="pc-q">QiTrax se validó en 87 pacientes en un ensayo clínico multicéntrico y aleatorizado.</q></span><span class="pc-read">Ver QiTrax <svg class="arr" viewBox="0 0 14 14" aria-hidden="true"><path d="M4 10 10 4M5 4h5v5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+      <li class="pc"><a class="pc-card" href="#qitrax"><span class="pc-top"><span class="pc-mark">Precisión</span><q class="pc-q">8.66% MARD en el estudio clínico de QiTrax.</q></span><span class="pc-read">Ver QiTrax <svg class="arr" viewBox="0 0 14 14" aria-hidden="true"><path d="M4 10 10 4M5 4h5v5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+      <li class="pc"><a class="pc-card" href="#qitrax"><span class="pc-top"><span class="pc-mark">Zona clínica</span><q class="pc-q">100% de las lecturas en zona clínicamente segura (A+B).</q></span><span class="pc-read">Ver QiTrax <svg class="arr" viewBox="0 0 14 14" aria-hidden="true"><path d="M4 10 10 4M5 4h5v5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+      <li class="pc pc-hm"><a class="pc-card" href="#qitrax"><span class="pc-top"><span class="pc-mark">Registro sanitario</span><q class="pc-q">Sensor CGM · Reg. SSA 2370E2025 · Permiso de publicidad 263300201B2529.</q></span><span class="pc-read">Ver QiTrax <svg class="arr" viewBox="0 0 14 14" aria-hidden="true"><path d="M4 10 10 4M5 4h5v5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+      <li class="pc pc-hm"><a class="pc-card" href="#bandpro"><span class="pc-top"><span class="pc-mark">Band Pro</span><q class="pc-q">12 meses de garantía y soporte directo por WhatsApp.</q></span><span class="pc-read">Ver Band Pro <svg class="arr" viewBox="0 0 14 14" aria-hidden="true"><path d="M4 10 10 4M5 4h5v5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 4. BATTERY (Band Pro 15+ días) ============ -->
+<section class="batt" id="batt" aria-labelledby="batt-h">
+  <div class="batt-stage">
+    <div class="batt-art" aria-hidden="true">
+      <picture><source media="(max-width: 767px)" srcset="assets/img/batt_band_s.webp"><img class="batt-band" src="assets/img/batt_band.webp" alt="" width="3288" height="1370" loading="lazy" decoding="async"></picture>
+      <svg class="batt-arc" viewBox="0 0 1440 600" preserveAspectRatio="none" shape-rendering="geometricPrecision">
+        <defs>
+          <linearGradient id="bArcG" gradientUnits="userSpaceOnUse" x1="477.5" y1="-90.5" x2="-101.8" y2="-41.8"><stop offset=".22" stop-color="#1235D2"/><stop offset=".44" stop-color="#6E9DFF"/><stop offset=".67" stop-color="#1235D2"/></linearGradient>
+          <filter id="bArcF" x="0" y="0" width="460" height="176.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="ha"/><feOffset dy="8"/><feGaussianBlur stdDeviation="7.5"/><feComposite in2="ha" operator="arithmetic" k2="-1" k3="1"/><feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .8 0"/><feBlend mode="normal" in2="SourceGraphic"/></filter>
+          <clipPath id="bArcC"><path d="M229.5 0C301.327 0 387.769 11.2026 460 46.7627V168.476C418.153 98.4387 335.34 51 229.5 51C124.496 51 42.1576 97.6931 0 166.821V46.2725C72.0275 11.0996 158.004 0 229.5 0Z"/></clipPath>
+          <linearGradient id="bShine" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+        </defs>
+        <g transform="translate(0 33) scale(3.13043 1.24053)">
+          <path d="M229.5 0C301.327 0 387.769 11.2026 460 46.7627V168.476C418.153 98.4387 335.34 51 229.5 51C124.496 51 42.1576 97.6931 0 166.821V46.2725C72.0275 11.0996 158.004 0 229.5 0Z" fill="url(#bArcG)" filter="url(#bArcF)"/>
+          <g clip-path="url(#bArcC)"><rect class="batt-shine" x="-140" y="0" width="140" height="170" fill="url(#bShine)"/></g>
+        </g>
+      </svg>
+    </div>
+    <div class="batt-text">
+      <div class="batt-title"><h2 class="sec-t" id="batt-h">Sin pantalla. Sin cargar cada noche.</h2></div>
+      <div class="batt-claim">
+        <p class="batt-side batt-l">Hasta</p>
+        <p class="batt-stat"><span class="batt-count" id="battCount">1</span>+ días<a class="batt-fn" href="#disc" aria-label="Ver nota">*</a></p>
+        <p class="batt-side batt-r">de batería</p>
+      </div>
+      <p class="sr-only">Hasta 15 o más días de batería con uso normal.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. TABS + CAROUSEL (Band Pro 7 señales) ============ -->
+<section class="sig" id="sig" aria-labelledby="sig-h">
+  <div class="sig-head">
+    <div class="sig-copy">
+      <h2 class="sec-t sig-t rv" id="sig-h">7 señales, 24/7</h2>
+      <p class="sig-sub rv" style="--rd:.06s">Cada señal que mide Band Pro, de día y de noche, y lo que cada una te dice sobre tu día.</p>
+    </div>
+    <div class="sig-tabs" role="tablist" id="sigTabs">
+      <span class="sig-hl" id="sigHl"></span>
+      <button class="sig-tab is-on" role="tab" aria-selected="true" data-i="0">Sueño</button>
+      <button class="sig-tab" role="tab" aria-selected="false" data-i="1">Recuperación</button>
+      <button class="sig-tab" role="tab" aria-selected="false" data-i="2">Estrés</button>
+      <button class="sig-tab" role="tab" aria-selected="false" data-i="3">Actividad</button>
+      <button class="sig-tab" role="tab" aria-selected="false" data-i="4">SpO2 y temperatura</button>
+    </div>
+  </div>
+  <div class="sig-viewport" id="sigVp">
+    <ul class="sig-track" id="sigTrack">
+      <li class="sig-slide" data-i="0"><div class="sig-media"><picture><source media="(max-width:767px)" type="image/webp" srcset="../assets/img/store/hd/bp-marron-3-uso@800.webp"><img src="../assets/img/store/hd/bp-marron-3-uso.webp" alt="Band Pro marrón en la muñeca, de noche junto a la lámpara" loading="lazy" decoding="async" width="1800" height="2227" style="--op:50% 70%"></picture>
+        <div class="sig-ui sig-ui-sleep"><span class="ui-k">Sueño · anoche</span><svg viewBox="0 0 220 64" class="ui-hyp"><path d="M4 14h26v22h22v14h18V22h30v28h22V36h26v14h20V10h22v26h26" fill="none" stroke="#1A98FF" stroke-width="3" stroke-linejoin="round"/></svg><span class="ui-n">Ilustrativo</span></div></div>
+        <div class="sig-cc"><h3>Entiende tu sueño</h3><p>Band Pro registra tu sueño cada noche y lo ves en la app al despertar, sin una pantalla que te ilumine la cara.</p></div></li>
+      <li class="sig-slide" data-i="1"><div class="sig-media"><picture><source media="(max-width:767px)" type="image/webp" srcset="../assets/img/store/hd/bp-beige-3-uso@800.webp"><img src="../assets/img/store/hd/bp-beige-3-uso.webp" alt="Band Pro beige durante una pausa de yoga en casa" loading="lazy" decoding="async" width="1800" height="2227" style="--op:62% 55%"></picture>
+        <div class="sig-ui"><span class="ui-k">HRV en reposo</span><svg viewBox="0 0 220 64" class="ui-line"><path d="M4 46 C30 40 44 50 66 38 S100 22 120 30 160 18 180 22 210 12 216 14" fill="none" stroke="#1A98FF" stroke-width="3"/></svg><span class="ui-n">Ilustrativo</span></div></div>
+        <div class="sig-cc"><h3>Tu recuperación, cada mañana</h3><p>Frecuencia cardiaca y HRV en reposo para ver cómo amaneces después de un día pesado o de un buen descanso.</p></div></li>
+      <li class="sig-slide" data-i="2"><div class="sig-media"><picture><source media="(max-width:767px)" type="image/webp" srcset="../assets/img/store/hd/bp-negro-3-uso@800.webp"><img src="../assets/img/store/hd/bp-negro-3-uso.webp" alt="Band Pro negra mientras trabajas en la laptop" loading="lazy" decoding="async" width="1800" height="2227" style="--op:50% 72%"></picture>
+        <div class="sig-ui"><span class="ui-k">Frecuencia cardiaca · hoy</span><svg viewBox="0 0 220 64" class="ui-line"><path d="M4 40 L22 38 L34 30 L46 42 L60 22 L74 34 L90 28 L104 44 L120 18 L136 30 L152 26 L168 40 L184 24 L200 32 L216 28" fill="none" stroke="#1A98FF" stroke-width="3" stroke-linejoin="round"/></svg><span class="ui-n">Ilustrativo</span></div></div>
+        <div class="sig-cc"><h3>El estrés de tu día</h3><p>Band Pro sigue tu frecuencia cardiaca y tu HRV mientras trabajas, para que veas en qué momentos tu cuerpo carga más.</p></div></li>
+      <li class="sig-slide" data-i="3"><div class="sig-media"><picture><source media="(max-width:767px)" type="image/webp" srcset="../assets/img/store/hd/bp-naranja-3-uso@800.webp"><img src="../assets/img/store/hd/bp-naranja-3-uso.webp" alt="Band Pro naranja durante una caminata en el parque" loading="lazy" decoding="async" width="1800" height="2227" style="--op:50% 50%"></picture>
+        <div class="sig-phone"><picture><source type="image/webp" srcset="../assets/img/app/sport_407@800.webp"><img src="../assets/img/app/sport_407.jpg" alt="Modo Sport en la app: cronómetro" loading="lazy" width="688" height="1486"></picture></div></div>
+        <div class="sig-cc"><h3>Movimiento, todo el día</h3><p>Pasos, entrenamientos y Modo Sport: tu actividad registrada las 24 horas, no solo cuando entrenas.</p></div></li>
+      <li class="sig-slide" data-i="4"><div class="sig-media"><picture><source media="(max-width:767px)" type="image/webp" srcset="../assets/img/store/hd/bp-naranja-5-look@800.webp"><img src="../assets/img/store/hd/bp-naranja-5-look.webp" alt="Band Pro naranja después de entrenar" loading="lazy" decoding="async" width="1800" height="2227" style="--op:50% 46%"></picture>
+        <div class="sig-phone"><picture><source type="image/webp" srcset="../assets/img/app/sport_328@800.webp"><img src="../assets/img/app/sport_328.jpg" alt="Datos de salud en la app" loading="lazy" width="694" height="1146"></picture></div></div>
+        <div class="sig-cc"><h3>SpO2 y temperatura de la piel</h3><p>Oxígeno en sangre y temperatura de la piel, medidos 24/7 y organizados en la app para que veas tus tendencias.</p></div></li>
+    </ul>
+  </div>
+  <div class="sig-dots" id="sigDots">
+    <button class="sig-dot is-on" aria-label="Sueño"><span></span></button><button class="sig-dot" aria-label="Recuperación"><span></span></button><button class="sig-dot" aria-label="Estrés"><span></span></button><button class="sig-dot" aria-label="Actividad"><span></span></button><button class="sig-dot" aria-label="SpO2 y temperatura"><span></span></button>
+  </div>
+  <div class="rbanner rv" id="rbanner">
+    <canvas class="rb-shader" aria-hidden="true"></canvas>
+    <div class="rb-copy"><p class="rb-t">QiTrax se validó en un ensayo clínico multicéntrico y aleatorizado (2022).</p><p class="rb-s">87 pacientes · 8.66% MARD · 100% de lecturas en zona A+B.</p></div>
+    <a class="rb-cta" href="#qitrax">Ver QiTrax <svg viewBox="0 0 14 14" aria-hidden="true"><use href="#i-chev"/></svg></a>
+  </div>
+
+</section>
+
+
+<section class="ugcw" data-ugc="home" data-theme="v1"></section>
+
+<!-- ============ 6. BAND PRO BUY ============ -->
+<section class="buy" id="bandpro" data-bar="dark" aria-labelledby="buy-h">
+  <div class="buy-in"><div class="buy-grid">
+    <div class="buy-left"><div class="gal" id="gal">
+      <div class="gal-stage"><div class="gal-it is-on" data-i="0"><picture><source media="(max-width:767px)" srcset="../assets/img/store/hd/bp-home-portada-band-pro@800.webp"><img src="../assets/img/store/hd/bp-home-portada-band-pro.webp" alt="QiHealth Band Pro negra" width="1800" height="2227" loading="eager" decoding="async" style="object-position:50% 50%" class="gal-m"></picture><p class="gal-cap">Band Pro: banda inteligente sin pantalla que mide 7 señales 24/7.</p></div><div class="gal-it" data-i="1"><picture><source media="(max-width:767px)" srcset="../assets/img/store/hd/bp-marron-3-uso@800.webp"><img src="../assets/img/store/hd/bp-marron-3-uso.webp" alt="Band Pro marrón de noche" width="1800" height="2227" loading="lazy" decoding="async" style="object-position:50% 62%" class="gal-m"></picture><p class="gal-cap">Sueño: registra tus noches sin una pantalla que te ilumine la cara.</p></div><div class="gal-it" data-i="2"><picture><source media="(max-width:767px)" srcset="../assets/img/store/hd/bp-beige-3-uso@800.webp"><img src="../assets/img/store/hd/bp-beige-3-uso.webp" alt="Band Pro beige durante una pausa de yoga" width="1800" height="2227" loading="lazy" decoding="async" style="object-position:62% 50%" class="gal-m"></picture><p class="gal-cap">Recuperación: frecuencia cardiaca y HRV en reposo para ver cómo amaneces.</p></div><div class="gal-it" data-i="3"><picture><source media="(max-width:767px)" srcset="../assets/img/store/hd/bp-naranja-5-look@800.webp"><img src="../assets/img/store/hd/bp-naranja-5-look.webp" alt="Band Pro naranja después de entrenar" width="1800" height="2227" loading="lazy" decoding="async" style="object-position:46% 45%" class="gal-m"></picture><p class="gal-cap">Actividad y Modo Sport: tus entrenamientos, registrados en la app.</p></div><div class="gal-it" data-i="4"><picture><source media="(max-width:767px)" srcset="../assets/img/store/hd/bp-naranja-4-angulo@800.webp"><img src="../assets/img/store/hd/bp-naranja-4-angulo.webp" alt="Detalle de la correa naranja y la placa QiHealth" width="1800" height="2227" loading="lazy" decoding="async" style="object-position:55% 50%" class="gal-m"></picture><p class="gal-cap">Correa elástica unitalla en beige, naranja, marrón o negro.</p></div><div class="gal-it" data-i="5"><picture><source media="(max-width:767px)" srcset="../assets/img/store/hd/bp-senales@800.webp"><img src="../assets/img/store/hd/bp-senales.webp" alt="Band Pro marrón en la muñeca" width="1800" height="2227" loading="lazy" decoding="async" style="object-position:58% 45%" class="gal-m"></picture><p class="gal-cap">15+ días de batería con uso normal, 30 días de datos sin sincronizar e IP68.</p></div></div>
+      <div class="gal-ths"><button class="gal-th is-on" data-i="0" aria-label="Ver: QiHealth Band Pro negra"><img src="../assets/img/store/hd/bp-home-portada-band-pro@800.webp" alt="" loading="lazy" width="900" height="1113" style="object-position:50% 50%"></button><button class="gal-th" data-i="1" aria-label="Ver: Band Pro marrón de noche"><img src="../assets/img/store/hd/bp-marron-3-uso@800.webp" alt="" loading="lazy" width="900" height="1113" style="object-position:50% 62%"></button><button class="gal-th" data-i="2" aria-label="Ver: Band Pro beige durante una pausa de yoga"><img src="../assets/img/store/hd/bp-beige-3-uso@800.webp" alt="" loading="lazy" width="900" height="1113" style="object-position:62% 50%"></button><button class="gal-th" data-i="3" aria-label="Ver: Band Pro naranja después de entrenar"><img src="../assets/img/store/hd/bp-naranja-5-look@800.webp" alt="" loading="lazy" width="900" height="1113" style="object-position:46% 45%"></button><button class="gal-th" data-i="4" aria-label="Ver: Detalle de la correa naranja y la placa QiHealth"><img src="../assets/img/store/hd/bp-naranja-4-angulo@800.webp" alt="" loading="lazy" width="900" height="1113" style="object-position:55% 50%"></button><button class="gal-th" data-i="5" aria-label="Ver: Band Pro marrón en la muñeca"><img src="../assets/img/store/hd/bp-senales@800.webp" alt="" loading="lazy" width="900" height="1113" style="object-position:58% 45%"></button></div>
+    </div></div>
+    <div class="buy-right">
+      <article class="bcard bcard-inc">
+        <header class="bc-head"><p class="bc-eb">Qué incluye</p><p class="bc-price" id="buy-h"><span class="bc-amt">$3,500</span> <span class="bc-note">MXN · Band Pro, sin pantalla</span></p><p class="bc-sub">Producto de bienestar, no dispositivo médico.</p></header>
+        <ul class="inc-list"><li class="inc-row"><svg class="ok-ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="m7.5 12.3 3 3 6-6.3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="inc-t">Band Pro, base de carga y correa<span class="inc-x"> elástica en beige, naranja, marrón o negro</span></span></li><li class="inc-row"><svg class="ok-ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="m7.5 12.3 3 3 6-6.3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="inc-t">15+ días de batería<span class="inc-x"> con uso normal · ~30 días en espera</span></span></li><li class="inc-row"><svg class="ok-ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="m7.5 12.3 3 3 6-6.3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="inc-t">FC, HRV, SpO2, sueño, estrés<span class="inc-x">, actividad y temperatura</span><span class="inc-m"> y más</span></span></li><li class="inc-row"><svg class="ok-ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="m7.5 12.3 3 3 6-6.3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="inc-t">30 días de datos sin sincronizar</span></li><li class="inc-row"><svg class="ok-ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="m7.5 12.3 3 3 6-6.3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="inc-t">Resistencia IP68</span></li><li class="inc-row"><svg class="ok-ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="m7.5 12.3 3 3 6-6.3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="inc-t">12 meses de garantía</span></li></ul>
+        <a class="bc-buy" href="band-pro/comprar/" data-buy="band-pro">Comprar Band Pro</a>
+      </article>
+      <article class="bcard bcard-opt">
+        <header class="bc-head"><p class="bc-eb">Opcional</p><p class="bc-opt-t">Más, cuando quieras.</p></header>
+        <ul class="opt-list"><li class="opt-row"><svg class="ok-ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M8 13.5c1.2-3 2.2-3 3 0s2 3 3 0 1.6-2.4 2-1" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg><a class="opt-cp" href="#qitrax"><span class="opt-h"><span class="opt-n">QiTrax</span><span class="opt-p">desde $1,380 MXN</span></span><span class="opt-b">1 sensor de 15 días o Pack 6 (90 días).</span></a></li><li class="opt-row" id="ring"><svg class="ok-ic" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="8" ry="8" fill="none" stroke="currentColor" stroke-width="1.4"/><ellipse cx="12" cy="12" rx="5.2" ry="5.2" fill="none" stroke="currentColor" stroke-width="1.4"/></svg><a class="opt-cp" href="#ring"><span class="opt-h"><span class="opt-n">Ring Pro</span><span class="opt-p">$5,999 MXN</span></span><span class="opt-b">Dorado, plateado o negro.</span></a></li><li class="opt-row" id="ringpro"><svg class="ok-ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg><a class="opt-cp" href="https://wa.me/525547914540?text=Quiero%20unirme%20a%20la%20lista%20de%20espera%20de%20Ring%20Pro" target="_blank" rel="noopener"><span class="opt-h"><span class="opt-n">Kit Band Pro + 2 QiTrax</span><span class="opt-p">$6,260 MXN</span></span><span class="opt-b">Band Pro + 2 sensores, un pedido.</span></a></li></ul>
+      </article>
+      <ul class="bc-ben"><li><span class="bt">Envío gratis</span><span class="bs">En zonas seleccionadas</span></li><li class="bc-rule" aria-hidden="true"></li><li><span class="bt">Soporte</span><span class="bs">Por WhatsApp</span></li><li class="bc-rule" aria-hidden="true"></li><li><span class="bt">12 meses</span><span class="bs">De garantía</span></li></ul>
+    </div>
+  </div></div>
+</section>
+
+<div class="blk-pair">
+<!-- ============ 7. QITRAX BENTO (light) ============ -->
+<section class="blk blk-light" id="qitrax" data-bar="light" aria-labelledby="qt-h">
+  <div class="blk-in">
+    <h2 class="blk-t" id="qt-h"><span class="rv">QiTrax</span><span class="blk-faint rv rv-s" style="--rd:.06s">Lo que pasa entre piquete y piquete</span></h2>
+    <article class="ff">
+      <div class="ff-grid">
+        <div class="ff-rail">
+          <div class="ff-media ff-media-light"><video class="lv" data-src="assets/video/qitraxbox_w_pp.mp4" data-src-m="assets/video/qitraxbox_w_pp_m.mp4" poster="assets/video/qitraxbox_w_pp.jpg" muted loop playsinline preload="none" aria-hidden="true"></video></div>
+          <div class="ff-meta"><h3 class="ff-name rv"><img class="ff-logo ff-logo-qt" src="../assets/img/logo/logo_qitrax_navy.png" alt="QiTrax" width="4039" height="1190" loading="lazy"></h3><div class="ff-ctas"><a class="pill pill-blue" href="qitrax/comprar/" data-buy="qitrax" data-variant="48612182819051">Comprar · $1,380</a><a class="pill pill-line" href="#">Pack 6 · $5,999</a></div></div>
+        </div>
+        <div class="ff-panels">
+          <article class="pnl pnl-intro pnl-intro-l"><p class="pnl-introb rv">¿Te picas el dedo y no sabes qué pasa entre piquetes? QiTrax mide tu glucosa cada minuto durante 15 días.</p>
+            <div class="gcurve" id="gcurve" aria-label="Curva de glucosa ilustrativa">
+              <svg viewBox="0 0 536 150" preserveAspectRatio="none"><rect class="g-range" x="0" y="46" width="536" height="58" rx="6"/><path class="g-line" d="M0 92 C 30 90, 52 88, 70 86 S 100 84, 116 80 C 132 74, 142 40, 162 30 S 196 44, 214 66 S 250 92, 280 90 S 320 84, 344 86 C 362 88, 372 70, 388 58 S 418 52, 432 66 S 470 90, 500 88 S 526 84, 536 84" fill="none"/><circle class="g-dot g-d1" cx="70" cy="86" r="5"/><circle class="g-dot g-d2" cx="344" cy="86" r="5"/></svg>
+              <span class="g-tag g-tag1">Piquete</span><span class="g-tag g-tag2">Piquete</span><span class="g-ilu">Ilustrativo</span>
+            </div></article>
+          <article class="pnl pnl-metric" id="qtMetric">
+            <canvas class="ripple" aria-hidden="true"></canvas>
+            <div class="m-layout">
+              <p class="m-eb rv">Tan ligero como</p>
+              <div class="m-row"><p class="m-val rv" style="--rd:.06s">2.2</p></div>
+              <p class="m-cap rv" style="--rd:.12s">gramos</p>
+              <p class="m-note rv" style="--rd:.18s">Disco de 22 mm × 4.2 mm</p>
+            </div>
+          </article>
+          <article class="pnl pnl-feat">
+            <p class="f-eb rv">Un vistazo a QiTrax</p>
+            <ul class="f-list">
+              <li class="f-item"><svg class="f-ic"><use href="#f-wave"/></svg><div class="f-cp"><p class="f-t rv">1,440 lecturas al día</p><p class="f-b rv" style="--rd:.06s">Una lectura por minuto: 21,600 en los 15 días del sensor, no solo los momentos en que te picas.</p></div></li>
+              <li class="f-item"><svg class="f-ic"><use href="#f-meal"/></svg><div class="f-cp"><p class="f-t rv">¿Qué comida te sube?</p><p class="f-b rv" style="--rd:.06s">QiCoach organiza y presenta tus datos y patrones de glucosa para facilitar su visualización.</p></div></li>
+              <li class="f-item"><svg class="f-ic"><use href="#f-doc"/></svg><div class="f-cp"><p class="f-t rv">Llega a tu consulta con datos</p><p class="f-b rv" style="--rd:.06s">15 días de lecturas para revisar con tu médico.</p></div></li>
+              <li class="f-item"><svg class="f-ic"><use href="#f-care"/></svg><div class="f-cp"><p class="f-t rv">Acompaña a quien cuidas</p><p class="f-b rv" style="--rd:.06s">Revisen juntos la curva de tu papá o tu mamá en la app.</p></div></li>
+            </ul>
+            <p class="f-legal">Sensor CGM · Reg. SSA 2370E2025 · Permiso de publicidad 263300201B2529</p>
+          </article>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+</div>
+
+<!-- ============ 8. FIT / CORREA + TIMELINE ============ -->
+<section class="fit" id="fit" aria-labelledby="fit-h">
+  <div class="fit-in">
+    <header class="fit-head"><h2 class="fit-t rv" id="fit-h">Elige color. Luego, tu banda.</h2><p class="fit-s rv" style="--rd:.06s">Correas en naranja, negro, beige y marrón.<span class="co-d"> Envío gratis en zonas seleccionadas.</span></p>
+      <div class="seg rv" style="--rd:.12s" role="tablist"><span class="seg-hl"></span><button class="seg-b is-on" role="tab" aria-selected="true" data-p="0">Así llega tu pedido</button><button class="seg-b" role="tab" aria-selected="false" data-p="1">Colores de correa</button></div></header>
+    <ol class="fit-row is-on" data-p="0">
+      <li class="fstep"><span class="fs-media"><picture><source media="(max-width:767px)" type="image/webp" srcset="../assets/img/life/mujer_sofa_sensor_app@800.webp"><source type="image/webp" srcset="../assets/img/life/mujer_sofa_sensor_app.webp"><img src="../assets/img/life/mujer_sofa_sensor_app.jpg" alt="Mujer revisa su teléfono en casa" width="1620" height="2880" loading="lazy" decoding="async" style="object-position:50% 40%" class="fs-img"></picture></span><span class="fs-rail"><span class="fs-badge">1</span><span class="fs-line"></span></span><span class="fs-copy"><span class="fs-when">Hoy</span><span class="fs-t">Pides</span><span class="fs-b">Elige tu color y paga en línea.</span></span></li>
+      <li class="fstep"><span class="fs-media"><picture><source media="(max-width:767px)" type="image/webp" srcset="../assets/img/product/qitrax_cajas_par@800.webp"><source type="image/webp" srcset="../assets/img/product/qitrax_cajas_par.webp"><img src="../assets/img/product/qitrax_cajas_par.jpg" alt="Cajas QiHealth listas para envío" width="2880" height="1925" loading="lazy" decoding="async" style="object-position:50% 50%" class="fs-img"></picture></span><span class="fs-rail"><span class="fs-badge">2</span><span class="fs-line"></span></span><span class="fs-copy"><span class="fs-when">Enviamos</span><span class="fs-t">Preparamos tu pedido</span><span class="fs-b">Te compartimos el seguimiento de tu envío. <em class="validar">[VALIDAR]</em></span></span></li>
+      <li class="fstep"><span class="fs-media"><picture><source media="(max-width:767px)" srcset="../assets/img/store/bandpro-beige-2-detalle@800.webp"><img src="../assets/img/store/bandpro-beige-2-detalle.webp" alt="Mujer se ajusta Band Pro" width="1800" height="2227" loading="lazy" decoding="async" style="object-position:50% 46%" class="fs-img"></picture></span><span class="fs-rail"><span class="fs-badge">3</span><span class="fs-line"></span></span><span class="fs-copy"><span class="fs-when">Llega</span><span class="fs-t">Te la pones</span><span class="fs-b">Envío gratis en zonas seleccionadas.</span></span></li>
+    </ol>
+    <ol class="fit-row" data-p="1">
+      <li class="fstep"><span class="fs-media"><picture><source media="(max-width:767px)" srcset="../assets/img/store/hd/bp-qiband-pro_00@800.webp"><img src="../assets/img/store/hd/bp-qiband-pro_00.webp" alt="Band Pro con correa negra" width="1800" height="2227" loading="lazy" decoding="async" style="object-position:50% 45%" class="fs-img"></picture></span><span class="fs-rail"><span class="fs-badge">1</span><span class="fs-line"></span></span><span class="fs-copy"><span class="fs-when">Color</span><span class="fs-t">Negro</span><span class="fs-b">Correa negra, la de nuestras fotos.</span></span></li>
+      <li class="fstep"><span class="fs-media"><span class="sw-grid"><span class="sw" style="--c:#E46A2E"><i></i>Naranja</span><span class="sw" style="--c:#1d1f22"><i></i>Negro</span><span class="sw" style="--c:#CDBFA6"><i></i>Beige</span><span class="sw" style="--c:#6B4A33"><i></i>Marrón</span></span></span><span class="fs-rail"><span class="fs-badge">2</span><span class="fs-line"></span></span><span class="fs-copy"><span class="fs-when">Colores</span><span class="fs-t">Naranja, negro, beige y marrón</span><span class="fs-b">Los cuatro colores de correa disponibles en la tienda.</span></span></li>
+      <li class="fstep"><span class="fs-media"><picture><source media="(max-width:767px)" srcset="../assets/img/store/hd/bp-naranja-4-angulo@800.webp"><img src="../assets/img/store/hd/bp-naranja-4-angulo.webp" alt="Correa elástica naranja con la placa QiHealth" width="1800" height="2227" loading="lazy" decoding="async" style="object-position:50% 45%" class="fs-img fs-img-w"></picture></span><span class="fs-rail"><span class="fs-badge">3</span><span class="fs-line"></span></span><span class="fs-copy"><span class="fs-when">Ajuste</span><span class="fs-t">Unitalla</span><span class="fs-b">Correa elástica: colócala unos 2.5 cm arriba del hueso de la muñeca, ajustada pero cómoda.</span></span></li>
+    </ol>
+    <div class="fit-cta"><a class="pill pill-blue" href="band-pro/comprar/" data-buy="band-pro">Comprar Band Pro</a></div>
+  </div>
+</section>
+
+<!-- ============ 9. HAZ LA CUENTA ============ -->
+<section class="math" id="math" aria-labelledby="math-h">
+  <div class="math-in">
+    <header class="math-head"><h2 class="math-t rv" id="math-h">Haz la cuenta.</h2><p class="math-s rv" style="--rd:.06s">Glucómetro de piquete vs. QiTrax.</p>
+      <div class="math-yrs rv" style="--rd:.12s"><button class="yr" data-d="1">1 día</button><button class="yr" data-d="15">15 días</button><button class="yr is-on" data-d="90">90 días</button></div></header>
+    <p class="math-hl" id="mathHl" aria-live="polite">129,600 lecturas en 90 días con Pack 6.</p>
+    <ul class="math-rows">
+      <li class="mr"><span class="mr-h"><span class="mr-l">QiTrax <span class="mr-n">1 lectura por minuto</span></span><span class="mr-v mr-v-q" id="mathQ">129,600</span></span><span class="mr-tr"><span class="mr-bar mr-bar-q" id="barQ"></span></span></li>
+      <li class="mr"><span class="mr-h"><span class="mr-l">Glucómetro de piquete <span class="mr-n">Ejemplo: 3 piquetes al día</span></span><span class="mr-v" id="mathP">270</span></span><span class="mr-tr"><span class="mr-bar mr-bar-p" id="barP"></span></span></li>
+    </ul>
+    <p class="math-lg"><span class="k k-q"></span>Lecturas continuas <span class="k k-p"></span>Piquetes (ejemplo)</p>
+    <p class="math-fine">Ejemplo: glucómetro con 3 piquetes al día vs. QiTrax, 1 lectura por minuto. 90 días = Pack 6 ($5,999 MXN).</p>
+    <div class="math-cta"><a class="pill pill-blue" href="qitrax/comprar/" data-buy="qitrax">Comprar QiTrax</a></div>
+  </div>
+</section>
+
+<!-- ============ 10. PAY + GIFT ============ -->
+<section class="pay" id="pay" aria-labelledby="pay-h">
+  <div class="pay-in">
+    <header class="pay-head"><h2 class="pay-t rv" id="pay-h">Paga como prefieras.</h2><p class="pay-s rv" style="--rd:.06s">Paga con tarjeta, a meses o haz tu pedido por WhatsApp. <em class="validar">[VALIDAR métodos de pago]</em></p></header>
+    <ul class="pay-grid">
+      <li><a class="pcard" href="#" data-validar="pagos con tarjeta"><span class="pc-art pc-art-card" aria-hidden="true"><span class="cc cc-a"></span><span class="cc cc-b"></span></span><span class="pc-band"></span><span class="pc-copy"><span class="pc-ttl">Tarjeta de crédito o débito</span><span class="pc-bd">Paga en línea de forma segura. <em class="validar">[VALIDAR]</em></span><span class="pc-btn">Ver opciones</span></span></a></li>
+      <li><a class="pcard" href="#" data-validar="meses sin intereses"><span class="pc-art pc-art-msi" aria-hidden="true"><span class="msi"><b>3</b><b>6</b><b>12</b></span></span><span class="pc-band"></span><span class="pc-copy"><span class="pc-ttl">Meses sin intereses</span><span class="pc-bd">Con tarjetas participantes. <em class="validar">[VALIDAR]</em></span><span class="pc-btn">Ver opciones</span></span></a></li>
+      <li><a class="pcard" href="https://wa.me/525547914540?text=Hola%2C%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener"><span class="pc-art pc-art-wa" aria-hidden="true"><svg viewBox="0 0 20 20"><use href="#i-wa"/></svg></span><span class="pc-band"></span><span class="pc-copy"><span class="pc-ttl">Pide por WhatsApp</span><span class="pc-bd">Escríbenos al +52 55 4791 4540 y te ayudamos con tu pedido.</span><span class="pc-btn">Escribir</span></span></a></li>
+      <li class="pay-gift"><a class="gift" href="https://wa.me/525547914540?text=Hola%2C%20quiero%20regalar%20QiHealth" target="_blank" rel="noopener"><span class="pc-copy"><span class="pc-ttl">¿Es un regalo? Regala QiHealth.</span><span class="pc-bd">Escríbenos por WhatsApp y te ayudamos a elegir. <em class="validar">[VALIDAR opción de regalo]</em></span><span class="pc-btn">Escríbenos</span></span><span class="gift-img"><picture><source media="(max-width:767px)" srcset="../assets/img/store/hd/bp-home-portada-band-pro@800.webp"><img src="../assets/img/store/hd/bp-home-portada-band-pro.webp" alt="Band Pro para regalar" width="1800" height="2240" loading="lazy" decoding="async" style="object-position:50% 50%"></picture></span></a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 8. APP + FILM CARD (QiCoach) ============ -->
+<section class="app" id="app" aria-labelledby="app-h">
+  <div class="app-stage">
+    <div class="app-intro">
+      <div class="app-stack">
+        <h2 class="app-t rv" id="app-h">La experiencia QiHealth, en tu app.</h2>
+        <p class="app-b rv" style="--rd:.06s">Band Pro y QiTrax en un solo lugar. QiCoach organiza tus datos para que veas tus tendencias.</p>
+      </div>
+      <div class="app-store"><a class="pill pill-line pill-store" href="#" data-validar="App Store URL">App Store <svg><use href="#i-apple"/></svg></a><a class="pill pill-line pill-store" href="#" data-validar="Google Play URL">Google Play <svg><use href="#i-play-store"/></svg></a></div>
+    </div>
+    <div class="film-layer"><div class="film-card">
+      <video class="lv" id="filmVid" data-src="assets/video/qitrax_film_w.mp4" data-src-m="assets/video/qitrax_film_m.mp4" poster="assets/video/qitrax_film_w.jpg" muted loop playsinline preload="none" aria-hidden="true"></video>
+      <div class="film-scrim"></div>
+      <div class="film-title"><span class="film-eb">Presentamos</span><span class="film-name">QiCoach</span></div>
+      <button class="watch" id="watch" aria-label="Pausar video"><svg class="w-pause"><use href="#i-pause"/></svg><svg class="w-play"><use href="#i-play"/></svg></button>
+    </div></div>
+  </div>
+</section>
+
+<!-- ============ 9. GLOBE + COUNTERS ============ -->
+<section class="globe" id="globe" aria-labelledby="globe-h">
+  <div class="globe-in">
+    <div class="globe-copy">
+      <div class="globe-cp">
+        <h2 class="globe-t rv" id="globe-h">Tu bienestar, en un solo sistema.</h2>
+        <p class="globe-b">Band Pro, QiTrax, Ring Pro y QiCoach trabajan juntos, con soporte directo por WhatsApp.</p>
+        <a class="pill pill-line globe-pill" href="https://wa.me/525547914540" target="_blank" rel="noopener">Escríbenos</a>
+      </div>
+      <dl class="globe-stats">
+        <div class="gs"><dt>Lecturas que un QiTrax<br>lleva hoy (una por minuto)</dt><dd class="gs-v"><span id="liveCount">0</span></dd></div>
+        <div class="gs"><dt>Lecturas en los 15 días<br>de un sensor</dt><dd class="gs-v"><span class="cnt" data-to="21600">21,600</span></dd></div>
+      </dl>
+    </div>
+    <div class="globe-vis"><canvas id="globeCv" aria-label="Globo terráqueo centrado en México"></canvas><div class="gcard gc1" aria-hidden="true"><div class="gglass"></div><div class="gcopy"><p class="gk">QiTrax</p><div class="gstats"><p class="gv">1,440</p><p class="gl">lecturas al día</p></div></div></div><div class="gcard gc2" aria-hidden="true"><div class="gglass"></div><div class="gcopy"><p class="gk">Band Pro</p><div class="gstats"><p class="gv">15+</p><p class="gl">días de batería</p></div></div></div><div class="globe-fade"></div></div>
+  </div>
+</section>
+
+<!-- ============ 12. TALK ============ -->
+<section class="talk" aria-labelledby="talk-h">
+  <picture class="talk-v talk-pic" aria-hidden="true"><source media="(max-width:767px)" srcset="../assets/img/store/hd/bp-negro-3-uso@800.webp"><img src="../assets/img/store/hd/bp-negro-3-uso.webp" alt="" width="1800" height="2227" loading="lazy" decoding="async"></picture>
+  <div class="talk-scrim"></div><div class="talk-side"></div><div class="talk-edge"></div>
+  <div class="talk-copy"><h2 class="talk-t rv" id="talk-h">Habla con nosotros.</h2><p class="talk-b rv" style="--rd:.06s">¿Dudas sobre Band Pro, QiTrax o tu pedido? Escríbenos por WhatsApp al +52 55 4791 4540 y te respondemos.</p><div class="rv" style="--rd:.12s"><a class="talk-btn" href="https://wa.me/525547914540" target="_blank" rel="noopener">Escríbenos</a></div></div>
+</section>
+
+<!-- ============ 10. PROOF STRIP (marquee) ============ -->
+<section class="strip" aria-label="Respaldo">
+  <p class="strip-h">Respaldo real</p>
+  <div class="mq"><div class="mq-track" id="mqTrack"><div class="mq-row">
+    <span class="mk">Reg. SSA <b>2370E2025</b></span><span class="mk">Ensayo clínico <b>2022</b></span><span class="mk"><b>87</b> pacientes</span><span class="mk"><b>8.66%</b> MARD</span><span class="mk"><b>100%</b> zona A+B</span><span class="mk">IP<b>68</b></span><span class="mk"><b>12</b> meses de garantía</span><span class="mk">Soporte por <b>WhatsApp</b></span><span class="mk">Envío gratis en <b>zonas seleccionadas</b></span>
+  </div></div></div>
+</section>
+
+<aside class="disc" id="disc"><p>* Con uso normal; ~30 días en espera. Band Pro es un producto de bienestar (wellness), no es un dispositivo médico.</p></aside>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="ftr">
+  <div class="ftr-cols">
+    <div class="fcol">
+      <nav class="fsec open"><button class="fh" aria-expanded="true">Productos<svg><use href="#i-chev"/></svg></button><div class="fl"><a href="#bandpro">Band Pro <span class="new">Nuevo</span></a><a href="#qitrax">QiTrax</a><a href="#qitrax">QiTrax Pack 6</a><a href="ring-pro/comprar/">Ring Pro</a></div></nav>
+      <div class="fsep"><nav class="fsec"><button class="fh" aria-expanded="false">App<svg><use href="#i-chev"/></svg></button><div class="fl"><a href="#app">QiCoach</a><a href="#app">Descargar la app</a></div></nav></div>
+    </div>
+    <div class="fcol">
+      <nav class="fsec"><button class="fh" aria-expanded="false">Ayuda<svg><use href="#i-chev"/></svg></button><div class="fl"><a href="#">Cómo funciona</a><a href="#">Preguntas frecuentes</a><a href="#">Envíos</a><a href="#">Devoluciones</a></div></nav>
+      <div class="fsep"><nav class="fsec"><button class="fh" aria-expanded="false">Comprar<svg><use href="#i-chev"/></svg></button><div class="fl"><a href="band-pro/comprar/">Band Pro</a><a href="ring-pro/comprar/">Ring Pro</a><a href="qitrax/comprar/">QiTrax</a></div></nav></div>
+    </div>
+    <div class="fcol">
+      <nav class="fsec"><button class="fh" aria-expanded="false">Compañía<svg><use href="#i-chev"/></svg></button><div class="fl"><a href="#">Sobre QiHealth</a><a href="https://wa.me/525547914540">Contacto</a></div></nav>
+      <div class="fsep"><nav class="fsec"><button class="fh" aria-expanded="false">Soporte<svg><use href="#i-chev"/></svg></button><div class="fl"><a href="https://wa.me/525547914540">WhatsApp</a><a href="#">Garantía de 12 meses</a></div></nav></div>
+    </div>
+    <div class="fcol">
+      <nav class="fsec"><button class="fh" aria-expanded="false">Legal<svg><use href="#i-chev"/></svg></button><div class="fl"><a href="#">Aviso de privacidad</a><a href="#">Términos y condiciones</a><a href="#">Política de envíos</a><a href="#">Política de devoluciones</a><button class="flink" id="cookiePrefs">Tus preferencias de cookies</button></div></nav>
+    </div>
+  </div>
+  <div class="ftr-bar">
+    <div class="fb"><p class="fbh">Contacto</p><div class="fb-c"><a href="https://wa.me/525547914540">WhatsApp +52 55 4791 4540</a><span>Soporte solo por WhatsApp</span></div></div>
+    <div class="fb"><p class="fbh">Síguenos</p><div class="fb-soc" data-validar="URLs de redes sociales"><a href="#" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a><a href="#" aria-label="Facebook"><svg><use href="#i-fb"/></svg></a><a href="#" aria-label="TikTok"><svg><use href="#i-tt"/></svg></a><a href="https://wa.me/525547914540" aria-label="WhatsApp"><svg><use href="#i-wa"/></svg></a></div></div>
+    <div class="fb"><p class="fbh">Descarga la app</p><div class="fb-app"><a class="badge" href="#" data-validar="App Store URL"><svg><use href="#i-apple"/></svg><span><small>Descárgala en</small>App Store</span></a><a class="badge" href="#" data-validar="Google Play URL"><svg><use href="#i-play-store"/></svg><span><small>Disponible en</small>Google Play</span></a></div></div>
+  </div>
+  <div class="ftr-copy">
+    <p>© 2026 Habits Sync, S.A. de C.V. Todos los derechos reservados. QiTrax: Sensor CGM · Reg. SSA 2370E2025 · Permiso de publicidad 263300201B2529.</p>
+    <div class="ftr-util"><button class="locale locale-f"><svg class="flag"><use href="#i-flag-mx"/></svg><span class="locale-l">México</span></button><a class="ftr-pill" href="https://wa.me/525547914540" target="_blank" rel="noopener">Escríbenos</a></div>
+  </div>
+  <div class="ftr-wm" aria-hidden="true"><svg viewBox="0 0 186 42"><use href="#wm-full"/></svg></div>
+</footer>
+
+<!-- mobile sticky product bar -->
+<div class="mbar" id="mbar" aria-hidden="true">
+  <div class="mbar-l mbar-dark"><p>Band Pro</p><div class="mbar-c"><a class="pill pill-blue" href="band-pro/comprar/" data-buy="band-pro">Comprar</a><a class="pill pill-line-dark" href="#sig">Conocer más</a></div></div>
+  <div class="mbar-l mbar-light"><p>QiTrax</p><div class="mbar-c"><a class="pill pill-blue" href="qitrax/comprar/" data-buy="qitrax">Comprar</a><a class="pill pill-line" href="qitrax/comprar/" data-buy="qitrax" data-variant="48612182917355">Pack 6</a></div></div>
+</div>
+
+<!-- chat FAB -->
+<div class="chat" id="chat">
+  <div class="chat-pop" id="chatPop"><a href="https://wa.me/525547914540?text=Hola%2C%20quiero%20asesor%C3%ADa%20antes%20de%20comprar" target="_blank" rel="noopener">Asesoría antes de comprar <svg><use href="#i-chev"/></svg></a></div>
+  <button class="chat-btn" id="chatBtn" aria-label="Abrir asesoría por WhatsApp" aria-expanded="false"><svg class="c-open"><use href="#i-chat"/></svg><svg class="c-close"><use href="#i-close"/></svg></button>
+</div>
+
+<!-- cookie banner -->
+<div class="cookie" id="cookie" role="dialog" aria-labelledby="ck-h" hidden>
+  <div class="ck-top"><h2 id="ck-h">Cookies con propósito</h2><button class="ck-x" data-ck="close" aria-label="Cerrar"><svg><use href="#i-close"/></svg></button></div>
+  <p class="ck-d">Usamos cookies para que el sitio funcione rápido y para recomendarte productos. Las esenciales siempre están activas; las de publicidad solo con tu permiso.</p>
+  <a class="ck-l" href="#">Lee nuestro aviso de privacidad</a>
+  <div class="ck-a"><button class="ck-b ck-p" data-ck="accept">Aceptar todas</button><button class="ck-b ck-o" data-ck="decline">Rechazar todas</button><button class="ck-m" data-ck="manage">Gestionar</button></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="app.js" defer></script>
+<script src="../shop/products.js"></script><script src="../shop/cart.js" defer></script>
+<script src="../shop/ugc-data.js" defer></script><script src="../shop/ugc.js" defer></script>
+</body>
+</html>
