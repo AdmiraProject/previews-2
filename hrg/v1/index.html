@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>HRG Seguros · Cotiza tu seguro con asesoría humana</title>
+<meta name="description" content="Cotiza gratis tu seguro de vida, seguro por enfermedad o gastos médicos mayores con HRG Seguros. Asesoría 1 a 1 por WhatsApp o en persona.">
+<link rel="icon" href="../assets/brand/logo-purple.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="v1.css">
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="hdr" id="top">
+  <a class="hdr__logo" href="#top" aria-label="HRG Seguros, inicio"><img src="../assets/brand/logo-color.png" alt="HRG Seguros" width="224" height="30"></a>
+  <nav class="hdr__nav" aria-label="Seguros">
+    <div class="hdr__item"><button class="hdr__btn" aria-expanded="false" aria-controls="mega-vida">Vida</button><div class="mega" id="mega-vida" role="region"><div class="mega__in"><div class="mega__cols"><div class="mega__col"><p class="mega__h">Coberturas</p><a href="#cotiza" data-open-quote="vida">Fallecimiento</a><a href="#cotiza" data-open-quote="vida">Enfermedad terminal</a><a href="#cotiza" data-open-quote="vida">Invalidez total y permanente</a><a href="#cotiza" data-open-quote="vida">Gastos funerarios (opcional)</a></div><div class="mega__col"><p class="mega__h">Planes a 10 años</p><a href="#cotiza" data-open-quote="vida">Suma asegurada de $1,000,000</a><a href="#cotiza" data-open-quote="vida">Suma asegurada de $2,000,000</a><a href="#cotiza" data-open-quote="vida">Suma asegurada de $3,000,000</a></div><div class="mega__col"><p class="mega__h">Preguntas</p><a href="#faq">¿Cuánto cuesta un seguro de vida?</a><a href="#faq">¿Quién recibe el dinero?</a><a href="#faq">¿Quién regula mi seguro?</a></div></div><div class="mega__foot"><button class="btn btn--primary btn--sm" data-open-quote="vida">Cotiza gratis</button><span>Desde $8.04 al día · cotiza en 30 segundos</span></div></div></div></div>
+    <div class="hdr__item"><button class="hdr__btn" aria-expanded="false" aria-controls="mega-enfermedad">Enfermedad</button><div class="mega" id="mega-enfermedad" role="region"><div class="mega__in"><div class="mega__cols"><div class="mega__col"><p class="mega__h">Qué cubre</p><a href="#cotiza" data-open-quote="enfermedad">Infarto · $150,000</a><a href="#cotiza" data-open-quote="enfermedad">Cáncer · $150,000</a><a href="#cotiza" data-open-quote="enfermedad">Derrame cerebral · $75,000</a><a href="#cotiza" data-open-quote="enfermedad">Cirugías · desde $20,000</a></div><div class="mega__col"><p class="mega__h">Siempre incluido</p><a href="#cotiza" data-open-quote="enfermedad">$800 por día en el hospital</a><a href="#cotiza" data-open-quote="enfermedad">Hasta $15,000 por accidente</a><a href="#cotiza" data-open-quote="enfermedad">Sin deducible ni coaseguro</a></div><div class="mega__col"><p class="mega__h">Para quién</p><a href="#cotiza" data-open-quote="enfermedad">Tú y hasta 4 familiares</a><a href="#cotiza" data-open-quote="enfermedad">De 0 a 69 años</a><a href="#faq">¿Qué es el seguro por enfermedad?</a></div></div><div class="mega__foot"><button class="btn btn--primary btn--sm" data-open-quote="enfermedad">Cotiza gratis</button><span>Hasta $300,000 en efectivo · desde $4.45 al día</span></div></div></div></div>
+    <div class="hdr__item"><button class="hdr__btn" aria-expanded="false" aria-controls="mega-gmm">Gastos médicos</button><div class="mega" id="mega-gmm" role="region"><div class="mega__in"><div class="mega__cols"><div class="mega__col"><p class="mega__h">Entiende tu póliza</p><a href="#faq">Suma asegurada</a><a href="#faq">Deducible</a><a href="#faq">Coaseguro y tope</a></div><div class="mega__col"><p class="mega__h">Herramientas</p><a href="#simula">Calculadora de siniestros</a><a href="#cotiza" data-open-quote="gmm">Cotiza gastos médicos mayores</a></div><div class="mega__col"><p class="mega__h">Asesoría</p><a href="https://calendly.com/hrgseguros/30min" target="_blank" rel="noopener">Agenda una cita</a><a href="https://wa.me/525580302272" target="_blank" rel="noopener">Escríbenos por WhatsApp</a></div></div><div class="mega__foot"><button class="btn btn--primary btn--sm" data-open-quote="gmm">Cotiza gratis</button><span>Protege tu salud y tu patrimonio</span></div></div></div></div>
+    <div class="hdr__item"><button class="hdr__btn" aria-expanded="false" aria-controls="mega-retiro">Retiro</button><div class="mega" id="mega-retiro" role="region"><div class="mega__in"><div class="mega__cols"><div class="mega__col"><p class="mega__h">Planes</p><a href="#cotiza" data-open-quote="retiro">Seguro de retiro</a><a href="#cotiza" data-open-quote="educativo">Seguro educativo</a><a href="#cotiza" data-open-quote="empresarial">Seguro empresarial (hombre clave)</a></div><div class="mega__col"><p class="mega__h">Beneficios</p><a href="#cotiza" data-open-quote="retiro">Protección con plan de ahorro</a><a href="#cotiza" data-open-quote="educativo">Un fondo para la educación de tus hijos</a><a href="#cotiza" data-open-quote="empresarial">100% deducible para la empresa</a></div><div class="mega__col"><p class="mega__h">Asesoría</p><a href="https://calendly.com/hrgseguros/30min" target="_blank" rel="noopener">Agenda una cita</a><a href="#confianza">Conoce a HRG Seguros</a></div></div><div class="mega__foot"><button class="btn btn--primary btn--sm" data-open-quote="retiro">Agenda una asesoría</button><span>Te mostramos escenarios según las condiciones del plan</span></div></div></div></div>
+  </nav>
+  <div class="hdr__right">
+    <a class="hdr__link" href="#confianza">Nosotros</a>
+    <a class="hdr__link" href="https://calendly.com/hrgseguros/30min" target="_blank" rel="noopener">Agenda una cita</a>
+    <button class="btn btn--primary" data-open-quote>Cotiza gratis <i class="chev"></i></button>
+  </div>
+  <button class="btn btn--primary hdr__mcta" data-open-quote>Cotiza <i class="chev"></i></button>
+  <button class="hdr__burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+</header>
+<div class="mnav" hidden>
+  <a href="#cotiza" data-product="vida">Seguro de vida</a>
+  <a href="#cotiza" data-product="enfermedad">Seguro por enfermedad</a>
+  <a href="#cotiza" data-product="gmm">Gastos médicos mayores</a>
+  <a href="#cotiza" data-product="retiro">Seguro de retiro</a>
+  <a href="#confianza">Nosotros</a>
+  <a href="https://calendly.com/hrgseguros/30min" target="_blank" rel="noopener">Agenda una cita</a>
+  <button class="btn btn--primary" data-open-quote>Cotiza gratis <i class="chev"></i></button>
+</div>
+
+<main>
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="hero__media">
+    <img class="hero__img" src="../assets/img/hero-v1.jpg" alt="Familia mexicana abrazando a su bebé en un jardín" fetchpriority="high">
+  </div>
+  <div class="hero__head">
+    <h1>Una forma <em class="sw">humana<svg class="ul ul--hero" viewBox="0 0 215 17" aria-hidden="true"><path class="draw" pathLength="1" d="M1.6 4.5C40 4.4 120 3.4 204.5 1.6C218.8 1.7 212.2 2.3 198 3.2C162.6 5.4 125.5 8.2 102.2 10.7C91.2 12.1 83 13.5 77.3 14.5C76.5 14.7 75.7 14.8 73.4 15.1"/></svg></em> de<br>contratar tu seguro.</h1>
+  </div>
+  <svg class="loop loop--top" viewBox="0 0 358 294" aria-hidden="true"><path class="draw draw--load" pathLength="1" d="M4 -150C56 -79 145 99 266 142C379 181 370 84 304 85C185 86 167 180 255 290"/></svg>
+  <svg class="loop loop--bottom" viewBox="0 0 634 510" aria-hidden="true"><path class="draw draw--load draw--slow" pathLength="1" d="M27 3.5C47 24 123 49 138 49M272 94.6C346 115.8 596 152 620 183C689 276 323 322 185 337C80 348 -39 408 21 525C70 619 361 776 429 789"/></svg>
+
+  <div class="finder" id="cotiza">
+    <p class="finder__title">¿Qué quieres proteger?</p>
+    <div class="finder__cards">
+      <button class="fcard" data-open-quote="vida">
+        <svg viewBox="0 0 34 30" aria-hidden="true"><path d="M17 27.5S2.5 19 2.5 9.6C2.5 5.2 6 2 10 2c3 0 5.4 1.7 7 4.2C18.6 3.7 21 2 24 2c4 0 7.5 3.2 7.5 7.6C31.5 19 17 27.5 17 27.5Z"/><path d="M10.5 12.5h4l2-3.5 2.5 7 2-3.5h2.5"/></svg>
+        <span>Vida</span><i class="chev chev--dark"></i></button>
+      <button class="fcard" data-open-quote="enfermedad">
+        <svg viewBox="0 0 34 30" aria-hidden="true"><rect x="3" y="3" width="28" height="24" rx="6"/><path d="M17 9v12M11 15h12"/></svg>
+        <span>Enfermedad</span><i class="chev chev--dark"></i></button>
+      <button class="fcard" data-open-quote="gmm">
+        <svg viewBox="0 0 34 30" aria-hidden="true"><path d="M4 27V10l13-7 13 7v17"/><path d="M2 27h30"/><path d="M13 27v-7h8v7"/><path d="M17 9.5v6M14 12.5h6"/></svg>
+        <span>Gastos médicos</span><i class="chev chev--dark"></i></button>
+      <button class="fcard" data-open-quote="retiro">
+        <svg viewBox="0 0 34 30" aria-hidden="true"><circle cx="17" cy="15" r="12.5"/><path d="M17 8v7.5l5 3"/></svg>
+        <span>Retiro</span><i class="chev chev--dark"></i></button>
+    </div>
+    <button class="btn btn--primary finder__cta" data-open-quote>Cotiza gratis <i class="chev"></i></button>
+  </div>
+</section>
+
+<!-- ===================== EXPERTISE ROW ===================== -->
+<section class="expert" aria-label="Por qué HRG Seguros">
+  <div class="expert__item">
+    <h2 class="expert__h">Asesoría 1 a 1</h2>
+    <p class="expert__sub">En línea en todo México o en persona</p>
+  </div>
+  <a class="expert__item" href="#confianza">
+    <h2 class="expert__h"><span class="count" data-to="620">620</span> familias</h2>
+    <p class="expert__sub expert__sub--link">protegidas con HRG Seguros</p>
+  </a>
+  <a class="expert__item" href="#confianza">
+    <h2 class="expert__h"><span class="count" data-to="224">224</span> pólizas</h2>
+    <p class="expert__sub expert__sub--link">de vida y gastos médicos colocadas</p>
+  </a>
+  <a class="expert__item" href="#confianza">
+    <h2 class="expert__h">MDRT</h2>
+    <p class="expert__sub expert__sub--link">Mesa del Millón de Dólares</p>
+  </a>
+</section>
+
+<!-- ===================== REAL STORIES ===================== -->
+<section class="block stories" id="testimonios">
+  <h2 class="h2 center"><em class="sw">Clientes<svg class="ul ul--130" viewBox="0 0 130 17" aria-hidden="true"><path class="draw" pathLength="1" d="M1.6 4.4C40 4.2 90 3 122.9 1.6C131.4 1.7 127.5 2.3 119 3.2C97.8 5.2 75.7 8 61.8 10.4C55.1 11.7 50.3 13.1 46.8 14.1C46.4 14.2 45.9 14.3 44.5 14.6"/></svg></em> reales, historias reales.</h2>
+  <p class="sub center">En HRG Seguros cotizas gratis y un asesor te acompaña en cada paso: te explica coberturas, condiciones y alcances antes de que decidas, por WhatsApp o en persona.</p>
+
+  <div class="tgrid-wrap">
+    <div class="tgrid is-active" data-page="0">
+      <div class="tcard tcard--video s3" data-video="../assets/video/t-alejandra.mp4" data-vtt="../assets/video/t-alejandra.vtt">
+        <img src="../assets/video/t-alejandra.jpg" alt="Alejandra, clienta de HRG Seguros">
+        <div class="tcard__shade"></div>
+        <button class="play" aria-label="Reproducir testimonio de Alejandra"><svg viewBox="0 0 31 31"><circle cx="15.5" cy="15.5" r="15.5" fill="#fff"/><path d="M12.5 10v11l9-5.5z" fill="#1D1D1B"/></svg></button>
+        <div class="tcard__foot">
+          <p class="tq">Me escuchó las necesidades que yo tenía.</p>
+          <p class="tn">Alejandra</p><p class="tr">Clienta de HRG Seguros</p>
+        </div>
+      </div>
+      <div class="tcard tcard--lilac s3">
+        <p class="tq"><span class="qm">“</span>El seguimiento ha sido constante. Si llega a haber algún problema, se me notifica para buscar la solución más pronta. Es un muy buen seguimiento.<span class="qm">”</span></p>
+        <div><p class="tn">Cliente</p><p class="tr">Cliente de HRG Seguros</p></div>
+      </div>
+      <div class="tcard tcard--brand s6">
+        <p class="tq tq--big"><span class="qm">“</span>Platicamos mucho de lo que yo quería para poder hacer el plan y que me funcionara lo mejor posible.<span class="qm">”</span></p>
+        <div><p class="tn">Alejandra</p><p class="tr">Clienta de HRG Seguros</p></div>
+      </div>
+      <div class="tcard tcard--lilac s3">
+        <p class="tq"><span class="qm">“</span>Los planes son diseñados individualmente: en lugar de uno para todos, es uno por persona.<span class="qm">”</span></p>
+        <p class="tlogo">Atención<br>personalizada</p>
+      </div>
+      <div class="tcard tcard--white s6">
+        <p class="tq tq--big"><span class="qm">“</span>Poder dormir tranquilo, sabiendo que mi futuro está en buenas manos.<span class="qm">”</span></p>
+        <div><p class="tn">Cliente</p><p class="tr">Cliente de HRG Seguros</p></div>
+      </div>
+      <div class="tcard tcard--video s3" data-video="../assets/video/t-0512.mp4" data-vtt="../assets/video/t-0512.vtt">
+        <img src="../assets/video/t-0512.jpg" alt="Cliente de HRG Seguros en video">
+        <div class="tcard__shade"></div>
+        <button class="play" aria-label="Reproducir testimonio"><svg viewBox="0 0 31 31"><circle cx="15.5" cy="15.5" r="15.5" fill="#fff"/><path d="M12.5 10v11l9-5.5z" fill="#1D1D1B"/></svg></button>
+        <div class="tcard__foot">
+          <p class="tq">La atención es más personalizada.</p>
+          <p class="tn">Cliente</p><p class="tr">Cliente de HRG Seguros</p>
+        </div>
+      </div>
+    </div>
+    <div class="tgrid" data-page="1" id="page2">
+      <div class="tcard tcard--video s3" data-video="../assets/v2/t-angel-v2.mp4" data-vtt="../assets/v2/t-angel-v2.vtt">
+        <img src="../assets/video/t-angel.jpg" alt="Ángel Ramos, cliente de HRG Seguros" loading="lazy">
+        <div class="tcard__shade"></div>
+        <button class="play" aria-label="Reproducir testimonio de Ángel Ramos"><svg viewBox="0 0 31 31"><circle cx="15.5" cy="15.5" r="15.5" fill="#fff"/><path d="M12.5 10v11l9-5.5z" fill="#1D1D1B"/></svg></button>
+        <div class="tcard__foot">
+          <p class="tq">Todo fue muy sencillo.</p>
+          <p class="tn">Ángel Ramos</p><p class="tr">Cliente de HRG Seguros</p>
+        </div>
+      </div>
+      <div class="tcard tcard--lilac s3">
+        <p class="tq"><span class="qm">“</span>Sí, totalmente. Muy sencillo, con toda la confianza y seguridad que se debe tener.<span class="qm">”</span></p>
+        <div><p class="tn">Ángel Ramos</p><p class="tr">Cliente de HRG Seguros</p></div>
+      </div>
+      <div class="tcard tcard--brand s6">
+        <p class="tq tq--big"><span class="qm">“</span>Confianza. No hay una mejor palabra para describirlo.<span class="qm">”</span></p>
+        <div><p class="tn">Ángel Ramos</p><p class="tr">Cliente de HRG Seguros</p></div>
+      </div>
+      <div class="tcard tcard--lilac s3">
+        <p class="tq"><span class="qm">“</span>En otras experiencias no escuchaban cuál era mi problema; solamente buscaban lo que me querían ofrecer.<span class="qm">”</span></p>
+        <div><p class="tn">Alejandra</p><p class="tr">Clienta de HRG Seguros</p></div>
+      </div>
+      <div class="tcard tcard--white s6">
+        <p class="tq tq--big"><span class="qm">“</span>Me da más tranquilidad saber que estoy pensando en mi yo del futuro.<span class="qm">”</span></p>
+        <div><p class="tn">Alejandra</p><p class="tr">Clienta de HRG Seguros</p></div>
+      </div>
+      <div class="tcard tcard--lilac s3">
+        <p class="tq">Personas, familias y empresas que ya confían en la asesoría de HRG Seguros para proteger su salud, su patrimonio y su futuro.</p>
+        <p class="tlogo"><span class="count" data-to="620">620</span> familias<br>protegidas</p>
+      </div>
+    </div>
+  </div>
+  <div class="dots" role="tablist" aria-label="Página de testimonios">
+    <button class="dot is-active" role="tab" aria-selected="true" aria-label="Página 1" data-go="0"></button>
+    <button class="dot" role="tab" aria-selected="false" aria-label="Página 2" data-go="1"></button>
+  </div>
+  <a class="btn btn--primary center-btn" href="https://calendly.com/hrgseguros/30min" target="_blank" rel="noopener">Habla con un asesor <i class="chev"></i></a>
+</section>
+
+<!-- ===================== TRUSTED ===================== -->
+<section class="block trusted" id="confianza">
+  <div class="trusted__img">
+    <div class="clipr"><img src="../assets/img/trusted-v1.jpg" alt="Papá y mamá jugando con su bebé en un jardín" loading="lazy"></div>
+    <svg class="trusted__line" viewBox="0 0 433 500" aria-hidden="true"><path class="draw" pathLength="1" d="M430 -80C434 -30 432 60 376 110C340 140 300 135 290 100C282 70 312 58 322 85C334 122 312 160 270 188C220 220 168 226 129 231C90 234 20 250 -4 290C-20 330 30 395 245 393C330 391 395 400 392 433C388 470 330 505 288 530"/></svg>
+  </div>
+  <div class="trusted__body">
+    <h2 class="h2 h2--light">Un nombre de <em class="sw">confianza<svg class="ul ul--200" viewBox="0 0 215 17" aria-hidden="true"><path class="draw" pathLength="1" d="M1.6 4.5C40 4.4 120 3.4 204.5 1.6C218.8 1.7 212.2 2.3 198 3.2C162.6 5.4 125.5 8.2 102.2 10.7C91.2 12.1 83 13.5 77.3 14.5C76.5 14.7 75.7 14.8 73.4 15.1"/></svg></em>.</h2>
+    <p class="trusted__sub">En HRG Seguros diseñamos estrategias de protección personalizadas: primero entendemos tu vida, tu familia y tu patrimonio, y después te ayudamos a elegir el seguro que hace sentido para ti. Te acompañamos desde la cotización hasta el apoyo en siniestros.</p>
+    <div class="stats">
+      <div class="stat"><div class="stat__v">$<span class="count" data-to="154">154</span>M</div><div class="stat__l">en coberturas de vida</div></div>
+      <div class="stat"><div class="stat__v">$<span class="count" data-to="1600" data-sep="1">1,600</span>M</div><div class="stat__l">en protección de gastos médicos</div></div>
+      <div class="stat"><div class="stat__v"><span class="count" data-to="620">620</span></div><div class="stat__l">familias protegidas</div></div>
+      <div class="stat"><div class="stat__v"><span class="count" data-to="224">224</span></div><div class="stat__l">pólizas de vida y GMM colocadas</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SIMULATOR (in place of Refer a Friend) ===================== -->
+<section class="block sim" id="simula">
+  <div class="sim__copy">
+    <h2 class="h2">Simula tu <em class="sw">gasto<svg class="ul ul--175" viewBox="0 0 215 17" aria-hidden="true"><path class="draw" pathLength="1" d="M1.6 4.5C40 4.4 120 3.4 204.5 1.6C218.8 1.7 212.2 2.3 198 3.2C162.6 5.4 125.5 8.2 102.2 10.7C91.2 12.1 83 13.5 77.3 14.5C76.5 14.7 75.7 14.8 73.4 15.1"/></svg></em></h2>
+    <p class="sim__tag">Sin complicaciones. Sin letras pequeñas.</p>
+    <p class="sim__p">Ingresa el monto de <strong>un accidente</strong> y elige tu deducible: te mostramos cuánto pagas tú y <strong>cuánto cubre la aseguradora</strong>.</p>
+    <button class="btn btn--primary" data-open-quote="gmm">Cotiza gastos médicos <i class="chev"></i></button>
+    <p class="sim__disc"><strong>Aviso</strong>: simulación ilustrativa con coaseguro del 10% y tope de $80,000. Las condiciones reales dependen de tu póliza; <a href="#faq">consulta las preguntas frecuentes</a>.</p>
+  </div>
+  <div class="calc" aria-label="Calculadora de siniestros">
+    <div class="calc__card">
+      <label class="calc__l" for="siniestro">Monto del siniestro</label>
+      <div class="calc__money"><span>$</span><input id="siniestro" type="text" inputmode="numeric" value="350,000" aria-describedby="calc-out"></div>
+      <input class="calc__range" type="range" min="50000" max="2000000" step="10000" value="350000" aria-label="Monto del siniestro">
+      <p class="calc__l">Deducible que te gustaría pagar</p>
+      <div class="calc__chips" role="radiogroup" aria-label="Deducible">
+        <button role="radio" data-d="26000">$26,000</button><button role="radio" data-d="35000" class="is-on" aria-checked="true">$35,000</button><button role="radio" data-d="52000">$52,000</button><button role="radio" data-d="79000">$79,000</button><button role="radio" data-d="100000">$100,000</button>
+      </div>
+      <div class="calc__bar" aria-hidden="true"><i class="b-ded"></i><i class="b-coa"></i><i class="b-ins"></i></div>
+      <div class="calc__out" id="calc-out" aria-live="polite">
+        <div><span class="k"><i class="sw-ded"></i>Deducible</span><b data-o="ded">$35,000</b></div>
+        <div><span class="k"><i class="sw-coa"></i>Coaseguro</span><b data-o="coa">$31,500</b></div>
+        <div class="tot"><span class="k">Tú pagas</span><b data-o="you">$66,500</b></div>
+        <div class="ins"><span class="k">La aseguradora paga</span><b data-o="ins">$283,500</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROCESS ===================== -->
+<section class="block process" id="como-funciona">
+  <h2 class="h2 center">Protegerte es así de <em class="sw">fácil<svg class="ul ul--146" viewBox="0 0 215 17" aria-hidden="true"><path class="draw" pathLength="1" d="M1.6 4.5C40 4.4 120 3.4 204.5 1.6C218.8 1.7 212.2 2.3 198 3.2C162.6 5.4 125.5 8.2 102.2 10.7C91.2 12.1 83 13.5 77.3 14.5C76.5 14.7 75.7 14.8 73.4 15.1"/></svg></em>.</h2>
+  <p class="sub center sub--781">HRG Seguros te guía desde la cotización hasta la póliza: eliges qué proteger, conoces tu precio en segundos y un asesor resuelve tus dudas antes de que decidas. Sin presión y sin letra chica.</p>
+  <div class="steps">
+    <div class="step">
+      <svg class="step__ic" viewBox="0 0 245 150" aria-hidden="true">
+        <path class="draw" pathLength="1" d="M122 128C122 128 74 103 74 70C74 55 85 45 98 45C109 45 117 52 122 61C127 52 135 45 146 45C159 45 170 55 170 70C170 103 122 128 122 128Z"/>
+        <path class="draw d2" pathLength="1" d="M96 77H110L117 64L127 92L134 77H150C162 77 176 70 182 58C188 46 182 34 172 38C162 42 168 60 186 66C200 71 214 66 222 58"/>
+      </svg>
+      <span class="step__n">1</span>
+      <h3 class="step__t">Elige qué proteger</h3>
+      <p class="step__p">Tu vida, tu salud, tu retiro, la educación de tus hijos o tu empresa.</p>
+    </div>
+    <div class="step">
+      <svg class="step__ic" viewBox="0 0 245 150" aria-hidden="true">
+        <rect class="draw" pathLength="1" x="88" y="16" width="68" height="120" rx="12"/>
+        <path class="draw d2" pathLength="1" d="M108 50H136M108 66H128M104 88H140V104H104Z"/>
+        <path class="draw d3" pathLength="1" d="M156 112C172 112 178 98 190 98C202 98 204 114 194 118C182 122 176 104 192 92C204 83 218 86 226 92"/>
+      </svg>
+      <span class="step__n">2</span>
+      <h3 class="step__t">Conoce tu precio</h3>
+      <p class="step__p">Edad, sexo y suma asegurada: tu precio de referencia en segundos.</p>
+    </div>
+    <div class="step">
+      <svg class="step__ic" viewBox="0 0 245 150" aria-hidden="true">
+        <path class="draw" pathLength="1" d="M58 30H150C160 30 166 36 166 46V82C166 92 160 98 150 98H96L74 116V98H58C48 98 42 92 42 82V46C42 36 48 30 58 30Z"/>
+        <path class="draw d2" pathLength="1" d="M182 58H190C198 58 203 63 203 71V102C203 110 198 115 190 115H178V130L160 115H128C120 115 115 110 115 102"/>
+        <path class="draw d3" pathLength="1" d="M70 58H138M70 72H118"/>
+      </svg>
+      <span class="step__n">3</span>
+      <h3 class="step__t">Habla con un asesor</h3>
+      <p class="step__p">Un asesor de HRG Seguros resuelve tus dudas por WhatsApp, videollamada o en persona.</p>
+    </div>
+    <div class="step">
+      <svg class="step__ic" viewBox="0 0 245 150" aria-hidden="true">
+        <path class="draw" pathLength="1" d="M78 16H142L168 42V134H78Z"/>
+        <path class="draw d2" pathLength="1" d="M142 16V42H168M94 62H150M94 78H150M94 94H128"/>
+        <path class="draw d3" pathLength="1" d="M136 112L146 122L168 100C178 90 190 92 196 100C204 110 196 124 184 120C170 116 178 96 196 92C210 89 220 94 226 100"/>
+      </svg>
+      <span class="step__n">4</span>
+      <h3 class="step__t">Elige tu plan</h3>
+      <p class="step__p">Recibe tu cotización oficial en PDF por WhatsApp y decide con toda la información.</p>
+    </div>
+  </div>
+  <button class="btn btn--primary center-btn" data-open-quote>Cotiza gratis ahora <i class="chev"></i></button>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="faq" id="faq">
+  <h2 class="h2 center">Preguntas frecuentes.</h2>
+  <p class="sub center sub--781">Conoce cómo trabaja HRG Seguros, qué cubre cada seguro y qué esperar al cotizar con nosotros.</p>
+  <div class="acc">
+    <div class="acc__item is-open">
+      <button class="acc__h" aria-expanded="true"><span>¿Qué hace HRG Seguros?</span><i class="tog"></i></button>
+      <div class="acc__c"><p>HRG Seguros es un <i>agente de seguros</i> autorizado por la CNSF. Te asesoramos para elegir la cobertura ideal para ti, tu familia o tu negocio, te ayudamos a cotizar y contratar, y te acompañamos durante toda la vida de tu póliza, incluido el apoyo en siniestros. No cotizamos seguros genéricos: diseñamos una estrategia de protección según tu vida, tu familia, tu patrimonio o tu empresa, y te explicamos coberturas, exclusiones y condiciones antes de que decidas.</p></div>
+    </div>
+    <div class="acc__item">
+      <button class="acc__h" aria-expanded="false"><span>¿Cuánto cuesta cotizar con HRG Seguros?</span><i class="tog"></i></button>
+      <div class="acc__c"><p>Nada. Cotizar y recibir asesoría es gratis y sin compromiso. Recibes tu cotización oficial en PDF por WhatsApp y decides con calma.</p></div>
+    </div>
+    <div class="acc__item">
+      <button class="acc__h" aria-expanded="false"><span>¿Cuánto cuesta un seguro de vida a 10 años?</span><i class="tog"></i></button>
+      <div class="acc__c"><p>Desde $8.04 al día (mujer de 18 a 20 años, no fumadora, suma asegurada de $1,000,000: $2,935.57 al año). Puedes elegir $1M, $2M o $3M de suma asegurada y se paga en un solo pago al año. El precio cambia según tu edad y perfil, y está sujeto a evaluación. Es una protección para tu familia, no un plan de ahorro.</p></div>
+    </div>
+    <div class="acc__item">
+      <button class="acc__h" aria-expanded="false"><span>¿Qué es el seguro por enfermedad?</span><i class="tog"></i></button>
+      <div class="acc__c"><p>Es un seguro que te paga una indemnización en efectivo si te diagnostican una de las 29 enfermedades cubiertas: por ejemplo, $150,000 por infarto (desde el día 1) o por cáncer (a los 6 meses), y hasta $300,000 con la suma doble. Sin deducible ni coaseguro. Complementa tu seguro de gastos médicos, no lo reemplaza.</p></div>
+    </div>
+    <div class="acc__item">
+      <button class="acc__h" aria-expanded="false"><span>¿Qué son el deducible y el coaseguro?</span><i class="tog"></i></button>
+      <div class="acc__c"><p>En gastos médicos mayores, el deducible es la cantidad fija que pagas antes de que la aseguradora empiece a cubrir; el coaseguro es el porcentaje del resto que te toca pagar, normalmente con un tope. Usa la <a href="#simula">calculadora de siniestros</a> para verlo con tus números.</p></div>
+    </div>
+    <div class="acc__item">
+      <button class="acc__h" aria-expanded="false"><span>¿Puedo asegurar a mi familia?</span><i class="tog"></i></button>
+      <div class="acc__c"><p>Sí. En el seguro por enfermedad puedes asegurarte tú y hasta 4 familiares de 0 a 69 años en la misma póliza. En vida, eliges a tus beneficiarios: tu pareja, tus hijos, tus padres o tus socios, y puedes cambiarlos después.</p></div>
+    </div>
+    <div class="acc__item">
+      <button class="acc__h" aria-expanded="false"><span>¿Quién regula mi seguro?</span><i class="tog"></i></button>
+      <div class="acc__c"><p>HRG Seguros es un agente de seguros autorizado por la CNSF. Los seguros están supervisados por la CNSF y la CONDUSEF protege los derechos de las personas usuarias.</p></div>
+    </div>
+    <div class="acc__item">
+      <button class="acc__h" aria-expanded="false"><span>¿Voy a hablar con una persona real?</span><i class="tog"></i></button>
+      <div class="acc__c"><p>Sí. Un asesor de HRG Seguros te atiende 1 a 1: en línea en todo México o en persona en el Valle de México y Toluca. También puedes <a href="https://calendly.com/hrgseguros/30min" target="_blank" rel="noopener">agendar una cita</a> o escribirnos por WhatsApp al (55) 8030-2272.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FINAL CTA ===================== -->
+<section class="final">
+  <div class="final__wrap">
+    <div class="final__copy">
+      <h2 class="h2">¿Terminaste de leer? Empieza a <em class="sw">protegerte<svg class="ul ul--190" viewBox="0 0 215 17" aria-hidden="true"><path class="draw" pathLength="1" d="M1.6 4.5C40 4.4 120 3.4 204.5 1.6C218.8 1.7 212.2 2.3 198 3.2C162.6 5.4 125.5 8.2 102.2 10.7C91.2 12.1 83 13.5 77.3 14.5C76.5 14.7 75.7 14.8 73.4 15.1"/></svg></em>.</h2>
+      <p class="final__p">Cotiza gratis tu seguro con HRG Seguros y recibe asesoría humana, clara y sin presión.</p>
+      <button class="btn btn--primary" data-open-quote>Cotiza gratis <i class="chev"></i></button>
+    </div>
+    <div class="final__img">
+      <div class="clipr"><img src="../assets/img/final-v1.jpg" alt="Mamá caminando con sus hijos en la playa" loading="lazy"></div>
+      <svg class="final__line" viewBox="0 0 500 202" aria-hidden="true"><path class="draw" pathLength="1" d="M-10 120C40 70 110 60 150 100C180 130 150 170 120 150C88 128 130 74 200 84C260 92 300 150 360 140C420 130 450 70 520 60"/></svg>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="ftr">
+  <div class="ftr__top">
+    <a href="#top" class="ftr__logo"><img src="../assets/brand/logo-white.png" alt="HRG Seguros" width="310" height="41" loading="lazy"></a>
+    <div class="ftr__col">
+      <h3>Seguros</h3>
+      <a href="#cotiza" data-open-quote="vida">Seguro de vida</a>
+      <a href="#cotiza" data-open-quote="enfermedad">Seguro por enfermedad</a>
+      <a href="#cotiza" data-open-quote="gmm">Gastos médicos mayores</a>
+      <a href="#cotiza" data-open-quote="retiro">Seguro de retiro</a>
+      <a href="#cotiza" data-open-quote="educativo">Seguro educativo</a>
+      <a href="#cotiza" data-open-quote="empresarial">Seguro empresarial</a>
+    </div>
+    <div class="ftr__col">
+      <h3>HRG Seguros</h3>
+      <a href="#confianza">Nosotros</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#simula">Calculadora de siniestros</a>
+      <a href="#faq">Preguntas frecuentes</a>
+      <a href="https://calendly.com/hrgseguros/30min" target="_blank" rel="noopener">Agenda una cita</a>
+    </div>
+    <div class="ftr__col">
+      <h3>Contacto</h3>
+      <a href="mailto:prospeccion@hrgseguros.com.mx">prospeccion@hrgseguros.com.mx</a>
+      <a href="https://wa.me/525580302272" target="_blank" rel="noopener">(55) 8030-2272</a>
+      <p class="ftr__addr">Malinche 222, Xinantécatl</p>
+      <p>52169 San Jorge Pueblo Nuevo, Méx.</p>
+    </div>
+  </div>
+  <div class="ftr__mid">
+    <div class="ftr__col">
+      <h3>Vida</h3>
+      <a href="#faq">¿Cuánto cuesta un seguro de vida?</a>
+      <a href="#faq">¿Quién recibe el dinero?</a>
+      <a href="#faq">¿Puedo cambiar a mis beneficiarios?</a>
+      <a href="#faq">¿Qué cubre la enfermedad terminal?</a>
+      <a href="#faq">¿El seguro de vida es un plan de ahorro?</a>
+    </div>
+    <div class="ftr__col">
+      <h3>Enfermedad</h3>
+      <a href="#faq">¿Qué es el seguro por enfermedad?</a>
+      <a href="#faq">¿Puedo asegurar a mi familia?</a>
+      <a href="#faq">¿Qué es el periodo de espera?</a>
+      <a href="#faq">¿Cuánto recibo por un infarto o cáncer?</a>
+    </div>
+    <div class="ftr__col">
+      <h3>Gastos médicos</h3>
+      <a href="#faq">¿Qué son el deducible y el coaseguro?</a>
+      <a href="#simula">Simula tu gasto en un accidente</a>
+      <a href="#faq">¿Cómo elijo mi suma asegurada?</a>
+      <a href="#faq">¿Qué pasa en un siniestro?</a>
+    </div>
+    <div class="ftr__col">
+      <h3>Retiro y empresa</h3>
+      <a href="#cotiza" data-open-quote="retiro">Seguro de retiro</a>
+      <a href="#cotiza" data-open-quote="educativo">Seguro educativo</a>
+      <a href="#cotiza" data-open-quote="empresarial">Seguro empresarial (hombre clave)</a>
+      <a href="https://calendly.com/hrgseguros/30min" target="_blank" rel="noopener">Agenda una asesoría</a>
+    </div>
+  </div>
+  <div class="ftr__legal">
+    <nav class="ftr__links" aria-label="Legales">
+      <a href="#">Aviso de privacidad</a><a href="#">Términos y condiciones</a><a href="#">Condiciones generales (PDF)</a><a href="#">Unidad Especializada (UNE)</a><a href="https://www.condusef.gob.mx" target="_blank" rel="noopener">CONDUSEF</a>
+    </nav>
+    <p>HRG Seguros es un agente de seguros autorizado por la CNSF, folio [PENDIENTE]. Te asesoramos para cotizar y contratar tu seguro; las pólizas las emite y las paga la aseguradora correspondiente. Precios de referencia, sujetos a evaluación y aceptación de la aseguradora. El seguro de vida a 10 años no es un plan de ahorro. Las coberturas, exclusiones y periodos de espera se detallan en las condiciones generales de cada seguro.</p>
+    <p>Si usas un lector de pantalla y tienes problemas con este sitio, llámanos al <a href="tel:+525580302272">(55) 8030-2272</a>.</p>
+    <p><strong>Aviso:</strong> las fotografías de personas en este sitio son de stock y se usan con fines ilustrativos, salvo los testimonios en video, que son de clientes reales de HRG Seguros.</p>
+    <p>Copyright © 2026 HRG Seguros. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- ===================== QUOTE MODAL ===================== -->
+<div class="qm-modal" id="quote" role="dialog" aria-modal="true" aria-labelledby="qm-title" hidden>
+  <div class="qm-modal__bg" data-close></div>
+  <div class="qm-modal__box">
+    <button class="qm-modal__x" data-close aria-label="Cerrar">×</button>
+    <form class="qm-step is-on" data-step="1" novalidate>
+      <p class="qm-eye">Cotiza en 30 segundos · sin llamadas</p>
+      <h2 id="qm-title" class="qm-h">Recibe tu cotización por WhatsApp</h2>
+      <label class="qm-f"><span>WhatsApp (10 dígitos)</span><input name="wa" type="tel" inputmode="tel" autocomplete="tel-national" required placeholder="55 1234 5678"></label>
+      <label class="qm-f"><span>Correo electrónico</span><input name="email" type="email" autocomplete="email" required placeholder="tu@correo.com"></label>
+      <label class="qm-f"><span>Nombre</span><input name="nombre" autocomplete="name" required placeholder="Ej. Mariana González"></label>
+      <label class="qm-ck"><input type="checkbox" name="mayor" required> Soy mayor de 18 años</label>
+      <label class="qm-ck"><input type="checkbox" name="priv" required> Acepto el Aviso de Privacidad</label>
+      <p class="qm-err" hidden></p>
+      <button class="btn btn--primary qm-go" type="submit">Continuar <i class="chev"></i></button>
+      <p class="qm-note">Tus datos están protegidos. Sin compromiso.</p>
+    </form>
+    <div class="qm-step" data-step="2">
+      <p class="qm-eye">Paso 2 de 3</p>
+      <h2 class="qm-h">¿Qué quieres proteger?</h2>
+      <div class="qm-opts">
+        <button data-p="vida"><b>Seguro de vida</b><span>Hasta $3,000,000 para tu familia · desde $8.04 al día</span></button>
+        <button data-p="enfermedad"><b>Seguro por enfermedad</b><span>Hasta $300,000 en efectivo si te diagnostican · desde $4.45 al día</span></button>
+        <button data-p="gmm"><b>Gastos médicos mayores</b><span>Protege tu salud y tu patrimonio ante gastos hospitalarios</span></button>
+        <button data-p="retiro"><b>Seguro de retiro</b><span>Protección con plan de ahorro a largo plazo</span></button>
+        <button data-p="educativo"><b>Seguro educativo</b><span>Un fondo para la educación de tus hijos</span></button>
+        <button data-p="empresarial"><b>Seguro empresarial</b><span>Protege a las personas clave de tu empresa</span></button>
+      </div>
+    </div>
+    <form class="qm-step" data-step="3" novalidate>
+      <button type="button" class="qm-back" data-back>← Cambiar seguro</button>
+      <p class="qm-eye" data-ptitle>Seguro de vida</p>
+      <h2 class="qm-h">Últimos detalles</h2>
+      <div class="qm-ref" data-pref></div>
+      <div class="qm-row">
+        <label class="qm-f"><span>Edad</span><input name="edad" inputmode="numeric" required placeholder="30"></label>
+        <div class="qm-f"><span>Sexo</span><div class="qm-seg"><button type="button" class="is-on" data-sex="Mujer">Mujer</button><button type="button" data-sex="Hombre">Hombre</button></div></div>
+      </div>
+      <div class="qm-f"><span>¿Fumas?</span><div class="qm-seg"><button type="button" class="is-on">No</button><button type="button">Sí</button></div></div>
+      <p class="qm-err" hidden></p>
+      <button class="btn btn--primary qm-go" type="submit">Enviar mi cotización por WhatsApp <i class="chev"></i></button>
+      <p class="qm-note">Precios de referencia, sujetos a evaluación.</p>
+    </form>
+    <div class="qm-step" data-step="4">
+      <div class="qm-ok"><svg viewBox="0 0 64 64" aria-hidden="true"><circle class="draw" pathLength="1" cx="32" cy="32" r="29"/><path class="draw d2" pathLength="1" d="M19 33l9 9 18-19"/></svg></div>
+      <h2 class="qm-h center" data-done>¡Listo!</h2>
+      <p class="qm-p center">Un asesor de HRG Seguros te escribirá por WhatsApp con tu cotización oficial en PDF.</p>
+      <a class="btn btn--ghost" href="https://calendly.com/hrgseguros/30min" target="_blank" rel="noopener">Prefiero agendar una cita <i class="chev chev--dark"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== VIDEO MODAL (PG testimonial lightbox) ===================== -->
+<div class="vmodal" id="vmodal" role="dialog" aria-modal="true" aria-label="Testimonio en video" hidden>
+  <div class="vmodal__bg" data-vclose></div>
+  <div class="vmodal__box">
+    <video class="vmodal__v" controls playsinline preload="metadata"></video>
+    <button class="vmodal__x" data-vclose aria-label="Cerrar video"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+</div>
+
+<script src="v1.js"></script>
+</body>
+</html>

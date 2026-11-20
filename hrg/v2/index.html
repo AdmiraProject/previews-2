@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Seguro de vida, hecho simple | HRG Seguros</title>
+<meta name="description" content="Cotiza tu seguro de vida en 30 segundos y recibe tu cotización oficial por WhatsApp. Desde $8.04 al día. Asesoría 1 a 1 con HRG Seguros.">
+<link rel="icon" href="../assets/brand/logo-purple.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="v2.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav" aria-label="Principal">
+  <div class="nav-bar">
+    <a href="./" class="nav-logo" aria-label="HRG Seguros, inicio"><img src="../assets/brand/logo-color.png" alt="HRG Seguros" width="160" height="21"></a>
+    <ul class="nav-list">
+      <li><a class="nav-link" href="#cotizar" data-quote>Seguro de vida</a></li>
+      <li><a class="nav-link" href="#beneficios">Seguro por enfermedad</a></li>
+      <li><a class="nav-link" href="#beneficios">Gastos médicos</a></li>
+      <li><a class="nav-link" href="#cobertura">Cobertura</a></li>
+      <li><a class="nav-link" href="#testimonios">Nosotros</a></li>
+      <li><a class="nav-link" href="#como-funciona">Preguntas</a></li>
+    </ul>
+    <div class="nav-right">
+      <a class="nav-signin" href="https://calendly.com/hrgseguros/30min" target="_blank" rel="noopener">Agenda una cita</a>
+      <a class="nav-cta" href="#cotizar" data-quote>Cotiza ahora</a>
+    </div>
+    <button class="nav-burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mnav" id="mnav">
+    <ul class="mnav-list">
+      <li><a href="#cotizar" data-quote>Seguro de vida</a></li>
+      <li><a href="#beneficios">Seguro por enfermedad</a></li>
+      <li><a href="#beneficios">Gastos médicos</a></li>
+      <li><a href="#cobertura">Cobertura</a></li>
+      <li><a href="#testimonios">Nosotros</a></li>
+      <li><a href="#como-funciona">Preguntas</a></li>
+    </ul>
+    <a class="mnav-cta" href="#cotizar" data-quote>Cotiza ahora <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="11" fill="#fff"/><path d="M6 11h9m-3.6-3.8L15.2 11l-3.8 3.8" stroke="#625DA6" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <a class="mnav-signin" href="https://calendly.com/hrgseguros/30min" target="_blank" rel="noopener">Agenda una cita</a>
+  </div>
+</nav>
+
+<!-- fixed CTA tab (drops in from the top once the nav hides past the hero, like Root's .fixed-ctaUp) -->
+<div class="fixed-cta" id="fixedCta"><button type="button" data-quote>Cotiza ahora</button></div>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero" aria-labelledby="h1">
+  <div class="hero-bg" aria-hidden="true">
+    <svg class="arcs" viewBox="0 0 1440 910" preserveAspectRatio="xMidYMid slice"><circle cx="1088" cy="-8" r="402" class="arc-dark"/><circle cx="1095" cy="980" r="378" class="arc-lite"/><circle cx="1095" cy="980" r="520" class="arc-faint"/></svg>
+  </div>
+  <div class="hero-phones" aria-hidden="true">
+    <div class="plane">
+      <!-- bottom phone: WhatsApp chat with the PDF quote -->
+      <div class="phone ph3"><div class="scr scr-wa">
+        <div class="wa-top"><span class="wa-back">‹</span><span class="wa-av"><img src="../assets/brand/mark.svg" alt=""></span><div><b>HRG Seguros</b><small>en línea</small></div></div>
+        <div class="wa-body">
+          <div class="wa-msg in">¡Hola, Mariana! Aquí está tu cotización oficial de seguro de vida.</div>
+          <div class="wa-doc in"><span class="pdf">PDF</span><div><b>Cotizacion-HRG-Seguros.pdf</b><small>Seguro de vida · 10 años</small></div></div>
+          <div class="wa-msg in">Cualquier duda, aquí te ayudo con tu solicitud.</div>
+          <div class="wa-msg out">¡Gracias! La reviso hoy ✓✓</div>
+        </div>
+      </div></div>
+      <!-- middle phone: cotizador -->
+      <div class="phone ph2"><div class="scr scr-q">
+        <div class="q-head"><img src="../assets/brand/logo-color.png" alt=""><span>Calcula tu costo</span></div>
+        <div class="q-lbl">Suma asegurada</div>
+        <div class="q-chips"><span class="on">$1M</span><span>$2M</span><span>$3M</span></div>
+        <div class="q-row"><span>Mujer</span><span>30 años</span><span>No fuma</span></div>
+        <div class="q-price"><small>Precio de referencia</small><b>$9.95</b><em>/ día</em></div>
+        <div class="q-btn">Recibe tu cotización por WhatsApp</div>
+      </div></div>
+      <!-- top phone: brand splash -->
+      <div class="phone ph1"><div class="scr scr-brand"><img src="../assets/brand/logo-white.png" alt=""></div></div>
+    </div>
+  </div>
+  <div class="wrap hero-wrap">
+    <div class="hero-content">
+      <h1 id="h1" class="headline">Seguro de vida, hecho simple</h1>
+      <p class="lead">Cotiza en 30 segundos y recibe tu cotización oficial por WhatsApp. Desde $8.04 al día.*</p>
+      <div class="cta-row"><a class="btn" href="#cotizar" data-quote>Cotiza tu precio</a></div>
+      <div class="proof"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="7" cy="6" r="3.6" fill="#fff"/><path d="M0.6 17.5c0-3.9 2.9-6.6 6.4-6.6s6.4 2.7 6.4 6.6z" fill="#fff"/><circle cx="14.2" cy="6.6" r="3" fill="#fff"/><path d="M12.2 11.4c.6-.2 1.3-.3 2-.3 3 0 5.2 2.4 5.2 5.8v.6h-4.6c0-2.5-1-4.6-2.6-6.1z" fill="#fff"/></svg><p>620 familias ya protegidas con HRG Seguros</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP (Root press logos) ============ -->
+<section class="press" aria-label="Respaldo de HRG Seguros">
+  <div class="press-logos">
+    <span class="plogo"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3 5 9v10c0 9.2 6.3 15.8 15 18 8.7-2.2 15-8.8 15-18V9z" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="m13 20 5 5 9-10" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="pt"><b>Agente autorizado</b><small>CNSF</small></span></span>
+    <span class="plogo"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="16" r="11" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M13 25.5 10 37l10-5 10 5-3-11.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/><path d="m20 10 1.9 3.9 4.3.6-3.1 3 .7 4.3-3.8-2-3.8 2 .7-4.3-3.1-3 4.3-.6z" fill="currentColor"/></svg><span class="pt"><b>Mesa del Millón de Dólares</b><small>MDRT</small></span></span>
+    <span class="plogo"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M12 5h16v9a8 8 0 0 1-16 0z" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M12 8H6v3a6 6 0 0 0 6 6m16-9h6v3a6 6 0 0 1-6 6M20 22v7m-7 6h14l-2-6H15z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/></svg><span class="pt"><b>Campeón de venta nueva</b><small>Gastos médicos mayores</small></span></span>
+    <span class="plogo"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="15" cy="13" r="6" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M4 34c0-6.6 4.9-11 11-11s11 4.4 11 11" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M26 8h10v8h-4l-3 3v-3h-3z" fill="currentColor"/></svg><span class="pt"><b>Asesoría 1 a 1</b><small>En todo México</small></span></span>
+  </div>
+</section>
+
+<!-- ============ REVIEWS → TESTIMONIOS ============ -->
+<section class="rv-head" id="testimonios">
+  <h2 class="headline">620 familias protegidas y contando</h2>
+</section>
+<section class="rv-sub">
+  <h2 class="tout-title">Clientes reales, historias reales</h2>
+  <div class="stats" aria-label="Cifras de HRG Seguros">
+    <div class="stat"><b>224</b><span>seguros de vida y GMM colocados</span></div>
+    <div class="stat"><b>$154 M</b><span>en coberturas de vida</span></div>
+    <div class="stat"><b>$1,600 M</b><span>en protección de gastos médicos</span></div>
+  </div>
+</section>
+<section class="rv-avatars" aria-label="Clientes en video">
+  <div class="avatars">
+    <button type="button" class="av" data-video="0" aria-label="Ver testimonio de clienta de HRG Seguros"><img class="fade" src="../assets/video/t-alejandra.jpg" alt="" style="object-position:50% 30%"></button>
+    <button type="button" class="av" data-video="1" aria-label="Ver testimonio de Dr. Ángel Ramos"><img class="fade" src="../assets/video/t-angel.jpg" alt="" style="object-position:62% 24%"></button>
+    <button type="button" class="av" data-video="2" aria-label="Ver testimonio de cliente de HRG Seguros"><img class="fade" src="../assets/video/t-0512.jpg" alt="" style="object-position:40% 22%"></button>
+  </div>
+</section>
+<section class="quotes">
+  <div class="wrap-touts" id="touts">
+    <button type="button" class="quote-tout" data-video="0">
+      <svg class="qm" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true"><path d="M11.599 23.0154C10.8586 23.0154 10.2416 23.1388 9.62468 23.2622C11.4756 17.3393 16.2879 12.7738 21.4704 9.07198L18.6324 5C9.99486 8.5784 0 18.0797 0 29.9254C0 38.3162 4.81234 42.018 10.982 42.018C17.1517 42.018 21.7172 37.8226 21.7172 32.3933C21.7172 26.964 17.3985 23.0154 11.599 23.0154ZM37.8818 23.0154C37.1414 23.0154 36.401 23.1388 35.7841 23.2622C37.7584 17.3393 42.5707 12.7738 47.7532 9.07198L44.9152 5C36.2776 8.5784 26.2828 18.0797 26.2828 29.9254C26.2828 38.3162 30.9717 42.018 37.2648 42.018C43.4344 42.018 48 37.8226 48 32.3933C48 26.964 43.6812 23.0154 37.8818 23.0154Z"/></svg>
+      <span class="uq">Creo que esa experiencia fue muy personalizada y me gustó mucho la atención que ha tenido conmigo.</span>
+      <span class="who">Clienta de HRG Seguros<span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12"/><path d="M9.6 7.4v9.2l7.2-4.6z" fill="#fff"/></svg></span></span>
+    </button>
+    <button type="button" class="quote-tout" data-video="1">
+      <svg class="qm" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true"><use href="#qm-path"/></svg>
+      <span class="uq">Sí, totalmente. Muy sencillo, con toda la confianza y seguridad que se debe tener.</span>
+      <span class="who">Dr. Ángel Ramos<span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12"/><path d="M9.6 7.4v9.2l7.2-4.6z" fill="#fff"/></svg></span></span>
+    </button>
+    <button type="button" class="quote-tout" data-video="2">
+      <svg class="qm" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true"><use href="#qm-path"/></svg>
+      <span class="uq">Lo que más me llamó la atención, valga la redundancia, viene siendo la atención que ofrece HRG Seguros.</span>
+      <span class="who">Cliente de HRG Seguros<span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12"/><path d="M9.6 7.4v9.2l7.2-4.6z" fill="#fff"/></svg></span></span>
+    </button>
+    <div class="carousel-pad" aria-hidden="true"></div>
+  </div>
+</section>
+<section class="fnote fnote-rv"><p>Testimonios de clientes de HRG Seguros, en <a class="ul" href="#testimonios" data-video="0">video</a>. Cifras publicadas en hrgseguros.com.mx.</p></section>
+
+<!-- ============ BAND (Root teal "Better drivers") ============ -->
+<section class="band" aria-labelledby="band-h">
+  <div class="band-bg" aria-hidden="true">
+    <svg class="arcs" viewBox="0 0 1440 850" preserveAspectRatio="xMidYMid slice"><circle cx="1110" cy="-30" r="368" class="arc-dark"/><circle cx="1108" cy="830" r="390" class="arc-lite"/><circle cx="1108" cy="830" r="560" class="arc-faint"/></svg>
+  </div>
+  <div class="band-visual" aria-hidden="true">
+    <div class="plane">
+      <div class="phone ph-flat"><div class="scr scr-sum">
+        <div class="s-chip"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M8 1.2 2.4 3.6v4c0 3.6 2.4 6.2 5.6 7.2 3.2-1 5.6-3.6 5.6-7.2v-4z" fill="#fff"/><path d="m5.3 8 1.9 1.9 3.6-3.8" stroke="#625DA6" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>Te protegemos</div>
+        <div class="s-card">
+          <small>Suma asegurada</small>
+          <b>$1,000,000</b>
+          <div class="s-bar"><i></i></div>
+          <div class="s-meta"><span>Seguro de vida</span><span>10 años</span></div>
+        </div>
+        <div class="s-row"><span>Beneficiarios</span><em>Tú eliges</em></div>
+        <div class="s-row"><span>Pago</span><em>Un pago al año</em></div>
+      </div></div>
+      <div class="fcard"><span class="fc-ic"><svg width="26" height="26" viewBox="0 0 16 16"><path d="M8 1.2 2.4 3.6v4c0 3.6 2.4 6.2 5.6 7.2 3.2-1 5.6-3.6 5.6-7.2v-4z" fill="#fff"/><path d="m5.3 8 1.9 1.9 3.6-3.8" stroke="#625DA6" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg></span><b>Te protegemos</b><small>Tu familia, respaldada 10 años</small><span class="fc-btn">Cotiza ahora</span></div>
+      <div class="stack st-a"><div class="top"><i></i></div><div class="sf"></div><div class="se"></div></div>
+      <div class="stack st-b"><div class="top"><i></i></div><div class="sf"></div><div class="se"></div></div>
+      <div class="coin c1"></div><div class="coin c2"></div>
+    </div>
+  </div>
+  <div class="wrap band-wrap">
+    <div class="band-content">
+      <h2 id="band-h" class="headline">Protege a tu familia desde $8.04 al día*</h2>
+      <p class="lead">Seguro de vida a 10 años: si llegaras a faltar, tus beneficiarios reciben la suma que elijas: $1,000,000, $2,000,000 o $3,000,000.</p>
+      <div class="cta-row"><a class="btn" href="#beneficios">Conoce el seguro de vida</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EVERYTHING YOU GET ============ -->
+<section class="sec-head off" id="beneficios">
+  <h2 class="headline">Todo lo que obtienes</h2>
+  <h3 class="subhead">Seguros con todo lo que importa.</h3>
+</section>
+<section class="tiles off">
+  <div class="tile">
+    <div class="tile-img fade t-purple"><svg viewBox="0 0 452 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <circle cx="226" cy="262" r="214" class="ta"/><circle cx="226" cy="262" r="150" class="ta"/>
+      <ellipse cx="226" cy="214" rx="74" ry="10" fill="#000" opacity=".16"/>
+      <rect x="212" y="30" width="28" height="16" rx="4" fill="#E9E8F6"/><rect x="218" y="40" width="16" height="16" fill="#D6D4EE"/>
+      <rect x="282" y="50" width="16" height="12" rx="3" fill="#E9E8F6" transform="rotate(45 290 56)"/>
+      <circle cx="226" cy="128" r="78" fill="#fff"/><circle cx="226" cy="128" r="78" fill="url(#gSh)"/>
+      <circle cx="226" cy="128" r="62" fill="none" stroke="#EFEFF6" stroke-width="12"/>
+      <path d="M226 66a62 62 0 0 1 0 124" fill="none" stroke="#625DA6" stroke-width="12" stroke-linecap="round"/>
+      <text x="226" y="128" text-anchor="middle" dominant-baseline="central" class="tw-num" fill="#2F254D">30<tspan font-size="20" dx="3">s</tspan></text>
+    </svg></div>
+    <h3 class="tile-title">Cotiza en 30 segundos</h3>
+    <p class="tile-text">Sin llamadas y sin dar tu correo: eliges edad, sexo y suma asegurada, y ves tu precio al momento.</p>
+  </div>
+  <div class="tile">
+    <div class="tile-img fade t-deep"><svg viewBox="0 0 452 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <circle cx="226" cy="262" r="214" class="ta"/><circle cx="226" cy="262" r="150" class="ta"/>
+      <g transform="rotate(-4 226 120)">
+        <rect x="120" y="42" width="212" height="58" rx="14" fill="#DCF8C6"/><path d="M318 96l22 10-6-16z" fill="#DCF8C6"/>
+        <text x="138" y="67" class="tw-s" fill="#1D1D1B">¡Hola! Aquí está tu</text><text x="138" y="86" class="tw-s" fill="#1D1D1B">cotización oficial.</text>
+        <rect x="104" y="112" width="236" height="76" rx="14" fill="#fff"/>
+        <rect x="118" y="126" width="40" height="48" rx="6" fill="#E5484D"/><text x="138" y="151" text-anchor="middle" dominant-baseline="central" class="tw-pdf" fill="#fff">PDF</text>
+        <text x="170" y="146" class="tw-b" fill="#1D1D1B">Cotización HRG Seguros</text><text x="170" y="166" class="tw-s" fill="#767676">Seguro de vida</text>
+        <path d="M298 172l4 4 8-8m-4 4 4 4 8-8" stroke="#53BDEB" stroke-width="2" fill="none" stroke-linecap="round"/>
+      </g>
+      <circle cx="356" cy="58" r="22" fill="#25D366"/><path d="M346 70l2.6-7.4A11 11 0 1 1 352 67z" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round"/>
+    </svg></div>
+    <h3 class="tile-title">Cotización oficial por WhatsApp</h3>
+    <p class="tile-text">Recibe tu cotización en PDF directo en tu WhatsApp, para revisarla con calma o compartirla con tu familia.</p>
+  </div>
+  <div class="tile">
+    <div class="tile-img fade t-lav"><svg viewBox="0 0 452 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <circle cx="226" cy="262" r="214" class="ta ta-d"/><circle cx="226" cy="262" r="150" class="ta ta-d"/>
+      <ellipse cx="226" cy="216" rx="66" ry="9" fill="#2F254D" opacity=".14"/>
+      <path d="M226 30 158 56v52c0 46 30 78 68 94 38-16 68-48 68-94V56z" fill="url(#gShield)"/>
+      <path d="M226 30v172c38-16 68-48 68-94V56z" fill="#fff" opacity=".08"/>
+      <path d="M226 148s-34-20-34-44c0-12 9-20 19-20 7 0 12 4 15 9 3-5 8-9 15-9 10 0 19 8 19 20 0 24-34 44-34 44z" fill="#fff"/>
+      <rect x="290" y="66" width="128" height="44" rx="22" fill="#fff"/><text x="354" y="88" text-anchor="middle" dominant-baseline="central" class="tw-b" fill="#2F254D">25% – 75%</text>
+      <rect x="40" y="128" width="118" height="44" rx="22" fill="#2F254D"/><text x="99" y="150" text-anchor="middle" dominant-baseline="central" class="tw-b" fill="#fff">Adelanto</text>
+    </svg></div>
+    <h3 class="tile-title">Enfermedad terminal incluida</h3>
+    <p class="tile-text">Si te diagnostican una enfermedad terminal, recibes un adelanto de 25% a 75% de tu suma asegurada, hasta $500,000.</p>
+  </div>
+</section>
+<section class="tiles off">
+  <div class="tile">
+    <div class="tile-img fade t-warm"><svg viewBox="0 0 452 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <circle cx="226" cy="262" r="214" class="ta"/><circle cx="226" cy="262" r="150" class="ta"/>
+      <ellipse cx="226" cy="214" rx="90" ry="11" fill="#7a3d00" opacity=".16"/>
+      <path d="M226 46c-62 0-106 40-112 90 12-10 26-14 37-14s23 4 37 14c12-10 25-14 38-14s26 4 38 14c14-10 26-14 37-14s25 4 37 14c-6-50-50-90-112-90z" fill="#fff"/>
+      <path d="M226 46c-30 0-48 40-50 90 8-9 16-14 26-14 9 0 17 4 24 14 7-10 15-14 24-14 10 0 18 5 26 14-2-50-20-90-50-90z" fill="#625DA6"/>
+      <rect x="223" y="30" width="6" height="18" rx="3" fill="#fff"/>
+      <path d="M226 132v58c0 12 -10 18 -20 14" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+    </svg></div>
+    <h3 class="tile-title">Invalidez total y permanente</h3>
+    <p class="tile-text">Tu seguro de vida incluye cobertura por invalidez total y permanente, vigente hasta los 55 años.</p>
+  </div>
+  <div class="tile">
+    <div class="tile-img fade t-purple2"><svg viewBox="0 0 452 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <circle cx="226" cy="262" r="214" class="ta"/><circle cx="226" cy="262" r="150" class="ta"/>
+      <ellipse cx="226" cy="214" rx="72" ry="10" fill="#000" opacity=".15"/>
+      <path d="M226 202s-96-52-96-118c0-30 23-50 49-50 20 0 36 11 47 26 11-15 27-26 47-26 26 0 49 20 49 50 0 66-96 118-96 118z" fill="#fff"/>
+      <path d="M150 112h40l12-26 18 52 14-38 10 12h58" fill="none" stroke="#625DA6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="292" y="150" width="138" height="44" rx="22" fill="#2F254D"/><text x="361" y="172" text-anchor="middle" dominant-baseline="central" class="tw-b" fill="#fff">Hasta $300,000</text>
+    </svg></div>
+    <h3 class="tile-title">Seguro por enfermedad</h3>
+    <p class="tile-text">Te paga hasta $300,000 en efectivo si te diagnostican un padecimiento cubierto. Infarto cubierto desde el día 1.</p>
+  </div>
+  <div class="tile">
+    <div class="tile-img fade t-deep2"><svg viewBox="0 0 452 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <circle cx="226" cy="262" r="214" class="ta"/><circle cx="226" cy="262" r="150" class="ta"/>
+      <ellipse cx="226" cy="218" rx="96" ry="10" fill="#000" opacity=".2"/>
+      <rect x="132" y="36" width="188" height="172" rx="16" fill="#fff"/>
+      <path d="M132 52a16 16 0 0 1 16-16h156a16 16 0 0 1 16 16v26H132z" fill="#625DA6"/>
+      <rect x="168" y="26" width="8" height="22" rx="4" fill="#2F254D"/><rect x="276" y="26" width="8" height="22" rx="4" fill="#2F254D"/>
+      <text x="226" y="62" text-anchor="middle" dominant-baseline="central" class="tw-b" fill="#fff">Agenda una cita</text>
+      <g fill="#E4E3F1"><rect x="150" y="92" width="22" height="18" rx="4"/><rect x="180" y="92" width="22" height="18" rx="4"/><rect x="210" y="92" width="22" height="18" rx="4"/><rect x="240" y="92" width="22" height="18" rx="4"/><rect x="270" y="92" width="22" height="18" rx="4"/><rect x="150" y="118" width="22" height="18" rx="4"/><rect x="180" y="118" width="22" height="18" rx="4"/><rect x="240" y="118" width="22" height="18" rx="4"/><rect x="270" y="118" width="22" height="18" rx="4"/><rect x="150" y="144" width="22" height="18" rx="4"/><rect x="180" y="144" width="22" height="18" rx="4"/><rect x="210" y="144" width="22" height="18" rx="4"/><rect x="240" y="144" width="22" height="18" rx="4"/><rect x="270" y="144" width="22" height="18" rx="4"/><rect x="150" y="170" width="22" height="18" rx="4"/><rect x="180" y="170" width="22" height="18" rx="4"/><rect x="210" y="170" width="22" height="18" rx="4"/></g>
+      <rect x="210" y="118" width="22" height="18" rx="4" fill="#625DA6"/><path d="m215 127 4 4 8-8" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <circle cx="338" cy="164" r="34" fill="#EFEFF6"/><circle cx="338" cy="154" r="11" fill="#625DA6"/><path d="M318 186c2-12 10-18 20-18s18 6 20 18" fill="#625DA6"/>
+    </svg></div>
+    <h3 class="tile-title">Asesoría 1 a 1</h3>
+    <p class="tile-text">Un asesor de HRG Seguros te acompaña en línea desde todo México o en persona en el Valle de México y Toluca. <a class="ul" href="https://calendly.com/hrgseguros/30min" target="_blank" rel="noopener">Agenda una cita</a>.</p>
+  </div>
+</section>
+
+<!-- ============ MAP ============ -->
+<section class="map-sec" id="cobertura">
+  <h2 class="map-title">Cotiza desde cualquier estado de México</h2>
+  <p class="map-sub">Atención en línea en los 32 estados y presencial en el Valle de México y Toluca.</p>
+  <div class="map-box" id="mapBox"><div class="map-tip" id="mapTip" role="status" aria-live="polite"></div></div>
+  <div class="legend">
+    <div class="lg"><svg width="22" height="22" aria-hidden="true"><rect width="22" height="22" fill="#625DA6"/></svg><h5>Atención en línea</h5></div>
+    <div class="lg"><svg width="22" height="22" aria-hidden="true"><rect width="22" height="22" fill="#2F254D"/></svg><h5>Atención presencial (Valle de México / Toluca)</h5></div>
+  </div>
+  <label class="state-select"><span class="sr">Selecciona tu estado</span><select id="stateSel"><option value="">Selecciona tu estado</option></select></label>
+  <p class="state-result" id="stateRes" aria-live="polite"></p>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="sec-head" id="como-funciona">
+  <h2 class="headline">¿Cómo funciona cotizar con HRG Seguros?</h2>
+  <h3 class="subhead">Tu seguro en 3 pasos</h3>
+</section>
+<section class="steps">
+  <div class="tiles tiles-photo">
+    <div class="tile">
+      <div class="photo"><img class="fade" src="../assets/v2/step-24246025.jpg" alt="Pareja mexicana conversando en la mesa" loading="lazy" style="object-position:50% 45%"></div>
+      <h3 class="tile-title">Cotiza</h3>
+      <p class="tile-text">Elige tu edad, sexo y suma asegurada: ves tu precio en 30 segundos, sin llamadas.</p>
+    </div>
+    <div class="tile">
+      <div class="photo"><img class="fade" src="../assets/v2/step-35858303.jpg" alt="Familia mexicana sonriendo junta" loading="lazy" style="object-position:50% 40%"></div>
+      <h3 class="tile-title">Recíbela por WhatsApp</h3>
+      <p class="tile-text">Te llega tu cotización oficial en PDF y un asesor de HRG Seguros te guía en tu solicitud.</p>
+    </div>
+    <div class="tile">
+      <div class="photo"><img class="fade" src="../assets/v2/step-38409775.jpg" alt="Papá levanta a su bebé junto a mamá" loading="lazy" style="object-position:50% 35%"></div>
+      <h3 class="tile-title">Quedas protegido</h3>
+      <p class="tile-text">Una vez aceptada tu solicitud, tienes 10 años de respaldo para quien tú elijas.</p>
+    </div>
+  </div>
+  <div class="cta-center"><a class="btn" href="#cotizar" data-quote>Cotiza ahora</a></div>
+</section>
+<section class="fnote fnote-end"><p>*Referencia: mujer de 18 a 20 años, no fumadora, suma asegurada de $1,000,000. <a class="ul" href="#cotizar" data-quote>Calcula tu precio</a>.</p></section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="f-wrap">
+    <a href="./" class="f-logo" aria-label="HRG Seguros, inicio"><img src="../assets/brand/logo-color.png" alt="HRG Seguros" width="205" height="27"></a>
+    <div class="f-social">
+      <a href="https://www.facebook.com/profile.php?id=61577368353551" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 26 26"><path d="M24 0H2a2 2 0 0 0-2 2v22a2 2 0 0 0 2 2h11.8V15.9h-3.4V12h3.4V9.1c0-3.4 2.1-5.2 5.1-5.2 1.4 0 2.7.1 3 .2v3.5h-2.1c-1.6 0-2 .8-2 1.9V12h3.9l-.5 3.9h-3.4V26H24a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/></svg></a>
+      <a href="#" data-validar="instagram" aria-label="Instagram"><svg viewBox="0 0 26 26"><path d="M13 2.3c3.5 0 3.9 0 5.3.1 3.5.2 5.2 1.8 5.3 5.3.1 1.4.1 1.8.1 5.3s0 3.9-.1 5.3c-.2 3.5-1.8 5.2-5.3 5.3-1.4.1-1.8.1-5.3.1s-3.9 0-5.3-.1c-3.5-.2-5.2-1.8-5.3-5.3C2.3 16.9 2.3 16.5 2.3 13s0-3.9.1-5.3C2.6 4.2 4.2 2.6 7.7 2.4 9.1 2.3 9.5 2.3 13 2.3zM13 0C9.5 0 9 0 7.6.1 2.9.3.3 2.9.1 7.6 0 9 0 9.5 0 13s0 4 .1 5.4c.2 4.7 2.8 7.3 7.5 7.5 1.4.1 1.9.1 5.4.1s4 0 5.4-.1c4.7-.2 7.3-2.8 7.5-7.5.1-1.4.1-1.9.1-5.4s0-4-.1-5.4C25.7 2.9 23.1.3 18.4.1 17 0 16.5 0 13 0zm0 6.3a6.7 6.7 0 1 0 0 13.4 6.7 6.7 0 0 0 0-13.4zm0 11a4.3 4.3 0 1 1 0-8.6 4.3 4.3 0 0 1 0 8.6zm7-12.8a1.6 1.6 0 1 0 0 3.1 1.6 1.6 0 0 0 0-3.1z"/></svg></a>
+      <a href="https://www.linkedin.com/in/horacio-rios-garcia" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 26 26"><path d="M5.8 26H.4V8.7h5.4zM3.1 6.3A3.1 3.1 0 1 1 3.1 0a3.1 3.1 0 0 1 0 6.3zM26 26h-5.4v-8.4c0-2 0-4.6-2.8-4.6s-3.2 2.2-3.2 4.4V26H9.2V8.7h5.1v2.4h.1a5.6 5.6 0 0 1 5-2.8c5.4 0 6.4 3.6 6.4 8.2z"/></svg></a>
+      <a href="#" data-validar="tiktok" aria-label="TikTok"><svg viewBox="0 0 26 26"><path d="M19.3 5.6A5.6 5.6 0 0 1 17.9 2V1.5h-4.2v16.6a3.5 3.5 0 1 1-2.5-3.4v-4.3a7.8 7.8 0 1 0 6.7 7.7V9.6a9.7 9.7 0 0 0 5.6 1.8V7.2a5.6 5.6 0 0 1-4.2-1.6z"/></svg></a>
+    </div>
+    <div class="f-cols">
+      <ul class="f-col">
+        <li><a href="#cotizar" data-quote>Seguro de vida</a></li>
+        <li><a href="#beneficios">Seguro por enfermedad</a></li>
+        <li><a href="#beneficios">Gastos médicos mayores</a></li>
+        <li><a href="#" data-validar="retiro">Seguro de retiro</a></li>
+        <li><a href="#" data-validar="educativo">Seguro educativo</a></li>
+        <li><a href="#" data-validar="empresarial">Seguro empresarial</a></li>
+      </ul>
+      <ul class="f-col">
+        <li><a href="#testimonios">Nosotros</a></li>
+        <li><a href="#como-funciona">Preguntas frecuentes</a></li>
+        <li><a href="#como-funciona">Cómo funciona</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#cobertura">Cobertura en México</a></li>
+        <li><a href="https://calendly.com/hrgseguros/30min" target="_blank" rel="noopener">Agenda una cita</a></li>
+        <li><a href="https://wa.me/525580302272" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="mailto:prospeccion@hrgseguros.com.mx">Contacto</a></li>
+      </ul>
+      <ul class="f-col">
+        <li><a href="#" data-validar="aviso-privacidad">Aviso de privacidad</a></li>
+        <li><a href="#" data-validar="terminos">Términos y condiciones</a></li>
+        <li><a href="#" data-validar="condiciones-generales">Condiciones generales (PDF)</a></li>
+        <li><a href="#" data-validar="une">Unidad Especializada (UNE)</a></li>
+        <li><a href="https://www.condusef.gob.mx" target="_blank" rel="noopener">CONDUSEF</a></li>
+      </ul>
+      <address class="f-addr">
+        <p>HRG Seguros</p>
+        <p>Malinche 222, Xinantécatl</p>
+        <p>52169 San Jorge Pueblo Nuevo, Méx.</p>
+        <p><a href="tel:+525580302272">(55) 8030-2272</a></p>
+        <p><a href="mailto:prospeccion@hrgseguros.com.mx">prospeccion@hrgseguros.com.mx</a></p>
+      </address>
+    </div>
+    <p class="f-disc">© 2026 HRG Seguros. <span class="dt">HRG Seguros,</span> agente de seguros autorizado por la CNSF, folio [PENDIENTE]. <span class="dt">Precios:</span> precios de referencia, sujetos a evaluación y aceptación de la aseguradora. El precio desde $8.04 al día corresponde a mujer de 18 a 20 años, no fumadora, suma asegurada de $1,000,000, seguro de vida a 10 años con un pago al año. <span class="dt">Importante:</span> este seguro de vida no es un plan de ahorro. Las coberturas aplican conforme a las condiciones generales de la póliza; pueden existir exclusiones y periodos de espera. <span class="dt">Testimonios:</span> clientes reales de HRG Seguros; su experiencia no garantiza resultados para otras personas.</p>
+  </div>
+</footer>
+
+<!-- ============ VIDEO MODAL ============ -->
+<div class="modal vmodal" id="vmodal" role="dialog" aria-modal="true" aria-label="Testimonio en video" hidden>
+  <div class="m-scrim" data-close></div>
+  <div class="v-card">
+    <button class="m-x" type="button" data-close aria-label="Cerrar"><svg width="18" height="18" viewBox="0 0 18 18"><path d="M2 2l14 14M16 2 2 16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
+    <video id="vplayer" playsinline controls preload="none" crossorigin="anonymous"><track id="vtrack" kind="captions" srclang="es" label="Español" default></video>
+    <div class="v-cap"><b id="vname"></b><span id="vrole"></span></div>
+  </div>
+</div>
+
+<!-- ============ QUOTE MODAL ============ -->
+<div class="modal qmodal" id="qmodal" role="dialog" aria-modal="true" aria-labelledby="qm-title" hidden>
+  <div class="m-scrim" data-close></div>
+  <div class="q-card">
+    <button class="m-x" type="button" data-close aria-label="Cerrar"><svg width="18" height="18" viewBox="0 0 18 18"><path d="M2 2l14 14M16 2 2 16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
+    <form id="qform" novalidate>
+      <div class="qf-step" id="qfMain">
+        <p class="qf-eyebrow">Seguro de vida a 10 años</p>
+        <h2 id="qm-title">Calcula tu precio</h2>
+        <p class="qf-note">Sin llamadas y sin dar tu correo.</p>
+        <div class="qf-grid">
+          <label class="qf-f"><span>Edad</span><input type="number" id="qAge" min="18" max="70" inputmode="numeric" placeholder="30" value="30" required></label>
+          <fieldset class="qf-f"><legend>Sexo</legend><div class="seg"><label><input type="radio" name="sex" value="F" checked><span>Mujer</span></label><label><input type="radio" name="sex" value="M"><span>Hombre</span></label></div></fieldset>
+          <fieldset class="qf-f"><legend>¿Fumas?</legend><div class="seg"><label><input type="radio" name="smk" value="0" checked><span>No</span></label><label><input type="radio" name="smk" value="1"><span>Sí</span></label></div></fieldset>
+        </div>
+        <fieldset class="qf-f"><legend>Suma asegurada</legend><div class="seg seg3"><label><input type="radio" name="sum" value="1" checked><span>$1,000,000</span></label><label><input type="radio" name="sum" value="2"><span>$2,000,000</span></label><label><input type="radio" name="sum" value="3"><span>$3,000,000</span></label></div></fieldset>
+        <label class="qf-toggle"><input type="checkbox" id="qGf"><span class="tg" aria-hidden="true"></span><span>Agregar gastos funerarios (+$100,000)</span></label>
+        <div class="qf-price" id="qPrice" aria-live="polite"></div>
+        <label class="qf-f"><span>Tu WhatsApp</span><input type="tel" id="qWa" inputmode="numeric" autocomplete="tel-national" placeholder="10 dígitos" maxlength="14" required></label>
+        <label class="qf-check"><input type="checkbox" id="qC1" required><span>Soy mayor de 18 años y acepto el <a class="ul" href="#" data-validar="aviso-privacidad">Aviso de privacidad</a>.</span></label>
+        <label class="qf-check"><input type="checkbox" id="qC2" required><span>Acepto que HRG Seguros me contacte por WhatsApp para dar seguimiento a mi cotización.</span></label>
+        <p class="qf-err" id="qErr" role="alert"></p>
+        <button class="btn btn-full" type="submit">Recibe tu cotización por WhatsApp</button>
+      </div>
+      <div class="qf-step qf-done" id="qfDone" hidden>
+        <svg width="64" height="64" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="32" fill="#EFEFF6"/><path d="m20 33 8 8 16-17" stroke="#625DA6" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h2>¡Listo! Tu cotización va en camino a tu WhatsApp.</h2>
+        <p>Un asesor de HRG Seguros te escribirá para acompañarte en tu solicitud.</p>
+        <button class="btn" type="button" data-close>Entendido</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <path id="qm-path" d="M11.599 23.0154C10.8586 23.0154 10.2416 23.1388 9.62468 23.2622C11.4756 17.3393 16.2879 12.7738 21.4704 9.07198L18.6324 5C9.99486 8.5784 0 18.0797 0 29.9254C0 38.3162 4.81234 42.018 10.982 42.018C17.1517 42.018 21.7172 37.8226 21.7172 32.3933C21.7172 26.964 17.3985 23.0154 11.599 23.0154ZM37.8818 23.0154C37.1414 23.0154 36.401 23.1388 35.7841 23.2622C37.7584 17.3393 42.5707 12.7738 47.7532 9.07198L44.9152 5C36.2776 8.5784 26.2828 18.0797 26.2828 29.9254C26.2828 38.3162 30.9717 42.018 37.2648 42.018C43.4344 42.018 48 37.8226 48 32.3933C48 26.964 43.6812 23.0154 37.8818 23.0154Z"/>
+    <radialGradient id="gSh" cx=".35" cy=".3" r=".8"><stop offset=".6" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#2F254D" stop-opacity=".12"/></radialGradient>
+    <linearGradient id="gShield" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7C77C2"/><stop offset="1" stop-color="#4C4791"/></linearGradient>
+  </defs>
+</svg>
+
+<script src="v2.js" defer></script>
+</body>
+</html>
