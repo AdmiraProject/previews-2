@@ -1,0 +1,44 @@
+/* v1 use-case pages — same Tend component system as home */
+.hero--case{min-height:740px}
+.eyebrow{display:inline-block;margin:0 0 18px;padding:7px 16px;border-radius:999px;background:var(--bar);color:var(--ink);font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;animation:fadeUp .8s both}
+.hero--case .hero__h{font-size:58px}
+.ln--b>span{color:#00A0BE}
+.facts{display:grid;gap:10px;margin:0 0 30px;padding:0}
+.facts div{display:grid;grid-template-columns:130px 1fr;gap:14px;font-size:15.5px;line-height:1.5;padding-bottom:10px;border-bottom:1px solid #E3EAF0}
+.facts dt{font-weight:700;color:var(--ink)}.facts dd{margin:0}
+.tc__ic{position:relative}
+.tc__ic b{position:absolute;right:-6px;top:-6px;width:26px;height:26px;border-radius:50%;background:var(--ink);color:#fff;font-size:13px;display:grid;place-items:center;border:2px solid #fff}
+.team--case{margin-top:110px}
+.band{background:var(--dark);padding:72px 0}
+.band__in{display:flex;align-items:center;justify-content:space-between;gap:50px;max-width:1316px;margin:0 auto;padding:0 0}
+.band .h3{margin-bottom:10px}
+.band p{margin:0;color:#e3ebf3;font-size:17px;line-height:1.7;max-width:760px}
+.btn--aqua{background:var(--ic);color:var(--ink)}
+.btn--aqua:hover{background:#CDEFF6}
+.faq{max-width:1080px;margin:110px auto 0}
+.faq__l{list-style:none;padding:0;margin:56px 0 0;display:grid;gap:16px}
+.faq__i{border-radius:30px;background:var(--soft2);overflow:hidden;transition:background .3s}
+.faq__i.open{background:var(--soft)}
+.faq__i button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:26px 30px 26px 40px;border:0;background:none;cursor:pointer;text-align:left;font-size:22px;color:#2F4D60;letter-spacing:-.01em}
+.faq__i i{flex:none;width:46px;height:46px;border-radius:50%;border:2px solid #2F4D60;display:grid;place-items:center;transition:background .25s,transform .35s}
+.faq__i i svg{width:16px;height:16px;fill:none;stroke:#2F4D60;stroke-width:2.6}
+.faq__i.open i{background:#2F4D60;transform:rotate(180deg)}.faq__i.open i svg{stroke:#fff}
+.faq__a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s cubic-bezier(.16,1,.3,1)}
+.faq__i.open .faq__a{grid-template-rows:1fr}
+.faq__a p{overflow:hidden;margin:0;padding:0 40px;font-size:17px;line-height:1.7}
+.faq__i.open .faq__a p{padding-bottom:28px}
+.more{max-width:1316px;margin:110px auto 0}
+.more__g{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:36px}
+.more__i{display:flex;align-items:center;justify-content:space-between;height:90px;padding:0 26px 0 30px;border-radius:24px;background:var(--soft);font-size:21px;color:#2F4D60;transition:background .3s,color .3s,transform .3s}
+.more__i svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.6}
+.more__i:hover{background:var(--btn);color:#fff;transform:translateY(-3px)}
+@media (max-width:1380px){.band__in,.more,.faq{margin-left:40px;margin-right:40px}.band__in{margin:0 40px}}
+@media (max-width:900px){
+  .hero--case .hero__h{font-size:34px}
+  .facts div{grid-template-columns:1fr;gap:2px}
+  .band{padding:50px 0}.band__in{flex-direction:column;align-items:flex-start;margin:0 20px;gap:24px}
+  .faq,.more{margin:70px 20px 0}.faq__i button{font-size:17px;padding:18px 16px 18px 22px}.faq__a p{padding:0 22px;font-size:15.5px}.faq__i i{width:38px;height:38px}
+  .more__g{grid-template-columns:1fr 1fr;gap:12px}.more__i{height:72px;font-size:16px;padding:0 16px}
+}
+
+.hero--case .svc__i{font-size:21px;padding:0 18px;text-align:center}

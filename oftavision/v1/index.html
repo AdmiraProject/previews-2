@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oftavisión · Cirugía de cataratas y alta especialidad en oftalmología</title>
+<meta name="description" content="Clínicas Oftavisión: cirugía de cataratas, retina, glaucoma y pterigión con oftalmólogos certificados. Agenda tu consulta por WhatsApp en Cd. Victoria, Madero, Valles, Tuxpan, Mérida, Matamoros y Mexicali.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="v1.css">
+<link rel="icon" href="../assets/brand/logo-oftavision-site-color.png">
+</head>
+<body>
+
+<!-- ============ top value bar (Tend lime bar) ============ -->
+<div class="bar" role="region" aria-label="Por qué Oftavisión">
+  <a class="bar__why" href="#diferencia">¿Por qué Oftavisión?</a>
+  <div class="bar__track"><div class="bar__row">
+    <span>Especialistas en catarata</span><span>+25,000 cirugías al año</span><span>Médicos certificados</span><span>Lentes ZEISS · Alcon · J&amp;J · B+L</span><span>Clínicas en 7 ciudades</span>
+  </div></div>
+  <a class="bar__login" href="https://wa.me/528120025252" data-lead="consulta">WhatsApp</a>
+</div>
+
+<!-- ============ floating pill header ============ -->
+<header class="hd" id="hd">
+  <nav class="hd__nav" aria-label="Principal">
+    <a class="hd__logo" href="#top" aria-label="Oftavisión inicio"><img src="../assets/brand/logo-instituto-oftavision-blue.webp" alt="Instituto Oftavisión" width="170" height="46"></a>
+    <ul class="hd__menu">
+      <li class="has-dd"><button type="button">Cirugías</button>
+        <div class="dd"><a href="cirugia-de-catarata.html">Cirugía de catarata</a><a href="lentes-intraoculares.html">Lentes intraoculares</a><a href="pterigion.html">Pterigión</a><a href="#" data-lead="presbicia">Vista cansada</a></div></li>
+      <li class="has-dd"><button type="button">Especialidades</button>
+        <div class="dd"><a href="retina.html">Retina</a><a href="glaucoma.html">Glaucoma</a><a href="#" data-lead="estudios">Estudios diagnósticos</a><a href="#" data-lead="optica">Óptica</a></div></li>
+      <li><a href="#sedes">Sedes</a></li>
+      <li><a href="#pacientes">Pacientes</a></li>
+      <li><a href="#equipo">Nosotros</a></li>
+    </ul>
+    <button class="hd__burger" type="button" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="hd__act">
+    <label class="hd__search"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+      <select id="hdSede" aria-label="Busca tu sede"><option value="">Busca tu sede</option></select></label>
+    <a class="btn btn--blue hd__book" href="#agendar" data-lead="consulta">Agendar</a>
+    <a class="hd__phone" href="tel:+528120025252" aria-label="Llamar al 81 2002 5252" data-no-lead><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></a>
+  </div>
+</header>
+
+<main id="top">
+<!-- ============ hero ============ -->
+<section class="hero">
+  <figure class="hero__pic hero__pic--l" data-parallax="normal"><img src="../assets/img/hd/hero-mario.jpg" alt="Mario Alberto, paciente de cirugía de catarata en Cd. Valles"></figure>
+  <figure class="hero__pic hero__pic--r" data-parallax="reverse"><img src="../assets/img/hd/hero-maria-antonia.jpg" alt="María Antonia, paciente de catarata en Cd. Madero"></figure>
+  <div class="hero__c">
+    <h1 class="hero__h"><span class="ln"><span>Especialistas en</span></span> <span class="ln"><span>cirugía de cataratas</span></span></h1>
+    <p class="hero__p">¿Ves borroso o nublado? Revisamos tu vista con especialistas, <b>sin vueltas, por WhatsApp.</b></p>
+    <div class="hero__btns">
+      <a class="btn btn--blue" href="#agendar" data-lead="catarata">Agendar consulta</a>
+      <a class="btn btn--line" href="tel:+528120025252" data-no-lead>81 2002 5252</a>
+    </div>
+    <h2 class="hero__sub">Atendemos todo lo que necesitan <b>tus ojos</b></h2>
+  </div>
+  <div class="svc">
+    <button class="svc__ar svc__ar--p" type="button" aria-label="Anterior"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
+    <div class="svc__vp"><div class="svc__tr">
+      <a href="cirugia-de-catarata.html" class="svc__i">Cirugía de catarata</a>
+      <a href="retina.html" class="svc__i">Retina</a>
+      <a href="glaucoma.html" class="svc__i">Glaucoma</a>
+      <a href="pterigion.html" class="svc__i">Pterigión</a>
+      <a href="lentes-intraoculares.html" class="svc__i">Lentes intraoculares</a>
+      <a href="#" class="svc__i" data-lead="estudios">Estudios</a>
+      <a href="#" class="svc__i" data-lead="presbicia">Vista cansada</a>
+      <a href="#" class="svc__i" data-lead="optica">Óptica</a>
+    </div></div>
+    <button class="svc__ar svc__ar--n" type="button" aria-label="Siguiente"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+  </div>
+</section>
+
+<!-- ============ the difference ============ -->
+<section class="dif" id="diferencia">
+  <div class="dif__media rv">
+    <video class="dif__vid" src="../assets/video/testimonio-video-maria-de-los-angeles-chavez.mp4" poster="../assets/img/foto-tuxpan-fachada-dron-DJI_0473.jpg" playsinline preload="none"></video>
+    <img class="dif__poster" src="../assets/img/foto-tuxpan-fachada-dron-DJI_0473.jpg" alt="Fachada del Instituto Oftavisión en Tuxpan, Veracruz">
+    <button class="dif__play" type="button" aria-label="Ver testimonio en video"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg></button>
+    <span class="dif__tag">Instituto Oftavisión · Tuxpan, Ver.</span>
+  </div>
+  <div class="dif__c">
+    <h2 class="h2 rv">La diferencia Oftavisión</h2>
+    <p class="dif__p rv">En Oftavisión hacemos oftalmología de alta especialidad con trato cercano. Tu consulta, tus estudios y tu cirugía de catarata se hacen en la misma clínica, con médicos certificados que te explican cada paso con palabras claras.</p>
+    <p class="dif__rate rv"><b>+25,000 cirugías al año</b> <span>en nuestra red de +15 centros quirúrgicos</span></p>
+    <a class="btn btn--blue rv" href="#agendar" data-lead="consulta">Agendar consulta</a>
+    <ul class="chk">
+      <li>Clínicas en 7 ciudades</li><li>Consulta, estudios y cirugía en un lugar</li>
+      <li>Agenda por WhatsApp</li><li>Cirugía ambulatoria, regresas a casa el mismo día</li>
+      <li>Lentes ZEISS, Alcon, J&amp;J y Bausch + Lomb</li><li>Consejera quirúrgica para tus opciones de pago</li>
+      <li class="more">Médicos certificados por el Consejo Mexicano de Oftalmología</li><li class="more">Revisiones después de tu cirugía</li>
+    </ul>
+    <button class="viewmore" type="button" aria-expanded="false">Ver más <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
+  </div>
+</section>
+
+<!-- ============ why people love (Tend testimonial carousel) ============ -->
+<section class="love" id="pacientes">
+  <div class="love__hd">
+    <h2 class="h2">Por qué nos eligen</h2>
+    <div class="love__nav"><button type="button" class="circ" aria-label="Anterior"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button><button type="button" class="pill-next">Siguiente <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button></div>
+  </div>
+  <div class="love__vp"><div class="love__tr" id="loveTr"></div></div>
+</section>
+
+<!-- ============ locations ============ -->
+<section class="loc" id="sedes">
+  <h2 class="h2 c rv">Clínicas en 7 ciudades</h2>
+  <p class="lead-p c rv">Nuestras clínicas combinan tecnología de alta especialidad con un trato cálido. Encuentra la sede más cerca de tu casa y agenda por WhatsApp.</p>
+  <div class="loc__g">
+    <ul class="loc__list" id="locList"></ul>
+    <div class="loc__map" id="map" aria-label="Mapa de sedes Oftavisión"></div>
+  </div>
+</section>
+
+<!-- ============ lenses (Tend insurance block) ============ -->
+<section class="ins">
+  <h2 class="h2 c">Lentes intraoculares de marca</h2>
+  <p class="lead-p c">En tu cirugía de catarata se coloca un lente intraocular. Trabajamos con las marcas líderes y tu médico te ayuda a elegir el tuyo.</p>
+  <div class="ins__g">
+    <div>
+      <h3 class="h3">Marcas con las que trabajamos</h3>
+      <p>Tu médico te explica las opciones de lente para tu cirugía de catarata, entre ellas:</p>
+      <ul class="ins__list"><li>ZEISS</li><li>Alcon</li><li>Johnson &amp; Johnson</li><li>Bausch + Lomb</li><li>Lente monofocal (estándar)</li><li>Multifocal, rango extendido y tórico</li></ul>
+      <a class="ins__more" href="#" data-lead="lentes">¿Más dudas? <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></a>
+    </div>
+    <form class="ins__f" id="insForm" novalidate>
+      <h3 class="h3">Pregunta por tu lente</h3>
+      <p>¿Quieres saber qué lente va contigo? Déjanos tus datos y te contestamos por WhatsApp.</p>
+      <label><span>Tu nombre</span><input name="n" type="text" autocomplete="name"></label>
+      <label><span>Tu celular</span><input name="t" type="tel" inputmode="tel" autocomplete="tel"></label>
+      <label><span>Tu sede</span><select name="s" id="insSede"><option value=""></option></select></label>
+      <button class="ins__b" type="submit">Preguntar por WhatsApp</button>
+    </form>
+  </div>
+  <div class="lg" aria-label="Marcas de lentes intraoculares"><button class="lg__ar lg__ar--p" type="button" aria-label="Anterior"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button><div class="lg__vp"><ul class="lg__tr"><li><img class="tile" src="../assets/logos/zeiss.svg" alt="ZEISS"></li><li><img src="../assets/logos/alcon.svg" alt="Alcon"></li><li><img src="../assets/logos/jnj.svg" alt="Johnson & Johnson"></li><li><img src="../assets/logos/bausch-lomb.svg" alt="Bausch + Lomb"></li><li><img src="../assets/img/partner-logo-consejo.webp" alt="Consejo Mexicano de Oftalmología" class="seal"></li></ul></div><button class="lg__ar lg__ar--n" type="button" aria-label="Siguiente"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button></div>
+</section>
+
+<!-- ============ clinical team ============ -->
+<section class="team" id="equipo">
+  <figure class="team__pic team__pic--l" data-parallax="normal"><img src="../assets/img/hd/team-doctora.jpg" alt="Doctora del equipo Oftavisión sonriendo"></figure>
+  <figure class="team__pic team__pic--r" data-parallax="reverse"><img src="../assets/img/hd/team-doctor.jpg" alt="Doctor del equipo Oftavisión sonriendo"></figure>
+  <h2 class="h2 c rv">Un equipo de alta especialidad</h2>
+  <p class="lead-p c rv">Nuestro equipo médico combina años de práctica con tecnología de quirófano para que tu experiencia sea clara y cómoda.</p>
+  <div class="team__g">
+    <article class="tc rv"><span class="tc__ic"><svg viewBox="0 0 48 48"><circle cx="24" cy="20" r="11"/><path d="M17 29l-4 13 11-5 11 5-4-13"/><path d="M19.5 20l3 3 6-6"/></svg></span><div><h3>Médicos certificados</h3><p>Certificados por el Consejo Mexicano de Oftalmología.</p></div></article>
+    <article class="tc rv"><span class="tc__ic"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="8"/><circle cx="24" cy="24" r="16"/><path d="M24 4v4M24 40v4M4 24h4M40 24h4"/></svg></span><div><h3>Tecnología ZEISS</h3><p>Microscopios quirúrgicos y equipos de diagnóstico de alta especialidad.</p></div></article>
+    <article class="tc rv"><span class="tc__ic"><svg viewBox="0 0 48 48"><path d="M4 24s7-12 20-12 20 12 20 12-7 12-20 12S4 24 4 24z"/><circle cx="24" cy="24" r="6"/></svg></span><div><h3>Síntomas primero</h3><p>Te escuchamos y te explicamos lo que ves, sin tecnicismos.</p></div></article>
+    <article class="tc rv"><span class="tc__ic"><svg viewBox="0 0 48 48"><path d="M24 5l16 6v11c0 10-7 18-16 21C15 40 8 32 8 22V11z"/><path d="M17 24l5 5 9-10"/></svg></span><div><h3>Te acompañamos</h3><p>Revisiones después de tu cirugía para cuidar tu recuperación.</p></div></article>
+  </div>
+  <a class="link-cta" href="#" data-lead="consulta">Agenda con nuestro equipo <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></a>
+</section>
+
+
+<section data-ov-reviews class="v1-rev"></section>
+
+<section class="learn" id="aprende"><div class="learn__hd"><h2 class="h2 rv">Aprende sobre tu vista</h2><a class="btn btn--aqua learn__all" href="cirugia-de-catarata.html">Ver todo</a></div><ul class="learn__g"><li class="ar rv"><a href="cirugia-de-catarata.html"><figure><img src="../assets/img/foto-victoria-quirofano-cirugia-microscopio-zeiss-DSC08191.jpg" alt="" loading="lazy"><span>Por Oftavisión</span></figure><h3>¿Qué es la catarata y cómo se opera?</h3><p>Catarata · Síntomas · Cirugía</p></a></li><li class="ar rv"><a href="lentes-intraoculares.html"><figure><img src="../assets/img/landing-clinica-hero-2.webp" alt="" loading="lazy"><span>Por Oftavisión</span></figure><h3>Lente estándar o premium: cómo elegir tu lente intraocular</h3><p>Catarata · Lentes intraoculares</p></a></li><li class="ar rv"><a href="glaucoma.html"><figure><img src="../assets/img/foto-victoria-medico-ocular-closeup-DSC08142.jpg" alt="" loading="lazy"><span>Por Oftavisión</span></figure><h3>Glaucoma: por qué revisarte aunque no tengas síntomas</h3><p>Glaucoma · Prevención</p></a></li></ul></section>
+
+<!-- ============ press ============ -->
+<section class="press"><span class="press__l">En los medios:</span><div class="press__win"><div class="press__vp"><span class="press__m press__m--1">El Sol de Tampico</span><span class="press__m press__m--2">EL MAÑANA</span><span class="press__m press__m--3">Posta</span><span class="press__m press__m--4">El Heraldo de Tamaulipas</span></div></div></section>
+
+<!-- ============ CTA ============ -->
+<section class="cta">
+  <div class="cta__bg" aria-hidden="true"></div>
+  <div class="cta__card">
+    <div class="cta__c">
+      <p class="cta__trust"><span class="cta__st" aria-hidden="true"><i></i><i></i><i></i><i></i><i class="h"></i></span><b>4.5</b> · <b>+200,000</b> pacientes atendidos</p>
+      <h2 class="h2">Cuidar tu vista empieza<br>con una consulta</h2>
+    </div>
+    <div class="cta__b"><a class="btn btn--blue" href="#agendar" data-lead="consulta">Agendar consulta</a><a class="btn btn--line" href="tel:+528120025252" data-no-lead>81 2002 5252</a></div>
+  </div>
+</section>
+</main>
+
+<!-- ============ footer ============ -->
+<footer class="ft">
+  <div class="bar bar--ft" aria-hidden="true"><span class="bar__why">¿Por qué Oftavisión?</span><div class="bar__track"><div class="bar__row"><span>Especialistas en catarata</span><span>+25,000 cirugías al año</span><span>Médicos certificados</span><span>Lentes ZEISS · Alcon · J&amp;J · B+L</span><span>Clínicas en 7 ciudades</span></div></div><span class="bar__login">WhatsApp</span></div>
+  <div class="ft__card">
+    <img src="../assets/brand/logo-instituto-oftavision-blue.webp" alt="Instituto Oftavisión" width="190" height="52">
+    <div class="ft__qr"><span>Escanea y escríbenos por WhatsApp</span><a href="https://wa.me/528120025252" data-lead="consulta" aria-label="WhatsApp Oftavisión" id="qr"></a></div>
+  </div>
+  <div class="ft__cols">
+    <div><h2>Todo sobre Oftavisión</h2><ul><li><a href="#diferencia">Nosotros</a></li><li><a href="#equipo">Médicos</a></li><li><a href="#pacientes">Pacientes</a></li><li><a href="#" data-lead="consulta">Preguntas frecuentes</a></li><li><a href="#">Aviso de privacidad</a></li></ul></div>
+    <div><h2>Sedes</h2><ul class="acc" id="ftSedes"></ul>
+      <h2 class="ft__q">¿Dudas?</h2><h3>Llama</h3><p><a href="tel:+528120025252" data-no-lead>81 2002 5252</a></p><h3>WhatsApp</h3><p><a href="https://wa.me/528120025252" data-lead="consulta">Escríbenos</a></p><h3>Horario</h3><p class="ft__hrs" id="ftHrs"></p></div>
+    <div><h2>Servicios</h2><ul><li><a href="cirugia-de-catarata.html">Cirugía de catarata</a></li><li><a href="lentes-intraoculares.html">Lentes intraoculares</a></li><li><a href="retina.html">Retina</a></li><li><a href="glaucoma.html">Glaucoma</a></li><li><a href="pterigion.html">Pterigión</a></li></ul></div>
+    <div><h2 class="ft__ghost" aria-hidden="true">&nbsp;</h2><ul><li><a href="#" data-lead="presbicia">Vista cansada</a></li><li><a href="#" data-lead="estudios">Estudios diagnósticos</a></li><li><a href="#" data-lead="consulta">Consulta oftalmológica</a></li><li><a href="#" data-lead="optica">Óptica</a></li></ul></div>
+  </div>
+  <div class="ft__bot"><nav><a href="#">Aviso de privacidad</a><a href="#">Accesibilidad</a><a href="#">Términos</a><a href="#top">Volver arriba</a></nav><span>© 2026 Instituto Oftavisión. Alta Especialidad en Oftalmología.</span></div>
+  <p class="ft__legal">Los testimonios corresponden a pacientes reales y su experiencia personal. Cada caso es diferente; tu médico te indicará el tratamiento adecuado. Aviso COFEPRIS: VALIDAR.</p>
+</footer>
+
+<script src="../assets/ov-data.js"></script>
+<script src="../assets/lead/lead.js"></script>
+<script src="../assets/reviews/reviews.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+<script src="v1.js"></script>
+<script src="motion.js"></script>
+</body>
+</html>
