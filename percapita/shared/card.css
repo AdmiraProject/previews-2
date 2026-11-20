@@ -1,0 +1,101 @@
+/* Percapita card — size with --cw (card width). All internals scale in em (1em = cw/40). */
+.pc-card {
+  --cw: 420px;
+  position: relative; width: var(--cw); aspect-ratio: 85.6 / 53.98; font-size: calc(var(--cw) / 40);
+  border-radius: 1.55em; transform-style: preserve-3d; user-select: none; -webkit-user-select: none;
+  font-family: 'Geist', 'Inter', system-ui, sans-serif; line-height: 1;
+}
+.pc-face {
+  position: absolute; inset: 0; border-radius: inherit; overflow: hidden; backface-visibility: hidden; -webkit-backface-visibility: hidden;
+  background: var(--bg); color: var(--ink);
+  box-shadow: inset 0 0 0 1px var(--edge, rgba(255,255,255,.08)), 0 .1em .3em rgba(0,0,0,.08);
+}
+.pc-3d .pc-back { transform: rotateX(180deg); }
+.pc-card:not(.pc-3d) .pc-face { backface-visibility: visible; }
+.pc-tex { position: absolute; inset: 0; background: var(--tex, none); mix-blend-mode: var(--texblend, overlay); opacity: var(--texop, .5); pointer-events: none; }
+.pc-sheen { position: absolute; inset: -40%; background: linear-gradient(115deg, transparent 35%, var(--sheen, rgba(255,255,255,.22)) 48%, transparent 60%); transform: translateX(var(--sx, 0%)); pointer-events: none; mix-blend-mode: soft-light; }
+
+/* front */
+.pc-brand { position: absolute; top: 2.1em; left: 2.4em; display: flex; align-items: center; gap: .55em; }
+.pc-mark { width: 2.5em; height: auto; overflow: visible; }
+.pc-mark .m1 { fill: var(--mk1); } .pc-mark .m2 { fill: var(--mk2); } .pc-mark .m3 { fill: var(--mk3); }
+.pc-word { display: block; width: 7.6em; aspect-ratio: 182.8/47; background: var(--word, currentColor);
+  -webkit-mask: url(../assets/brand/wordmark.svg) left center / contain no-repeat; mask: url(../assets/brand/wordmark.svg) left center / contain no-repeat; }
+.pc-chip { position: absolute; left: 2.4em; top: 9.4em; width: 4.3em; height: auto; filter: drop-shadow(0 .05em .08em rgba(0,0,0,.25)); }
+.pc-nfc { position: absolute; left: 7.4em; top: 9.95em; width: 1.35em; color: var(--nfc, currentColor); opacity: .75; }
+.pc-front .pc-last { position: absolute; left: 2.4em; bottom: 2.2em; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 1.12em; letter-spacing: .08em; opacity: .85; }
+.pc-mc { position: absolute; right: 2.2em; bottom: 1.9em; display: flex; }
+.pc-mc::after { content: ''; position: absolute; left: 1.75em; top: 0; width: 2.9em; height: 2.9em; border-radius: 50%; background: #FF5F00; clip-path: circle(1.45em at -0.3em 1.45em); }
+.pc-mc i { width: 2.9em; height: 2.9em; border-radius: 50%; background: #EB001B; display: block; }
+.pc-mc i + i { background: #F79E1B; margin-left: -1.15em; }
+.f-titanio .pc-mc i, .f-glaciar .pc-mc i { box-shadow: none; }
+
+/* back */
+.pc-name { position: absolute; left: 2.4em; top: 2.3em; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 1em; letter-spacing: .22em; }
+.pc-tap { position: absolute; right: 2.2em; top: 2.1em; display: flex; align-items: center; gap: .45em; font-family: 'Geist Mono', ui-monospace, monospace; font-size: .62em; letter-spacing: .22em; opacity: .75; }
+.pc-tap .pc-nfc { position: static; width: 1.6em; }
+.pc-tap b { font-weight: 500; }
+.pc-num { position: absolute; left: 1.55em; top: 4.3em; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 1.55em; letter-spacing: .12em; }
+.pc-meta { position: absolute; left: 3em; top: 13.2em; display: flex; gap: 2.2em; font-family: 'Geist Mono', ui-monospace, monospace; font-size: .8em; letter-spacing: .18em; opacity: .8; }
+.pc-fine { position: absolute; left: 2.4em; bottom: 2.2em; width: 21em; font-size: .56em; line-height: 1.45; opacity: .55; }
+.pc-kind { position: absolute; right: 9.6em; bottom: 2.95em; font-family: 'Geist Mono', ui-monospace, monospace; font-size: .62em; letter-spacing: .3em; opacity: .7; }
+.pc-back .pc-mc { transform: scale(.72); transform-origin: right bottom; }
+
+/* ===== finishes ===== */
+.f-abismo {
+  --bg: radial-gradient(120% 140% at 85% 0%, #17324a 0%, #0a1826 38%, #050c14 70%, #03070c 100%);
+  --ink: #c9d6e2; --word: linear-gradient(90deg, #8fa6ba, #e8f1f8 45%, #7f95a8); --edge: rgba(150,190,220,.12);
+  --mk1: #7f95a8; --mk2: #c7d6e3; --mk3: #9fb4c6; --nfc: #9fb4c6;
+  --tex: repeating-linear-gradient(90deg, rgba(255,255,255,.035) 0 1px, transparent 1px 3px); --texop: .9;
+  --sheen: rgba(170,210,240,.18);
+}
+.f-glaciar {
+  --bg: radial-gradient(130% 120% at 15% 0%, #ffffff 0%, #f1f4f6 45%, #e1e7ec 100%);
+  --ink: #0d2233; --word: #00416B; --edge: rgba(0,40,70,.08);
+  --mk1: #87D1E6; --mk2: #00416B; --mk3: #54C0E8; --nfc: #00416B;
+  --tex: radial-gradient(circle at 70% 120%, rgba(84,192,232,.18), transparent 55%); --texblend: multiply; --texop: 1;
+  --sheen: rgba(255,255,255,.9);
+}
+.f-cobalto {
+  --bg: linear-gradient(135deg, #021d3a 0%, #00416B 34%, #0a6fb0 68%, #1d8fd6 100%);
+  --ink: #e8f6ff; --word: #ffffff; --edge: rgba(140,210,255,.18);
+  --mk1: #87D1E6; --mk2: #ffffff; --mk3: #54C0E8; --nfc: #87D1E6;
+  --tex: linear-gradient(28deg, transparent 0 46%, rgba(135,209,230,.22) 46% 72%, transparent 72%), linear-gradient(28deg, transparent 0 60%, rgba(255,255,255,.07) 60%); --texblend: screen; --texop: 1;
+  --sheen: rgba(200,240,255,.35);
+}
+.f-cielo {
+  --bg: conic-gradient(from 210deg at 70% 40%, #54C0E8, #b9ecfb, #7fd7f2, #3aa8d8, #c8f2ff, #54C0E8);
+  --ink: #04324f; --word: #00416B; --edge: rgba(255,255,255,.4);
+  --mk1: #ffffff; --mk2: #00416B; --mk3: #e9fbff; --nfc: #00416B;
+  --tex: radial-gradient(80% 60% at 20% 110%, rgba(255,255,255,.55), transparent 60%); --texblend: soft-light; --texop: 1;
+  --sheen: rgba(255,255,255,.6);
+}
+.f-titanio {
+  --bg: linear-gradient(120deg, #8d949b 0%, #e9edf0 18%, #9aa1a8 34%, #f6f8f9 52%, #a3aab1 70%, #dfe4e8 86%, #7e858c 100%);
+  --ink: #1d252c; --word: linear-gradient(90deg, #2a333b, #59636c); --edge: rgba(255,255,255,.5);
+  --mk1: #59636c; --mk2: #1d252c; --mk3: #3a434b; --nfc: #2a333b;
+  --tex: repeating-linear-gradient(0deg, rgba(255,255,255,.18) 0 1px, rgba(0,0,0,.035) 1px 2px); --texblend: overlay; --texop: 1;
+  --sheen: rgba(255,255,255,.95);
+}
+.f-aurora {
+  --bg: linear-gradient(160deg, #061a33 0%, #1b2f6b 30%, #6a3d8f 58%, #e2627a 82%, #ffa36b 100%);
+  --ink: #fff3ec; --word: #ffffff; --edge: rgba(255,200,180,.2);
+  --mk1: #ffd2bd; --mk2: #ffffff; --mk3: #ffb08f; --nfc: #ffd2bd;
+  --tex: radial-gradient(70% 50% at 80% 0%, rgba(255,255,255,.18), transparent 70%); --texblend: screen; --texop: 1;
+  --sheen: rgba(255,220,200,.35);
+}
+
+
+.f-porcelana { --bg: radial-gradient(130% 120% at 12% 0%, #ffffff 0%, #f3f6f7 40%, #e3e9ec 100%); --ink: #0d2233; --word: #00416B; --edge: rgba(0,40,70,.07);
+  --mk1: #87D1E6; --mk2: #00416B; --mk3: #54C0E8; --nfc: #00416B; --sheen: rgba(255,255,255,.95);
+  --tex: radial-gradient(70% 90% at 85% 110%, rgba(135,209,230,.28), transparent 60%); --texblend: multiply; --texop: 1; }
+.f-azur { --bg: radial-gradient(120% 120% at 100% 0%, #6fd2f7 0%, rgba(111,210,247,0) 46%), linear-gradient(118deg, #0a3fd1 0%, #1466ea 38%, #2a8ef2 70%, #46b6f2 100%);
+  --ink: #eaf6ff; --word: #ffffff; --edge: rgba(180,220,255,.25); --mk1: #bfe9f7; --mk2: #ffffff; --mk3: #87D1E6; --nfc: #dff4ff; --sheen: rgba(220,245,255,.45);
+  --tex: radial-gradient(60% 50% at 20% 110%, rgba(255,255,255,.18), transparent 70%); --texblend: screen; --texop: 1; }
+.f-hielo { --bg: linear-gradient(135deg, #7fd0ea 0%, #a5e2f3 45%, #c9f0fa 100%); --ink: #04324f; --word: #00416B; --edge: rgba(255,255,255,.45);
+  --mk1: #ffffff; --mk2: #00416B; --mk3: #54C0E8; --nfc: #00416B; --sheen: rgba(255,255,255,.7);
+  --tex: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 252' preserveAspectRatio='none'><g fill='none' stroke='white' stroke-width='3.2' stroke-linecap='round' opacity='.9'><path d='M-10 200 C 80 150, 150 240, 250 180 S 380 70, 420 120'/><path d='M120 -10 C 140 60, 230 70, 260 20' /><path d='M300 262 C 300 210, 360 190, 410 200'/><path d='M-10 60 C 40 40, 60 90, 30 130' stroke-dasharray='2 7'/></g></svg>") center / 100% 100% no-repeat;
+  --texblend: normal; --texop: .85; }
+.f-grafito { --bg: radial-gradient(90% 120% at 30% 10%, #8a9196 0%, #5d6469 40%, #3b4146 75%, #2c3135 100%); --ink: #eef2f4; --word: linear-gradient(90deg, #f6f8f9, #c2c9ce); --edge: rgba(255,255,255,.18);
+  --mk1: #cfd6db; --mk2: #ffffff; --mk3: #9aa3a9; --nfc: #e6ebee; --sheen: rgba(255,255,255,.4);
+  --tex: repeating-linear-gradient(0deg, rgba(255,255,255,.06) 0 1px, rgba(0,0,0,.05) 1px 2px); --texblend: overlay; --texop: 1; }

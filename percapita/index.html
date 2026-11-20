@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tarjeta Percapita — 3 versiones</title>
+<link rel="icon" href="assets/brand/mark-circle.svg">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared/card.css"><script src="shared/card.js"></script>
+<style>
+  body { margin: 0; min-height: 100vh; background: #03111d; color: #e8f1f8; font-family: Geist, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  .w { width: min(1180px, calc(100vw - 32px)); margin: 0 auto; padding: 72px 0; }
+  header { display: flex; align-items: center; gap: 14px; } header img { width: 34px; }
+  h1 { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 500; font-size: clamp(36px, 5vw, 64px); line-height: 1.02; margin: 40px 0 12px; letter-spacing: -.02em; }
+  p.s { color: #8fa6ba; font-size: 17px; max-width: 640px; margin: 0; line-height: 1.5; }
+  .g { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 56px; }
+  a.v { display: flex; flex-direction: column; border-radius: 22px; overflow: hidden; background: #0a1a28; box-shadow: inset 0 0 0 1px rgba(135,209,230,.12); color: inherit; text-decoration: none; transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s; }
+  a.v:hover { transform: translateY(-4px); box-shadow: inset 0 0 0 1px rgba(135,209,230,.35), 0 30px 60px -30px rgba(84,192,232,.4); }
+  .vis { height: 250px; display: grid; place-items: center; position: relative; overflow: hidden; }
+  .vis .pc-card { --cw: 250px; transition: transform .6s cubic-bezier(.2,.8,.2,1); border-radius: 1.55em; box-shadow: 0 30px 40px -24px rgba(0,0,0,.6); }
+  a.v:hover .vis .pc-card { transform: rotate(-3deg) scale(1.04); }
+  .v1 .vis { background: radial-gradient(60% 80% at 15% 80%, #b9a6ff, transparent 60%), radial-gradient(55% 70% at 85% 75%, #ffc9a3, transparent 60%), radial-gradient(70% 80% at 50% 10%, #9fe3f7, transparent 65%), #eef5fb; }
+  .v2 .vis { background: #F4F2F0; } .v2 .vis .pc-card { transform: perspective(900px) rotateX(8deg) rotateZ(-5deg); }
+  .v3 .vis { background: #E6E7EB; }
+  .v4 .vis { background: #F2F4F5; } .v4 .vis .pc-card { transform: perspective(900px) rotateX(10deg) rotateZ(-5deg); }
+  .v4 { box-shadow: inset 0 0 0 1.5px #8AD6EF; } .v4 .t small::after { content: ' · RECOMENDADA'; color: #8AD6EF; }
+  .t { padding: 22px 24px 26px; }
+  .t small { font-family: 'Geist Mono', monospace; font-size: 11px; letter-spacing: .2em; color: #54C0E8; }
+  .t b { display: block; font-size: 22px; margin: 8px 0 6px; font-weight: 600; }
+  .t span { color: #8fa6ba; font-size: 14px; line-height: 1.45; display: block; }
+  footer { margin-top: 48px; color: #5d7387; font-size: 13px; }
+  @media (max-width: 860px) { .g { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body><div class="w">
+  <header><img src="assets/brand/mark-circle.svg" alt=""><img src="assets/brand/logo-white.svg" alt="Percapita" style="width:140px"></header>
+  <h1>Tarjeta de Crédito Percapita<br>4 direcciones de sitio</h1>
+  <p class="s">Cuatro propuestas con la marca, los colores y los datos reales de Percapita.</p>
+  <div class="g">
+    <a class="v v4" href="v4/"><div class="vis"><div data-pc-card="azur"></div></div><div class="t"><small>V4</small><b>Tambor 3D + activación</b><span>Hero con tambor 3D de 6 tarjetas e incluye flujo de activación en /v4/solicitud/.</span></div></a>
+    <a class="v v1" href="v1/"><div class="vis"><div data-pc-card="cielo"></div></div><div class="t"><small>V1</small><b>Simplicidad</b><span>Hero con degradado y iPhone, bento de beneficios con ⊕, “Más para tus finanzas”.</span></div></a>
+    <a class="v v2" href="v2/"><div class="vis"><div data-pc-card="abismo"></div></div><div class="t"><small>V2</small><b>Tambor 3D</b><span>Hero de 6 tarjetas en tambor 3D (scroll, arrastre, toque).</span></div></a>
+    <a class="v v3" href="v3/"><div class="vis"><div data-pc-card="titanio"></div></div><div class="t"><small>V3</small><b>Espejo</b><span>Tarjeta espejo en mano, tipografía gigante, columnas sticky y FAQ minimal.</span></div></a>
+  </div>
+  <footer>Prototipo local · cifras de CAT/tasa marcadas [VALIDAR] · diseños de tarjeta conceptuales.</footer>
+</div></body>
+</html>
