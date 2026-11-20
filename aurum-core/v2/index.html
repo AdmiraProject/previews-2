@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aurum Core | Core bancario para lanzar productos financieros</title>
+<meta name="description" content="Aurum Core es el core bancario modular con el que tu empresa lanza y opera sus sistemas financieros.">
+<link rel="icon" href="../assets/brand/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css?v=20">
+<link rel="stylesheet" href="css/aurum.css?v=20">
+</head>
+<body>
+<div class="page-wrapper">
+
+<!-- ============================== HEADER ============================== -->
+<section class="header" data-sec="header">
+  <div class="section-padding-x">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="section-padding-y">
+        <div class="header_wrapper w-nav" data-collapse="medium">
+          <a href="./" class="header_logo-link w-nav-brand w--current" aria-label="Aurum Core inicio"><img src="../assets/brand/aurum_logo.png" alt="Aurum Core" class="image-contain"></a>
+          <nav class="header_menu-wrapper w-nav-menu" role="navigation">
+            <div class="header_dropdown-wrapper w-dropdown">
+              <div class="header_dropdown w-dropdown-toggle" tabindex="0" aria-haspopup="menu"><div class="header_item">Plataforma</div><div class="header-dropdown_arrow w-icon-dropdown-toggle"></div></div>
+              <nav class="header-submenu-wrapper w-dropdown-list">
+                <div class="submenu_grid _12-col">
+                  <div class="submenu_menu-column snode-ov4">
+                    <div class="submenu_border-heading"><div class="text-submenu_heading">Visión general</div></div>
+                    <div class="submenu_menu is-two-column-mob">
+                      <a href="#plataforma" class="submenu_menu-item w-inline-block"><div class="submenu_menu-item_content"><div class="submenu_menu-item_icon"><svg class="mi" viewBox="0 0 20 20"><rect x="3" y="3" width="14" height="14" rx="2"/><path d="M7 3v14M7 8h10"/></svg></div><div class="submenu-item_text"><div class="text-p-16 opacity-100 scale-up">Plataforma</div><div class="text-p-12 scale-up max-w-288">Un core modular para tu institución.</div></div></div><div class="submenu_menu-item_hover"></div></a>
+                      <a href="#portales" class="submenu_menu-item w-inline-block"><div class="submenu_menu-item_content"><div class="submenu_menu-item_icon"><svg class="mi" viewBox="0 0 20 20"><rect x="2.5" y="4" width="15" height="11" rx="1.5"/><path d="M2.5 7.5h15M7 17.5h6"/></svg></div><div class="submenu-item_text"><div class="text-p-16 opacity-100 scale-up">Portales</div><div class="text-p-12 scale-up max-w-288">Portal Admin y Portal de Atención al Cliente.</div></div></div><div class="submenu_menu-item_hover"></div></a>
+                    </div>
+                  </div>
+                  <div class="submenu_menu-column snode-uc8">
+                    <div class="submenu_border-heading"><div class="text-submenu_heading">Motores</div></div>
+                    <div class="submenu_menu is-two-column">
+                      <a href="#motores" class="submenu_menu-item w-inline-block"><div class="submenu_menu-item_content"><div class="submenu_menu-item_icon"><svg class="mi" viewBox="0 0 20 20"><rect x="2.5" y="5" width="15" height="11" rx="1.5"/><path d="M13 10.5h2"/><path d="M2.5 8h15"/></svg></div><div class="submenu-item_text"><div class="text-p-16 opacity-100 scale-up">Motor de Débito</div><div class="text-p-12 scale-up max-w-288">Cuentas, autorizaciones, reversos y retenciones.</div></div></div><div class="submenu_menu-item_hover"></div></a>
+                      <a href="#motores" class="submenu_menu-item w-inline-block"><div class="submenu_menu-item_content"><div class="submenu_menu-item_icon"><svg class="mi" viewBox="0 0 20 20"><path d="M3 15.5l4-4 3 3 7-7"/><path d="M12.5 7.5H17V12"/></svg></div><div class="submenu-item_text"><div class="text-p-16 opacity-100 scale-up">Motor de Crédito</div><div class="text-p-12 scale-up max-w-288">Todo el ciclo de crédito, de la solicitud al cierre.</div></div></div><div class="submenu_menu-item_hover"></div></a>
+                      <a href="#motores" class="submenu_menu-item w-inline-block"><div class="submenu_menu-item_content"><div class="submenu_menu-item_icon"><svg class="mi" viewBox="0 0 20 20"><path d="M4 7h11.5M12.5 4l3 3-3 3M16 13H4.5M7.5 10l-3 3 3 3"/></svg></div><div class="submenu-item_text"><div class="text-p-16 opacity-100 scale-up">Conectores</div><div class="text-p-12 scale-up max-w-288">Conecta SPEI, remesas, KYC, administración de tarjetas y pasarela de pagos.</div></div></div><div class="submenu_menu-item_hover"></div></a>
+                      <a href="#motores" class="submenu_menu-item w-inline-block"><div class="submenu_menu-item_content"><div class="submenu_menu-item_icon"><svg class="mi" viewBox="0 0 20 20"><rect x="3" y="4" width="14" height="13" rx="1.5"/><path d="M3 8h14M7 2.5v3M13 2.5v3M7 12h2"/></svg></div><div class="submenu-item_text"><div class="text-p-16 opacity-100 scale-up">Motor de Depósito</div><div class="text-p-12 scale-up max-w-288">Depósitos a plazo fijo o a la vista.</div></div></div><div class="submenu_menu-item_hover"></div></a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <a href="#casos" class="header_item">Casos de uso</a>
+            <div class="header_dropdown-wrapper w-dropdown">
+              <div class="header_dropdown w-dropdown-toggle" tabindex="0" aria-haspopup="menu"><div class="header_item">Desarrolladores</div><div class="header-dropdown_arrow w-icon-dropdown-toggle"></div></div>
+              <nav class="header-submenu-wrapper w-dropdown-list">
+                <div class="submenu_grid _12-col">
+                  <div class="submenu_menu-column snode-dev6">
+                    <a href="https://dev.aurumcore.com/" target="_blank" rel="noopener" class="submenu_dev-link-card w-inline-block">
+                      <div class="submenu_dev-link-card_content"><div class="submenu_anim-icon"><svg class="mi" viewBox="0 0 20 20"><path d="M7 6l-4 4 4 4M13 6l4 4-4 4"/></svg></div><div class="submenu_resource-link-card"><div class="text-p-16 opacity-100">Documentación API</div><div class="text-p-12">Integra tus canales con la API Multicanal de Aurum Core.</div></div></div>
+                      <div class="submenu_dev-link-card_media"><div class="nm-code" data-validar="endpoint ilustrativo, no es la API real"><div class="nm-code_bar"><i></i><i></i><i></i><span>cuentas</span></div><ol><li><b>POST</b> <em>/v1/cuentas</em></li><li>&nbsp;&nbsp;"producto": <em>"debito"</em>,</li><li>&nbsp;&nbsp;"titular": <em>"Cliente 0042"</em>,</li><li>&nbsp;&nbsp;"moneda": <em>"MXN"</em>,</li><li>&nbsp;&nbsp;"canal": <em>"app-movil"</em></li><li>&nbsp;&nbsp;"estatus": <em>"activa"</em></li><li>}</li></ol></div></div>
+                    </a>
+                  </div>
+                  <div class="submenu_menu-column snode-dev6">
+                    <a href="#plataforma" class="submenu_dev-link-card w-inline-block">
+                      <div class="submenu_dev-link-card_content"><div class="submenu_anim-icon"><svg class="mi" viewBox="0 0 20 20"><circle cx="4.5" cy="10" r="2"/><circle cx="15.5" cy="5" r="2"/><circle cx="15.5" cy="15" r="2"/><path d="M6.5 10h3l4-4.5M9.5 10l4 4.5"/></svg></div><div class="submenu_resource-link-card"><div class="text-p-16 opacity-100">Orquestador de procesos</div><div class="text-p-12">Automatiza flujos entre motores y proveedores.</div></div></div>
+                      <div class="submenu_dev-link-card_media"><div class="nm-flow"><div class="nm-flow_row"><span class="d"></span>KYC<em>Completado</em></div><div class="nm-flow_bars"><i style="--w:92%"></i></div><div class="nm-flow_meta"><span>Alta de cliente</span><span>Paso 1 de 3</span></div><div class="nm-flow_row is-dim"><span class="d"></span>SPEI<em>En curso</em></div><div class="nm-flow_bars is-dim"><i style="--w:54%"></i></div></div></div>
+                    </a>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div class="header_dropdown-wrapper w-dropdown">
+              <div class="header_dropdown w-dropdown-toggle" tabindex="0" aria-haspopup="menu"><div class="header_item">Recursos</div><div class="header-dropdown_arrow w-icon-dropdown-toggle"></div></div>
+              <nav class="header-submenu-wrapper w-dropdown-list">
+                <div class="submenu_grid _13-col">
+                  <div class="submenu_menu-column snode-res4">
+                    <a data-has-link-arrow="invert" href="https://www.aurumcore.com/blog" target="_blank" rel="noopener" class="submenu_resources-tile-link-card w-inline-block">
+                      <div class="submenu_link-card_content max-w-none"><div class="submenu_link-card_resources"><div class="submenu_resource-tile-link-card"><div class="text-p-16 opacity-100">Blog</div><div class="text-p-12">Ideas sobre infraestructura financiera.</div></div><div class="link-arrow"><img src="../assets/v2/arrow-ur.svg" loading="lazy" alt="" class="object-contain"></div></div></div>
+                      <div class="submenu_resource_tile-media"><div class="nm-tiles"><span class="t1">Seguridad</span><span class="t2">Glosario<small>Instituciones de nueva generación</small></span><span class="t3">Legacy</span><span class="t4"></span><span class="t5"></span></div></div>
+                    </a>
+                  </div>
+                  <div class="submenu_menu-column snode-res3">
+                    <a href="#plataforma" class="submenu_dev-link-card w-inline-block"><div class="submenu_link-card_content padding-shrinks"><div class="submenu_anim-icon"><svg class="mi" viewBox="0 0 20 20"><rect x="3" y="9" width="6" height="6"/><rect x="11" y="5" width="6" height="6"/><path d="M9 12h2V8"/></svg></div><div class="submenu_resource-link-card"><div class="text-p-16 opacity-100">Arquitectura</div><div class="text-p-12 max-w-200">Microservicios escalables, OnPrem o en IaaS.</div></div></div></a>
+                  </div>
+                  <div class="submenu_menu-column snode-res3">
+                    <a href="#casos" class="submenu_dev-link-card w-inline-block"><div class="submenu_link-card_content padding-shrinks"><div class="submenu_anim-icon"><svg class="mi" viewBox="0 0 20 20"><rect x="4" y="2.5" width="12" height="15" rx="1.5"/><path d="M7.5 6.5h5M7.5 10h5M7.5 13.5h3"/></svg></div><div class="submenu_resource-link-card"><div class="text-p-16 opacity-100">Casos de uso</div><div class="text-p-12 max-w-200">16 productos que puedes lanzar con Aurum.</div></div></div></a>
+                  </div>
+                  <div class="submenu_menu-column snode-res3">
+                    <a href="https://www.aurumcore.com/blog/por-que-la-seguridad-define-el-exito-de-una-fintech" target="_blank" rel="noopener" class="submenu_dev-link-card w-inline-block"><div class="submenu_link-card_content padding-shrinks"><div class="submenu_anim-icon"><svg class="mi" viewBox="0 0 20 20"><path d="M10 2.5l6 2.5v4.5c0 4-2.6 6.6-6 8-3.4-1.4-6-4-6-8V5z"/><path d="M7.5 10l2 2 3.5-4"/></svg></div><div class="submenu_resource-link-card"><div class="text-p-16 opacity-100">Seguridad</div><div class="text-p-12 max-w-200">Controles de acceso y registro de auditoría.</div></div></div></a>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </nav>
+          <div class="header_button-wrapper is-desktop">
+            <a href="https://dev.aurumcore.com/" target="_blank" rel="noopener" class="header_item button-link">Docs API</a>
+            <a data-button-theme="black" href="https://meetings.hubspot.com/alejandroflores/aurumcore-mktg-fafm" target="_blank" rel="noopener" class="button button-secondary v-nav w-inline-block"><div class="button_arrow is-hidden"><img src="../assets/v2/chevron.svg" alt="" class="image-contain"></div><div class="button_label">Agenda una demo</div><div class="button_arrow is-visible"><img src="../assets/v2/chevron.svg" alt="" class="image-contain"></div></a>
+          </div>
+          <div class="menu-button w-nav-button" aria-label="Menú" role="button" tabindex="0"><div class="mobile-menu-toggle"><div class="burger-top"></div><div class="burger-mid"></div><div class="burger-bottom"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main>
+<div>
+
+<!-- ============================== HERO ============================== -->
+<section data-overflow="hidden" class="section-builder" data-sec="hero">
+  <div class="relative-5">
+    <div class="section-padding-x">
+      <div class="w-layout-blockcontainer container is-relative w-container">
+        <div class="section-padding v-hero"></div>
+        <div class="home-hero_content">
+          <div class="home-hero_news">
+            <a href="#motores" class="news-link w-inline-block"><div class="text-p-14 opacity-100">Conoce la Fábrica de productos para tus sistemas financieros</div><div class="icon-8"><img src="../assets/v2/arrow-ur.svg" alt="" class="image-contain"></div></a>
+          </div>
+          <h1 class="text-h1 text-center">Lanza productos financieros con un core moderno</h1>
+          <div class="mt-24 max-w-584"><p class="text-p-20 text-center">Opera los sistemas financieros de tu empresa en un solo core.</p></div>
+          <div class="button-wrapper mt-32">
+            <a class="button button-primary w-inline-block" href="https://meetings.hubspot.com/alejandroflores/aurumcore-mktg-fafm" data-button-theme="black" target="_blank" rel="noopener"><div class="button_arrow is-hidden"><img src="../assets/v2/chevron-dark.svg" alt="" class="image-contain"></div><div class="button_label">Agenda una demo</div><div class="button_arrow is-visible"><img src="../assets/v2/chevron-dark.svg" alt="" class="image-contain"></div></a>
+          </div>
+        </div>
+        <div class="section-padding v-hero"></div>
+      </div>
+    </div>
+  </div>
+  <div class="section-background">
+    <div class="section-background_overlay"></div>
+    <div class="section-background_underlay"><div class="hero-blobs" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i><i class="b4"></i><i class="b5"></i><i class="b6"></i></div></div>
+  </div>
+</section>
+
+<!-- ============================== USE-CASE WALL (logo wall) ============================== -->
+<section data-overflow="hidden" class="section-builder" data-sec="logos">
+  <div class="section-padding-x"><div class="w-layout-blockcontainer container w-container">
+    <div data-padding-bottom="none" data-padding-top="xs" class="flex-section-padding-y"><div data-inner-spacing="md" class="flex-section-spacing">
+      <div data-logo-stacks class="logo-link_grid">
+        <div class="logo-link-slot"><div class="logo-link_logo"><a href="#motores" class="logo-link_link w-inline-block"><div class="logo-link_arrow"><svg viewBox="0 0 3 5"><path d="M.5.5l2 2-2 2" stroke="#071024" stroke-width=".7" fill="none"/></svg></div><span class="uc-mark"><svg viewBox="0 0 20 20"><path d="M4 7h11.5M12.5 4l3 3-3 3M16 13H4.5M7.5 10l-3 3 3 3"/></svg>SPEI</span></a></div></div><div class="logo-link-slot"><div class="logo-link_logo"><a href="#motores" class="logo-link_link w-inline-block"><div class="logo-link_arrow"><svg viewBox="0 0 3 5"><path d="M.5.5l2 2-2 2" stroke="#071024" stroke-width=".7" fill="none"/></svg></div><span class="uc-mark"><svg viewBox="0 0 20 20"><rect x="2.5" y="4" width="15" height="12" rx="1.5"/><circle cx="7.5" cy="9.5" r="2"/><path d="M4.5 14c.5-1.6 1.6-2.4 3-2.4s2.5.8 3 2.4M12 8.5h3.5M12 11.5h2.5"/></svg>KYC</span></a></div></div><div class="logo-link-slot"><div class="logo-link_logo"><a href="#motores" class="logo-link_link w-inline-block"><div class="logo-link_arrow"><svg viewBox="0 0 3 5"><path d="M.5.5l2 2-2 2" stroke="#071024" stroke-width=".7" fill="none"/></svg></div><span class="uc-mark"><svg viewBox="0 0 20 20"><path d="M10 2.5l6 2.5v4.5c0 4-2.6 6.6-6 8-3.4-1.4-6-4-6-8V5z"/><path d="M7.5 10l2 2 3.5-4"/></svg>PLD y antifraude</span></a></div></div><div class="logo-link-slot"><div class="logo-link_logo"><a href="#motores" class="logo-link_link w-inline-block"><div class="logo-link_arrow"><svg viewBox="0 0 3 5"><path d="M.5.5l2 2-2 2" stroke="#071024" stroke-width=".7" fill="none"/></svg></div><span class="uc-mark"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="7.5"/><path d="M2.5 10h15M10 2.5c2.2 2.2 2.2 12.8 0 15M10 2.5c-2.2 2.2-2.2 12.8 0 15"/></svg>Remesas</span></a></div></div><div class="logo-link-slot"><div class="logo-link_logo"><a href="#motores" class="logo-link_link w-inline-block"><div class="logo-link_arrow"><svg viewBox="0 0 3 5"><path d="M.5.5l2 2-2 2" stroke="#071024" stroke-width=".7" fill="none"/></svg></div><span class="uc-mark"><svg viewBox="0 0 20 20"><rect x="2" y="4.5" width="16" height="11" rx="1.8"/><path d="M2 8h16M12.5 12.5h3"/></svg>Pasarela de pagos</span></a></div></div><div class="logo-link-slot"><div class="logo-link_logo"><a href="#motores" class="logo-link_link w-inline-block"><div class="logo-link_arrow"><svg viewBox="0 0 3 5"><path d="M.5.5l2 2-2 2" stroke="#071024" stroke-width=".7" fill="none"/></svg></div><span class="uc-mark"><svg viewBox="0 0 20 20"><path d="M5 2.5h7l3 3v12H5z"/><path d="M8 9h4M8 12h4M8 15h2"/></svg>Depósitos referenciados</span></a></div></div><div class="logo-link-slot"><div class="logo-link_logo"><a href="#motores" class="logo-link_link w-inline-block"><div class="logo-link_arrow"><svg viewBox="0 0 3 5"><path d="M.5.5l2 2-2 2" stroke="#071024" stroke-width=".7" fill="none"/></svg></div><span class="uc-mark"><svg viewBox="0 0 20 20"><rect x="2" y="4.5" width="16" height="11" rx="1.8"/><path d="M2 8h16M5 12.5h3"/></svg>Administración de tarjetas</span></a></div><div class="logo-link_logo"><a href="#motores" class="logo-link_link w-inline-block"><div class="logo-link_arrow"><svg viewBox="0 0 3 5"><path d="M.5.5l2 2-2 2" stroke="#071024" stroke-width=".7" fill="none"/></svg></div><span class="uc-mark"><svg viewBox="0 0 20 20"><path d="M4 16V9M8 16V5M12 16v-6M16 16V7"/></svg>Sistemas contables (ERP)</span></a></div></div><div class="logo-link-slot"><div class="logo-link_logo"><span class="uc-mark"><svg viewBox="0 0 20 20"><circle cx="7" cy="7" r="2.6"/><circle cx="13.5" cy="7" r="2.6"/><path d="M2.5 16c.6-2.7 2.3-4.2 4.5-4.2s3.9 1.5 4.5 4.2M9.5 13c.9-.8 2.2-1.2 4-1.2 2.2 0 3.9 1.5 4.5 4.2"/></svg>CRMs</span></div><div class="logo-link_logo"><span class="uc-mark"><svg viewBox="0 0 20 20"><rect x="4" y="2.5" width="12" height="15" rx="1.5"/><path d="M7.5 7l5 6M7.8 12.8h.1M12.2 7.2h.1"/></svg>Sistemas de impuestos</span></div></div><div class="logo-link-slot"><div class="logo-link_logo"><a href="#motores" class="logo-link_link w-inline-block"><div class="logo-link_arrow"><svg viewBox="0 0 3 5"><path d="M.5.5l2 2-2 2" stroke="#071024" stroke-width=".7" fill="none"/></svg></div><span class="uc-mark"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="7.5"/><path d="M10 2.5V10h7.5"/></svg>Análisis de datos</span></a></div><div class="logo-link_logo"><a href="#motores" class="logo-link_link w-inline-block"><div class="logo-link_arrow"><svg viewBox="0 0 3 5"><path d="M.5.5l2 2-2 2" stroke="#071024" stroke-width=".7" fill="none"/></svg></div><span class="uc-mark"><svg viewBox="0 0 20 20"><rect x="3" y="3" width="14" height="14" rx="1.5"/><path d="M6.5 7h7M6.5 10h7M6.5 13h4"/></svg>Herramientas administrativas</span></a></div></div><div class="logo-link-slot"><div class="logo-link_logo"><a href="#motores" class="logo-link_link w-inline-block"><div class="logo-link_arrow"><svg viewBox="0 0 3 5"><path d="M.5.5l2 2-2 2" stroke="#071024" stroke-width=".7" fill="none"/></svg></div><span class="uc-mark"><svg viewBox="0 0 20 20"><rect x="5.5" y="2" width="9" height="16" rx="2"/><path d="M9 15.5h2"/></svg>Apps móviles</span></a></div><div class="logo-link_logo"><a href="#motores" class="logo-link_link w-inline-block"><div class="logo-link_arrow"><svg viewBox="0 0 3 5"><path d="M.5.5l2 2-2 2" stroke="#071024" stroke-width=".7" fill="none"/></svg></div><span class="uc-mark"><svg viewBox="0 0 20 20"><rect x="2.5" y="4" width="15" height="11" rx="1.5"/><path d="M2.5 7.5h15M7 17.5h6"/></svg>Apps web</span></a></div></div><div class="logo-link-slot"><div class="logo-link_logo"><a href="#motores" class="logo-link_link w-inline-block"><div class="logo-link_arrow"><svg viewBox="0 0 3 5"><path d="M.5.5l2 2-2 2" stroke="#071024" stroke-width=".7" fill="none"/></svg></div><span class="uc-mark"><svg viewBox="0 0 20 20"><path d="M3 4.5h14v9H8l-4 3v-3H3z"/><path d="M6.5 9h.1M10 9h.1M13.5 9h.1"/></svg>Chatbots y call center</span></a></div></div><div class="logo-link-slot"><div class="logo-link_logo"><span class="uc-mark"><svg viewBox="0 0 20 20"><rect x="6" y="5.5" width="8" height="9" rx="2"/><path d="M7.5 5.5l.5-3h4l.5 3M7.5 14.5l.5 3h4l.5-3"/></svg>Wearables</span></div></div>
+      </div>
+    </div></div>
+  </div></div>
+</section>
+
+<!-- ============================== STATS ============================== -->
+<section data-overflow="hidden" class="section-builder" data-sec="stats">
+  <div class="section-padding-x"><div class="w-layout-blockcontainer container w-container">
+    <div data-padding-bottom="none" data-padding-top="sm" class="flex-section-padding-y"><div data-inner-spacing="md" class="flex-section-spacing">
+      <div class="stats-status_wrapper v-stats">
+        <div class="stats-status_content">
+          <h2 class="text-h7">Un core completo</h2>
+          <div class="stats-status_grid">
+            <div class="_4-col-stat_item v-stat0"><div class="text-h2">3</div><div class="text-p-18">motores de producto financiero</div></div>
+            <div class="_4-col-stat_item v-stat0"><div class="text-h2">16</div><div class="text-p-18">casos de uso</div></div>
+            <div class="_4-col-stat_item v-stat0"><div class="text-h2">6</div><div class="text-p-18">conectores externos</div></div>
+            <div class="_4-col-stat_item has-no-padding-left"><div class="text-h2">2</div><a href="#portales" class="status-link_link w-inline-block"><div class="status-link_dot"></div><div class="text-p-18 opacity-100">portales</div></a></div>
+          </div>
+        </div>
+        <div class="stats-status_row-parent v-stats">
+          <div class="stat-status_card-parent v-stats">
+            <div class="stat-status_cards"><div class="rail-tiles" aria-hidden="true"><span>SPEI</span><span>KYC</span><span>PLD</span></div></div>
+            <div class="prose_legal m-0 w-richtext"><div class="w-embed"><p>Conectores de proveedores <span style="opacity:0.6;">para SPEI, KYC, remesas, tarjetas y pasarela de pagos.</span></p></div></div>
+          </div>
+          <div class="stat-status_tag-row v-stats">
+            <div class="custom-tag v-tagdark"><div class="text-14 is-14">OnPrem</div></div>
+            <div class="custom-tag v-tagdark"><div class="text-14 is-14">IaaS</div></div>
+          </div>
+        </div>
+      </div>
+    </div></div>
+  </div></div>
+</section>
+
+<!-- ============================== BUILDING BLOCKS (motores) ============================== -->
+<section data-overflow="hidden" class="section-builder" id="motores" data-sec="blocks">
+  <div class="section-padding-x"><div class="w-layout-blockcontainer container w-container">
+    <div data-padding-bottom="xl" data-padding-top="xxl" class="flex-section-padding-y"><div data-inner-spacing="md" class="flex-section-spacing">
+      <div class="text-card_align"><div class="text-card_max-width v-mw700"><div class="text-card_heading_max-width"><h2 class="text-card_heading">Todos los motores para operar cualquier producto financiero</h2></div></div></div>
+      <div>
+        <div class="two-col_grid">
+          <!-- card 1: Motor de Débito -->
+          <div><a data-has-link-arrow="default" href="#plataforma" class="prod-card_link is-outline w-inline-block">
+            <div class="media-box_content is-outline">
+              <div class="media-box_heading"><h3 class="text-h6 grow">Motor de Débito</h3><div class="submenu-top-level-arrow-box arrow-34"><div class="link-arrow"><img src="../assets/v2/arrow-ur.svg" alt="" class="object-contain"></div></div></div>
+              <p class="text-p-18 max-w-384">Ofrece a tus clientes cuentas o saldos propios.</p>
+              <div class="tag-carousel"><div class="custom-tag"><div class="text-14 is-14">Cuentas de débito</div></div><div class="custom-tag"><div class="text-14 is-14">Retenciones</div></div></div>
+            </div>
+            <div class="media-box pro-card"><div class="ui-code_wrapper">
+              <div class="ui-code_ui"><div class="rx rx-debit"><div class="rx-in">
+                <div class="ph"><div class="ph-top"><span>9:41</span><i class="ph-notch"></i><span class="ph-ic"><b></b><b></b><b></b></span></div>
+                  <div class="ph-list">
+                    <div class="ph-row" data-i="0"><span class="ph-ico"><svg viewBox="0 0 20 20"><path d="M4 10.5l4 4 8-9"/></svg></span><span class="ph-t">Autorización <small>• 8812</small></span><span class="ph-amt">−$249.00</span></div>
+                    <div class="ph-row" data-i="1"><span class="ph-ico"><svg viewBox="0 0 20 20"><rect x="4" y="8.5" width="12" height="8.5" rx="1.5"/><path d="M6.5 8.5V6a3.5 3.5 0 0 1 7 0v2.5"/></svg></span><span class="ph-t">Retención <small>• 3307</small></span><span class="ph-amt">$1,200.00</span></div>
+                    <div class="ph-row" data-i="2"><span class="ph-ico"><svg viewBox="0 0 20 20"><path d="M15.5 7.5A6 6 0 1 0 16 12"/><path d="M16.3 3.8v4h-4"/></svg></span><span class="ph-t">Reverso <small>• 5521</small></span><span class="ph-amt is-pos">+$350.00</span></div>
+                  </div>
+                </div>
+                <div class="acct">
+                  <div class="acct-h"><span class="acct-ico"><svg viewBox="0 0 20 20"><rect x="3" y="6" width="14" height="10" rx="1.5"/><path d="M7 6V4.5h6V6M3 10h14"/></svg></span><span>Cuenta de débito</span><span class="acct-badge">Activa</span></div>
+                  <div class="acct-l">Saldo disponible</div>
+                  <div class="acct-bal"><small>$</small><span data-count-to="17250.20">17,250.20</span></div>
+                  <div class="acct-cols"><div><div class="acct-l">Número de cuenta</div><div class="acct-v">••••••••0042</div></div><div><div class="acct-l">Retenido</div><div class="acct-v">$1,200.00</div></div></div>
+                </div>
+              </div></div></div>
+              <div class="ui-code_code"><div class="ui-code_code-box" data-validar="JSON ilustrativo, no es el esquema real de la API"><div class="code-tabs_code-wrapper ui-code"><div class="ui-code_browser"><i></i><i></i><i></i></div>
+                <div class="code-tabs_code-block"><div class="text-code line-number">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18</div></div>
+                <div class="code-tabs_code-block"><div class="text-code"><p class="text-code">{<br>&nbsp;&nbsp;"data": {<br>&nbsp;&nbsp;&nbsp;&nbsp;"tipo": <span class="code-highlight">"cuentaDebito"</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;"id": <span class="code-highlight">"0042"</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;"atributos": {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"creadaEl": <span class="code-highlight">"2026-11-13T10:19:30.409Z"</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"titular": <span class="code-highlight">"Cliente 0042"</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"estatus": <span class="code-highlight">"Activa"</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"producto": <span class="code-highlight">"valorAlmacenado"</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"canal": <span class="code-highlight">"app-movil"</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"cuenta": <span class="code-highlight">"0000000042"</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"moneda": <span class="code-highlight">"MXN"</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"saldo": <span class="code-highlight">18450.20</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"retenido": <span class="code-highlight">1200</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"disponible": <span class="code-highlight">17250.20</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"etiquetas": {</p></div></div>
+              </div></div></div>
+            </div></div>
+            <div class="prod-card_bg"><div class="aurora"></div></div>
+          </a></div>
+          <!-- card 2: Transferencias -->
+          <div><a data-has-link-arrow="default" href="#plataforma" class="prod-card_link v-c1 is-outline w-inline-block">
+            <div class="media-box_content is-outline">
+              <div class="media-box_heading"><h3 class="text-h6 grow">Transferencias</h3><div class="submenu-top-level-arrow-box arrow-34"><div class="link-arrow"><img src="../assets/v2/arrow-ur.svg" alt="" class="object-contain"></div></div></div>
+              <p class="text-p-18 max-w-384">Envía y recibe fondos de forma programática.</p>
+              <div class="tag-carousel"><div class="custom-tag"><div class="text-14 is-14">SPEI</div></div><div class="custom-tag"><div class="text-14 is-14">Remesas</div></div><div class="custom-tag"><div class="text-14 is-14">Transferencias internas</div></div><div class="custom-tag"><div class="text-14 is-14">Pasarela de pagos</div></div><div class="custom-tag"><div class="text-14 is-14">Depósitos referenciados</div></div><div class="custom-tag"><div class="text-14 is-14">Tarjetas</div></div></div>
+            </div>
+            <div class="media-box pro-card"><div class="ui-code_wrapper">
+              <div class="ui-code_ui"><div class="rx rx-move"><div class="rx-in">
+                <div class="mv">
+                  <div class="mv-top">
+                    <div class="mv-party"><span class="mv-av">AC</span><b>Cuenta 0042</b><small>Débito <i></i> 0042</small></div>
+                    <div class="mv-line"><i class="mv-solid"></i><span class="mv-mid"><svg viewBox="0 0 12 12"><path d="M2 6h7.5M6.5 3l3 3-3 3"/></svg></span><i class="mv-dash"></i><i class="mv-dot"></i></div>
+                    <div class="mv-party"><span class="mv-av is-spei"><svg viewBox="0 0 20 20"><path d="M4 7h11.5M12.5 4l3 3-3 3M16 13H4.5M7.5 10l-3 3 3 3"/></svg></span><b>Cuenta externa</b><small>SPEI <i></i> 1290</small></div>
+                  </div>
+                  <div class="mv-ok"><span class="mv-check"><svg viewBox="0 0 12 12"><path d="M3 6.2l2 2 4-4.4"/></svg></span><div class="mv-status"><span class="s1">Procesando envío…</span><span class="s2">Transferencia enviada</span></div><div class="mv-amt"><small>$</small><span data-count-to="1500" data-dec="0">1,500</span></div></div>
+                </div>
+              </div></div></div>
+              <div class="ui-code_code"><div class="ui-code_code-box" data-validar="JSON ilustrativo, no es el esquema real de la API"><div class="code-tabs_code-wrapper ui-code"><div class="ui-code_browser"><i></i><i></i><i></i></div>
+                <div class="code-tabs_code-block"><div class="text-code line-number">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13</div></div>
+                <div class="code-tabs_code-block"><div class="text-code"><p class="text-code">{<br>&nbsp;&nbsp;"data": {<br>&nbsp;&nbsp;&nbsp;&nbsp;"tipo": <span class="code-highlight">"transferenciaSpei"</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;"id": <span class="code-highlight">"50"</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;"atributos": {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"creadaEl": <span class="code-highlight">"2026-11-13T16:01:19.346Z"</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"estatus": <span class="code-highlight">"Enviada"</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"monto": <span class="code-highlight">1500</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"origen": {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"cuenta": <span class="code-highlight">"0000000042"</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"producto": <span class="code-highlight">"debito"</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"destino": {</p></div></div>
+              </div></div></div>
+            </div></div>
+            <div class="prod-card_bg"><div class="aurora"></div></div>
+          </a></div>
+          <!-- card 3: Motor de Crédito -->
+          <div><a data-has-link-arrow="default" href="#plataforma" class="prod-card_link v-c2 is-outline w-inline-block">
+            <div class="media-box_content is-outline">
+              <div class="media-box_heading"><h3 class="text-h6 grow">Motor de Crédito</h3><div class="submenu-top-level-arrow-box arrow-34"><div class="link-arrow"><img src="../assets/v2/arrow-ur.svg" alt="" class="object-contain"></div></div></div>
+              <p class="text-p-18 max-w-384">Automatiza cada etapa del crédito que opera tu institución, de la solicitud hasta el cierre.</p>
+              <div class="tag-carousel"><div class="custom-tag"><div class="text-14 is-14">Tasa pactada</div></div><div class="custom-tag"><div class="text-14 is-14">Plazo pactado</div></div><div class="custom-tag"><div class="text-14 is-14">Ciclo de vida completo</div></div></div>
+            </div>
+            <div class="media-box pro-card"><div class="ui-code_wrapper">
+              <div class="ui-code_ui"><div class="rx rx-credit"><div class="rx-in">
+                <div class="cr-card cr-back"><span class="cr-brand">CRÉDITO</span><span class="cr-chip-t">Simple</span></div>
+                <div class="cr-card cr-front"><div class="cr-brand">CRÉDITO <em>0187</em></div><div class="cr-wave"></div><div class="cr-lbl">Monto</div><div class="cr-amt"><small>$</small>35,000.00</div><div class="cr-row"><span>Plazo 12 meses · Cliente 0187</span></div><div class="cr-row cr-row2"><span>Tasa pactada <b>2.0% mensual</b></span></div></div>
+                <div class="cr-steps">
+                  <div class="cr-step" data-s="0"><span>Solicitud</span><i class="cr-tg"></i></div>
+                  <div class="cr-step" data-s="1"><span>Evaluación</span><i class="cr-tg"></i></div>
+                  <div class="cr-step" data-s="2"><span>Aprobación</span><i class="cr-tg"></i></div>
+                  <div class="cr-step" data-s="3"><span>Dispersión</span><i class="cr-tg"></i></div>
+                  <div class="cr-step" data-s="4"><span>Pagos</span><b class="cr-pay"><small>12</small> / 12</b></div>
+                  <div class="cr-step" data-s="5"><span>Cierre</span><i class="cr-tg"></i></div>
+                </div>
+              </div></div></div>
+              <div class="ui-code_code"><div class="ui-code_code-box" data-validar="JSON ilustrativo, no es el esquema real de la API"><div class="code-tabs_code-wrapper ui-code"><div class="ui-code_browser"><i></i><i></i><i></i></div>
+                <div class="code-tabs_code-block"><div class="text-code line-number">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13</div></div>
+                <div class="code-tabs_code-block"><div class="text-code"><p class="text-code">{<br>&nbsp;&nbsp;"data": {<br>&nbsp;&nbsp;&nbsp;&nbsp;"tipo": <span class="code-highlight">"credito"</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;"id": <span class="code-highlight">"0187"</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;"atributos": {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"creadoEl": <span class="code-highlight">"2026-11-13T11:59:25.574Z"</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"etapa": <span class="code-highlight">"dispersion"</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"monto": <span class="code-highlight">35000</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"plazoMeses": <span class="code-highlight">12</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"tasaPactada": {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"valor": <span class="code-highlight">2.0</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"periodo": <span class="code-highlight">"mensual"</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},</p></div></div>
+              </div></div></div>
+            </div></div>
+            <div class="prod-card_bg"><div class="aurora"></div></div>
+          </a></div>
+          <!-- card 4: Motor de Depósito -->
+          <div><a data-has-link-arrow="default" href="#plataforma" class="prod-card_link v-c3 is-outline w-inline-block">
+            <div class="media-box_content is-outline">
+              <div class="media-box_heading"><h3 class="text-h6 grow">Motor de Depósito</h3><div class="submenu-top-level-arrow-box arrow-34"><div class="link-arrow"><img src="../assets/v2/arrow-ur.svg" alt="" class="object-contain"></div></div></div>
+              <p class="text-p-18 max-w-384">Ofrece depósitos a plazo fijo o a la vista, con pagos de rendimiento automáticos.</p>
+              <div class="tag-carousel"><div class="custom-tag"><div class="text-14 is-14">Plazo fijo</div></div><div class="custom-tag"><div class="text-14 is-14">A la vista</div></div><div class="custom-tag"><div class="text-14 is-14">Reinversión</div></div></div>
+            </div>
+            <div class="media-box pro-card"><div class="ui-code_wrapper">
+              <div class="ui-code_ui"><div class="rx rx-deposit"><div class="rx-in">
+                <div class="dp-a">
+                  <div class="dp-h">Depósito a plazo fijo</div>
+                  <div class="dp-ok"><span class="mv-check"><svg viewBox="0 0 12 12"><path d="M3 6.2l2 2 4-4.4"/></svg></span><div class="dp-okt">Contrato activo por 180 días</div><div class="dp-cap"><small>$</small>50,000<em>.00</em></div></div>
+                  <div class="dp-term"><span>Día <b data-day>1</b> de 180</span><i><b></b></i></div>
+                </div>
+                <div class="dp-b">
+                  <div class="dp-h">Rendimientos <span class="dp-badge">Automático</span></div>
+                  <div class="dp-next"><div class="dp-l">Próximo pago</div><div class="dp-big"><small>$</small><span>395</span><em>.83</em></div></div>
+                  <div class="dp-rows"><div><span>Tasa pactada</span><span>9.5% anual</span></div><div><span>Reinversión</span><span class="dp-sw"><i></i></span></div></div>
+                </div>
+              </div></div></div>
+              <div class="ui-code_code"><div class="ui-code_code-box" data-validar="JSON ilustrativo, no es el esquema real de la API"><div class="code-tabs_code-wrapper ui-code"><div class="ui-code_browser"><i></i><i></i><i></i></div>
+                <div class="code-tabs_code-block"><div class="text-code line-number">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13</div></div>
+                <div class="code-tabs_code-block"><div class="text-code"><p class="text-code">{<br>&nbsp;&nbsp;"data": {<br>&nbsp;&nbsp;&nbsp;&nbsp;"tipo": <span class="code-highlight">"depositoPlazoFijo"</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;"id": <span class="code-highlight">"0311"</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;"atributos": {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"creadoEl": <span class="code-highlight">"2026-11-13T10:19:30.409Z"</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"titular": <span class="code-highlight">"Cliente 0311"</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"estatus": <span class="code-highlight">"Activo"</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"plazoDias": <span class="code-highlight">180</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"moneda": <span class="code-highlight">"MXN"</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"capital": <span class="code-highlight">50000</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"reinversion": <span class="code-highlight">true</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"pagoRendimiento": <span class="code-highlight">"mensual"</span>,</p></div></div>
+              </div></div></div>
+            </div></div>
+            <div class="prod-card_bg"><div class="aurora"></div></div>
+          </a></div>
+        </div>
+      </div>
+    </div></div>
+  </div></div>
+</section>
+
+<!-- ============================== WHAT TEAMS BUILD (customer slider) ============================== -->
+<section data-overflow="hidden" class="section-builder v-offwhite" data-sec="slider">
+  <div class="section-padding-x"><div class="w-layout-blockcontainer container w-container">
+    <div data-padding-bottom="xl" data-padding-top="lg" class="flex-section-padding-y"><div data-inner-spacing="xs" class="flex-section-spacing">
+      <div class="text-card_align v-center"><div class="text-card_max-width"><div class="text-card_heading_max-width"><h2 class="text-card_heading v-h40">Qué construyes con Aurum</h2></div></div></div>
+      <div data-styled-cs-slider="wrapper" class="customer-slider_wrapper">
+        <div data-styled-cs-slider="nav" class="customer-slider_nav">
+          <div class="customer-slider_button-box"><button class="customer-slider_button" aria-pressed="true"><span class="inst-mark"><svg viewBox="0 0 20 20"><rect x="5.5" y="2" width="9" height="16" rx="2"/><path d="M9 15.5h2"/></svg>Fintechs</span></button><div class="customer-slider_button-indicator"><div class="customer-slider_button-active"></div></div></div>
+          <div class="customer-slider_button-box"><button class="customer-slider_button" aria-pressed="false"><span class="inst-mark"><svg viewBox="0 0 20 20"><path d="M3 15.5l4-4 3 3 7-7"/><path d="M12.5 7.5H17V12"/></svg>SOFOMes</span></button><div class="customer-slider_button-indicator"><div class="customer-slider_button-active"></div></div></div>
+          <div class="customer-slider_button-box"><button class="customer-slider_button" aria-pressed="false"><span class="inst-mark"><svg viewBox="0 0 20 20"><circle cx="7" cy="7" r="2.6"/><circle cx="13.5" cy="7" r="2.6"/><path d="M2.5 16c.6-2.7 2.3-4.2 4.5-4.2s3.9 1.5 4.5 4.2M9.5 13c.9-.8 2.2-1.2 4-1.2 2.2 0 3.9 1.5 4.5 4.2"/></svg>Cooperativas</span></button><div class="customer-slider_button-indicator"><div class="customer-slider_button-active"></div></div></div>
+          <div class="customer-slider_button-box"><button class="customer-slider_button" aria-pressed="false"><span class="inst-mark"><svg viewBox="0 0 20 20"><rect x="3" y="2.5" width="9" height="15"/><path d="M12 7.5h5v10h-5M5.5 6h1M8.5 6h1M5.5 9h1M8.5 9h1M5.5 12h1M8.5 12h1M7 17.5v-2.5"/></svg>Empresas</span></button><div class="customer-slider_button-indicator"><div class="customer-slider_button-active"></div></div></div>
+        </div>
+        <div data-styled-cs-slider="slides" class="customer-slider_slides">
+          <!-- slide 1 -->
+          <div class="customer-slider_slide">
+            <div class="customer-slider_thumbnail"><div class="media-box full"><div class="rx rx-th th-wallet"><div class="rx-in">
+              <div class="tw-top"><div class="tw-tl"><svg viewBox="0 0 20 20"><path d="M16 7.5A6.5 6.5 0 1 0 16.5 12"/><path d="M16.8 3.5v4.2h-4.2"/></svg>Cashback del mes</div><span class="tw-tag">Puntos</span><div class="tw-tv"><small>$</small>184.20 <em>▲ 3,2%</em></div></div>
+              <div class="tw-acct"><div class="acct-h"><span class="acct-ico"><svg viewBox="0 0 20 20"><path d="M3 6.5h12.5a1.5 1.5 0 0 1 1.5 1.5v7a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 3 15V5.5A1.5 1.5 0 0 1 4.5 4H14v2.5"/></svg></span><span>Cartera electrónica</span><span class="acct-badge is-gold">MXN</span></div><div class="acct-l">Saldo</div><div class="acct-bal"><small>$</small>12,840<em>.50</em></div><div class="acct-cols"><div><div class="acct-l">Cuenta</div><div class="acct-v">••••••••0042</div></div><div><div class="acct-l">Canal</div><div class="acct-v">App móvil</div></div></div></div>
+              <div class="tw-chart"><div class="tw-ct">Movimientos SPEI</div><div class="tw-bars"><i style="--h:42%"></i><i style="--h:63%"></i><i style="--h:55%"></i><i style="--h:80%"></i><i style="--h:70%"></i><i style="--h:66%"></i><i style="--h:92%"></i></div><svg class="tw-line" viewBox="0 0 100 40" preserveAspectRatio="none"><path d="M2 32 L17 30 L31 26 L46 22 L60 24 L74 14 L90 12 L98 4"/></svg><div class="tw-x"><span>Jun</span><span>Jul</span><span>Ago</span><span>Sep</span><span>Oct</span><span>Nov</span><span>Dic</span></div></div>
+            </div></div></div></div>
+            <div class="customer-slider_slide-content">
+              <div class="max-w-32rem"><h3 class="text-h6">Tu fintech lanza una cartera electrónica con cuentas, SPEI, cashback y puntos de lealtad.</h3>
+                <div class="customer-slide_slide-tags"><div class="custom-tag"><div class="text-14 is-14">Motor de Débito</div></div><div class="custom-tag"><div class="text-14 is-14">SPEI</div></div><div class="custom-tag"><div class="text-14 is-14">KYC</div></div><div class="custom-tag"><div class="text-14 is-14">Pasarela de pagos</div></div><div class="custom-tag"><div class="text-14 is-14">Cashback</div></div><div class="custom-tag"><div class="text-14 is-14">Puntos de lealtad</div></div><div class="custom-tag"><div class="text-14 is-14">Remesas</div></div><div class="custom-tag"><div class="text-14 is-14">App móvil</div></div></div>
+              </div>
+              <div class="customer-slider_slide-quote-logo"><div class="customer-slider_quote"><p class="text-quote-16">Opera todo desde el Portal Admin: tu Área de Débito, Tesorería y Área contable trabajan sobre los mismos datos en tiempo real.</p><div class="quote-attribution"><div class="quote-image"><span class="qi"><svg viewBox="0 0 20 20"><rect x="2.5" y="4" width="15" height="11" rx="1.5"/><path d="M2.5 7.5h15M7 17.5h6"/></svg></span></div><div class="quote-attribution-text"><div class="text-p-14 opacity-100">Portal Admin</div><div class="text-p-14">Incluido en Aurum Core</div></div></div></div></div>
+            </div>
+          </div>
+          <!-- slide 2 -->
+          <div class="customer-slider_slide">
+            <div class="customer-slider_thumbnail"><div class="media-box full"><div class="rx rx-th th-sofom"><div class="rx-in">
+              <div class="ts-top"><div class="tw-tl"><svg viewBox="0 0 20 20"><path d="M10 2.5l6 2.5v4.5c0 4-2.6 6.6-6 8-3.4-1.4-6-4-6-8V5z"/></svg>Validaciones del lote</div><div class="ts-checks"><span class="ok">KYC</span><span class="ok">PLD</span><span class="ok">Listas</span></div></div><div class="ts-panel"><div class="ts-h"><span>Dispersión SPEI · Lote 0412</span><span class="acct-badge is-gold">Nómina</span></div><div class="ts-row"><span>Crédito 0187</span><span>$35,000.00</span><b class="st" data-st="2">Liquidada</b></div><div class="ts-row"><span>Crédito 0188</span><span>$12,500.00</span><b class="st" data-st="2">Liquidada</b></div><div class="ts-row"><span>Crédito 0189</span><span>$8,000.00</span><b class="st" data-st="1">Enviada</b></div><div class="ts-row"><span>Crédito 0190</span><span>$20,000.00</span><b class="st" data-st="0">En cola</b></div><div class="ts-row"><span>Crédito 0191</span><span>$15,000.00</span><b class="st" data-st="0">En cola</b></div><div class="ts-tot"><span>Total del lote</span><b>$90,500.00</b></div></div>
+            </div></div></div></div>
+            <div class="customer-slider_slide-content">
+              <div class="max-w-32rem"><h3 class="text-h6">Tu SOFOM opera sus préstamos de nómina y microcréditos en su propio core, con dispersión por SPEI.</h3>
+                <div class="customer-slide_slide-tags"><div class="custom-tag"><div class="text-14 is-14">Motor de Crédito</div></div><div class="custom-tag"><div class="text-14 is-14">KYC y PLD</div></div></div>
+              </div>
+              <div class="customer-slider_slide-quote-logo"><div class="customer-slider_quote"><p class="text-quote-16" data-validar="auditoría ligada a usuario y rol">Tu Área de Crédito sigue cada etapa del ciclo, y tu Área de Auditoría consulta el registro de actividad sin pedir reportes a nadie. Cada acción queda ligada a su usuario y a su rol, con controles de acceso por área.</p><div class="quote-attribution"><div class="quote-image"><span class="qi"><svg viewBox="0 0 20 20"><path d="M10 2.5l6 2.5v4.5c0 4-2.6 6.6-6 8-3.4-1.4-6-4-6-8V5z"/><path d="M7.5 10l2 2 3.5-4"/></svg></span></div><div class="quote-attribution-text"><div class="text-p-14 opacity-100">Registro de auditoría</div><div class="text-p-14">Controles de acceso por área</div></div></div></div></div>
+            </div>
+          </div>
+          <!-- slide 3 -->
+          <div class="customer-slider_slide">
+            <div class="customer-slider_thumbnail"><div class="media-box full"><div class="rx rx-th th-coop"><div class="rx-in">
+              <div class="tc-panel"><div class="ts-h"><span>Depósito a plazo fijo</span><span class="acct-badge is-gold">180 días</span></div><div class="acct-l">Capital</div><div class="acct-bal"><small>$</small>50,000<em>.00</em></div>
+                <div class="tc-sched"><div class="tc-st">Pagos de rendimiento</div><div class="tc-bars"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="tw-x"><span>Dic</span><span>Ene</span><span>Feb</span><span>Mar</span><span>Abr</span><span>May</span></div></div>
+              </div>
+              <div class="tc-side"><div class="tw-tl">A la vista</div><div class="tw-tv"><small>$</small>8,420<em>.00</em></div><div class="tc-re"><span>Reinversión</span><span class="dp-sw is-on"><i></i></span></div></div>
+            </div></div></div></div>
+            <div class="customer-slider_slide-content">
+              <div class="max-w-32rem"><h3 class="text-h6">Tu cooperativa ofrece cuentas a la vista y depósitos a plazo fijo con pagos de rendimiento automáticos.</h3>
+                <div class="customer-slide_slide-tags"><div class="custom-tag"><div class="text-14 is-14">Motor de Depósito</div></div><div class="custom-tag"><div class="text-14 is-14">Motor de Débito</div></div><div class="custom-tag"><div class="text-14 is-14">Depósitos referenciados</div></div><div class="custom-tag"><div class="text-14 is-14">SPEI</div></div><div class="custom-tag"><div class="text-14 is-14">Reportes operativos</div></div><div class="custom-tag"><div class="text-14 is-14">Sistemas contables</div></div></div>
+              </div>
+              <div class="customer-slider_slide-quote-logo"><div class="customer-slider_quote"><p class="text-quote-16">Reinvertir capital es simple para tus socios, y tu Tesorería ve cada vencimiento y cada pago de rendimiento desde el Portal Admin.</p><div class="quote-attribution"><div class="quote-image"><span class="qi"><svg viewBox="0 0 20 20"><rect x="3" y="4" width="14" height="13" rx="1.5"/><path d="M3 8h14M7 2.5v3M13 2.5v3M7 12h2"/></svg></span></div><div class="quote-attribution-text"><div class="text-p-14 opacity-100">Motor de Depósito</div><div class="text-p-14">Plazo fijo y a la vista</div></div></div></div></div>
+            </div>
+          </div>
+          <!-- slide 4 -->
+          <div class="customer-slider_slide">
+            <div class="customer-slider_thumbnail"><div class="media-box full"><div class="rx rx-th th-corp"><div class="rx-in">
+              <div class="te-pts"><div class="tw-tl"><svg viewBox="0 0 20 20"><path d="M10 2.5l2.3 4.7 5.2.8-3.8 3.6.9 5.1L10 14.3l-4.6 2.4.9-5.1L2.5 8l5.2-.8z"/></svg>Programa de recompensas</div><div class="te-big"><span data-pts>12,480</span> <small>puntos</small></div><div class="te-prog"><i></i></div><div class="te-meta"><span>Nivel Oro</span><span>2,520 para el siguiente</span></div></div>
+              <div class="te-card"><span class="te-logo"><img src="../assets/brand/icon.png" alt=""></span><span class="te-n">•••• 4021</span><span class="te-t">Débito</span></div>
+              <div class="te-toast"><span class="mv-check"><svg viewBox="0 0 12 12"><path d="M3 6.2l2 2 4-4.4"/></svg></span><div><b>Remesa recibida</b><small>Cuenta 0042 · $3,200.00</small></div></div>
+            </div></div></div></div>
+            <div class="customer-slider_slide-content">
+              <div class="max-w-32rem"><h3 class="text-h6">Tu empresa entra al mundo financiero con un programa de recompensas, tarjetas de débito y remesas.</h3>
+                <div class="customer-slide_slide-tags"><div class="custom-tag"><div class="text-14 is-14">Motor de Débito</div></div><div class="custom-tag"><div class="text-14 is-14">Tarjetas</div></div><div class="custom-tag"><div class="text-14 is-14">Remesas</div></div><div class="custom-tag"><div class="text-14 is-14">Recompensas</div></div><div class="custom-tag"><div class="text-14 is-14">API Multicanal</div></div></div>
+              </div>
+              <div class="customer-slider_slide-quote-logo"><div class="customer-slider_quote"><p class="text-quote-16">Conecta tu ERP, tu CRM y tus herramientas de análisis de datos con la API Multicanal y el Orquestador de procesos.</p><div class="quote-attribution"><div class="quote-image"><span class="qi"><svg viewBox="0 0 20 20"><path d="M7 6l-4 4 4 4M13 6l4 4-4 4"/></svg></span></div><div class="quote-attribution-text"><div class="text-p-14 opacity-100">API Multicanal</div><div class="text-p-14">Integración en días</div></div></div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div></div>
+  </div></div>
+</section>
+
+<!-- ============================== FULL-STACK SCROLL TABS ============================== -->
+<section data-overflow="visible" class="section-builder" id="plataforma" data-sec="platform">
+  <div class="section-padding-x"><div class="w-layout-blockcontainer container w-container">
+    <div data-padding-bottom="xxl" data-padding-top="xl" class="flex-section-padding-y"><div data-inner-spacing="md" class="flex-section-spacing">
+      <div data-scroll-tabs="wrapper" class="scroll-tabs v-st">
+        <div data-scroll-tabs="inner" class="timed-accordions v-st">
+          <div class="timed-accordions_col timed-accordions_col--left v-st"><div class="timed-accordions_content-wrap"><div class="timed-accordions_content-inner">
+            <div class="timed-accordions_header is-desktop v-st"><h2 class="text-h2 v-st">Una plataforma modular, a la medida de tu institución.</h2>
+              <div class="button-wrapper mt-24"><div><a data-button-theme="black" href="https://meetings.hubspot.com/alejandroflores/aurumcore-mktg-fafm" target="_blank" rel="noopener" class="button button-secondary w-inline-block"><div class="button_arrow is-hidden"><img src="../assets/v2/chevron.svg" alt="" class="image-contain"></div><div class="button_label">Explora la plataforma</div><div class="button_arrow is-visible"><img src="../assets/v2/chevron.svg" alt="" class="image-contain"></div></a></div></div>
+            </div>
+            <div class="timed-accordions_accordions v-st">
+              <div data-tabs="button" class="timed-accordion_button"><div class="timed-accordion_item-timer"><div data-tabs="progress" class="timed-accordion_item-timer-inner"></div></div><div class="timed-accordion_content-alt"><h3 class="text-h8">Fábrica de productos</h3><p class="text-p-16">Tres motores modulares de producto sobre un mismo esquema transaccional.</p></div></div>
+              <div data-tabs="button" class="timed-accordion_button"><div class="timed-accordion_item-timer"><div data-tabs="progress" class="timed-accordion_item-timer-inner"></div></div><div class="timed-accordion_content-alt"><h3 class="text-h8">Portales y API</h3><p class="text-p-16">Opera con dos portales intuitivos y conecta tus canales por API.</p></div></div>
+              <div data-tabs="button" class="timed-accordion_button"><div class="timed-accordion_item-timer"><div data-tabs="progress" class="timed-accordion_item-timer-inner"></div></div><div class="timed-accordion_content-alt"><h3 class="text-h8">Control y operación</h3><p class="text-p-16">Accesos, auditoría, reportes y conectores de PLD: todo en un solo lugar.</p></div></div>
+            </div>
+          </div></div></div>
+          <div class="timed-accordions_col timed-accordions--right"><div class="timed-accordion_assets v-st"><div class="aurora-dark" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+            <div data-tabs="visual-item" class="full-stack_panel"><div class="full-stack_pane">
+<div class="ax ax-fab" data-ax="fab">
+  <div class="ax-h"><span class="ax-k">Fábrica de productos</span><span class="ax-live"><i></i>Sin código</span></div>
+  <div class="ax-eng"><span data-e="0">Débito</span><span data-e="1">Crédito</span><span data-e="2">Depósito</span></div>
+  <div class="ax-card">
+    <div class="ax-row"><small>Producto</small><b class="ax-name">Crédito de nómina</b></div>
+    <div class="ax-row"><small class="ax-l1">Monto máximo</small><b class="ax-v1">$35,000</b></div>
+    <div class="ax-bar"><i class="ax-fill"></i></div>
+    <div class="ax-row"><small class="ax-l2">Plazo</small><b class="ax-v2">24 meses</b></div>
+    <div class="ax-row"><small class="ax-l3">Tasa anual fija</small><b class="ax-v3">18.0%</b></div>
+    <div class="ax-ch"><span>App</span><span>Web</span><span>Call center</span><span>Chatbot</span></div>
+  </div>
+  <div class="ax-btn"><span>Publicar producto</span></div>
+</div>
+            </div></div>
+            <div data-tabs="visual-item" class="full-stack_panel"><div class="full-stack_pane">
+<div class="ax ax-api" data-ax="api">
+  <div class="ax-h"><span class="ax-k">API Multicanal</span><span class="ax-live"><i></i>sandbox</span></div>
+  <pre class="ax-code"><span class="m">POST</span> /v1/debit/authorizations
+{
+  <span class="k">"account"</span>: <span class="s">"0042"</span>,
+  <span class="k">"amount"</span>: <span class="n">318.90</span>,
+  <span class="k">"channel"</span>: <span class="s">"app"</span>
+}</pre>
+  <div class="ax-res"><span class="ax-201">201</span><span>Autorizada · folio AUT-7781</span><em>42 ms</em></div>
+  <div class="ax-portal"><div class="ax-ph"><b>Portal de Atención</b><small>Cuenta ••0042</small></div>
+    <div class="ax-feed"></div></div>
+</div>
+            </div></div>
+            <div data-tabs="visual-item" data-animate-items="true" class="full-stack_panel"><div class="full-stack_pane">
+<div class="ax ax-ctl" data-ax="ctl">
+  <div class="ax-h"><span class="ax-k">Registro de auditoría</span><span class="ax-live"><i></i>en vivo</span></div>
+  <div class="ax-log"></div>
+  <div class="ax-pld"><span class="ax-sh">!</span><div><b>Alerta PLD · Operación inusual</b><small>Cuenta ••6630 · 5 depósitos en 1 hora</small></div><span class="ax-tag">Revisión</span></div>
+  <div class="ax-roles"><span>Tesorería</span><span>Crédito</span><span>Contabilidad</span><span>Auditoría</span></div>
+</div>
+            </div></div>
+          </div></div>
+          <div class="timed-accordions_header is-mobile v-st"><h2 class="text-h2 v-st">Una plataforma modular, a la medida de tu institución.</h2>
+            <div class="button-wrapper mt-24 larger-mobile v-st"><div><a data-button-theme="black" href="https://meetings.hubspot.com/alejandroflores/aurumcore-mktg-fafm" target="_blank" rel="noopener" class="button button-secondary w-inline-block"><div class="button_arrow is-hidden"><img src="../assets/v2/chevron.svg" alt="" class="image-contain"></div><div class="button_label">Explora la plataforma</div><div class="button_arrow is-visible"><img src="../assets/v2/chevron.svg" alt="" class="image-contain"></div></a></div></div>
+          </div>
+        </div>
+      </div>
+    </div></div>
+  </div></div>
+</section>
+
+<!-- ============================== TWO-COL CTA (portales) ============================== -->
+<section data-overflow="hidden" class="section-builder" id="portales" data-sec="portals">
+  <div class="section-padding-x"><div class="w-layout-blockcontainer container w-container">
+    <div data-padding-bottom="xl" data-padding-top="none" class="flex-section-padding-y"><div data-inner-spacing="md" class="flex-section-spacing">
+      <div class="two-col-cta">
+        <div class="two-col-cta_over">
+          <div class="two-col-cta_text">
+            <div class="two-col-cta_inner"><h2 class="text-h4" data-validar="portales operables desde el día uno">Opera con portales listos desde el primer día</h2><p class="text-p-18">Gestiona clientes, cuentas y productos desde el Portal Admin y el de Atención al Cliente.</p></div>
+            <div class="button-wrapper"><a class="button button-primary w-inline-block" href="https://meetings.hubspot.com/alejandroflores/aurumcore-mktg-fafm" data-button-theme="black" target="_blank" rel="noopener"><div class="button_arrow is-hidden"><img src="../assets/v2/chevron-dark.svg" alt="" class="image-contain"></div><div class="button_label">Conoce más</div><div class="button_arrow is-visible"><img src="../assets/v2/chevron-dark.svg" alt="" class="image-contain"></div></a></div>
+          </div>
+          <div class="two-col-cta_media-box"><div class="rive-container aspect-630-400"><div class="rx rx-portal"><div class="rx-in">
+            <div class="pa-win">
+              <div class="pa-side"><img class="pa-logo" src="../assets/brand/icon.png" alt=""><span class="is-on"><svg viewBox="0 0 20 20"><rect x="3" y="6" width="14" height="10" rx="1.5"/><path d="M3 10h14"/></svg>Cuentas</span><span><svg viewBox="0 0 20 20"><path d="M3 15.5l4-4 3 3 7-7"/></svg>Créditos</span><span><svg viewBox="0 0 20 20"><rect x="3" y="4" width="14" height="13" rx="1.5"/><path d="M3 8h14"/></svg>Depósitos</span><span><svg viewBox="0 0 20 20"><path d="M4 7h11.5M12.5 4l3 3-3 3M16 13H4.5M7.5 10l-3 3 3 3"/></svg>Conciliación</span><span><svg viewBox="0 0 20 20"><path d="M4 16V9M8 16V5M12 16v-6M16 16V7"/></svg>Reportes</span><span><svg viewBox="0 0 20 20"><path d="M10 2.5l6 2.5v4.5c0 4-2.6 6.6-6 8-3.4-1.4-6-4-6-8V5z"/></svg>Auditoría</span></div>
+              <div class="pa-main">
+                <div class="pa-h"><b>Portal Admin</b><span class="pa-search">Libro mayor · hoy</span><span class="pa-user">MXN</span></div>
+                <div class="pa-kpis"><div><small>Movimientos hoy</small><b data-kpi>1,248</b></div><div><small>Autorizaciones</small><b data-kpi2>3,912</b></div><div><small>Conciliado</small><b>100%</b></div></div>
+                <div class="pa-table"><div class="pa-tr pa-th"><span>Cuenta</span><span>Movimiento</span><span>Monto</span><span>Estatus</span></div>
+                  <div class="pa-rows"></div>
+                </div>
+              </div>
+              <div class="pa-toast"><span class="mv-check"><svg viewBox="0 0 12 12"><path d="M3 6.2l2 2 4-4.4"/></svg></span><div><b>Reverso aplicado</b><small>Cuenta 0042 · $350.00</small></div></div>
+            </div>
+          </div></div></div></div>
+        </div>
+        <div class="two-col-background"><div class="two-col-glow" aria-hidden="true"><i></i><i></i><i></i></div><div class="two-col-background_overlay"></div><div class="two-col-background_overlay is-mobile"></div></div>
+      </div>
+    </div></div>
+  </div></div>
+</section>
+
+<!-- ============================== USE CASES SWIPER ============================== -->
+<section data-overflow="hidden" class="section-builder" id="casos" data-sec="cases">
+  <div class="section-padding-x"><div class="w-layout-blockcontainer container w-container">
+    <div data-padding-bottom="xl" data-padding-top="none" class="flex-section-padding-y"><div data-inner-spacing="md" class="flex-section-spacing">
+      <div><div class="swiper-initialise">
+        <div class="swiper-heading align-end"><div class="swiper-heading_box"><h2 class="text-h3">16 productos que tu institución puede lanzar</h2></div>
+          <div class="swiper-buttons mt-flex-swiper right"><div class="swiper-button swiper-button-prev_cs swiper-button-disabled" role="button" aria-label="Anterior"><img src="../assets/v2/arrow-right.svg" alt="" class="image-contain"></div><div class="swiper-button swiper-button-next_cs" role="button" aria-label="Siguiente"><img src="../assets/v2/arrow-right.svg" alt="" class="image-contain"></div></div>
+        </div>
+        <div class="swiper-container"><div class="swiper-wrapper" id="uc-wrapper"></div></div>
+      </div></div>
+    </div></div>
+  </div></div>
+</section>
+
+<!-- ============================== RESOURCES ============================== -->
+<section data-overflow="hidden" class="section-builder v-offwhite" data-sec="resources">
+  <div class="section-padding-x"><div class="w-layout-blockcontainer container w-container">
+    <div data-padding-bottom="lg" data-padding-top="lg" class="flex-section-padding-y"><div data-inner-spacing="md" class="flex-section-spacing">
+      <div data-enable-selected-posts="true" class="lat-resources_flex">
+        <div class="lat-resources_header">
+          <div class="max-w-14rem"><h2 class="text-h4">Recursos</h2></div>
+          <div class="lat-resources_selected-posts"><div class="resources-listint_text-list">
+            <div><a href="https://www.aurumcore.com/blog/la-brecha-entre-lo-que-los-bancos-ofrecen-y-lo-que-busca-el-usuario" target="_blank" rel="noopener" class="text-resource-listing w-inline-block"><div class="flex-wrap opacity-70"><div class="icon-12"><img src="../assets/v2/book.svg" alt="" class="image-contain"></div><div class="text-p-12">Blog</div><div class="meta-divider"></div><div class="text-p-12">31 ago 2026</div></div><div class="text-p-20 opacity-100">La brecha entre lo que los bancos ofrecen y lo que busca el usuario</div></a></div>
+            <div><a href="https://www.aurumcore.com/blog/glosario-para-entender-las-instituciones-financieras-de-nueva-generacion" target="_blank" rel="noopener" class="text-resource-listing w-inline-block"><div class="flex-wrap opacity-70"><div class="icon-12"><img src="../assets/v2/book.svg" alt="" class="image-contain"></div><div class="text-p-12">Blog</div><div class="meta-divider"></div><div class="text-p-12">24 ago 2026</div></div><div class="text-p-20 opacity-100">Glosario de las instituciones financieras de nueva generación</div></a></div>
+          </div></div>
+          <div class="mt-auto"><a class="button button-primary w-inline-block" href="https://www.aurumcore.com/blog" target="_blank" rel="noopener" data-button-theme="black"><div class="button_arrow is-hidden"><img src="../assets/v2/chevron-dark.svg" alt="" class="image-contain"></div><div class="button_label">Ver todo el blog</div><div class="button_arrow is-visible"><img src="../assets/v2/chevron-dark.svg" alt="" class="image-contain"></div></a></div>
+        </div>
+        <div class="lat-resources_wrapper"><div class="lat-resources_grid">
+          <a data-has-link-arrow="switch" href="https://dev.aurumcore.com/" target="_blank" rel="noopener" class="resource-listing_card-black invert-icon w-inline-block">
+            <div class="resource-card_content"><div class="flex-wrap opacity-70"><div class="icon-12"><img src="../assets/v2/book.svg" alt="" class="image-contain animate-filter"></div><div class="text-p-12">Guía</div><div class="meta-divider"></div><div class="text-p-12">Desarrolladores</div></div><h2 class="text-h7">Documentación de la API Multicanal de Aurum Core</h2></div>
+            <div class="resource-thumbnail mt-auto is_348-230"><div class="rx rx-docs"><div class="rx-in">
+              <div class="dc-code" data-validar="SDK ilustrativo, no es la API real"><span>const</span> cuenta = <span>await</span> aurum.cuentas.<em>crear</em>({<br>&nbsp;&nbsp;producto: <i>'debito'</i>,<br>&nbsp;&nbsp;titular: <i>'Cliente 0042'</i>,<br>&nbsp;&nbsp;moneda: <i>'MXN'</i><br>});<br><span>await</span> aurum.spei.<em>enviar</em>({ monto: <b>1500</b> });<br><span>const</span> credito = aurum.creditos.<em>solicitud</em>(...)<br>aurum.depositos.<em>plazoFijo</em>({ dias: <b>180</b> });<br><span>const</span> kyc = <span>await</span> aurum.kyc.<em>validar</em>(id);</div>
+              <div class="dc-dia"><div class="dc-l"><span>Apps móviles</span><span>Apps web</span><span>Wearables</span><span>Chatbots</span><span>Call center</span></div><svg class="dc-wires" viewBox="0 0 60 120" preserveAspectRatio="none"><path d="M0 12 C30 12 30 60 60 60M0 36 C30 36 30 60 60 60M0 60 H60M0 84 C30 84 30 60 60 60M0 108 C30 108 30 60 60 60"/></svg><div class="dc-core"><small>API</small><b>aurum core</b></div><div class="dc-r">Tu<br>institución</div></div>
+            </div></div></div>
+            <div class="ml-auto"><div class="link-arrow"><img src="../assets/v2/arrow-ur.svg" alt="" class="object-contain"></div></div>
+          </a>
+          <a data-has-link-arrow="switch" href="https://www.aurumcore.com/blog/por-que-la-seguridad-define-el-exito-de-una-fintech" target="_blank" rel="noopener" class="resource-listing_card-black invert-icon w-inline-block">
+            <div class="resource-card_content"><div class="flex-wrap opacity-70"><div class="icon-12"><img src="../assets/v2/book.svg" alt="" class="image-contain animate-filter"></div><div class="text-p-12">Blog</div><div class="meta-divider"></div><div class="text-p-12">3 sep 2026</div></div><h2 class="text-h7">Por qué la seguridad define el éxito de una fintech</h2></div>
+            <div class="resource-thumbnail mt-auto is_348-230"><div class="rx rx-sec"><div class="rx-in">
+              <div class="sc-board"><div class="sc-h"><span>TU INSTITUCIÓN</span><span>AURUM</span></div><div class="sc-sl"><i style="--p:30%"></i></div><div class="sc-sl"><i style="--p:78%"></i></div><div class="sc-sl"><i style="--p:52%"></i></div><div class="sc-lbls"><span>Accesos</span><span>Auditoría</span><span>Reportes</span></div></div>
+              <svg class="sc-shield" viewBox="0 0 60 70"><path d="M30 4l24 9v18c0 16-10.5 26.5-24 33C16.5 57.5 6 47 6 31V13z"/><path d="M20 35l7 7 14-15"/></svg>
+            </div></div></div>
+            <div class="ml-auto"><div class="link-arrow"><img src="../assets/v2/arrow-ur.svg" alt="" class="object-contain"></div></div>
+          </a>
+        </div></div>
+      </div>
+    </div></div>
+  </div></div>
+</section>
+
+</div>
+</main>
+
+<!-- ============================== FOOTER CTA ============================== -->
+<section class="section bg-black" data-sec="cta">
+  <div class="section-padding-x"><div class="w-layout-blockcontainer container w-container">
+    <div data-padding-bottom="lg" data-padding-top="lg" class="flex-section-padding-y">
+      <div class="footer-cta_content">
+        <div class="space-y space-y-5 center"><h2 class="text-h3">Crea tu producto financiero de próxima generación</h2></div>
+        <div><a class="button button-primary w-inline-block" href="https://meetings.hubspot.com/alejandroflores/aurumcore-mktg-fafm" data-button-theme="white" target="_blank" rel="noopener"><div class="button_arrow is-hidden"><img src="../assets/v2/chevron.svg" alt="" class="image-contain"></div><div class="button_label">Agenda una demo</div><div class="button_arrow is-visible"><img src="../assets/v2/chevron.svg" alt="" class="image-contain"></div></a></div>
+      </div>
+    </div>
+  </div></div>
+</section>
+
+<!-- ============================== FOOTER ============================== -->
+<section data-sec="footer">
+  <div class="section-padding-x"><div class="w-layout-blockcontainer container w-container">
+    <div data-padding-top="lg" data-padding-bottom="md" class="flex-section-padding-y"><div data-inner-spacing="md" class="flex-section-spacing inset-footer">
+      <div class="footer_main">
+        <div class="footer_main-menu fnode-menu">
+          <div class="footer_menu-column"><h2 class="text-footer_heading">Plataforma</h2><ul role="list" class="footer_menu-list"><li><a data-button-theme="black" href="#plataforma" class="text-footer_link underline-link">Aurum Core</a></li><li><a data-button-theme="black" href="#portales" class="text-footer_link underline-link">Portales</a></li></ul></div>
+          <div class="footer_menu-column"><h2 class="text-footer_heading">Desarrolladores</h2><ul role="list" class="footer_menu-list"><li><a data-button-theme="black" href="https://dev.aurumcore.com/" target="_blank" rel="noopener" class="text-footer_link underline-link">Documentación API</a></li><li><a data-button-theme="black" href="https://dev.aurumcore.com/" target="_blank" rel="noopener" class="text-footer_link underline-link">API Multicanal</a></li><li><a data-button-theme="black" href="#motores" class="text-footer_link underline-link">Conectores</a></li><li><a data-button-theme="black" href="#plataforma" class="text-footer_link underline-link">Orquestador</a></li></ul></div>
+          <div class="footer_menu-column"><h2 class="text-footer_heading">Motores</h2><ul role="list" class="footer_menu-list"><li><a data-button-theme="black" href="#motores" class="text-footer_link underline-link">Motor de Débito</a></li><li><a data-button-theme="black" href="#motores" class="text-footer_link underline-link">Motor de Crédito</a></li><li><a data-button-theme="black" href="#motores" class="text-footer_link underline-link">Motor de Depósito</a></li><li><a data-button-theme="black" href="#casos" class="text-footer_link underline-link">Casos de uso</a></li></ul></div>
+          <div class="footer_menu-column"><h2 class="text-footer_heading">Recursos</h2><ul role="list" class="footer_menu-list"><li><a data-button-theme="black" href="https://www.aurumcore.com/blog" target="_blank" rel="noopener" class="text-footer_link underline-link">Blog</a></li><li><a data-button-theme="black" href="https://www.aurumcore.com/blog/glosario-para-entender-las-instituciones-financieras-de-nueva-generacion" target="_blank" rel="noopener" class="text-footer_link underline-link">Glosario</a></li><li><a data-button-theme="black" href="#plataforma" class="text-footer_link underline-link">Arquitectura</a></li><li><a data-button-theme="black" href="https://www.aurumcore.com/blog/por-que-la-seguridad-define-el-exito-de-una-fintech" target="_blank" rel="noopener" class="text-footer_link underline-link">Controles de seguridad</a></li><li><a data-button-theme="black" href="#casos" class="text-footer_link underline-link">Ecosistema</a></li></ul></div>
+          <div class="footer_menu-column"><h2 class="text-footer_heading">Empresa</h2><ul role="list" class="footer_menu-list"><li><a data-button-theme="black" href="mailto:info@aurumcore.com" class="text-footer_link underline-link">Contacto</a></li><li><a data-button-theme="black" href="https://www.linkedin.com/company/aurumcore" target="_blank" rel="noopener" class="text-footer_link underline-link">LinkedIn</a></li><li><a data-button-theme="black" href="https://www.aurumcore.com/privacy-notice" target="_blank" rel="noopener" class="text-footer_link underline-link">Privacidad</a></li></ul></div>
+          <div class="footer_menu-column footer_menu-column--two-col fnode-2col"><h2 class="text-footer_heading">Instituciones</h2><ul role="list" class="footer_menu-list"><li><a data-button-theme="black" href="#casos" class="text-footer_link underline-link">Para fintechs</a></li><li><a data-button-theme="black" href="#casos" class="text-footer_link underline-link">Para SOFOMes</a></li><li><a data-button-theme="black" href="#casos" class="text-footer_link underline-link">Para cooperativas</a></li><li><a data-button-theme="black" href="#casos" class="text-footer_link underline-link">Para empresas de cualquier giro</a></li></ul></div>
+        </div>
+        <div class="footer_cta-box">
+          <div class="footer_cta"><div class="footer_cta-form w-form"><div class="text-footer_heading">Recibe novedades</div>
+            <form class="form_footer-form" id="news-form" action="mailto:info@aurumcore.com" method="get"><label for="Email" class="hidden-field">Recibe novedades</label><input class="footer-form-field w-input" maxlength="256" name="body" placeholder="Tu correo electrónico" type="email" id="Email" required><input type="hidden" name="subject" value="Quiero recibir novedades de Aurum Core"><button type="submit" class="footer-form_submit" aria-label="Enviar"></button></form>
+          </div></div>
+          <div class="footer_social"><h2 class="text-footer_heading">Síguenos</h2><div class="footer_social-menu"><a href="https://twitter.com/Aurumcore_" target="_blank" rel="noopener" class="social-link w-inline-block"><img src="../assets/v2/x.svg" alt="X" class="social-icon"></a><a href="https://www.linkedin.com/company/aurumcore" target="_blank" rel="noopener" class="social-link w-inline-block"><img src="../assets/v2/linkedin.svg" alt="LinkedIn" class="social-icon"></a><a href="https://www.facebook.com/aurumcore.79" target="_blank" rel="noopener" class="social-link w-inline-block"><img src="../assets/v2/facebook.svg" alt="Facebook" class="social-icon"></a></div></div>
+          <div class="footer_awards"><h2 class="text-footer_heading">Despliegue a tu medida</h2><div class="footer_awards-menu"><div class="footer-award"><span class="dep-badge">On<br>Prem</span></div><div class="footer-award"><span class="dep-badge is-cyan">IaaS</span></div></div></div>
+        </div>
+      </div>
+      <div class="footer_legal">
+        <div class="footer_legal_bar"><a href="./" class="footer_logo w-inline-block w--current"><img src="../assets/brand/aurum_logo.png" alt="Aurum Core" class="image-contain"></a>
+          <ul role="list" class="footer_legal_menu"><li class="footer_legal_item"><a href="https://www.aurumcore.com/privacy-notice" target="_blank" rel="noopener" class="footer_legal-link">Aviso de privacidad</a></li><li class="footer_legal_item"><a href="mailto:info@aurumcore.com" class="footer_legal-link">Contacto</a></li><li class="footer_legal_item"><a href="https://dev.aurumcore.com/" target="_blank" rel="noopener" class="footer_legal-link">Documentación</a></li></ul></div>
+        <div id="footer-disclaimer" class="footer_legal-copy">
+          <p class="text-p-14" data-validar="estatus regulatorio de AurumCore">AurumCore es una empresa de tecnología que provee infraestructura de software (core bancario) a instituciones. AurumCore no es una entidad financiera: no capta recursos ni otorga créditos o inversiones al público. Los productos financieros los opera, bajo su propia responsabilidad, cada institución que usa la plataforma.</p>
+          <p class="text-p-14">Los nombres, cuentas, montos, tasas y respuestas de API que aparecen en las ilustraciones de producto son ficticios y solo tienen fines demostrativos; no representan clientes ni condiciones reales. Las tasas, plazos y condiciones de cada producto las define la institución que lo opera, y las integraciones con proveedores externos dependen de los acuerdos que cada institución tenga con ellos. Esta página describe capacidades de la plataforma y no constituye una oferta de productos financieros al público.</p>
+          <p class="text-p-14">SPEI y las demás marcas de terceros mencionadas pertenecen a sus respectivos titulares. Su mención solo describe los conectores disponibles en Aurum Core y no implica patrocinio ni respaldo.</p>
+          <div class="text-p-14 opacity-60">© 2026 AurumCore.</div>
+        </div>
+      </div>
+    </div></div>
+  </div></div>
+</section>
+
+</div>
+<script src="js/app.js?v=20"></script>
+<link rel="stylesheet" href="css/aurum-review.css?v=2"><script src="js/aurum-review.js?v=2" defer></script>
+</body>
+</html>
