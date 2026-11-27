@@ -247,3 +247,8 @@
 
 .chip.h3i svg{width:15px;height:15px;flex:none;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
 .chip.h3i{white-space:normal;line-height:18px}
+
+
+.icons{width:520px}.icons .tk{gap:28px;animation-duration:43.67s}.icons .tk img{width:18px;height:18px}
+@media(max-width:767px){.icons{width:100%}}
+.hero .lead{text-wrap:balance;color:#696A70}
