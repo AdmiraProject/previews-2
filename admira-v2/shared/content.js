@@ -1,6 +1,6 @@
-/* Shared Admira content for both versions. Copy follows getadmira.com + the Website (Copy) Figma. */
+
 window.ADM = (function () {
-  const L = (n) => `../assets/logos/${n}.svg`;
+  const L = (n) => `https://admiraproject.github.io/previews-2/admira-v2/assets/logos/${n}.svg`;
   const ICONS = ['meta', 'googleads', 'tiktok', 'linkedin', 'x', 'amazon', 'microsoft', 'openai', 'snapchat', 'pinterest', 'youtube', 'googleanalytics', 'hubspot', 'salesforce', 'whatsapp', 'instagram', 'shopify', 'stripe', 'slack', 'googlesheets', 'webflow', 'reddit'];
   const SKILL = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 1.5h5l3.5 3.5v9.5h-8.5z"/><path d="M9 1.5V5h3.5M6 8.5h4M6 11h4"/></svg>';
   const TOOL = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2.5 8a5.5 5.5 0 1011 0 5.5 5.5 0 00-11 0zM8 2.5v11M2.5 8h11"/></svg>';
@@ -17,7 +17,7 @@ window.ADM = (function () {
     ['s', 'Weekly report'], ['s', 'Budget pacing'], ['s', 'Lead source audit'], ['s', 'Channel mapping'], ['s', 'Goal forecast'],
     ['s', 'W-shaped model'], ['s', 'Time decay'], ['s', 'First touch'], ['s', 'Last touch'], ['s', 'Linear'],
   ];
-  const chipHtml = ([k, n]) => k === 's' ? `<div class="chip s">${SKILL}${n}</div>` : k.startsWith('t:') ? `<div class="chip t">${TOOL}${n}</div>` : `<div class="chip"><img src="../assets/logos/${k}.${k === 'zoho-crm-icon' ? 'png' : 'svg'}" alt="">${n}</div>`;
+  const chipHtml = ([k, n]) => k === 's' ? `<div class="chip s">${SKILL}${n}</div>` : k.startsWith('t:') ? `<div class="chip t">${TOOL}${n}</div>` : `<div class="chip"><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/logos/${k}.${k === 'zoho-crm-icon' ? 'png' : 'svg'}" alt="">${n}</div>`;
   const FAQ = window.ADM_FAQ || [
     ['What is Admira?', 'Admira is one AI platform for ads, attribution and ROI. It connects your ad accounts, CRM and website, traces every touch to revenue with multi-touch attribution, and lets you ask Admira AI what is working and what to change.'],
     ['How long do setup and onboarding take?', 'Our technical setup is a quick process, taking only minutes. The full onboarding experience, including dashboard setup and team training, is completed within two weeks.'],
@@ -31,6 +31,6 @@ window.ADM = (function () {
   const faqHtml = () => FAQ.map(([q, a]) => `<div class="q"><button>${q}<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6l4 4 4-4"/></svg></button><div class="a"><div><p>${a}</p></div></div></div>`).join('');
   const TASKS = [['ga', 'Which campaign drove the most revenue?'], ['hubspot', 'Map lead sources to channels'], ['meta', 'Pause ads with no deals'], ['slack', 'Send the weekly report'], ['googleads', 'Move $300 USD per day to Search'], ['whatsapp', 'Score WhatsApp leads'], ['ad', 'Forecast this month’s goal'], ['linkedin', 'Find our best audience']];
   const TOOLS = [['meta', 'Meta Ads'], ['googleads', 'Google Ads'], ['hubspot', 'HubSpot'], ['slack', 'Slack'], ['whatsapp', 'WhatsApp'], ['salesforce', 'Salesforce'], ['linkedin', 'LinkedIn Ads'], ['googleanalytics', 'Analytics']];
-  const ico = (k) => k === 'ad' ? '../assets/brand/admira-icon-gradient.svg' : k === 'ga' ? L('googleanalytics') : L(k);
+  const ico = (k) => k === 'ad' ? 'https://admiraproject.github.io/previews-2/admira-v2/assets/brand/admira-icon-gradient.svg' : k === 'ga' ? L('googleanalytics') : L(k);
   return { L, ICONS, CHIPS, chipHtml, FAQ, faqHtml, TASKS, TOOLS, ico };
 })();
