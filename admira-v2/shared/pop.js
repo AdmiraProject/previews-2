@@ -52,7 +52,8 @@
   
   function rail(sec) {
     const keys = (sec.dataset.examples ? sec.dataset.examples.split(',') : ORDER).map((k) => k.trim()).filter((k) => M[k] && M[k].thumb);
-    const title = sec.dataset.title || 'See Admira in action.', sub = sec.dataset.sub || 'Follow the work from campaign to close.';
+    const clean = (v) => (v || '').replace(/^https?:\/\/\S*\//, ''); // guard: a URL prefix must never show in headings
+    const title = clean(sec.dataset.title) || 'See Admira in action.', sub = clean(sec.dataset.sub) || 'Follow the work from campaign to close.';
     sec.classList.add('tx-ex');
     sec.innerHTML = `<div class="in"><h2 class="h2 rv">${esc(title)}<br><span class="m">${esc(sub)}</span></h2>
       <ul class="tx-rail" tabindex="0" aria-label="Product tour carousel">${keys.map((k) => `<li><button type="button" class="tx-card" data-watch="${k}">
