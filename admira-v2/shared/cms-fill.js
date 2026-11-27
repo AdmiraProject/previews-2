@@ -1,4 +1,5 @@
-
+/* Blog post template (Spanish locale): the new-design shell (#v2post) is filled from the page's own Webflow CMS content,
+   so /es/blog/<slug> shows the Spanish article Webflow renders (title, date, category, author, cover, rich text). */
 (function () {
   if (window.ADM_LANG !== 'es' || !document.getElementById('v2post')) return;
   var $ = function (s, r) { return (r || document).querySelector(s); };
@@ -6,10 +7,10 @@
   var h1o = $('.blog-post_heading', old), rich = $('.blog-post_content .w-richtext', old);
   if (!h1o || !rich) return;
   var slugify = function (t) { return t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); };
-
+  // title + summary
   var h1 = $('h1', v); if (h1) h1.textContent = h1o.textContent.trim();
   var md = $('meta[name="description"]'); var sub = $('.sub', v); if (sub && md && md.content) sub.textContent = md.content;
-
+  // meta line
   var date = $('.blog-tag.is-date', old), cat = $('.blog-tag.is-category', old), au = $('.blog-author_name', old);
   var wm = $('.wm', v);
   if (wm) {
@@ -20,7 +21,7 @@
   }
   var crumb = $('.crumb span:last-child', v); if (crumb && cat) crumb.textContent = cat.textContent.trim();
   var cov = $('.blog-post_img', old), cimg = $('.cov img', v); if (cov && cimg) cimg.src = cov.src;
-
+  // body
   var prose = $('.prose', v);
   if (prose) {
     prose.innerHTML = rich.innerHTML;
@@ -33,7 +34,7 @@
     if (side) side.innerHTML = '<p class="lb">En esta página</p>' + hs.map(function (h) { return '<a href="#' + h.id + '">' + h.textContent + '</a>'; }).join('');
     if (tm) tm.innerHTML = '<p class="lb"><span>En esta página</span><span>' + hs.length + ' secciones</span></p>' + hs.map(function (h, i) { return '<a href="#' + h.id + '"><span class="n">' + (i + 1) + '</span>' + h.textContent + '</a>'; }).join('');
   }
-
+  // related cards: Spanish titles by slug
   try {
     var x = new XMLHttpRequest(); x.open('GET', (window.ADM_BASE || '') + 'blog/es-titles.json', false); x.send();
     var T = x.status === 200 ? JSON.parse(x.responseText) : {};

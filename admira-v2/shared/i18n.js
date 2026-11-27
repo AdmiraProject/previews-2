@@ -1,4 +1,6 @@
-
+/* Admira /es runtime strings: page HTML comes translated from Webflow's Spanish locale; this only translates text that
+   our scripts render at runtime (menus, tabs, FAQ, tour captions, popups). Dictionary: shared/i18n-es.json (English → Spanish).
+   Active only on /es and /es/… paths. Never touches the native Webflow form (Webflow localizes it). */
 (function () {
   var p = location.pathname;
   if (!(p === '/es' || p.indexOf('/es/') === 0)) return;
@@ -10,6 +12,13 @@
     var url = (s ? s.replace(/i18n\.js.*$/, '') : '') + 'i18n-es.json';
     var x = new XMLHttpRequest(); x.open('GET', url, false); x.send();
     if (x.status === 200) D = JSON.parse(x.responseText);
+  } catch (e) {}
+  // localized Spanish URLs for pages whose /es slug differs (menus built by nav.js go through ADM_LINK)
+  try {
+    var y = new XMLHttpRequest(); y.open('GET', url.replace('i18n-es.json', 'es-pages.json'), false); y.send();
+    var PG = y.status === 200 ? JSON.parse(y.responseText) : {};
+    window.ADM_ES_PAGES = PG;
+    if (window.ADM_LINK) { var L0 = window.ADM_LINK; window.ADM_LINK = function (u) { var r = L0(u); return r.replace(/^\/es\/([^\/#?]+)/, function (m, a) { return '/es/' + (PG[a] || a); }); }; }
   } catch (e) {}
   if (!D) return;
   var ATTR = ['aria-label', 'alt', 'title', 'placeholder', 'data-title', 'data-sub'];
