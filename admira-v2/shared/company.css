@@ -215,3 +215,4 @@ a.cc:hover{box-shadow:0 8px 24px -12px rgba(21,25,29,.25)}
 .cs .vw[data-watch]:hover::after{opacity:1}
 .bd .wtr,.wtr{margin-top:24px}
 @media(max-width:767px){.cats{max-width:100%;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}.cats::-webkit-scrollbar{display:none}}
+@media(max-width:767px){.ci .cats{max-width:calc(100% - 4px);min-width:0}}
