@@ -29,7 +29,7 @@ window.ADM = (function () {
     ['Where is my data stored?', 'Your data is securely stored on AWS in Austin, adhering to the strictest privacy standards. Admira is GDPR and CCPA compliant and does not collect personal data by default.'],
   ];
   const faqHtml = () => FAQ.map(([q, a]) => `<div class="q"><button>${q}<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6l4 4 4-4"/></svg></button><div class="a"><div><p>${a}</p></div></div></div>`).join('');
-  const TASKS = [['ga', 'Which campaign drove the most revenue?'], ['hubspot', 'Map lead sources to channels'], ['meta', 'Pause ads with no deals'], ['slack', 'Send the weekly report'], ['googleads', 'Move $300/day to Search'], ['whatsapp', 'Score WhatsApp leads'], ['ad', 'Forecast this month’s goal'], ['linkedin', 'Find our best audience']];
+  const TASKS = [['ga', 'Which campaign drove the most revenue?'], ['hubspot', 'Map lead sources to channels'], ['meta', 'Pause ads with no deals'], ['slack', 'Send the weekly report'], ['googleads', 'Move $300 USD per day to Search'], ['whatsapp', 'Score WhatsApp leads'], ['ad', 'Forecast this month’s goal'], ['linkedin', 'Find our best audience']];
   const TOOLS = [['meta', 'Meta Ads'], ['googleads', 'Google Ads'], ['hubspot', 'HubSpot'], ['slack', 'Slack'], ['whatsapp', 'WhatsApp'], ['salesforce', 'Salesforce'], ['linkedin', 'LinkedIn Ads'], ['googleanalytics', 'Analytics']];
   const ico = (k) => k === 'ad' ? 'https://admiraproject.github.io/previews-2/admira-v2/assets/brand/admira-icon-gradient.svg' : k === 'ga' ? L('googleanalytics') : L(k);
   return { L, ICONS, CHIPS, chipHtml, FAQ, faqHtml, TASKS, TOOLS, ico };

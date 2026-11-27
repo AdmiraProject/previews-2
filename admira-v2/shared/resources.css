@@ -215,3 +215,27 @@
   .rp .tm a{white-space:normal;overflow:visible}
 }
 .prose p,.prose li,.prose td,.prose blockquote{overflow-wrap:anywhere}
+
+.wpo{position:absolute;inset:0;display:block;container-type:size;overflow:hidden;text-align:left;color:#15191D;
+  background-color:#A5C4FB;background-image:url(https://cdn.prod.website-files.com/660b7c74d20e45c2022e472a/6626fcc32d2298e9c11aa724_admira-bg.svg),radial-gradient(at 12% 90%,#D2EDFF 0%,transparent 58%),linear-gradient(118deg,#92B1F6,#C7D8FC 58%,#8DBDEE);background-size:cover,auto,auto;background-position:center}
+.wpo img{transform:none!important;opacity:1!important}
+.wpo-l{position:absolute;left:6.2cqw;top:7.5cqh;bottom:7.5cqh;width:56cqw;display:flex;flex-direction:column}
+.wpo-co{display:flex;align-items:center;gap:1.6cqw}
+.wpo-tile{width:9.6cqw;height:9.6cqw;border-radius:2.4cqw;background:#fff;display:grid;place-items:center;box-shadow:0 .4cqw 1.6cqw rgba(41,72,115,.18);overflow:hidden}
+.wpo-tile img{width:62%!important;height:62%!important;object-fit:contain!important;border-radius:1.2cqw}
+.wpo-co i{font:400 3.6cqw/1 var(--f);font-style:normal;color:rgba(21,25,29,.55)}
+.wpo-tag{margin-left:.8cqw;font:500 2.9cqw/1.2 var(--f);color:rgba(21,25,29,.72);white-space:nowrap}
+.wpo-t{margin-top:auto;font:500 4.9cqw/1.16 var(--f);letter-spacing:-.02em;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.wpo-sp{display:flex;gap:3.2cqw;margin-top:3.4cqh}
+.wpo-sp>span{display:flex;flex-direction:column;font:400 2.4cqw/1.3 var(--f);color:rgba(21,25,29,.68)}
+.wpo-sp b{font:500 2.7cqw/1.3 var(--f);color:#15191D}
+.wpo-ph{position:absolute;right:5cqw;top:44%;transform:translateY(-50%);width:31cqw;height:31cqw}
+.wpo-ph img{position:absolute;width:20cqw!important;height:20cqw!important;border-radius:50%;object-fit:cover!important;background:#E8EEFC;border:.9cqw solid rgba(255,255,255,.9);box-shadow:0 1.2cqw 4cqw rgba(41,72,115,.28)}
+.wpo-ph img:first-child{left:0;top:0}
+.wpo-ph img:last-child{right:0;bottom:0}
+.wpo-lab{position:absolute;right:5cqw;top:7.5cqh;font:500 2.4cqw/1 var(--f);color:rgba(21,25,29,.6);display:none}
+
+.ri .card .im:has(.wpo) .pl,.rp .vid button:has(.wpo) .pl{left:auto;top:auto;right:16px;bottom:16px;margin:0;z-index:2}
+.rp .vid button:has(.wpo){background:#A5C4FB}
+.rp .vid button:has(.wpo):hover .wpo{filter:brightness(1.03)}
+.wpo-tile.full img{width:100%!important;height:100%!important;border-radius:0;object-fit:cover!important}

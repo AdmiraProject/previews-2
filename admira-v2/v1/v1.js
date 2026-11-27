@@ -11,14 +11,15 @@
   const autoS = (sc, nums, size, o) => { const { es, w, h } = pickS(sc, nums, size); return AdmScene.auto(P, es, { ...o, w, h }); };
 
   
-  const ic = ADM.ICONS.map(k => `<img src="${ADM.L(k)}" alt="">`).join('');
+  const BARE = ['microsoft', 'snapchat', 'pinterest', 'webflow']; // marquee shows bare marks, no grey tile
+  const ic = ADM.ICONS.map(k => `<img src="${BARE.includes(k) ? ADM.L(k).replace('/logos/', '/logos/bare/') : ADM.L(k)}" alt="">`).join('');
   $('#icons').innerHTML = ic + ic;
 
   const MD = window.ADM_MEDIA || {}, phone = matchMedia('(max-width: 767px)');
   const TABS = [['Launch in chat', 'campaign-chat'], ['Optimize & report', 'optimize-report'], ['AI dashboards', 'ai-dashboard'], ['Journeys', 'individual-journey'], ['Ad canvas', 'creative-hub'], ['Workflows', 'workflows']].filter(([, k]) => MD[k]);
-  const PAUSE = '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><rect x="6.5" y="5" width="3.6" height="14" rx="1"/><rect x="13.9" y="5" width="3.6" height="14" rx="1"/></svg>';
+  const PAUSE = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg>';
   const PLAY = '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a.6.6 0 0 0 .9.5l10.2-6.5a.6.6 0 0 0 0-1L8.9 5a.6.6 0 0 0-.9.5Z"/></svg>';
-  const EXP = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"/></svg>';
+  const EXP = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9V4h5m6 0h5v5m0 6v5h-5M9 20H4v-5"/></svg>';
   const tabs = $('#tabs'), win = $('#win'); win.classList.add('hfilm');
   win.innerHTML = '<video muted playsinline preload="auto"></video><div class="tx-fc"><button type="button" class="tx-fp" aria-label="Pause" title="Pause or play">' + PAUSE + '</button><button type="button" class="tx-fx" aria-label="Open full video" title="Open full video">' + EXP + '</button></div>';
   const vid = win.querySelector('video'), pp = win.querySelector('.tx-fp'), fx = win.querySelector('.tx-fx');
@@ -51,7 +52,7 @@
     pulse: '<path d="M2.5 10h3l2-5 4 10 2-5h4"/>', plug: '<path d="M7 3v4M13 3v4M5 7h10v3a5 5 0 01-10 0zM10 15v3"/>',
     check: '<path d="M4 10.5l3.5 3.5L16 5.5"/>', bolt: '<path d="M11 2L4 11h5l-1 7 7-9h-5z"/>', layers: '<path d="M10 3l7 4-7 4-7-4zM3 11l7 4 7-4"/>', spark: '<path d="M10 2v4M10 14v4M2 10h4M14 10h4M4.5 4.5l2.5 2.5M13 13l2.5 2.5M15.5 4.5L13 7M7 13l-2.5 2.5"/>',
   };
-  const cap = (i, t, s) => `<div class="cap"><span class="ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">${CAPI[i]}</svg></span><div><b>${t}</b><small>${s}</small></div></div>`;
+  const cap = (i, t, s) => `<div class="cap"><span class="ic">${i}</span><div><b>${t}</b><small>${s}</small></div></div>`;
   const POP = `<div class="pop p1" style="left:640px;top:250px;width:470px"><div class="who"><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/brand/admira-icon-gradient.svg" alt="">Admira AI</div>
       <p>Display – Remarketing spent $18.4K with no attributed deals in 30 days, so I paused it. Its <mark>$300 a day</mark> now goes to Search – Brand, which closes leads at $21.</p>
       <div class="tags"><span class="tag">Budget +$300/day</span><span class="tag w">1 campaign paused</span></div><div class="acts"><b>Keep changes</b><span>↺ Undo</span></div></div>
@@ -62,49 +63,58 @@
       <tr><td><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/logos/meta.svg" alt="">Lookalike 1%</td><td>$600</td><td>31</td></tr>
       <tr><td><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/logos/linkedin.svg" alt="">Directors</td><td>$250</td><td>12</td></tr>
       <tr><td><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/logos/googleads.svg" alt="">Display – Remarketing</td><td style="color:#B91C1C">Paused</td><td>0</td></tr></table></div>`;
+  {
+  
   const FEATS = [
-    ['Admira AI', 'Ask about your ads, CRM and revenue in plain words. Admira answers with your numbers and can launch the campaign for you.', 'ai', [6, 7, 8, 9, 10, 11, 12], { zoom: 1.25 },
-      [['chat', 'Ask in plain words', 'Admira AI'], ['chart', 'Reports in seconds', 'Admira AI'], ['bolt', 'Launch campaigns', 'Admira AI'], ['plug', 'Connect in chat', 'Admira AI'], ['check', 'Approve changes', 'Admira AI'], ['layers', 'Sources on every answer', 'Admira AI']]],
-    ['Dashboards and reports', 'Spend, leads, pipeline and revenue in one place, with ready-made reports for every channel and goal.', 'dash', [1, 2, 3, 5, 6, 7], { zoom: 1.3, pop: true },
-      [['chart', 'Paid growth weekly', 'Dashboards'], ['money', 'Spend vs. leads', 'Dashboards'], ['layers', 'Leads by source', 'Dashboards'], ['spark', 'AI insights', 'Dashboards'], ['target', 'Pipeline goal', 'Dashboards'], ['flow', 'Drill into any number', 'Dashboards']]],
-    ['Multi-touch attribution', 'Track every touch across the buyer journey, match anonymous activity to revenue, and see beyond first and last touch.', 'journey', [1, 2, 3], { zoom: 1.25 },
-      [['flow', 'Winning journeys', 'Attribution'], ['layers', 'W-shaped model', 'Attribution'], ['pulse', 'Time decay', 'Attribution'], ['users', 'First and last touch', 'Attribution'], ['chart', 'Revenue by source', 'Attribution'], ['spark', 'Routes that sell', 'Attribution']]],
-    ['Goals and forecasting', 'Define what a lead, an opportunity and a sale mean in your CRM, and see each goal against its monthly target.', 'goals', [1, 2, 3, 4], { zoom: 1.3 },
-      [['target', 'Funnel goals', 'Goals'], ['check', 'Verify on real data', 'Goals'], ['chart', 'Monthly targets', 'Goals'], ['flow', 'CRM conditions', 'Goals'], ['pulse', 'Custom goals', 'Goals'], ['spark', 'Forecast pacing', 'Goals']]],
-    ['Deals and pipeline', 'Every deal with its value, win probability and the touchpoints that brought it in.', 'deals', [1, 2, 3, 4, 5], { zoom: 1.3 },
-      [['money', 'Open pipeline', 'Deals'], ['check', 'Won and lost', 'Deals'], ['flow', 'Deal timeline', 'Deals'], ['users', 'Associated contacts', 'Deals'], ['pulse', 'Win probability', 'Deals'], ['layers', 'Touchpoints per deal', 'Deals']]],
-    ['People and journeys', 'Every person with every touch: the ad they clicked, the pages they read, the WhatsApp chat and the deal it became.', 'people', [], {},
-      [['users', 'Every visitor', 'Journeys'], ['flow', 'Touches by channel', 'Journeys'], ['pulse', 'Event feed', 'Journeys'], ['layers', 'Journey timeline', 'Journeys'], ['target', 'First touch', 'Journeys'], ['chat', 'WhatsApp chats', 'Journeys']]],
-    ['Tracking and events', 'One pixel and your CRM send every page view, form, WhatsApp chat and deal to a debugger you can read.', 'debugger', [1, 2, 3, 5, 6], { zoom: 1.3 },
-      [['pulse', 'Event log', 'Tracking'], ['check', 'Event outcomes', 'Tracking'], ['layers', 'Business events', 'Tracking'], ['plug', 'Own system API', 'Tracking'], ['users', 'Identify calls', 'Tracking'], ['flow', 'UTM capture', 'Tracking']]],
-    ['Connect your stack', 'Connect ad platforms, CRMs and Admira itself from one place, in a few clicks.', 'sources', [1, 2, 3, 4, 5, 6, 7, 8, 9], { zoom: 1.25 },
-      [['plug', '32 sources', 'Integrations'], ['bolt', 'One-click connect', 'Integrations'], ['layers', 'Ad platforms', 'Integrations'], ['users', 'CRMs', 'Integrations'], ['chat', 'WhatsApp', 'Integrations'], ['check', 'Synced history', 'Integrations']]],
+    ['attribution', 'Revenue attribution', 'See which campaigns helped win a deal and how the credit changes with your attribution model.'],
+    ['journeys', 'Customer journeys', 'Open a person’s Feed, then switch to Journey to see how their ad clicks and conversations led to a sale.'],
+    ['overview', 'Paid performance', 'Put each channel’s spend next to the pipeline and revenue it generated in the same reporting period.'],
+    ['goals', 'Goals and funnels', 'Define the stages that matter to your team and see where leads move forward or leave the funnel.'],
+    ['deals', 'Leads and deals', 'Open a pipeline number to see the individual deals, owners, and marketing touches behind it.'],
+    ['reports', 'Custom dashboards', 'Choose Ask Admira and describe the report you need. Switch between a line chart and a table, then save it to your dashboard.'],
+    ['agents', 'Admira AI', 'Ask about a change in performance using the accounts, metrics, and business context in your workspace.'],
+    ['automations', 'Automations', 'Set a routine for repeat work, from reviewing campaign performance to preparing a weekly update.'],
   ];
-  const acc = $('#acc'), fscs = $('#fscs'), caps = $('#caps'), fsc = [];
-  FEATS.forEach(([t, d, sc, nums, o, cp], i) => {
-    acc.insertAdjacentHTML('beforeend', `<div class="it"><button>${t}</button><div class="b"><div><p>${d}</p></div></div><div class="bar"><i></i></div></div>`);
-    const host = document.createElement('div'); host.innerHTML = '<div class="sc"></div>'; fscs.appendChild(host);
-    const def = sc === 'people' ? AdmScene.people(P, '@panel') : autoS(sc, nums, '@panel', { ...o, hold: 1.4 });
-    if (o.pop) { // the popover beat: card appears, cursor presses Keep changes, result card
-      const k = def.w / 1440;
-      def.overlay = `<div style="position:absolute;left:0;top:0;width:1440px;height:900px;transform:scale(${k});transform-origin:0 0;pointer-events:none">${POP}</div>`;
-      def.steps.splice(2, 0, ['cam', def.w / 2, def.h / 2, 1, .6], ['ov', '.p1', true, .9], ['cur', 690 * k, 410 * k, .9], ['click'], ['ov', '.p1', false], ['ov', '.p2', true, 2.6], ['ov', '.p2', false, .3]);
-    }
-    fsc.push({ host, def, cp, sc: null });
-    acc.lastElementChild.firstElementChild.addEventListener('click', () => open(i, true));
+  const TILES = [["attribution", "Revenue attribution", "<svg aria-hidden=\"true\" width=\"22\" height=\"22\" viewBox=\"0 0 24 24\"><path d=\"m12 3 9 5-9 5-9-5Zm-9 9 9 5 9-5M3 16l9 5 9-5\"></path></svg>"], ["journeys", "Customer journeys", "<svg aria-hidden=\"true\" width=\"22\" height=\"22\" viewBox=\"0 0 24 24\"><circle cx=\"5\" cy=\"6\" r=\"2\"></circle><circle cx=\"19\" cy=\"18\" r=\"2\"></circle><path d=\"M7 6h7a4 4 0 0 1 0 8H9a2 2 0 0 0 0 4h8\"></path></svg>"], ["overview", "Paid growth dashboard", "<svg aria-hidden=\"true\" width=\"22\" height=\"22\" viewBox=\"0 0 24 24\"><path d=\"M3 4v16h18M8 15v-3m5 3V7m5 8v-5\"></path></svg>"], ["goals", "Goals and funnels", "<svg aria-hidden=\"true\" width=\"22\" height=\"22\" viewBox=\"0 0 24 24\"><path d=\"M3 4h18l-7 9v6l-4 2v-8Z\"></path></svg>"], ["deals", "Deal explorer", "<svg aria-hidden=\"true\" width=\"22\" height=\"22\" viewBox=\"0 0 24 24\"><rect x=\"3\" y=\"7\" width=\"18\" height=\"14\" rx=\"2\"></rect><path d=\"M8 7V4h8v3M3 12c5 4 13 4 18 0\"></path></svg>"], ["sources", "Connected sources", "<svg aria-hidden=\"true\" width=\"22\" height=\"22\" viewBox=\"0 0 24 24\"><path d=\"m13 5 6 6m-3-9-4 4m10 2-4 4M9 6l9 9-3 3a5 5 0 0 1-7-7l3-3m-4 9-5 5\"></path></svg>"]];
+  const MED = window.ADM_MEDIA || {}, PH = matchMedia('(max-width: 767px)');
+  const acc = $('#acc'), fscs = $('#fscs'), caps = $('#caps'), panel = fscs.parentElement, fsc = [];
+  caps.innerHTML = TILES.map(([k, t, i]) => `<button type="button" class="cap on" data-watch="${k}"><span class="ic">${i}</span><span><b>${t}</b><small>Product tour</small></span></button>`).join('');
+  const PAUSE = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg>';
+  const PLAY = '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 001.5.86l10.4-6.5a1 1 0 000-1.72L9.5 4.64A1 1 0 008 5.5z"/></svg>';
+  const EXP = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9V4h5m6 0h5v5m0 6v5h-5M9 20H4v-5"/></svg>';
+  FEATS.forEach(([k, t, d], i) => {
+    const m = MED[k] || {};
+    acc.insertAdjacentHTML('beforeend', `<div class="it"><button type="button" aria-expanded="false">${t}</button><div class="b"><div><p>${d}</p><div class="slot"></div></div></div><div class="bar"><i></i></div></div>`);
+    const host = document.createElement('div');
+    host.innerHTML = `<div class="sc tx-film ff"><video muted playsinline preload="none" poster="${m.poster || ''}" aria-label="${t}"></video><div class="tx-fc"><button type="button" class="tx-fp" aria-label="Pause ${t}" title="Pause or play">${PAUSE}</button><button type="button" data-watch="${k}" aria-label="Enlarge ${t}" title="Open full video">${EXP}</button></div></div>`;
+    fscs.appendChild(host);
+    const v = host.querySelector('video'), pb = host.querySelector('.tx-fp');
+    const ico = () => { pb.innerHTML = v.paused ? PLAY : PAUSE; };
+    v.addEventListener('play', ico); v.addEventListener('pause', ico);
+    pb.onclick = () => { if (v.paused) { held = false; v.play().catch(() => {}); } else { held = true; v.pause(); } };
+    v.addEventListener('ended', () => { if (fi === i && !held) open((i + 1) % FEATS.length); });
+    v.addEventListener('timeupdate', () => { if (fi === i && v.duration) acc.children[i].style.setProperty('--p', (v.currentTime / v.duration).toFixed(4)); });
+    fsc.push({ host, v, m });
+    acc.lastElementChild.firstElementChild.addEventListener('click', () => { held = false; open(i); });
   });
-  let fi = -1, ft;
-  function open(i, user) {
-    if (i === fi) return; fi = i; clearTimeout(ft);
-    [...acc.children].forEach((el, k) => el.classList.toggle('on', k === i));
-    fsc.forEach((f, k) => { f.host.classList.toggle('on', k === i); if (k !== i && f.sc) f.sc.stop(); });
-    const f = fsc[i]; if (!f.sc) f.sc = new AdmScene(f.host.firstChild, f.def); else f.sc.restart();
-    caps.innerHTML = f.cp.map(c => cap(...c)).join('');
-    [...caps.children].forEach((c, k) => setTimeout(() => c.classList.add('on'), 250 + k * 120));
-    const d = dur(f.def) + 800; acc.children[i].style.setProperty('--dur', d + 'ms');
-    if (!user) ft = setTimeout(() => open((i + 1) % fsc.length), d);
+  let fi = -1, held = false, inView = false;
+  function place(i) { // phones: the film + tour tiles sit inside the open tab, like home-3's inline slot
+    const slot = PH.matches ? acc.children[i].querySelector('.slot') : $('#product .grid');
+    if (panel.parentElement !== slot) slot.appendChild(panel);
   }
-  new IntersectionObserver((es, io) => es.forEach(e => { if (e.isIntersecting) { open(0); io.disconnect(); } }), { threshold: .3 }).observe(acc);
+  function open(i) {
+    if (i === fi) return; fi = i;
+    [...acc.children].forEach((el, k) => { el.classList.toggle('on', k === i); el.firstElementChild.setAttribute('aria-expanded', k === i); el.style.setProperty('--p', 0); });
+    place(i);
+    fsc.forEach((f, k) => { f.host.classList.toggle('on', k === i); if (k !== i) { f.v.pause(); } });
+    const f = fsc[i];
+    if (!f.v.src) f.v.src = f.m.video;
+    try { f.v.currentTime = 0; } catch (e) {}
+    if (inView && !held) f.v.play().catch(() => {});
+  }
+  PH.addEventListener('change', () => fi >= 0 && place(fi));
+  new IntersectionObserver((es) => es.forEach(e => { inView = e.isIntersecting; if (fi < 0 && inView) { open(0); return; } const v = fi >= 0 && fsc[fi].v; if (!v) return; if (inView && !held) v.play().catch(() => {}); else v.pause(); }), { threshold: .25 }).observe($('#product'));
+  }
 
   
   $('#chips').innerHTML = ADM.CHIPS.map(ADM.chipHtml).join('');
@@ -143,12 +153,14 @@
     [P + 'deals/01-list.webp', 'Every deal with its touchpoints, value and win probability.'],
     [P + 'debugger/02-event.webp', 'An event debugger that shows exactly what your pixel and CRM sent.'],
   ];
+  if ($('#extr')) {
   $('#extr').innerHTML = EX.map(([s, c]) => s === 'bl'
     ? `<div class="c"><div class="th bl"><span class="t"><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/brand/admira-white.svg" style="width:auto;height:16px" alt="Admira"></span><h4>30+ integrations,<br>one source of truth</h4><img class="mini" src="${P}sources/05-apps-panel.webp" alt="" style="object-position:34% 42%"></div><p class="cap2">${c}</p></div>`
     : `<div class="c"><div class="th"><img src="${s}" alt="" loading="lazy"></div><p class="cap2">${c}</p></div>`).join('');
   let ex = 0; const tr = $('#extr'), maxEx = EX.length - 3;
   const mv = () => { tr.style.transform = `translateX(${-ex * 354}px)`; $('#exp').disabled = ex === 0; $('#exn').disabled = ex >= maxEx; };
   $('#exp').onclick = () => { ex = Math.max(0, ex - 1); mv(); }; $('#exn').onclick = () => { ex = Math.min(maxEx, ex + 1); mv(); };
+  }
 
   
   $('#ugc').outerHTML = AdmUGC(ROOT);
