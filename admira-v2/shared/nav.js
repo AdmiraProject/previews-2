@@ -1,4 +1,5 @@
-
+/* Admira header: Product / Solutions / Resources mega-menus (1:1 with hyperfx.ai's Products / Platforms / Resources panels)
+   + the mobile menu behind the burger. One script for every page; paths resolve from this file's location. */
 (function () {
   const R = new URL('..', document.currentScript ? document.currentScript.src : location.href).href; // site root
   const hdr = document.querySelector('.hdr'); if (!hdr || hdr.dataset.nav) return; hdr.dataset.nav = '1';
@@ -28,7 +29,7 @@
   };
   const lg = (f) => `<img src="${R}assets/logos/${f}" alt="">`;
   const I = (s) => `${R}integrations/${s}/`, SO = (s) => `${R}solutions/${s}/`;
-
+  // item: [icon, title, sub, href, lead?]
   const PRODUCT = [
     ['Product', [['ai', 'Admira AI', 'Ask your ads and CRM anything', `${R}v1/#ai`], ['attr', 'Attribution', 'Every touch, every model', `${R}multi-touch-attribution/`], ['dash', 'Dashboards', 'Reports built from a prompt', `${R}marketing-dashboard/`], ['journey', 'Journeys', 'From first click to sale', `${R}lead-tracking/`]]],
     ['Platform', [['plug', 'Integrations', 'Connect your tools', `${R}integrations/`], ['capi', 'Conversions API', 'Send real sales back', `${R}conversions-api/`], ['code', 'Admira pixel', 'Cookieless tracking', I('admira-pixel')], ['spark', 'AI creative', 'Ads made for you', `${R}ai-creative/`]]],
@@ -78,7 +79,7 @@
   addEventListener('keydown', e => { if (e.key === 'Escape') { close(); closeM(); } });
   addEventListener('scroll', () => { hdr.classList.toggle('scrolled', scrollY > 40); }, { passive: true });
 
-  
+  /* ---------- mobile menu ---------- */
   const burger = hdr.querySelector('.burger');
   const m = document.createElement('div'); m.className = 'mnav'; m.setAttribute('aria-hidden', 'true');
   const acc = (t, body) => `<div class="mg"><button>${t}<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6l4 4 4-4"/></svg></button><div class="mb"><div>${body}</div></div></div>`;
@@ -96,9 +97,13 @@
   m.querySelectorAll('.mg>button').forEach(b => b.addEventListener('click', () => b.parentElement.classList.toggle('o')));
   m.addEventListener('click', e => { if (e.target.closest('a')) closeM(); });
   addEventListener('resize', () => { if (innerWidth > 767) closeM(); });
-
+  // On Webflow (/v2/ staging) pages live at /v2/<flat-slug>, while assets stay on the static host: map page links (paths ending in /)
   if (window.ADM_LINK) {
-    const fix = () => document.querySelectorAll('a[href]').forEach((a) => { const h = a.getAttribute('href'); if (h.indexOf(R) === 0 && /\/$/.test(h.split(/[#?]/)[0])) a.setAttribute('href', window.ADM_LINK(h)); });
-    fix(); document.addEventListener('DOMContentLoaded', fix);
+    // rewrite every static-host page link to its Webflow URL, including menus built later (hover panels, mobile menu, /es)
+    const one = (a) => { const h = a.getAttribute('href'); if (h && h.indexOf(R) === 0 && /\/$/.test(h.split(/[#?]/)[0])) a.setAttribute('href', window.ADM_LINK(h)); };
+    const fix = (root) => { if (root.nodeType !== 1) return; if (root.matches('a[href]')) one(root); root.querySelectorAll('a[href]').forEach(one); };
+    fix(document.documentElement); document.addEventListener('DOMContentLoaded', () => fix(document.documentElement));
+    new MutationObserver((ms) => ms.forEach((m) => { if (m.type === 'attributes') one(m.target); else m.addedNodes.forEach(fix); }))
+      .observe(document.documentElement, { childList: true, subtree: true, attributes: true, attributeFilter: ['href'] });
   }
 })();
