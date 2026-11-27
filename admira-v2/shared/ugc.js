@@ -27,14 +27,14 @@ window.AdmUGC = function (base = '../') {
 <section class="sec ugc" id="inside"><div class="in">
   <h2 class="h2 hd rv">See what Admira does inside your account</h2>
   <div class="row rv">
-    <div class="card"><video data-auto loop muted playsinline preload="metadata" poster="${A}analyst.jpg" src="${A}analyst.mp4"></video>
+    <div class="card"><video data-auto loop muted playsinline preload="metadata" poster="https://cdn.prod.website-files.com/660b7c74d20e45c2022e472a/6b08cbaddb7afa655b92a71d_nh-inside-analyst.jpg" src="https://cdn.prod.website-files.com/660b7c74d20e45c2022e472a/6b08cbbbdb7afa655b92aa82_nh-inside-analyst.mp4"></video>
       <div class="pill">Analyze account</div>
       <div class="ov" style="right:6%;top:9%"><div class="t"><span>ROAS</span><span>2.91×</span></div><div class="bar"><i style="--w:72%"></i></div><ul><li>Search – Brand drives 41% of revenue</li><li>Display has no attributed deals</li></ul></div>
       <div class="ov" style="left:6%;top:56%"><div class="t"><span>Pipeline</span><span>+27%</span></div><div class="bar"><i style="--w:84%"></i></div><ul><li>930 qualified leads this quarter</li><li>WhatsApp closes fastest</li></ul></div>
       <span class="lab">AI analyst</span></div>
-    <div class="card"><video data-auto loop muted playsinline preload="metadata" poster="${A}ai.jpg" src="${A}ai.mp4"></video><span class="lab">Ask Admira AI</span></div>
+    <div class="card"><video data-auto loop muted playsinline preload="metadata" poster="https://cdn.prod.website-files.com/660b7c74d20e45c2022e472a/6b08cbab5962d4a17bfcf52a_nh-inside-ai.jpg" src="https://cdn.prod.website-files.com/660b7c74d20e45c2022e472a/6b08cbb574b94a03ab0f84ad_nh-inside-ai.mp4"></video><span class="lab">Ask Admira AI</span></div>
     <div class="card"><div class="scroll"><div class="tk">${auditHtml}${auditHtml}</div></div><span class="lab" style="color:#fff">Tracking audit</span></div>
-    <div class="card"><video data-auto loop muted playsinline preload="metadata" poster="${A}channels.jpg" src="${A}channels.mp4"></video><span class="lab">Channel overview</span></div>
+    <div class="card"><video data-auto loop muted playsinline preload="metadata" poster="https://cdn.prod.website-files.com/660b7c74d20e45c2022e472a/6b08cbab74b94a03ab0f819b_nh-inside-channels.jpg" src="https://cdn.prod.website-files.com/660b7c74d20e45c2022e472a/6b08cbb50bef7669cb4a283b_nh-inside-channels.mp4" style="object-position:0 50%"></video><span class="lab">Channel overview</span></div>
     <div class="card"><div class="scroll opt"><div class="oh"><span>Campaign</span><span>Deals</span><span>CPL</span><span>Action</span></div>${optHtml}</div><span class="lab">Budget optimization</span></div>
   </div>
 </div></section>`;
