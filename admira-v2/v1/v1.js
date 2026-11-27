@@ -1,4 +1,5 @@
 (async function () {
+  const ROOT = new URL('../', document.currentScript ? document.currentScript.src : location.href).href; // site root, from this script's URL
   const P = 'https://admiraproject.github.io/previews-2/admira-v2/assets/proto/', $ = (s, r = document) => r.querySelector(s);
   const M = await AdmScene.manifest(P + 'manifest.json');
 
@@ -150,7 +151,7 @@
   $('#exp').onclick = () => { ex = Math.max(0, ex - 1); mv(); }; $('#exn').onclick = () => { ex = Math.min(maxEx, ex + 1); mv(); };
 
   
-  $('#ugc').outerHTML = AdmUGC('../');
+  $('#ugc').outerHTML = AdmUGC(ROOT);
   $('#faq').innerHTML = ADM.faqHtml();
   AdmUI.faq(); AdmUI.header(); AdmUI.videos(); AdmUI.ugc(); AdmUI.reveal();
 })();
