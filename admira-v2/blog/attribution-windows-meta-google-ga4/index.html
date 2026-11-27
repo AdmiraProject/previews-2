@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Attribution Windows Explained: Meta, Google Ads and GA4 Compared | Admira</title>
+<meta name="description" content="Attribution windows compared across Meta, Google Ads and GA4: default settings, view-through rules, reporting dates, and why your dashboards never match.">
+<link rel="icon" href="../../assets/brand/admira-icon-gradient.svg">
+<link rel="stylesheet" href="../../shared/base.css?v=1795750925">
+<link rel="stylesheet" href="../../shared/resources.css?v=1795750925">
+</head>
+<body class="rs det post">
+
+<div class="ann"><a href="../../v1/#inside">Admira AI is live — ask your ads and CRM anything <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a><button class="x" aria-label="Close" onclick="this.parentElement.remove()"><svg width="16" height="16" viewBox="0 0 16 16" stroke="currentColor" stroke-width="1.5"><path d="M4 4l8 8M12 4l-8 8"/></svg></button></div>
+
+<header class="hdr"><div class="in">
+  <a class="logo" href="../../v1/"><img src="../../assets/brand/admira.svg" alt="Admira" width="83" height="21"></a>
+  <nav class="nav">
+    <button>Product <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 4.5l3 3 3-3"/></svg></button>
+    <button>Solutions <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 4.5l3 3 3-3"/></svg></button>
+    <a href="../../v1/#ai">Admira AI</a><a href="../../integrations/">Integrations</a><a href="../../customers/">Customers</a>
+    <button>Resources <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 4.5l3 3 3-3"/></svg></button>
+  </nav>
+  <div class="r"><a class="login" href="https://app.getadmira.com">Log in</a><a class="btn dk sm" href="../../v1/">Book a demo</a>
+    <button class="burger" aria-label="Menu"><svg width="18" height="18" viewBox="0 0 18 18" stroke="currentColor" stroke-width="1.6"><path d="M3 6h12M3 12h12"/></svg></button></div>
+</div></header>
+
+<main>
+<section class="rp bp"><div class="rw">
+  <nav class="crumb rv" aria-label="Breadcrumb"><a href="../"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 8H3M7 4 3 8l4 4"/></svg>Blog</a><span>/</span><span>Attribution</span></nav>
+  <h1 class="rv">Attribution Windows Explained: Meta, Google Ads and GA4 Compared</h1>
+  <p class="sub rv">Attribution windows compared across Meta, Google Ads and GA4: default settings, view-through rules, reporting dates, and why your dashboards never match.</p>
+  <button class="act rv" type="button" data-copy><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="8.5" height="8.5" rx="1.5"/><path d="M10.5 5V3.5A1.5 1.5 0 0 0 9 2H3.5A1.5 1.5 0 0 0 2 3.5V9a1.5 1.5 0 0 0 1.5 1.5H5"/></svg><span>Copy link</span></button>
+  <div class="cols">
+    <aside class="side rv">
+      <div class="toc"><p class="lb">On this page</p><a href="#what-an-attribution-window-actually-controls">What an attribution window actually controls</a><a href="#what-each-platform-actually-does">What each platform actually does</a><a href="#why-the-same-sale-shows-up-differently-everywhere">Why the same sale shows up differently everywhere</a><a href="#how-window-choice-changes-your-numbers">How window choice changes your numbers</a><a href="#practical-recommendations">Practical recommendations</a><a href="#faq">FAQ</a></div>
+      <div class="promo"><b>Admira AI.</b><span>Ask your ads and CRM anything, in plain English.</span>
+        <div class="pi"><img src="../../assets/proto/ai@panel/04-answer.webp" alt="" loading="lazy"></div>
+        <a class="btn dk" href="../../v1/">Book a demo</a></div>
+    </aside>
+    <article class="art">
+      <div class="wm rv"><span class="tg">Attribution</span><span class="dot"></span><span class="who"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6ab7f7fc64174af658d15333_662879e093c51bd48ddda61f_admirawebclip.png" alt=""><span>Andre Sottil</span></span><span class="dot"></span><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 4.5V8l2.5 1.5"/></svg>5 min read</span><span class="dot"></span><span>Aug 12</span></div>
+      <figure class="cov rv"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6ab7f8addf00b2e388644625_6ab7f7408639a31507745f94_attribution-windows-meta-google-ga4-hero-en.jpeg" alt=""></figure>
+      <nav class="toc tm" aria-label="On this page"><p class="lb"><span>On this page</span><span>6 sections</span></p><a href="#what-an-attribution-window-actually-controls"><span class="n">1</span>What an attribution window actually controls</a><a href="#what-each-platform-actually-does"><span class="n">2</span>What each platform actually does</a><a href="#why-the-same-sale-shows-up-differently-everywhere"><span class="n">3</span>Why the same sale shows up differently everywhere</a><a href="#how-window-choice-changes-your-numbers"><span class="n">4</span>How window choice changes your numbers</a><a href="#practical-recommendations"><span class="n">5</span>Practical recommendations</a><a href="#faq"><span class="n">6</span>FAQ</a></nav>
+      <div class="prose">
+<p>An attribution window is how long after an ad interaction a platform will still claim credit for a conversion. Meta defaults to 7-day click plus 1-day view, Google Ads defaults to 30-day click for most conversion actions, and GA4 uses <a href="../../blog/ga4-data-driven-attribution-how-it-works/">data-driven attribution</a> with lookback windows of up to 90 days. Because the windows differ, the same sale can be claimed by several platforms, or reported on different dates, which is exactly why your dashboards never match.</p>
+<h2 id="what-an-attribution-window-actually-controls">What an attribution window actually controls</h2>
+<p>A window does two jobs at once. First, it decides which past ad interactions are eligible to receive credit when a conversion happens. Second, it shapes what each platform's optimization algorithm learns from, because the system only trains on conversions it is allowed to see inside that window. Change the window and you change both the report and the machine deciding who sees your ads.</p>
+<p>That dual role is why window settings deserve more respect than they usually get. Teams treat them as a reporting preference, but they are also a bidding input. A window that is too short can starve the algorithm of conversion signal; one that is too long can let it take credit for demand it did not create.</p>
+<h2 id="what-each-platform-actually-does">What each platform actually does</h2>
+<div class="tw"><table>
+<thead><tr><th>Platform</th><th>Default window</th><th>Configurable options</th><th>Counts views?</th></tr></thead>
+<tbody>
+<tr><td>Meta Ads</td><td>7-day click, 1-day view</td><td>1-day click; 7-day click; each with or without 1-day view</td><td>Yes, view-through by default</td></tr>
+<tr><td>Google Ads</td><td>30-day click (varies by conversion action)</td><td>1 to 90 days per conversion action; separate engaged-view and view windows for video</td><td>Video engaged-view and viewable impressions, depending on campaign type</td></tr>
+<tr><td>GA4</td><td>Data-driven attribution; 30-day lookback for acquisition events, up to 90 days for other conversions</td><td>Lookback adjustable in attribution settings</td><td>No, GA4 only sees clicks and sessions, not impressions</td></tr>
+</tbody>
+</table></div>
+<p>Two more details cause endless confusion. Meta reports the conversion on the date of the ad interaction (the impression or click), while GA4 reports it on the date of the conversion itself. And Google Ads lets every conversion action carry its own window, so "purchases" and "leads" in the same account may quietly follow different rules.</p>
+<h2 id="why-the-same-sale-shows-up-differently-everywhere">Why the same sale shows up differently everywhere</h2>
+<p>Imagine a customer who sees a Meta ad on the 1st, clicks a Google ad on the 5th, and buys on the 10th. Meta claims a view-through conversion dated the 1st. Google Ads claims a click conversion dated the 5th or 10th depending on the report. GA4 assigns credit across the click path, dated the 10th, and never sees the Meta impression at all. Three reports, three stories, one order.</p>
+<p>Now multiply that single journey across thousands of orders and overlapping channels. Each platform's window catches a slightly different slice of the same buyers, so the totals cannot reconcile no matter how carefully you export them. The mismatch is structural, not a bug you can configure away. It also drifts over time: as your channel mix shifts toward more retargeting or more view-through-heavy formats, the overlap grows and the gap between platform totals and real orders widens, even when nobody touched a single setting.</p>
+<h2 id="how-window-choice-changes-your-numbers">How window choice changes your numbers</h2>
+<p>Longer windows and view-through counting always raise reported conversions; they never lower them. Shortening Meta from <a href="../../blog/meta-attribution-settings-7-day-click-vs-1-day-view/">7-day click 1-day view</a> to 1-day click typically cuts reported conversions substantially, especially for retargeting. That does not mean performance changed. It means you changed the ruler you are measuring with.</p>
+<p>Window choice also feeds the algorithms. Platforms optimize toward the conversions they can see inside the window you set, so very short windows can push delivery toward impulse buyers, and very long ones can let the algorithm coast on people who would have converted anyway. The setting you pick quietly reshapes who your campaigns chase.</p>
+<p>The reporting-date difference matters for month-end analysis too. A Meta click on January 30 that converts on February 3 lands in January's Meta report and February's GA4 report. Anyone comparing "January performance" across the two tools is comparing different sets of orders by construction, before any attribution logic even enters the picture.</p>
+<h2 id="practical-recommendations">Practical recommendations</h2>
+<ul>
+<li><strong>Match the window to your real consideration cycle.</strong> Check your median time from first touch to purchase; if 90% of orders happen within 3 days, a 30-day window mostly adds noise.</li>
+<li><strong>Standardize windows across platforms</strong> as far as each one allows before you compare them side by side.</li>
+<li><strong>Document your settings.</strong> Half of all "why did our numbers change?" panics trace back to someone quietly editing a window.</li>
+<li><strong>Separate reporting from optimization.</strong> You can leave <a href="../../blog/view-through-conversions-real-value-or-inflated-roas/">view-through</a> visible for context while excluding it from the numbers you actually budget on.</li>
+<li><strong>For cross-platform truth, use a measurement layer outside the platforms,</strong> since no window setting fixes <a href="../../blog/deduplicate-conversions-across-ad-platforms/">double counting</a> between them.</li>
+</ul>
+<p>Admira sits above all three platforms and deduplicates conversions under one consistent model, so window mismatches stop driving your budget meetings. It combines <a href="../../multi-touch-attribution/">multi-touch attribution</a>, MMM, and lift testing on a cookieless-first foundation, so every channel is measured on the same ruler instead of each platform's own. If your Meta, Google and GA4 numbers never reconcile, <a href="../../book-demo/">book a demo</a> and we will show you a single reconciled view of the same conversions.</p>
+<h2 id="faq">FAQ</h2>
+<h3>Which attribution window is best for ecommerce?</h3>
+<p>For most ecommerce with short cycles, 7-day click on Meta and 30-day click on Google are workable defaults; drop view-through from decision-making even if you leave it visible for context. Long-consideration products, like furniture or high-ticket electronics, justify longer windows because real buyers genuinely take weeks to decide. Check your own median time to purchase rather than copying a competitor's setting blindly.</p>
+<h3>Why did my conversions drop after shortening a window?</h3>
+<p>Reported conversions dropped because fewer past interactions now qualify for credit, not because sales fell. Your backend orders are the check: if actual revenue held steady while the platform number dropped, the change was reporting, not performance. This is the single most common false alarm in paid media, and it is entirely avoidable by reconciling against real orders before reacting.</p>
+<h3>Can I make Meta, Google Ads, and GA4 match?</h3>
+<p>No. Different visibility, different attribution logic, and different report dating make exact reconciliation impossible. Meta sees impressions GA4 never will; GA4 sees a click path Meta ignores. You can narrow the gaps by aligning windows and standardizing conversion definitions, but matching to the decimal is not a realistic or useful goal. Aim for stable, explainable differences instead.</p>
+<h3>Do attribution windows affect billing?</h3>
+<p>No. You pay for clicks and impressions regardless of any window setting. Windows only change which conversions get reported and what each optimization system learns from. So while a longer window can make a campaign look more efficient on paper, it does not change what you actually spent, only how that spend appears to have performed.</p>
+      </div>
+      <div class="byl rv"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6ab7f7fc64174af658d15333_662879e093c51bd48ddda61f_admirawebclip.png" alt=""><div><b>Andre Sottil</b><span>Founder &amp; CEO, Admira</span></div></div>
+    </article>
+  </div>
+  <div class="ri rel"><h2 class="rv">Keep reading</h2><div class="grid"><a class="card rv" href="../why-roas-is-lying-platform-inflation/"><div class="im"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6ab7f7fc64174af658d1532f_6ab7f67a8ea175d5fb73f14a_why-roas-is-lying-platform-inflation-hero-en.jpeg" alt=""></div>
+      <div class="bd"><div class="meta"><span>Attribution</span><span class="dt">Sep 25</span></div><h2>Why Your ROAS Is Lying to You: Platform Inflation Explained</h2><p>Why platform ROAS is inflated by self-attribution, view-through and modeled conversions, how to measure the gap in 15 minutes, and what to trust instead.</p></div></a><a class="card rv" href="../meta-conversions-api-guide/"><div class="im"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6aef2ec8540d8d056ec6f90c_6aef2e52b78747b6660ba13d_meta-conversions-api-guide-hero.webp" alt=""></div>
+      <div class="bd"><div class="meta"><span>Attribution</span><span class="dt">Nov 7</span></div><h2>Meta Conversions API (CAPI): Setup Guide for Lead Gen</h2><p>The Meta Conversions API sends events from your server or CRM to Meta. Learn setup paths, event_id dedup, match quality and what lead-gen should send.</p></div></a><a class="card rv" href="../self-reported-attribution/"><div class="im"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6aef2d6d3b284257bb6934a3_6aef2ad0c39bf0a3b5720ca0_self-reported-attribution-hero.webp" alt=""></div>
+      <div class="bd"><div class="meta"><span>Attribution</span><span class="dt">Nov 7</span></div><h2>Self-Reported Attribution: How to Ask and Use It</h2><p>Self-reported attribution asks buyers how they found you. Learn the wording, placement and CRM setup, plus how to compare answers with tracked data.</p></div></a></div></div>
+</div></section>
+<section class="sec" data-examples="attribution,journeys,overview,ai-dashboard,reports" data-title="See Admira in action." data-sub="Follow the work from campaign to close."></section>
+<section class="cta"><h2 class="h1 rv">Ready to try Admira?</h2>
+  <div class="bt rv"><a class="btn dk" href="../../v1/">Get started</a><a class="btn lt" href="../../v1/">Book a demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></div>
+  <a class="sub rv" href="../../v1/#ai"><img src="../../assets/brand/admira-icon-gradient.svg" width="18" alt="">Ask Admira AI your first question <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+</section>
+</main>
+
+<footer class="ft"><div class="in">
+  <div class="cols">
+    <div><h3>Product</h3><ul><li><a href="../../v1/#ai">Admira AI</a></li><li><a href="../../multi-touch-attribution/">Attribution</a></li><li><a href="../../marketing-dashboard/">Dashboards</a></li><li><a href="../../conversion-tracking/">Conversion tracking</a></li><li><a href="../../conversions-api/">Conversions API</a></li><li><a href="../../ai-creative/">AI creative</a></li><li><a href="../../integrations/">Integrations</a></li><li><a href="../../pricing/">Pricing</a></li></ul></div>
+    <div><h3>Platforms</h3><ul><li><a href="../../integrations/meta-ads/">Meta Ads</a></li><li><a href="../../integrations/google-ads/">Google Ads</a></li><li><a href="../../integrations/tiktok-ads/">TikTok Ads</a></li><li><a href="../../integrations/linkedin-ads/">LinkedIn Ads</a></li><li><a href="../../integrations/microsoft-ads/">Microsoft Ads</a></li><li><a href="../../integrations/amazon-ads/">Amazon Ads</a></li><li><a href="../../integrations/x-ads/">X Ads</a></li><li><a href="../../integrations/mercado-libre-ads/">Mercado Libre Ads</a></li></ul></div>
+    <div><h3>Connects to</h3><ul><li><a href="../../integrations/hubspot/">HubSpot</a></li><li><a href="../../integrations/salesforce/">Salesforce</a></li><li><a href="../../integrations/kommo/">Kommo</a></li><li><a href="../../integrations/pipedrive/">Pipedrive</a></li><li><a href="../../integrations/zoho-crm/">Zoho CRM</a></li><li><a href="../../integrations/whatsapp/">WhatsApp</a></li><li><a href="../../integrations/shopify/">Shopify</a></li><li><a href="../../integrations/stripe/">Stripe</a></li></ul></div>
+    <div><h3>Solutions</h3><ul><li><a href="../../solutions/ecommerce/">Ecommerce</a></li><li><a href="../../solutions/b2b-saas/">B2B SaaS</a></li><li><a href="../../solutions/marketing-leaders/">Marketing leaders</a></li><li><a href="../../solutions/agencies/">Agencies</a></li><li><a href="../../solutions/real-estate/">Real estate</a></li><li><a href="../../attribution-platform-latam/">LATAM</a></li></ul></div>
+    <div><h3>Resources</h3><ul><li><a href="../../customers/">Customers</a></li><li><a href="../../webinars/">Webinars</a></li><li><a href="../../blog/">Blog</a></li><li><a href="../../book-demo/">Book a demo</a></li><li><a href="mailto:support@getadmira.com">Support</a></li></ul></div>
+    <div><div class="grp"><h3>Company</h3><ul><li><a href="../../book-demo/">Contact</a></li><li><a href="https://www.linkedin.com/company/getadmira/jobs/">Careers</a></li><li><a href="https://app.getadmira.com">Log in</a></li></ul></div>
+      <div class="grp"><h3>Legal</h3><ul><li><a href="../../terms-and-conditions/">Terms of Service</a></li><li><a href="../../privacy/">Privacy Policy</a></li><li><a href="../../sms/">SMS Terms</a></li></ul></div></div>
+  </div>
+  <div class="bot"><a class="logo" href="../../v1/"><img src="../../assets/brand/admira.svg" alt="Admira"></a><small>© 2026 Admira Software, Inc. All rights reserved.</small></div>
+</div></footer>
+
+<script src="../../shared/resources.js?v=1795750925"></script>
+<script src="../../shared/nav.js?v=1795750925"></script>
+<script src="../../shared/lead.js?v=1795750925"></script>
+<script src="../../shared/pop-media.js?v=1795750925"></script><script src="../../shared/pop.js?v=1795750925"></script>
+</body>
+</html>

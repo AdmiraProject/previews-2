@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>MER and Blended ROAS: The Sanity-Check Metrics Every Team Needs | Admira</title>
+<meta name="description" content="MER and blended ROAS explained: how to calculate them, why they beat platform ROAS as sanity checks, and where their limits are for channel decisions.">
+<link rel="icon" href="../../assets/brand/admira-icon-gradient.svg">
+<link rel="stylesheet" href="../../shared/base.css?v=1795750925">
+<link rel="stylesheet" href="../../shared/resources.css?v=1795750925">
+</head>
+<body class="rs det post">
+
+<div class="ann"><a href="../../v1/#inside">Admira AI is live — ask your ads and CRM anything <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a><button class="x" aria-label="Close" onclick="this.parentElement.remove()"><svg width="16" height="16" viewBox="0 0 16 16" stroke="currentColor" stroke-width="1.5"><path d="M4 4l8 8M12 4l-8 8"/></svg></button></div>
+
+<header class="hdr"><div class="in">
+  <a class="logo" href="../../v1/"><img src="../../assets/brand/admira.svg" alt="Admira" width="83" height="21"></a>
+  <nav class="nav">
+    <button>Product <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 4.5l3 3 3-3"/></svg></button>
+    <button>Solutions <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 4.5l3 3 3-3"/></svg></button>
+    <a href="../../v1/#ai">Admira AI</a><a href="../../integrations/">Integrations</a><a href="../../customers/">Customers</a>
+    <button>Resources <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 4.5l3 3 3-3"/></svg></button>
+  </nav>
+  <div class="r"><a class="login" href="https://app.getadmira.com">Log in</a><a class="btn dk sm" href="../../v1/">Book a demo</a>
+    <button class="burger" aria-label="Menu"><svg width="18" height="18" viewBox="0 0 18 18" stroke="currentColor" stroke-width="1.6"><path d="M3 6h12M3 12h12"/></svg></button></div>
+</div></header>
+
+<main>
+<section class="rp bp"><div class="rw">
+  <nav class="crumb rv" aria-label="Breadcrumb"><a href="../"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 8H3M7 4 3 8l4 4"/></svg>Blog</a><span>/</span><span>Analytics &amp; Reporting</span></nav>
+  <h1 class="rv">MER and Blended ROAS: The Sanity-Check Metrics Every Team Needs</h1>
+  <p class="sub rv">MER and blended ROAS explained: how to calculate them, why they beat platform ROAS as sanity checks, and where their limits are for channel decisions.</p>
+  <button class="act rv" type="button" data-copy><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="8.5" height="8.5" rx="1.5"/><path d="M10.5 5V3.5A1.5 1.5 0 0 0 9 2H3.5A1.5 1.5 0 0 0 2 3.5V9a1.5 1.5 0 0 0 1.5 1.5H5"/></svg><span>Copy link</span></button>
+  <div class="cols">
+    <aside class="side rv">
+      <div class="toc"><p class="lb">On this page</p><a href="#what-mer-and-blended-roas-actually-measure">What MER and blended ROAS actually measure</a><a href="#how-to-calculate-them-and-the-decisions-that-matter-first">How to calculate them, and the decisions that matter first</a><a href="#why-blended-metrics-are-the-sanity-check">Why blended metrics are the sanity check</a><a href="#what-mer-cannot-tell-you">What MER cannot tell you</a><a href="#a-simple-operating-rhythm">A simple operating rhythm</a><a href="#faq">FAQ</a></div>
+      <div class="promo"><b>Admira AI.</b><span>Ask your ads and CRM anything, in plain English.</span>
+        <div class="pi"><img src="../../assets/proto/ai@panel/04-answer.webp" alt="" loading="lazy"></div>
+        <a class="btn dk" href="../../v1/">Book a demo</a></div>
+    </aside>
+    <article class="art">
+      <div class="wm rv"><span class="tg">Analytics &amp; Reporting</span><span class="dot"></span><span class="who"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6ab7f7fc64174af658d15333_662879e093c51bd48ddda61f_admirawebclip.png" alt=""><span>Andre Sottil</span></span><span class="dot"></span><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 4.5V8l2.5 1.5"/></svg>5 min read</span><span class="dot"></span><span>Jul 25</span></div>
+      <figure class="cov rv"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6ab7f902723e4089e288d8cb_6ab7f77c60e95da32d48d027_mer-and-blended-roas-sanity-check-metrics-hero-en.jpeg" alt=""></figure>
+      <nav class="toc tm" aria-label="On this page"><p class="lb"><span>On this page</span><span>6 sections</span></p><a href="#what-mer-and-blended-roas-actually-measure"><span class="n">1</span>What MER and blended ROAS actually measure</a><a href="#how-to-calculate-them-and-the-decisions-that-matter-first"><span class="n">2</span>How to calculate them, and the decisions that matter first</a><a href="#why-blended-metrics-are-the-sanity-check"><span class="n">3</span>Why blended metrics are the sanity check</a><a href="#what-mer-cannot-tell-you"><span class="n">4</span>What MER cannot tell you</a><a href="#a-simple-operating-rhythm"><span class="n">5</span>A simple operating rhythm</a><a href="#faq"><span class="n">6</span>FAQ</a></nav>
+      <div class="prose">
+<p>MER (marketing efficiency ratio) and blended ROAS are the sanity-check metrics every team needs because neither can be gamed by attribution. MER is total revenue divided by total marketing spend across every channel; blended ROAS is the same idea, usually scoped to ad spend only. They ignore pixels, cookies, and platform claims entirely. If Meta and Google both <a href="../../blog/why-roas-is-lying-platform-inflation/">report ROAS climbing while your MER falls</a>, the platforms are reallocating credit, not creating revenue.</p>
+<h2 id="what-mer-and-blended-roas-actually-measure">What MER and blended ROAS actually measure</h2>
+<p>Both metrics answer one blunt question: for every dollar that left the business, how many dollars came back? Because they work off totals rather than attributed events, they sidestep the entire attribution debate. No pixel fires into the calculation, no view-through window inflates it, and no platform gets to grade its own homework. That top-down honesty is the whole point.</p>
+<p>The tradeoff is resolution. A blended number tells you whether the machine is efficient overall; it says nothing about which gear is doing the work. That is a feature, not a bug, as long as you use the metric for what it is: a trend check on the entire system, not a channel scoreboard.</p>
+<h2 id="how-to-calculate-them-and-the-decisions-that-matter-first">How to calculate them, and the decisions that matter first</h2>
+<p>MER = total revenue &divide; total marketing spend. Blended ROAS = total revenue &divide; total ad spend. The math is trivial; the definitions are where teams quietly disagree and reports stop matching.</p>
+<ul>
+<li><strong>Which revenue:</strong> backend gross revenue, revenue net of returns, or new-customer revenue only. New-customer MER (sometimes called aMER or acquisition MER) is harsher and far more honest for growth decisions, because it stops returning buyers from flattering your paid efficiency.</li>
+<li><strong>Which spend:</strong> ads only, or ads plus agency fees, tools, and creative production. Include more for a truthful efficiency read; include ads only for a media-buying read. Pick one and stay consistent so month-over-month comparisons stay valid.</li>
+<li><strong>Which window:</strong> weekly is noisy, monthly is a reasonable default, and cohorted views matter when sales cycles are long or subscriptions spread revenue over time.</li>
+</ul>
+<p>Write these three choices down once. Half of all MER arguments are really definition arguments in disguise, and a one-page glossary settles them before they start.</p>
+<h2 id="why-blended-metrics-are-the-sanity-check">Why blended metrics are the sanity check</h2>
+<p>Every platform measures its own contribution with its own attribution model, and those claims overlap heavily. Summed platform-reported conversions commonly exceed what the backend actually recorded, sometimes by a wide margin. MER cannot be fooled this way because it never asks who deserves credit; it only asks whether total money out produced total money in.</p>
+<p>This makes MER the referee in the most common measurement argument on the team. When a channel's reported ROAS improves, check MER. If MER improved too, the gain is probably real. If MER stayed flat while a platform's number jumped, that channel likely captured credit for conversions that were happening anyway, a familiar pattern with <a href="../../blog/what-last-click-attribution-hides/">branded search and retargeting</a>. The blended view is what keeps optimistic platform dashboards honest.</p>
+<h2 id="what-mer-cannot-tell-you">What MER cannot tell you</h2>
+<p>Honesty about the limits is what keeps the metric useful. MER is a thermometer, not a diagnosis. It tells you the patient has a fever; it will not tell you which channel caused it.</p>
+<div class="tw"><table><thead><tr><th>Question</th><th>MER / blended ROAS</th><th>What you actually need</th></tr></thead><tbody>
+<tr><td>Is marketing efficient overall?</td><td>Yes, answers directly</td><td>&mdash;</td></tr>
+<tr><td>Which channel should get the next dollar?</td><td>No</td><td><a href="../../multi-touch-attribution/">Attribution</a> plus <a href="../../blog/incrementality-testing-holdout-geo-tests/">incrementality testing</a></td></tr>
+<tr><td>Did this campaign cause revenue?</td><td>No</td><td>Lift or geo holdout tests</td></tr>
+<tr><td>How do seasonality and promos affect efficiency?</td><td>Confounds them</td><td><a href="../../blog/what-is-marketing-mix-modeling-mmm/">Marketing mix modeling (MMM)</a></td></tr>
+<tr><td>Are platform numbers drifting from reality?</td><td>Yes, as a trend check</td><td>&mdash;</td></tr>
+</tbody></table></div>
+<p>MER also moves for reasons that have nothing to do with marketing skill: price changes, promo calendars, product mix, and seasonality all swing it. A holiday-quarter MER will beat a slow-season MER at identical marketing quality, so comparing an on-sale week to a full-price week tells you about the discount, not the media. Compare like periods honestly, and annotate the ones you cannot.</p>
+<h2 id="a-simple-operating-rhythm">A simple operating rhythm</h2>
+<ol>
+<li><strong>Set a floor, not a target to maximize.</strong> Work backward from gross margin to the MER at which you break even, then decide how far above it you need to sit given your growth goals and cash position.</li>
+<li><strong>Track MER weekly for trend, judge it monthly.</strong> React to sustained moves, not single noisy weeks that mean-revert on their own.</li>
+<li><strong>Put MER next to platform ROAS in every report.</strong> The gap between them is itself a metric; watch whether it widens, because a widening gap is early warning that platform credit is inflating.</li>
+<li><strong>When MER and platform numbers diverge, escalate to real measurement.</strong> That means incrementality tests or MMM, not another week of staring at dashboards hoping the two numbers reconcile on their own.</li>
+</ol>
+<p>Remember that maximizing MER is not the goal. A business that spends almost nothing on marketing can post a spectacular MER while quietly starving its own growth. The goal is the highest spend level that still clears your efficiency floor, because that is where scale and profitability meet. A rising MER on falling spend is often a warning, not a win.</p>
+<p>MER tells you when the numbers stopped adding up; Admira tells you why. It unifies multi-touch attribution, marketing mix modeling, and lift testing in one platform, cookieless-first and live in about two weeks, so your blended sanity check arrives with the channel-level explanation attached. When your MER and your platform dashboards disagree, <a href="../../book-demo/">book a demo</a> and get the reconciled read in one place.</p>
+<h2 id="faq">FAQ</h2>
+<h3>What is a good MER?</h3>
+<p>There is no universal benchmark, because it depends on gross margin, return rates, and how much of your revenue is organic. A 70% margin business and a 25% margin business need completely different MER floors to break even. Derive your own floor from contribution margin instead of borrowing a number from a company whose economics you cannot see.</p>
+<h3>Is MER the same as blended ROAS?</h3>
+<p>Teams often use them interchangeably, but the common distinction is scope. Blended ROAS usually divides total revenue by ad spend only, while MER divides by total marketing cost, including fees, tools, and production. Define both in writing so your reports stay comparable and nobody quietly swaps one for the other mid-quarter.</p>
+<h3>Can I run a team on MER alone?</h3>
+<p>Only at small scale with one or two channels. Once budget decisions start moving money between channels, MER cannot arbitrate, because it has no idea which channel earned the return. At that point you need attribution and incrementality evidence to allocate, with MER kept alongside as the check that your allocation is actually working.</p>
+<h3>Why did MER drop while every platform ROAS went up?</h3>
+<p>Usually credit capture: platforms attributing conversions that organic, email, or another channel would have driven anyway. Each dashboard looks great in isolation while the blended result quietly slips. It is the classic signal to run a holdout or geo lift test before trusting the platform trend and reallocating budget toward it.</p>
+      </div>
+      <div class="byl rv"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6ab7f7fc64174af658d15333_662879e093c51bd48ddda61f_admirawebclip.png" alt=""><div><b>Andre Sottil</b><span>Founder &amp; CEO, Admira</span></div></div>
+    </article>
+  </div>
+  <div class="ri rel"><h2 class="rv">Keep reading</h2><div class="grid"><a class="card rv" href="../agency-client-reporting-prove-roi/"><div class="im"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6aef2d08d8fd63d2fd38404d_6aef2ad0f85f0165b355cde1_agency-client-reporting-prove-roi-hero.webp" alt=""></div>
+      <div class="bd"><div class="meta"><span>Analytics &amp; Reporting</span><span class="dt">Nov 7</span></div><h2>How Agencies Prove ROI to Clients (With Examples)</h2><p>Agencies prove ROI by tying ad spend to CRM revenue and reporting profit after media and fees. Get the formula, a report template and a worked example.</p></div></a><a class="card rv" href="../cac-by-channel/"><div class="im"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6aef2d7c98b1dfc807034a12_6aef2acf4098f0625e4403a7_cac-by-channel-hero.webp" alt=""></div>
+      <div class="bd"><div class="meta"><span>Analytics &amp; Reporting</span><span class="dt">Nov 7</span></div><h2>How to Calculate CAC by Channel (With Examples)</h2><p>CAC by channel = channel spend ÷ new customers attributed to it. Get the formulas, a 7-step process, a worked example and the mistakes that distort it.</p></div></a><a class="card rv" href="../how-to-analyze-ad-campaigns/"><div class="im"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6aef3bbb98b1dfc807055a6a_6aef2e534beb95db2c252850_how-to-analyze-ad-campaigns-hero.webp" alt=""></div>
+      <div class="bd"><div class="meta"><span>Analytics &amp; Reporting</span><span class="dt">Nov 7</span></div><h2>How to Analyze Ad Campaigns: A Weekly Checklist</h2><p>How to analyze ad campaigns in 10 steps: check tracking, rank by cost per sale, diagnose the funnel and decide to scale, fix or pause. Example inside.</p></div></a></div></div>
+</div></section>
+<section class="sec" data-examples="attribution,journeys,overview,ai-dashboard,reports" data-title="See Admira in action." data-sub="Follow the work from campaign to close."></section>
+<section class="cta"><h2 class="h1 rv">Ready to try Admira?</h2>
+  <div class="bt rv"><a class="btn dk" href="../../v1/">Get started</a><a class="btn lt" href="../../v1/">Book a demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></div>
+  <a class="sub rv" href="../../v1/#ai"><img src="../../assets/brand/admira-icon-gradient.svg" width="18" alt="">Ask Admira AI your first question <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+</section>
+</main>
+
+<footer class="ft"><div class="in">
+  <div class="cols">
+    <div><h3>Product</h3><ul><li><a href="../../v1/#ai">Admira AI</a></li><li><a href="../../multi-touch-attribution/">Attribution</a></li><li><a href="../../marketing-dashboard/">Dashboards</a></li><li><a href="../../conversion-tracking/">Conversion tracking</a></li><li><a href="../../conversions-api/">Conversions API</a></li><li><a href="../../ai-creative/">AI creative</a></li><li><a href="../../integrations/">Integrations</a></li><li><a href="../../pricing/">Pricing</a></li></ul></div>
+    <div><h3>Platforms</h3><ul><li><a href="../../integrations/meta-ads/">Meta Ads</a></li><li><a href="../../integrations/google-ads/">Google Ads</a></li><li><a href="../../integrations/tiktok-ads/">TikTok Ads</a></li><li><a href="../../integrations/linkedin-ads/">LinkedIn Ads</a></li><li><a href="../../integrations/microsoft-ads/">Microsoft Ads</a></li><li><a href="../../integrations/amazon-ads/">Amazon Ads</a></li><li><a href="../../integrations/x-ads/">X Ads</a></li><li><a href="../../integrations/mercado-libre-ads/">Mercado Libre Ads</a></li></ul></div>
+    <div><h3>Connects to</h3><ul><li><a href="../../integrations/hubspot/">HubSpot</a></li><li><a href="../../integrations/salesforce/">Salesforce</a></li><li><a href="../../integrations/kommo/">Kommo</a></li><li><a href="../../integrations/pipedrive/">Pipedrive</a></li><li><a href="../../integrations/zoho-crm/">Zoho CRM</a></li><li><a href="../../integrations/whatsapp/">WhatsApp</a></li><li><a href="../../integrations/shopify/">Shopify</a></li><li><a href="../../integrations/stripe/">Stripe</a></li></ul></div>
+    <div><h3>Solutions</h3><ul><li><a href="../../solutions/ecommerce/">Ecommerce</a></li><li><a href="../../solutions/b2b-saas/">B2B SaaS</a></li><li><a href="../../solutions/marketing-leaders/">Marketing leaders</a></li><li><a href="../../solutions/agencies/">Agencies</a></li><li><a href="../../solutions/real-estate/">Real estate</a></li><li><a href="../../attribution-platform-latam/">LATAM</a></li></ul></div>
+    <div><h3>Resources</h3><ul><li><a href="../../customers/">Customers</a></li><li><a href="../../webinars/">Webinars</a></li><li><a href="../../blog/">Blog</a></li><li><a href="../../book-demo/">Book a demo</a></li><li><a href="mailto:support@getadmira.com">Support</a></li></ul></div>
+    <div><div class="grp"><h3>Company</h3><ul><li><a href="../../book-demo/">Contact</a></li><li><a href="https://www.linkedin.com/company/getadmira/jobs/">Careers</a></li><li><a href="https://app.getadmira.com">Log in</a></li></ul></div>
+      <div class="grp"><h3>Legal</h3><ul><li><a href="../../terms-and-conditions/">Terms of Service</a></li><li><a href="../../privacy/">Privacy Policy</a></li><li><a href="../../sms/">SMS Terms</a></li></ul></div></div>
+  </div>
+  <div class="bot"><a class="logo" href="../../v1/"><img src="../../assets/brand/admira.svg" alt="Admira"></a><small>© 2026 Admira Software, Inc. All rights reserved.</small></div>
+</div></footer>
+
+<script src="../../shared/resources.js?v=1795750925"></script>
+<script src="../../shared/nav.js?v=1795750925"></script>
+<script src="../../shared/lead.js?v=1795750925"></script>
+<script src="../../shared/pop-media.js?v=1795750925"></script><script src="../../shared/pop.js?v=1795750925"></script>
+</body>
+</html>

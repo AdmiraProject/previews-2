@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>LinkedIn Ads Attribution for B2B: A Practical Guide | Admira</title>
+<meta name="description" content="LinkedIn ads attribution for B2B: default 30-day click and 7-day view windows, Conversions API, Revenue Attribution Report and how to tie ads to revenue.">
+<link rel="icon" href="../../assets/brand/admira-icon-gradient.svg">
+<link rel="stylesheet" href="../../shared/base.css?v=1795750925">
+<link rel="stylesheet" href="../../shared/resources.css?v=1795750925">
+</head>
+<body class="rs det post">
+
+<div class="ann"><a href="../../v1/#inside">Admira AI is live — ask your ads and CRM anything <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a><button class="x" aria-label="Close" onclick="this.parentElement.remove()"><svg width="16" height="16" viewBox="0 0 16 16" stroke="currentColor" stroke-width="1.5"><path d="M4 4l8 8M12 4l-8 8"/></svg></button></div>
+
+<header class="hdr"><div class="in">
+  <a class="logo" href="../../v1/"><img src="../../assets/brand/admira.svg" alt="Admira" width="83" height="21"></a>
+  <nav class="nav">
+    <button>Product <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 4.5l3 3 3-3"/></svg></button>
+    <button>Solutions <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 4.5l3 3 3-3"/></svg></button>
+    <a href="../../v1/#ai">Admira AI</a><a href="../../integrations/">Integrations</a><a href="../../customers/">Customers</a>
+    <button>Resources <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 4.5l3 3 3-3"/></svg></button>
+  </nav>
+  <div class="r"><a class="login" href="https://app.getadmira.com">Log in</a><a class="btn dk sm" href="../../v1/">Book a demo</a>
+    <button class="burger" aria-label="Menu"><svg width="18" height="18" viewBox="0 0 18 18" stroke="currentColor" stroke-width="1.6"><path d="M3 6h12M3 12h12"/></svg></button></div>
+</div></header>
+
+<main>
+<section class="rp bp"><div class="rw">
+  <nav class="crumb rv" aria-label="Breadcrumb"><a href="../"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 8H3M7 4 3 8l4 4"/></svg>Blog</a><span>/</span><span>Attribution</span></nav>
+  <h1 class="rv">LinkedIn Ads Attribution for B2B: A Practical Guide</h1>
+  <p class="sub rv">LinkedIn ads attribution for B2B: default 30-day click and 7-day view windows, Conversions API, Revenue Attribution Report and how to tie ads to revenue.</p>
+  <button class="act rv" type="button" data-copy><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="8.5" height="8.5" rx="1.5"/><path d="M10.5 5V3.5A1.5 1.5 0 0 0 9 2H3.5A1.5 1.5 0 0 0 2 3.5V9a1.5 1.5 0 0 0 1.5 1.5H5"/></svg><span>Copy link</span></button>
+  <div class="cols">
+    <aside class="side rv">
+      <div class="toc"><p class="lb">On this page</p><a href="#why-is-linkedin-ads-attribution-so-hard-in-b2b">Why is LinkedIn ads attribution so hard in B2B?</a><a href="#how-does-linkedin-s-native-attribution-work">How does LinkedIn's native attribution work?</a><a href="#which-linkedin-measurement-options-should-you-use">Which LinkedIn measurement options should you use?</a><a href="#how-do-you-set-up-linkedin-ads-attribution-step-by-step">How do you set up LinkedIn ads attribution step by step?</a><a href="#what-does-linkedin-attribution-look-like-with-real-numbers">What does LinkedIn attribution look like with real numbers?</a><a href="#which-attribution-window-should-a-b2b-team-choose-on-linkedi">Which attribution window should a B2B team choose on LinkedIn?</a><a href="#what-mistakes-distort-linkedin-ads-attribution">What mistakes distort LinkedIn ads attribution?</a><a href="#where-does-admira-fit">Where does Admira fit?</a><a href="#who-is-this-for-and-when-doesn-t-it-apply">Who is this for, and when doesn't it apply?</a><a href="#faq">FAQ</a></div>
+      <div class="promo"><b>Admira AI.</b><span>Ask your ads and CRM anything, in plain English.</span>
+        <div class="pi"><img src="../../assets/proto/ai@panel/04-answer.webp" alt="" loading="lazy"></div>
+        <a class="btn dk" href="../../v1/">Book a demo</a></div>
+    </aside>
+    <article class="art">
+      <div class="wm rv"><span class="tg">Attribution</span><span class="dot"></span><span class="who"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6ab7f7fc64174af658d15333_662879e093c51bd48ddda61f_admirawebclip.png" alt=""><span>Andre Sottil</span></span><span class="dot"></span><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 4.5V8l2.5 1.5"/></svg>6 min read</span><span class="dot"></span><span>Nov 7</span></div>
+      <figure class="cov rv"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6aef2d0f01893f76b00bd40a_6aef2acff58440c0c9f5ec76_linkedin-ads-attribution-hero.webp" alt=""></figure>
+      <nav class="toc tm" aria-label="On this page"><p class="lb"><span>On this page</span><span>10 sections</span></p><a href="#why-is-linkedin-ads-attribution-so-hard-in-b2b"><span class="n">1</span>Why is LinkedIn ads attribution so hard in B2B?</a><a href="#how-does-linkedin-s-native-attribution-work"><span class="n">2</span>How does LinkedIn's native attribution work?</a><a href="#which-linkedin-measurement-options-should-you-use"><span class="n">3</span>Which LinkedIn measurement options should you use?</a><a href="#how-do-you-set-up-linkedin-ads-attribution-step-by-step"><span class="n">4</span>How do you set up LinkedIn ads attribution step by step?</a><a href="#what-does-linkedin-attribution-look-like-with-real-numbers"><span class="n">5</span>What does LinkedIn attribution look like with real numbers?</a><a href="#which-attribution-window-should-a-b2b-team-choose-on-linkedi"><span class="n">6</span>Which attribution window should a B2B team choose on LinkedIn?</a><a href="#what-mistakes-distort-linkedin-ads-attribution"><span class="n">7</span>What mistakes distort LinkedIn ads attribution?</a><a href="#where-does-admira-fit"><span class="n">8</span>Where does Admira fit?</a><a href="#who-is-this-for-and-when-doesn-t-it-apply"><span class="n">9</span>Who is this for, and when doesn't it apply?</a><a href="#faq"><span class="n">10</span>FAQ</a></nav>
+      <div class="prose">
+<p>LinkedIn ads attribution credits conversions to the last LinkedIn campaign a person clicked or viewed, inside a post-click window of 30 days and a view-through window of 7 days by default for conversion rules created through the Conversions API; for B2B teams, the useful version goes further and ties LinkedIn touches to CRM opportunities and closed revenue. You can get there in three ways: send qualified-lead and pipeline stages back through LinkedIn's Conversions API, connect Salesforce, Dynamics 365 or HubSpot to LinkedIn's Revenue Attribution Report, or use a CRM-based attribution tool that compares LinkedIn with your other channels.</p>
+<p>This guide covers how LinkedIn counts conversions, which settings matter for long sales cycles, a step-by-step setup, a worked example comparing attribution views, and the honest limits of measuring LinkedIn.</p>
+<h2 id="why-is-linkedin-ads-attribution-so-hard-in-b2b">Why is LinkedIn ads attribution so hard in B2B?</h2>
+<ul>
+<li><strong>Long sales cycles.</strong> A deal that closes in 90 to 180 days falls outside short attribution windows.</li>
+<li><strong>Buying committees.</strong> The person who saw your ad may not be the one who fills the form or signs.</li>
+<li><strong>View-heavy influence.</strong> Many people see LinkedIn ads and never click, then search your brand weeks later.</li>
+<li><strong>On-platform lead forms.</strong> Lead Gen Form leads never visit your site, so website tracking misses them unless you sync them to the CRM.</li>
+<li><strong>Expensive clicks.</strong> Small samples per campaign make results noisy.</li>
+</ul>
+<p>The general problem of long cycles is covered in <a href="../../blog/b2b-saas-attribution-long-sales-cycles/">B2B SaaS attribution for long sales cycles</a>. This post focuses on what is specific to LinkedIn.</p>
+<h2 id="how-does-linkedin-s-native-attribution-work">How does LinkedIn's native attribution work?</h2>
+<p>These settings come from <a href="https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/conversions-api-schema" target="_blank" rel="noopener">LinkedIn's Conversions API schema documentation</a> (checked November 2026).</p>
+<div class="tw"><table>
+<thead><tr><th>Setting</th><th>Default</th><th>Options</th></tr></thead>
+<tbody>
+<tr><td>Post-click window</td><td>30 days</td><td>1, 7, 30 or 90 days; 180 and 365 days for some types, including LEAD, QUALIFIED_LEAD, MARKETING_QUALIFIED_LEAD, SALES_QUALIFIED_LEAD and PURCHASE</td></tr>
+<tr><td>View-through window</td><td>7 days</td><td>Same options as post-click</td></tr>
+<tr><td>Attribution type</td><td>Last touch, each campaign</td><td>"Each campaign" counts a conversion once per campaign that can claim it; "single campaign" counts it once per conversion</td></tr>
+<tr><td>Matching identifiers</td><td>n/a</td><td>Hashed email, LinkedIn first-party click ID (li_fat_id), IP address, Lead Gen Form response ID, name with company and title, and more</td></tr>
+<tr><td>Event age limit</td><td>n/a</td><td>Conversion timestamps must be within the past 90 days</td></tr>
+</tbody>
+</table></div>
+<p>Two details matter. First, the default "each campaign" setting means one conversion can show up in several campaigns, so campaign totals can exceed your real lead count. Second, LinkedIn supports a QUALIFIED_LEAD conversion type that can be used as an optimization target for Lead Generation campaigns, and reports qualified leads and cost per qualified lead as metrics.</p>
+<h2 id="which-linkedin-measurement-options-should-you-use">Which LinkedIn measurement options should you use?</h2>
+<div class="tw"><table>
+<thead><tr><th>Option</th><th>What it measures</th><th>Strength</th><th>Limit</th></tr></thead>
+<tbody>
+<tr><td>Insight Tag</td><td>Website conversions after LinkedIn clicks and views</td><td>Easy to install</td><td>Browser-based; blocked by some browsers and consent choices</td></tr>
+<tr><td>Conversions API</td><td>Server or CRM events, such as qualified lead, SQL, purchase</td><td>Reaches offline and pipeline stages</td><td>Needs a lead ID, hashed email or click ID to match</td></tr>
+<tr><td>Lead Gen Forms plus CRM sync</td><td>Leads captured on LinkedIn</td><td>No website needed</td><td>Lead quality varies; must be synced to see outcomes</td></tr>
+<tr><td>Revenue Attribution Report</td><td>Pipeline and revenue influenced by LinkedIn</td><td>Uses your CRM data inside LinkedIn</td><td>Only LinkedIn's view; supported CRMs are Salesforce, Dynamics 365 and HubSpot</td></tr>
+<tr><td>CRM-based attribution tool</td><td>LinkedIn next to Meta, Google and other channels</td><td>One model for all channels</td><td>Depends on clean UTMs and CRM hygiene</td></tr>
+<tr><td>Self-reported attribution</td><td>What buyers say influenced them</td><td>Captures views and word of mouth</td><td>Memory bias</td></tr>
+</tbody>
+</table></div>
+<p>No single option is enough. Most B2B teams pair CRM-based attribution with a self-reported field. See <a href="../../blog/self-reported-attribution/">how self-reported attribution works</a>.</p>
+<h2 id="how-do-you-set-up-linkedin-ads-attribution-step-by-step">How do you set up LinkedIn ads attribution step by step?</h2>
+<ol>
+<li><strong>Tag every LinkedIn ad with UTMs</strong> using one naming convention for source, medium, campaign and content. Our <a href="../../blog/utm-tagging-best-practices-naming-convention/">UTM naming convention guide</a> has a template.</li>
+<li><strong>Install the Insight Tag and enable enhanced conversion tracking</strong> so LinkedIn adds the li_fat_id click ID to your URLs.</li>
+<li><strong>Capture UTMs and li_fat_id in hidden form fields</strong> and store them on the CRM contact.</li>
+<li><strong>Sync Lead Gen Form leads to your CRM</strong> with their source, so they are not lost as "offline."</li>
+<li><strong>Create Conversions API rules for pipeline stages</strong>: lead, qualified lead, SQL and closed-won. Set windows that match your cycle.</li>
+<li><strong>Send stage changes from the CRM</strong> with hashed email, li_fat_id or the lead form response ID, within 90 days of the event.</li>
+<li><strong>Report in the CRM, not only in Campaign Manager</strong>: cost per SQL, pipeline created and revenue by LinkedIn campaign, next to your other channels.</li>
+</ol>
+<p>LinkedIn's <a href="https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/conversions-api" target="_blank" rel="noopener">Conversions API documentation</a> recommends sending multiple identifiers per event, because only matched events can be used for attribution and optimization.</p>
+<h2 id="what-does-linkedin-attribution-look-like-with-real-numbers">What does LinkedIn attribution look like with real numbers?</h2>
+<p><strong>Example (hypothetical numbers):</strong> a B2B software company spends $10,000 on LinkedIn in one quarter. Average deal size is $18,000.</p>
+<div class="tw"><table>
+<thead><tr><th>View</th><th>Result credited to LinkedIn</th><th>Cost per result</th><th>Revenue credited</th><th>Return on spend</th></tr></thead>
+<tbody>
+<tr><td>Campaign Manager conversions (30-day click, 7-day view)</td><td>120 conversions, 80 of them view-through</td><td>$83</td><td>n/a</td><td>n/a</td></tr>
+<tr><td>CRM, leads with LinkedIn UTM or click ID</td><td>45 leads, 12 SQLs</td><td>$833 per SQL</td><td>n/a</td><td>n/a</td></tr>
+<tr><td>CRM, last-touch closed-won</td><td>1 deal</td><td>$10,000</td><td>$18,000</td><td>1.8x</td></tr>
+<tr><td>CRM, first-touch closed-won</td><td>3 deals</td><td>$3,333</td><td>$54,000</td><td>5.4x</td></tr>
+<tr><td>Influenced (any LinkedIn touch at the account)</td><td>7 deals</td><td>n/a</td><td>$126,000</td><td>Not a return figure</td></tr>
+</tbody>
+</table></div>
+<p>The same quarter gives a return between 1.8x and 5.4x depending on the model. LinkedIn tends to start deals and then hand over to search and sales, so last-touch undervalues it. The "influenced" row is useful context but is not a return: other channels touched those deals too. Present first-touch or multi-touch next to last-touch, and use cost per SQL as the in-quarter metric. For CAC across channels, apply the method in <a href="../../blog/cac-by-channel/">how to calculate CAC by channel</a>.</p>
+<h2 id="which-attribution-window-should-a-b2b-team-choose-on-linkedi">Which attribution window should a B2B team choose on LinkedIn?</h2>
+<ul>
+<li><strong>Lead events:</strong> a 30-day or 90-day post-click window usually fits B2B research cycles.</li>
+<li><strong>Qualified lead and SQL events:</strong> 90 days, or 180 days if SQLs routinely arrive months after the first click.</li>
+<li><strong>View-through:</strong> keep it short (7 days) and report it separately. Long view windows credit LinkedIn for people who would have converted anyway. Read <a href="../../blog/view-through-conversions-real-value-or-inflated-roas/">whether view-through conversions are real value</a>.</li>
+</ul>
+<p>Longer windows make LinkedIn look better, not necessarily more accurate. Use your CRM's median days from first touch to SQL to pick the window.</p>
+<h2 id="what-mistakes-distort-linkedin-ads-attribution">What mistakes distort LinkedIn ads attribution?</h2>
+<ul>
+<li>Treating Campaign Manager conversion totals as leads, when "each campaign" counting can repeat them.</li>
+<li>Judging LinkedIn on last-touch revenue alone.</li>
+<li>Not syncing Lead Gen Form leads, so LinkedIn's best leads show up with no source.</li>
+<li>Comparing LinkedIn's revenue report with Meta's or Google's own numbers, which use different rules.</li>
+<li>Reading results after a few weeks in a 120-day sales cycle.</li>
+</ul>
+<h2 id="where-does-admira-fit">Where does Admira fit?</h2>
+<p>Admira ties Meta, Google Ads, TikTok and Click-to-WhatsApp leads to CRM revenue in HubSpot, Salesforce and other CRMs, with multi-touch models and buyer journeys. LinkedIn is not among the ad platform integrations listed on Admira's site today. Admira builds missing integrations on request, so if LinkedIn is a major channel for you, ask exactly how LinkedIn spend and UTM-tagged leads would appear before you buy. See the <a href="../../b2b-marketing-attribution/">B2B marketing attribution</a> page for the rest of the setup. If you only need LinkedIn's own view and use HubSpot, also read <a href="../../blog/hubspot-attribution-reports-limits/">whether HubSpot attribution reporting is enough</a>.</p>
+<h2 id="who-is-this-for-and-when-doesn-t-it-apply">Who is this for, and when doesn't it apply?</h2>
+<p><strong>It is for</strong> B2B teams with a CRM, sales cycles longer than a few weeks, and enough LinkedIn spend that budget decisions depend on it.</p>
+<p><strong>It applies less</strong> when LinkedIn is mainly a recruiting or employer-brand channel, when you run only a few thousand dollars a quarter (results will be too noisy to compare), or when you need causal proof. For that, run a holdout or geo test.</p>
+<h2 id="faq">FAQ</h2>
+<h3>What is LinkedIn's default attribution window?</h3>
+<p>For conversion rules created through the Conversions API, the documented defaults are a 30-day post-click and a 7-day view-through window.</p>
+<h3>Does LinkedIn use last-click attribution?</h3>
+<p>It uses last-touch attribution by default, counting either clicks or views within the windows. By default each campaign that can claim the conversion counts it once.</p>
+<h3>Can LinkedIn optimize for qualified leads?</h3>
+<p>Yes. LinkedIn's QUALIFIED_LEAD conversion type can be used as an optimization target in Lead Generation campaigns when you send qualified leads from your CRM.</p>
+<h3>Which CRMs work with LinkedIn's Revenue Attribution Report?</h3>
+<p>Salesforce, Microsoft Dynamics 365 and HubSpot. Setup needs admin access in LinkedIn Business Manager and the CRM.</p>
+<h3>How far back can I send conversions to LinkedIn?</h3>
+<p>The Conversions API accepts conversion timestamps from the past 90 days.</p>
+<h3>Why does LinkedIn report more conversions than my CRM has leads?</h3>
+<p>View-through credit and per-campaign counting both add conversions. Compare click-through conversions with CRM leads that carry a LinkedIn source.</p>
+      </div>
+      <div class="byl rv"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6ab7f7fc64174af658d15333_662879e093c51bd48ddda61f_admirawebclip.png" alt=""><div><b>Andre Sottil</b><span>Founder &amp; CEO, Admira</span></div></div>
+    </article>
+  </div>
+  <div class="ri rel"><h2 class="rv">Keep reading</h2><div class="grid"><a class="card rv" href="../why-roas-is-lying-platform-inflation/"><div class="im"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6ab7f7fc64174af658d1532f_6ab7f67a8ea175d5fb73f14a_why-roas-is-lying-platform-inflation-hero-en.jpeg" alt=""></div>
+      <div class="bd"><div class="meta"><span>Attribution</span><span class="dt">Sep 25</span></div><h2>Why Your ROAS Is Lying to You: Platform Inflation Explained</h2><p>Why platform ROAS is inflated by self-attribution, view-through and modeled conversions, how to measure the gap in 15 minutes, and what to trust instead.</p></div></a><a class="card rv" href="../meta-conversions-api-guide/"><div class="im"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6aef2ec8540d8d056ec6f90c_6aef2e52b78747b6660ba13d_meta-conversions-api-guide-hero.webp" alt=""></div>
+      <div class="bd"><div class="meta"><span>Attribution</span><span class="dt">Nov 7</span></div><h2>Meta Conversions API (CAPI): Setup Guide for Lead Gen</h2><p>The Meta Conversions API sends events from your server or CRM to Meta. Learn setup paths, event_id dedup, match quality and what lead-gen should send.</p></div></a><a class="card rv" href="../self-reported-attribution/"><div class="im"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6aef2d6d3b284257bb6934a3_6aef2ad0c39bf0a3b5720ca0_self-reported-attribution-hero.webp" alt=""></div>
+      <div class="bd"><div class="meta"><span>Attribution</span><span class="dt">Nov 7</span></div><h2>Self-Reported Attribution: How to Ask and Use It</h2><p>Self-reported attribution asks buyers how they found you. Learn the wording, placement and CRM setup, plus how to compare answers with tracked data.</p></div></a></div></div>
+</div></section>
+<section class="sec" data-examples="attribution,journeys,overview,ai-dashboard,reports" data-title="See Admira in action." data-sub="Follow the work from campaign to close."></section>
+<section class="cta"><h2 class="h1 rv">Ready to try Admira?</h2>
+  <div class="bt rv"><a class="btn dk" href="../../v1/">Get started</a><a class="btn lt" href="../../v1/">Book a demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></div>
+  <a class="sub rv" href="../../v1/#ai"><img src="../../assets/brand/admira-icon-gradient.svg" width="18" alt="">Ask Admira AI your first question <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+</section>
+</main>
+
+<footer class="ft"><div class="in">
+  <div class="cols">
+    <div><h3>Product</h3><ul><li><a href="../../v1/#ai">Admira AI</a></li><li><a href="../../multi-touch-attribution/">Attribution</a></li><li><a href="../../marketing-dashboard/">Dashboards</a></li><li><a href="../../conversion-tracking/">Conversion tracking</a></li><li><a href="../../conversions-api/">Conversions API</a></li><li><a href="../../ai-creative/">AI creative</a></li><li><a href="../../integrations/">Integrations</a></li><li><a href="../../pricing/">Pricing</a></li></ul></div>
+    <div><h3>Platforms</h3><ul><li><a href="../../integrations/meta-ads/">Meta Ads</a></li><li><a href="../../integrations/google-ads/">Google Ads</a></li><li><a href="../../integrations/tiktok-ads/">TikTok Ads</a></li><li><a href="../../integrations/linkedin-ads/">LinkedIn Ads</a></li><li><a href="../../integrations/microsoft-ads/">Microsoft Ads</a></li><li><a href="../../integrations/amazon-ads/">Amazon Ads</a></li><li><a href="../../integrations/x-ads/">X Ads</a></li><li><a href="../../integrations/mercado-libre-ads/">Mercado Libre Ads</a></li></ul></div>
+    <div><h3>Connects to</h3><ul><li><a href="../../integrations/hubspot/">HubSpot</a></li><li><a href="../../integrations/salesforce/">Salesforce</a></li><li><a href="../../integrations/kommo/">Kommo</a></li><li><a href="../../integrations/pipedrive/">Pipedrive</a></li><li><a href="../../integrations/zoho-crm/">Zoho CRM</a></li><li><a href="../../integrations/whatsapp/">WhatsApp</a></li><li><a href="../../integrations/shopify/">Shopify</a></li><li><a href="../../integrations/stripe/">Stripe</a></li></ul></div>
+    <div><h3>Solutions</h3><ul><li><a href="../../solutions/ecommerce/">Ecommerce</a></li><li><a href="../../solutions/b2b-saas/">B2B SaaS</a></li><li><a href="../../solutions/marketing-leaders/">Marketing leaders</a></li><li><a href="../../solutions/agencies/">Agencies</a></li><li><a href="../../solutions/real-estate/">Real estate</a></li><li><a href="../../attribution-platform-latam/">LATAM</a></li></ul></div>
+    <div><h3>Resources</h3><ul><li><a href="../../customers/">Customers</a></li><li><a href="../../webinars/">Webinars</a></li><li><a href="../../blog/">Blog</a></li><li><a href="../../book-demo/">Book a demo</a></li><li><a href="mailto:support@getadmira.com">Support</a></li></ul></div>
+    <div><div class="grp"><h3>Company</h3><ul><li><a href="../../book-demo/">Contact</a></li><li><a href="https://www.linkedin.com/company/getadmira/jobs/">Careers</a></li><li><a href="https://app.getadmira.com">Log in</a></li></ul></div>
+      <div class="grp"><h3>Legal</h3><ul><li><a href="../../terms-and-conditions/">Terms of Service</a></li><li><a href="../../privacy/">Privacy Policy</a></li><li><a href="../../sms/">SMS Terms</a></li></ul></div></div>
+  </div>
+  <div class="bot"><a class="logo" href="../../v1/"><img src="../../assets/brand/admira.svg" alt="Admira"></a><small>© 2026 Admira Software, Inc. All rights reserved.</small></div>
+</div></footer>
+
+<script src="../../shared/resources.js?v=1795750925"></script>
+<script src="../../shared/nav.js?v=1795750925"></script>
+<script src="../../shared/lead.js?v=1795750925"></script>
+<script src="../../shared/pop-media.js?v=1795750925"></script><script src="../../shared/pop.js?v=1795750925"></script>
+</body>
+</html>

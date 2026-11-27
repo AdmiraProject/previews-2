@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>TikTok Ads Attribution: Events API Setup Guide | Admira</title>
+<meta name="description" content="TikTok ads attribution explained: click and view windows, Events API setup, ttclid, CRM signal postback and why TikTok numbers differ from your CRM.">
+<link rel="icon" href="../../assets/brand/admira-icon-gradient.svg">
+<link rel="stylesheet" href="../../shared/base.css?v=1795750925">
+<link rel="stylesheet" href="../../shared/resources.css?v=1795750925">
+</head>
+<body class="rs det post">
+
+<div class="ann"><a href="../../v1/#inside">Admira AI is live — ask your ads and CRM anything <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a><button class="x" aria-label="Close" onclick="this.parentElement.remove()"><svg width="16" height="16" viewBox="0 0 16 16" stroke="currentColor" stroke-width="1.5"><path d="M4 4l8 8M12 4l-8 8"/></svg></button></div>
+
+<header class="hdr"><div class="in">
+  <a class="logo" href="../../v1/"><img src="../../assets/brand/admira.svg" alt="Admira" width="83" height="21"></a>
+  <nav class="nav">
+    <button>Product <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 4.5l3 3 3-3"/></svg></button>
+    <button>Solutions <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 4.5l3 3 3-3"/></svg></button>
+    <a href="../../v1/#ai">Admira AI</a><a href="../../integrations/">Integrations</a><a href="../../customers/">Customers</a>
+    <button>Resources <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 4.5l3 3 3-3"/></svg></button>
+  </nav>
+  <div class="r"><a class="login" href="https://app.getadmira.com">Log in</a><a class="btn dk sm" href="../../v1/">Book a demo</a>
+    <button class="burger" aria-label="Menu"><svg width="18" height="18" viewBox="0 0 18 18" stroke="currentColor" stroke-width="1.6"><path d="M3 6h12M3 12h12"/></svg></button></div>
+</div></header>
+
+<main>
+<section class="rp bp"><div class="rw">
+  <nav class="crumb rv" aria-label="Breadcrumb"><a href="../"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 8H3M7 4 3 8l4 4"/></svg>Blog</a><span>/</span><span>Attribution</span></nav>
+  <h1 class="rv">TikTok Ads Attribution: Events API Setup Guide</h1>
+  <p class="sub rv">TikTok ads attribution explained: click and view windows, Events API setup, ttclid, CRM signal postback and why TikTok numbers differ from your CRM.</p>
+  <button class="act rv" type="button" data-copy><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="8.5" height="8.5" rx="1.5"/><path d="M10.5 5V3.5A1.5 1.5 0 0 0 9 2H3.5A1.5 1.5 0 0 0 2 3.5V9a1.5 1.5 0 0 0 1.5 1.5H5"/></svg><span>Copy link</span></button>
+  <div class="cols">
+    <aside class="side rv">
+      <div class="toc"><p class="lb">On this page</p><a href="#how-does-tiktok-attribute-conversions">How does TikTok attribute conversions?</a><a href="#what-attribution-windows-does-tiktok-offer">What attribution windows does TikTok offer?</a><a href="#what-is-the-difference-between-the-tiktok-pixel-events-api-a">What is the difference between the TikTok Pixel, Events API and CRM events?</a><a href="#how-do-you-set-up-the-tiktok-events-api-step-by-step">How do you set up the TikTok Events API step by step?</a><a href="#how-do-you-send-crm-lead-stages-back-to-tiktok">How do you send CRM lead stages back to TikTok?</a><a href="#why-don-t-tiktok-s-numbers-match-your-crm">Why don't TikTok's numbers match your CRM?</a><a href="#what-does-a-tiktok-attribution-reconciliation-look-like">What does a TikTok attribution reconciliation look like?</a><a href="#how-do-you-measure-tiktok-s-real-contribution">How do you measure TikTok's real contribution?</a><a href="#where-does-admira-fit">Where does Admira fit?</a><a href="#who-is-this-for-and-when-doesn-t-it-apply">Who is this for, and when doesn't it apply?</a><a href="#faq">FAQ</a></div>
+      <div class="promo"><b>Admira AI.</b><span>Ask your ads and CRM anything, in plain English.</span>
+        <div class="pi"><img src="../../assets/proto/ai@panel/04-answer.webp" alt="" loading="lazy"></div>
+        <a class="btn dk" href="../../v1/">Book a demo</a></div>
+    </aside>
+    <article class="art">
+      <div class="wm rv"><span class="tg">Attribution</span><span class="dot"></span><span class="who"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6ab7f7fc64174af658d15333_662879e093c51bd48ddda61f_admirawebclip.png" alt=""><span>Andre Sottil</span></span><span class="dot"></span><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 4.5V8l2.5 1.5"/></svg>6 min read</span><span class="dot"></span><span>Nov 7</span></div>
+      <figure class="cov rv"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6aef2ca6b78747b6660b0788_6aef2acf883aab66d8b61e63_tiktok-ads-attribution-hero.webp" alt=""></figure>
+      <nav class="toc tm" aria-label="On this page"><p class="lb"><span>On this page</span><span>11 sections</span></p><a href="#how-does-tiktok-attribute-conversions"><span class="n">1</span>How does TikTok attribute conversions?</a><a href="#what-attribution-windows-does-tiktok-offer"><span class="n">2</span>What attribution windows does TikTok offer?</a><a href="#what-is-the-difference-between-the-tiktok-pixel-events-api-a"><span class="n">3</span>What is the difference between the TikTok Pixel, Events API and CRM events?</a><a href="#how-do-you-set-up-the-tiktok-events-api-step-by-step"><span class="n">4</span>How do you set up the TikTok Events API step by step?</a><a href="#how-do-you-send-crm-lead-stages-back-to-tiktok"><span class="n">5</span>How do you send CRM lead stages back to TikTok?</a><a href="#why-don-t-tiktok-s-numbers-match-your-crm"><span class="n">6</span>Why don't TikTok's numbers match your CRM?</a><a href="#what-does-a-tiktok-attribution-reconciliation-look-like"><span class="n">7</span>What does a TikTok attribution reconciliation look like?</a><a href="#how-do-you-measure-tiktok-s-real-contribution"><span class="n">8</span>How do you measure TikTok's real contribution?</a><a href="#where-does-admira-fit"><span class="n">9</span>Where does Admira fit?</a><a href="#who-is-this-for-and-when-doesn-t-it-apply"><span class="n">10</span>Who is this for, and when doesn't it apply?</a><a href="#faq"><span class="n">11</span>FAQ</a></nav>
+      <div class="prose">
+<p>TikTok ads attribution credits a conversion to a TikTok ad when the person clicked or viewed that ad within the attribution window set on the ad group (click-through: 1, 7, 14 or 28 days; view-through: off, 1 or 7 days), using signals from the TikTok Pixel, the Events API and any CRM events you send. To make those numbers trustworthy for lead generation, you need three things: server-side events through the Events API, the ttclid click ID and UTMs stored with every lead, and CRM stages posted back to TikTok so it can optimize for leads that buy.</p>
+<p>This guide explains how TikTok counts conversions, how to set up the Events API and CRM postback step by step, why TikTok's numbers rarely match your CRM, and how to measure TikTok's real contribution to revenue.</p>
+<h2 id="how-does-tiktok-attribute-conversions">How does TikTok attribute conversions?</h2>
+<p>TikTok matches a conversion event (a lead, a purchase, a CRM stage) to a person who saw or clicked one of your ads. If the event happens inside the ad group's attribution window, TikTok counts it. Two kinds of credit exist:</p>
+<ul>
+<li><strong>Click-through attribution (CTA):</strong> the person clicked the ad, then converted within the click window.</li>
+<li><strong>View-through attribution (VTA):</strong> the person saw the ad without clicking, then converted within the view window.</li>
+</ul>
+<p>TikTok only sees its own ads. If the same person also clicked a Google ad and a Meta ad, each platform may claim the conversion. That is why platform totals add up to more than your real sales. Our guide to <a href="../../blog/deduplicate-conversions-across-ad-platforms/">deduplicating conversions across ad platforms</a> covers how to fix the double counting.</p>
+<h2 id="what-attribution-windows-does-tiktok-offer">What attribution windows does TikTok offer?</h2>
+<p>According to <a href="https://ads.tiktok.com/help/article/attribution-settings-at-the-ad-group-level" target="_blank" rel="noopener">TikTok's help center on ad group attribution settings</a> (checked November 2026):</p>
+<div class="tw"><table>
+<thead><tr><th>Setting</th><th>Options</th><th>What to know</th></tr></thead>
+<tbody>
+<tr><td>Click-through window</td><td>1, 7, 14 or 28 days</td><td>7 days is the common default; longer windows credit TikTok for more delayed conversions</td></tr>
+<tr><td>View-through window</td><td>Off, 1 day or 7 days</td><td>1 day is the common default; view-through credit is the most likely to be inflated</td></tr>
+<tr><td>Event count</td><td>"Every" or "Once"</td><td>Every counts repeat events (useful for purchases); Once counts one per person</td></tr>
+<tr><td>Editing</td><td>Locked after publishing</td><td>Attribution settings cannot be changed once the ad group is published</td></tr>
+</tbody>
+</table></div>
+<p>Because the settings are locked, decide them before launch. For a lead-gen business with a 2 to 4 week sales cycle, a 7-day click window for the lead event is reasonable, and the sale should be attributed in your CRM rather than inside TikTok.</p>
+<h2 id="what-is-the-difference-between-the-tiktok-pixel-events-api-a">What is the difference between the TikTok Pixel, Events API and CRM events?</h2>
+<div class="tw"><table>
+<thead><tr><th>Signal</th><th>Where it fires</th><th>Best for</th><th>Main weakness</th></tr></thead>
+<tbody>
+<tr><td>TikTok Pixel</td><td>Browser, on your website</td><td>Page views, form submits, add to cart</td><td>Blocked by ad blockers, browser limits and consent choices</td></tr>
+<tr><td>Events API (web)</td><td>Your server</td><td>The same web events, sent more reliably</td><td>Needs setup and deduplication with the Pixel</td></tr>
+<tr><td>CRM events (signal postback)</td><td>Your CRM, through the Events API or an upload</td><td>Qualified leads, appointments, sales that happen offline</td><td>Needs a lead ID or contact data to match</td></tr>
+</tbody>
+</table></div>
+<p>Most lead-gen advertisers need all three. The Pixel and web Events API capture the form. CRM events tell TikTok which of those forms turned into revenue.</p>
+<h2 id="how-do-you-set-up-the-tiktok-events-api-step-by-step">How do you set up the TikTok Events API step by step?</h2>
+<ol>
+<li><strong>Install the TikTok Pixel</strong> and confirm your key event (for example, form submit) fires in Events Manager.</li>
+<li><strong>Turn on the Events API</strong> through a partner integration, Google Tag Manager server-side, or a direct server connection.</li>
+<li><strong>Send the same event_id from the Pixel and the Events API</strong> for each event. TikTok's <a href="https://ads.tiktok.com/resources/help/article/event-deduplication?lang=en" target="_blank" rel="noopener">deduplication guide</a> says matching events are deduplicated within 48 hours of the first one.</li>
+<li><strong>Pass matching data:</strong> the ttclid click ID from the landing page URL, hashed email and phone, and the _ttp cookie where consent allows.</li>
+<li><strong>Store ttclid and UTMs on the lead in your CRM.</strong> You will need them later to match sales back to campaigns. Our <a href="../../lead-tracking/">lead tracking</a> page shows how this works across forms and WhatsApp.</li>
+<li><strong>Check Events Manager diagnostics.</strong> The event detail view separates browser, server and combined counts, which tells you whether deduplication is working.</li>
+</ol>
+<h2 id="how-do-you-send-crm-lead-stages-back-to-tiktok">How do you send CRM lead stages back to TikTok?</h2>
+<p>TikTok calls this signal postback. According to <a href="https://ads.tiktok.com/help/article/about-signal-postback-for-lead-quality-optimization?lang=en" target="_blank" rel="noopener">TikTok's help center</a>, you can send CRM events through the CRM Events API, CSV upload, Google Sheets, Zapier, Make and other partners. The key rules:</p>
+<ul>
+<li><strong>Match with the TikTok lead ID when you have it</strong> (Instant Form leads), or with email or phone for leads from your own forms.</li>
+<li><strong>Send event time</strong> as a Unix timestamp in seconds, in UTC.</li>
+<li><strong>Map your CRM events to TikTok's four funnel stages</strong> in Events Manager, then choose which stage to optimize in a deep funnel optimization campaign.</li>
+<li><strong>Keep volume steady.</strong> TikTok recommends more than 50 signals within 14 days for more stable optimization.</li>
+</ul>
+<p>This is TikTok's equivalent of Meta's conversion leads goal, explained in <a href="../../blog/optimize-meta-ads-for-qualified-leads/">how to optimize Meta ads for qualified leads</a>.</p>
+<h2 id="why-don-t-tiktok-s-numbers-match-your-crm">Why don't TikTok's numbers match your CRM?</h2>
+<ul>
+<li><strong>View-through credit.</strong> A 1-day or 7-day view window counts people who scrolled past an ad and converted later for other reasons. See <a href="../../blog/view-through-conversions-real-value-or-inflated-roas/">whether view-through conversions are real value</a>.</li>
+<li><strong>Different windows.</strong> TikTok may use 7-day click while your CRM uses first touch with no time limit.</li>
+<li><strong>Cross-platform claims.</strong> TikTok, Meta and Google can each claim the same lead.</li>
+<li><strong>Lost click IDs.</strong> If ttclid and UTMs never reach the CRM, TikTok leads show up as "direct" or "unknown."</li>
+<li><strong>Leads are not sales.</strong> TikTok counts the form; your CRM counts the deal.</li>
+</ul>
+<h2 id="what-does-a-tiktok-attribution-reconciliation-look-like">What does a TikTok attribution reconciliation look like?</h2>
+<p><strong>Example (hypothetical numbers):</strong> a B2B training company spends $6,000 on TikTok in one month.</p>
+<div class="tw"><table>
+<thead><tr><th>Source of the number</th><th>Leads</th><th>Sales</th><th>Cost per lead</th><th>Cost per sale</th></tr></thead>
+<tbody>
+<tr><td>TikTok Ads Manager (7-day click + 1-day view)</td><td>60</td><td>n/a</td><td>$100</td><td>n/a</td></tr>
+<tr><td>TikTok, click-through only</td><td>38</td><td>n/a</td><td>$158</td><td>n/a</td></tr>
+<tr><td>CRM, leads with TikTok ttclid or UTM</td><td>34</td><td>6</td><td>$176</td><td>$1,000</td></tr>
+<tr><td>CRM after fixing lost click IDs on WhatsApp leads</td><td>41</td><td>8</td><td>$146</td><td>$750</td></tr>
+</tbody>
+</table></div>
+<p>The first row is what TikTok reports. The second shows that 22 of the 60 leads came from view-through. The CRM rows show what matters for budget: TikTok drove 6 to 8 sales, and its cost per sale depends heavily on whether WhatsApp leads keep their source. If Meta's cost per sale is $600 on the same CRM basis, TikTok is more expensive but not by as much as the raw view-through numbers suggest. Use the CRM basis for <a href="../../blog/cac-by-channel/">CAC by channel</a>.</p>
+<h2 id="how-do-you-measure-tiktok-s-real-contribution">How do you measure TikTok's real contribution?</h2>
+<ul>
+<li><strong>CRM-based attribution</strong> with click IDs and UTMs: the baseline for cost per sale.</li>
+<li><strong>Self-reported attribution</strong>: ask "How did you hear about us?" on the form. TikTok is often seen but not clicked, so buyers mention it more than click data does.</li>
+<li><strong>Holdout or geo tests</strong>: pause TikTok in some regions and compare sales. Our guide to <a href="../../blog/incrementality-testing-holdout-geo-tests/">incrementality testing with holdouts and geo tests</a> explains the design.</li>
+</ul>
+<h2 id="where-does-admira-fit">Where does Admira fit?</h2>
+<p>Admira connects TikTok, Meta, Google Ads and Click-to-WhatsApp leads to closed deals in HubSpot, Salesforce, Kommo and other CRMs, and its <a href="../../conversions-api/">Conversion API</a> sends CRM events back to ad platforms server-side. That gives you TikTok's cost per lead and cost per sale on the same basis as your other channels. It is a young brand with few public reviews, and it does not replace incrementality testing.</p>
+<h2 id="who-is-this-for-and-when-doesn-t-it-apply">Who is this for, and when doesn't it apply?</h2>
+<p><strong>It is for</strong> lead-gen and sales-led teams spending on TikTok alongside Meta or Google who need to know which leads become customers.</p>
+<p><strong>It applies less</strong> to pure TikTok Shop sellers, where purchases happen inside TikTok, and to brand campaigns optimized for reach, where click-based attribution undercounts by design.</p>
+<h2 id="faq">FAQ</h2>
+<h3>What is TikTok's default attribution window?</h3>
+<p>The commonly used default is a 7-day click and 1-day view window. Check the attribution settings on each ad group, because they cannot be changed after publishing.</p>
+<h3>Do I need the Events API if I already have the Pixel?</h3>
+<p>For lead generation, yes in most cases. The Events API recovers events the browser misses and is the route for CRM events that happen offline.</p>
+<h3>What is ttclid?</h3>
+<p>It is TikTok's click ID, added to your landing page URL when someone clicks an ad. Store it with the lead so later CRM events can be matched to the click.</p>
+<h3>How do I avoid double counting between the Pixel and the Events API?</h3>
+<p>Send the same event_id for the same event from both. TikTok deduplicates matching events within 48 hours.</p>
+<h3>How many CRM events does TikTok need to optimize?</h3>
+<p>TikTok recommends more than 50 signals within 14 days for stable lead quality optimization.</p>
+<h3>Should I report TikTok view-through conversions to leadership?</h3>
+<p>Report them separately from click-through and CRM-verified results. Treat view-through as a hint, not proof.</p>
+      </div>
+      <div class="byl rv"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6ab7f7fc64174af658d15333_662879e093c51bd48ddda61f_admirawebclip.png" alt=""><div><b>Andre Sottil</b><span>Founder &amp; CEO, Admira</span></div></div>
+    </article>
+  </div>
+  <div class="ri rel"><h2 class="rv">Keep reading</h2><div class="grid"><a class="card rv" href="../why-roas-is-lying-platform-inflation/"><div class="im"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6ab7f7fc64174af658d1532f_6ab7f67a8ea175d5fb73f14a_why-roas-is-lying-platform-inflation-hero-en.jpeg" alt=""></div>
+      <div class="bd"><div class="meta"><span>Attribution</span><span class="dt">Sep 25</span></div><h2>Why Your ROAS Is Lying to You: Platform Inflation Explained</h2><p>Why platform ROAS is inflated by self-attribution, view-through and modeled conversions, how to measure the gap in 15 minutes, and what to trust instead.</p></div></a><a class="card rv" href="../meta-conversions-api-guide/"><div class="im"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6aef2ec8540d8d056ec6f90c_6aef2e52b78747b6660ba13d_meta-conversions-api-guide-hero.webp" alt=""></div>
+      <div class="bd"><div class="meta"><span>Attribution</span><span class="dt">Nov 7</span></div><h2>Meta Conversions API (CAPI): Setup Guide for Lead Gen</h2><p>The Meta Conversions API sends events from your server or CRM to Meta. Learn setup paths, event_id dedup, match quality and what lead-gen should send.</p></div></a><a class="card rv" href="../self-reported-attribution/"><div class="im"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6aef2d6d3b284257bb6934a3_6aef2ad0c39bf0a3b5720ca0_self-reported-attribution-hero.webp" alt=""></div>
+      <div class="bd"><div class="meta"><span>Attribution</span><span class="dt">Nov 7</span></div><h2>Self-Reported Attribution: How to Ask and Use It</h2><p>Self-reported attribution asks buyers how they found you. Learn the wording, placement and CRM setup, plus how to compare answers with tracked data.</p></div></a></div></div>
+</div></section>
+<section class="sec" data-examples="attribution,journeys,overview,ai-dashboard,reports" data-title="See Admira in action." data-sub="Follow the work from campaign to close."></section>
+<section class="cta"><h2 class="h1 rv">Ready to try Admira?</h2>
+  <div class="bt rv"><a class="btn dk" href="../../v1/">Get started</a><a class="btn lt" href="../../v1/">Book a demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></div>
+  <a class="sub rv" href="../../v1/#ai"><img src="../../assets/brand/admira-icon-gradient.svg" width="18" alt="">Ask Admira AI your first question <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+</section>
+</main>
+
+<footer class="ft"><div class="in">
+  <div class="cols">
+    <div><h3>Product</h3><ul><li><a href="../../v1/#ai">Admira AI</a></li><li><a href="../../multi-touch-attribution/">Attribution</a></li><li><a href="../../marketing-dashboard/">Dashboards</a></li><li><a href="../../conversion-tracking/">Conversion tracking</a></li><li><a href="../../conversions-api/">Conversions API</a></li><li><a href="../../ai-creative/">AI creative</a></li><li><a href="../../integrations/">Integrations</a></li><li><a href="../../pricing/">Pricing</a></li></ul></div>
+    <div><h3>Platforms</h3><ul><li><a href="../../integrations/meta-ads/">Meta Ads</a></li><li><a href="../../integrations/google-ads/">Google Ads</a></li><li><a href="../../integrations/tiktok-ads/">TikTok Ads</a></li><li><a href="../../integrations/linkedin-ads/">LinkedIn Ads</a></li><li><a href="../../integrations/microsoft-ads/">Microsoft Ads</a></li><li><a href="../../integrations/amazon-ads/">Amazon Ads</a></li><li><a href="../../integrations/x-ads/">X Ads</a></li><li><a href="../../integrations/mercado-libre-ads/">Mercado Libre Ads</a></li></ul></div>
+    <div><h3>Connects to</h3><ul><li><a href="../../integrations/hubspot/">HubSpot</a></li><li><a href="../../integrations/salesforce/">Salesforce</a></li><li><a href="../../integrations/kommo/">Kommo</a></li><li><a href="../../integrations/pipedrive/">Pipedrive</a></li><li><a href="../../integrations/zoho-crm/">Zoho CRM</a></li><li><a href="../../integrations/whatsapp/">WhatsApp</a></li><li><a href="../../integrations/shopify/">Shopify</a></li><li><a href="../../integrations/stripe/">Stripe</a></li></ul></div>
+    <div><h3>Solutions</h3><ul><li><a href="../../solutions/ecommerce/">Ecommerce</a></li><li><a href="../../solutions/b2b-saas/">B2B SaaS</a></li><li><a href="../../solutions/marketing-leaders/">Marketing leaders</a></li><li><a href="../../solutions/agencies/">Agencies</a></li><li><a href="../../solutions/real-estate/">Real estate</a></li><li><a href="../../attribution-platform-latam/">LATAM</a></li></ul></div>
+    <div><h3>Resources</h3><ul><li><a href="../../customers/">Customers</a></li><li><a href="../../webinars/">Webinars</a></li><li><a href="../../blog/">Blog</a></li><li><a href="../../book-demo/">Book a demo</a></li><li><a href="mailto:support@getadmira.com">Support</a></li></ul></div>
+    <div><div class="grp"><h3>Company</h3><ul><li><a href="../../book-demo/">Contact</a></li><li><a href="https://www.linkedin.com/company/getadmira/jobs/">Careers</a></li><li><a href="https://app.getadmira.com">Log in</a></li></ul></div>
+      <div class="grp"><h3>Legal</h3><ul><li><a href="../../terms-and-conditions/">Terms of Service</a></li><li><a href="../../privacy/">Privacy Policy</a></li><li><a href="../../sms/">SMS Terms</a></li></ul></div></div>
+  </div>
+  <div class="bot"><a class="logo" href="../../v1/"><img src="../../assets/brand/admira.svg" alt="Admira"></a><small>© 2026 Admira Software, Inc. All rights reserved.</small></div>
+</div></footer>
+
+<script src="../../shared/resources.js?v=1795750925"></script>
+<script src="../../shared/nav.js?v=1795750925"></script>
+<script src="../../shared/lead.js?v=1795750925"></script>
+<script src="../../shared/pop-media.js?v=1795750925"></script><script src="../../shared/pop.js?v=1795750925"></script>
+</body>
+</html>

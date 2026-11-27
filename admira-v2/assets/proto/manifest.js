@@ -1,0 +1,9016 @@
+window.ADM_MANIFEST={
+ "ai": [
+  {
+   "file": "ai/01-ready.webp",
+   "route": "#/agents",
+   "desc": "Admira AI new chat: \"Ready when you are\", composer and three suggestions",
+   "clickTo": {
+    "x": 497,
+    "y": 387,
+    "w": 735,
+    "h": 48
+   },
+   "focus": [
+    {
+     "label": "headline",
+     "x": 720,
+     "y": 301,
+     "w": 288,
+     "h": 40
+    },
+    {
+     "label": "composer",
+     "x": 481,
+     "y": 373,
+     "w": 767,
+     "h": 114
+    },
+    {
+     "label": "suggestions",
+     "x": 481,
+     "y": 499,
+     "w": 767,
+     "h": 108
+    },
+    {
+     "label": "history",
+     "x": 80,
+     "y": 77,
+     "w": 192,
+     "h": 754
+    }
+   ]
+  },
+  {
+   "file": "ai/02-typed.webp",
+   "route": "#/agents",
+   "desc": "Question typed in the composer, send button active",
+   "clickTo": {
+    "x": 1200,
+    "y": 443,
+    "w": 32,
+    "h": 32
+   },
+   "focus": [
+    {
+     "label": "composer",
+     "x": 481,
+     "y": 373,
+     "w": 767,
+     "h": 114
+    },
+    {
+     "label": "send",
+     "x": 1200,
+     "y": 443,
+     "w": 32,
+     "h": 32
+    }
+   ]
+  },
+  {
+   "file": "ai/03-thinking.webp",
+   "route": "#/agents/chat/c1795728069689",
+   "desc": "Agent working: steps ticking (reading attribution, matching sales to channels)",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "question",
+     "x": 663,
+     "y": 72,
+     "w": 337,
+     "h": 38
+    },
+    {
+     "label": "steps",
+     "x": 364,
+     "y": 132,
+     "w": 303,
+     "h": 139
+    },
+    {
+     "label": "outputs panel",
+     "x": 1024,
+     "y": 16,
+     "w": 400,
+     "h": 868
+    }
+   ]
+  },
+  {
+   "file": "ai/04-answer.webp",
+   "route": "#/agents/chat/c1795728069689",
+   "desc": "Answer with the report open in the Outputs panel (paid performance, last 30 days)",
+   "clickTo": {
+    "x": 1348,
+    "y": 27,
+    "w": 30,
+    "h": 30
+   },
+   "focus": [
+    {
+     "label": "answer",
+     "x": 328,
+     "y": 132,
+     "w": 672,
+     "h": 587
+    },
+    {
+     "label": "report panel",
+     "x": 1024,
+     "y": 16,
+     "w": 400,
+     "h": 868
+    },
+    {
+     "label": "panel body",
+     "x": 1025,
+     "y": 68,
+     "w": 399,
+     "h": 816
+    },
+    {
+     "label": "question",
+     "x": 663,
+     "y": 72,
+     "w": 337,
+     "h": 38
+    }
+   ]
+  },
+  {
+   "file": "ai/05-report-wide.webp",
+   "route": "#/agents/chat/c1795728069689",
+   "desc": "Outputs panel expanded: the full report next to the chat",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "report panel",
+     "x": 842,
+     "y": 16,
+     "w": 582,
+     "h": 868
+    },
+    {
+     "label": "panel body",
+     "x": 843,
+     "y": 68,
+     "w": 581,
+     "h": 816
+    },
+    {
+     "label": "answer",
+     "x": 328,
+     "y": 132,
+     "w": 490,
+     "h": 648
+    }
+   ]
+  },
+  {
+   "file": "ai/06-toolkit.webp",
+   "route": "#/agents/chat/c1795728082755",
+   "desc": "Asked about Facebook before Meta is connected: \"Enable toolkit\" card with + Connect",
+   "clickTo": {
+    "x": 866,
+    "y": 249,
+    "w": 84,
+    "h": 28
+   },
+   "focus": [
+    {
+     "label": "toolkit card",
+     "x": 517,
+     "y": 167,
+     "w": 460,
+     "h": 172
+    },
+    {
+     "label": "question",
+     "x": 848,
+     "y": 72,
+     "w": 400,
+     "h": 38
+    },
+    {
+     "label": "answer text",
+     "x": 517,
+     "y": 132,
+     "w": 731,
+     "h": 23
+    }
+   ]
+  },
+  {
+   "file": "ai/07-connect-meta.webp",
+   "route": "#/agents/chat/c1795728082755",
+   "desc": "\"Connect to Facebook Ads\" dialog (Admira ••• Meta), dark Continue",
+   "clickTo": {
+    "x": 508,
+    "y": 491,
+    "w": 424,
+    "h": 56
+   },
+   "focus": [
+    {
+     "label": "dialog",
+     "x": 460,
+     "y": 226,
+     "w": 520,
+     "h": 448
+    },
+    {
+     "label": "logos",
+     "x": 648,
+     "y": 282,
+     "w": 144,
+     "h": 48
+    },
+    {
+     "label": "title",
+     "x": 547,
+     "y": 356,
+     "w": 345,
+     "h": 36
+    }
+   ]
+  },
+  {
+   "file": "ai/08-connecting.webp",
+   "route": "#/agents/chat/c1795728082755",
+   "desc": "Continue pressed: \"Connecting...\" spinner",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "dialog",
+     "x": 460,
+     "y": 226,
+     "w": 520,
+     "h": 448
+    },
+    {
+     "label": "button",
+     "x": 508,
+     "y": 491,
+     "w": 424,
+     "h": 56
+    }
+   ]
+  },
+  {
+   "file": "ai/09-connected.webp",
+   "route": "#/agents/chat/c1795728082755",
+   "desc": "Facebook Ads connected in the toolkit card, Enable ready",
+   "clickTo": {
+    "x": 530,
+    "y": 288,
+    "w": 76,
+    "h": 28
+   },
+   "focus": [
+    {
+     "label": "toolkit card",
+     "x": 517,
+     "y": 167,
+     "w": 460,
+     "h": 162
+    },
+    {
+     "label": "connected badge",
+     "x": 874,
+     "y": 250,
+     "w": 76,
+     "h": 16
+    }
+   ]
+  },
+  {
+   "file": "ai/10-after-connect.webp",
+   "route": "#/agents/chat/c1795728082755",
+   "desc": "Toolkit enabled: the held answer runs and the report opens",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "toolkit card",
+     "x": 364,
+     "y": 20,
+     "w": 460,
+     "h": 124
+    },
+    {
+     "label": "answer",
+     "x": 328,
+     "y": 0,
+     "w": 672,
+     "h": 753
+    },
+    {
+     "label": "report panel",
+     "x": 1024,
+     "y": 16,
+     "w": 400,
+     "h": 868
+    }
+   ]
+  },
+  {
+   "file": "ai/11-campaign-draft.webp",
+   "route": "#/agents/chat/c1795728102740",
+   "desc": "Launch a Meta campaign at MX$2,000/day: campaign draft in the panel, approval button",
+   "clickTo": {
+    "x": 878,
+    "y": 328,
+    "w": 110,
+    "h": 32
+   },
+   "focus": [
+    {
+     "label": "answer",
+     "x": 328,
+     "y": 132,
+     "w": 672,
+     "h": 280
+    },
+    {
+     "label": "draft panel",
+     "x": 1024,
+     "y": 16,
+     "w": 400,
+     "h": 868
+    },
+    {
+     "label": "approve",
+     "x": 878,
+     "y": 328,
+     "w": 110,
+     "h": 32
+    }
+   ]
+  },
+  {
+   "file": "ai/12-campaign-live.webp",
+   "route": "#/agents/chat/c1795728102740",
+   "desc": "Approved: campaign created in Meta, budget and guardrail set",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "answer",
+     "x": 328,
+     "y": 132,
+     "w": 672,
+     "h": 306
+    },
+    {
+     "label": "draft panel",
+     "x": 1024,
+     "y": 16,
+     "w": 400,
+     "h": 868
+    }
+   ]
+  }
+ ],
+ "dash": [
+  {
+   "file": "dash/01-paid-growth.webp",
+   "route": "#/dashboards",
+   "desc": "Dashboard \"Paid growth weekly\": KPI cards, Spend vs Leads combo, Leads by source",
+   "clickTo": {
+    "x": 334,
+    "y": 458,
+    "w": 598,
+    "h": 269
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 316,
+     "y": 34,
+     "w": 218,
+     "h": 36
+    },
+    {
+     "label": "amount spent",
+     "x": 318,
+     "y": 142,
+     "w": 261,
+     "h": 168
+    },
+    {
+     "label": "pipeline gauge",
+     "x": 1149,
+     "y": 142,
+     "w": 261,
+     "h": 168
+    },
+    {
+     "label": "spend vs leads",
+     "x": 318,
+     "y": 326,
+     "w": 630,
+     "h": 444
+    },
+    {
+     "label": "leads by source",
+     "x": 964,
+     "y": 326,
+     "w": 446,
+     "h": 444
+    }
+   ]
+  },
+  {
+   "file": "dash/02-tooltip.webp",
+   "route": "#/dashboards",
+   "desc": "Hover on Spend vs Leads: tooltip with the day values",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "spend vs leads",
+     "x": 318,
+     "y": 326,
+     "w": 630,
+     "h": 444
+    },
+    {
+     "label": "tooltip",
+     "x": 515,
+     "y": 602,
+     "w": 186,
+     "h": 84
+    }
+   ]
+  },
+  {
+   "file": "dash/03-bar-hover.webp",
+   "route": "#/dashboards",
+   "desc": "Hover on Leads by source bar",
+   "clickTo": {
+    "x": 595,
+    "y": 142,
+    "w": 261,
+    "h": 168
+   },
+   "focus": [
+    {
+     "label": "leads by source",
+     "x": 964,
+     "y": 326,
+     "w": 446,
+     "h": 444
+    }
+   ]
+  },
+  {
+   "file": "dash/04-drilldown.webp",
+   "route": "#/dashboards",
+   "desc": "Click a number: the leads behind it open in a side panel",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "drilldown panel",
+     "x": 1062,
+     "y": 0,
+     "w": 378,
+     "h": 900
+    },
+    {
+     "label": "list",
+     "x": 1086,
+     "y": 159,
+     "w": 330,
+     "h": 672
+    }
+   ]
+  },
+  {
+   "file": "dash/05-pre-date.webp",
+   "route": "#/dashboards",
+   "desc": "Dashboard before changing the date range",
+   "clickTo": {
+    "x": 824,
+    "y": 32,
+    "w": 151,
+    "h": 40
+   },
+   "focus": [
+    {
+     "label": "date",
+     "x": 824,
+     "y": 32,
+     "w": 151,
+     "h": 40
+    }
+   ]
+  },
+  {
+   "file": "dash/06-date-menu.webp",
+   "route": "#/dashboards",
+   "desc": "Date range menu open (presets with their dates)",
+   "clickTo": {
+    "x": 840,
+    "y": 378,
+    "w": 208,
+    "h": 36
+   },
+   "focus": [
+    {
+     "label": "menu",
+     "x": 824,
+     "y": 78,
+     "w": 240,
+     "h": 312
+    },
+    {
+     "label": "date",
+     "x": 824,
+     "y": 32,
+     "w": 151,
+     "h": 40
+    }
+   ]
+  },
+  {
+   "file": "dash/07-last-90.webp",
+   "route": "#/dashboards",
+   "desc": "Date range switched to Last 90 days: every card recomputed",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "amount spent",
+     "x": 318,
+     "y": 142,
+     "w": 261,
+     "h": 168
+    },
+    {
+     "label": "spend vs leads",
+     "x": 318,
+     "y": 326,
+     "w": 630,
+     "h": 444
+    },
+    {
+     "label": "leads by source",
+     "x": 964,
+     "y": 326,
+     "w": 446,
+     "h": 444
+    }
+   ]
+  },
+  {
+   "file": "dash/08-sankey.webp",
+   "route": "#/charts",
+   "desc": "All chart types gallery: Sankey with the funnel strip",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "Sankey card",
+     "x": 318,
+     "y": 20,
+     "w": 1092,
+     "h": 444
+    },
+    {
+     "label": "neighbour",
+     "x": 1390,
+     "y": 444,
+     "w": 20,
+     "h": 20
+    }
+   ]
+  },
+  {
+   "file": "dash/09-map.webp",
+   "route": "#/charts",
+   "desc": "All chart types gallery: Map of leads by city",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "Map card",
+     "x": 318,
+     "y": 20,
+     "w": 538,
+     "h": 490
+    },
+    {
+     "label": "neighbour",
+     "x": 836,
+     "y": 490,
+     "w": 20,
+     "h": 20
+    }
+   ]
+  },
+  {
+   "file": "dash/10-funnel.webp",
+   "route": "#/charts",
+   "desc": "All chart types gallery: Funnel to sale",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "Funnel card",
+     "x": 318,
+     "y": 20,
+     "w": 538,
+     "h": 444
+    },
+    {
+     "label": "neighbour",
+     "x": 836,
+     "y": 444,
+     "w": 20,
+     "h": 20
+    }
+   ]
+  },
+  {
+   "file": "dash/11-journey-chart.webp",
+   "route": "#/charts",
+   "desc": "All chart types gallery: Journey chart",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "Journey card",
+     "x": 318,
+     "y": 20,
+     "w": 446,
+     "h": 536
+    },
+    {
+     "label": "neighbour",
+     "x": 744,
+     "y": 536,
+     "w": 20,
+     "h": 20
+    }
+   ]
+  }
+ ],
+ "journey": [
+  {
+   "file": "journey/01-report.webp",
+   "route": "#/report",
+   "desc": "Customer journey report: winning journeys lift + source → funnel → result Sankey",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "title",
+     "x": 316,
+     "y": 34,
+     "w": 269,
+     "h": 36
+    },
+    {
+     "label": "lift bars",
+     "x": 318,
+     "y": 142,
+     "w": 446,
+     "h": 582
+    },
+    {
+     "label": "sankey",
+     "x": 780,
+     "y": 142,
+     "w": 630,
+     "h": 582
+    },
+    {
+     "label": "funnel strip",
+     "x": 913,
+     "y": 223,
+     "w": 199,
+     "h": 17
+    }
+   ]
+  },
+  {
+   "file": "journey/02-report-routes.webp",
+   "route": "#/report",
+   "desc": "Journey report scrolled: routes that sell the most and more journey reports",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "routes",
+     "x": 318,
+     "y": 96,
+     "w": 1092,
+     "h": 444
+    }
+   ]
+  },
+  {
+   "file": "journey/03-report-more.webp",
+   "route": "#/report",
+   "desc": "Journey report further down: more journey reports",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "card",
+     "x": 318,
+     "y": 0,
+     "w": 1092,
+     "h": 88
+    },
+    {
+     "label": "card 2",
+     "x": 318,
+     "y": 104,
+     "w": 538,
+     "h": 536
+    }
+   ]
+  },
+  {
+   "file": "journey/04-users.webp",
+   "route": "#/users",
+   "desc": "Users list: identified and anonymous visitors, first touch, location, events",
+   "clickTo": {
+    "x": 354,
+    "y": 422,
+    "w": 1020,
+    "h": 52
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 328,
+     "y": 45,
+     "w": 54,
+     "h": 27
+    },
+    {
+     "label": "table",
+     "x": 328,
+     "y": 96,
+     "w": 1072,
+     "h": 708
+    },
+    {
+     "label": "Luis Treviño row",
+     "x": 354,
+     "y": 422,
+     "w": 1020,
+     "h": 52
+    }
+   ]
+  },
+  {
+   "file": "journey/05-profile-feed.webp",
+   "route": "#/users/40c830b7-3fc8",
+   "desc": "User profile, Feed tab",
+   "clickTo": {
+    "x": 414,
+    "y": 98,
+    "w": 105,
+    "h": 38
+   },
+   "focus": [
+    {
+     "label": "header",
+     "x": 328,
+     "y": 40,
+     "w": 1072,
+     "h": 38
+    },
+    {
+     "label": "tab content",
+     "x": 328,
+     "y": 151,
+     "w": 1072,
+     "h": 749
+    }
+   ]
+  },
+  {
+   "file": "journey/06-profile-overview.webp",
+   "route": "#/users/40c830b7-3fc8",
+   "desc": "User profile, Overview tab",
+   "clickTo": {
+    "x": 527,
+    "y": 98,
+    "w": 97,
+    "h": 38
+   },
+   "focus": [
+    {
+     "label": "header",
+     "x": 328,
+     "y": 40,
+     "w": 1072,
+     "h": 38
+    },
+    {
+     "label": "tab content",
+     "x": 328,
+     "y": 151,
+     "w": 1072,
+     "h": 749
+    }
+   ]
+  },
+  {
+   "file": "journey/07-profile-journey.webp",
+   "route": "#/users/40c830b7-3fc8",
+   "desc": "User profile, Journey tab",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "header",
+     "x": 328,
+     "y": 40,
+     "w": 1072,
+     "h": 38
+    },
+    {
+     "label": "tab content",
+     "x": 328,
+     "y": 151,
+     "w": 1072,
+     "h": 568
+    }
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "file": "sources/01-grid.webp",
+   "route": "#/sources",
+   "desc": "Sources: 32 sources, Connected / Available / Coming soon",
+   "clickTo": {
+    "x": 1000,
+    "y": 312,
+    "w": 248,
+    "h": 56
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 480,
+     "y": 96,
+     "w": 768,
+     "h": 56
+    },
+    {
+     "label": "grid",
+     "x": 480,
+     "y": 192,
+     "w": 768,
+     "h": 708
+    },
+    {
+     "label": "facebook ads tile",
+     "x": 1000,
+     "y": 244,
+     "w": 248,
+     "h": 56
+    },
+    {
+     "label": "linkedin tile",
+     "x": 1000,
+     "y": 312,
+     "w": 248,
+     "h": 56
+    }
+   ]
+  },
+  {
+   "file": "sources/02-linkedin-connecting.webp",
+   "route": "#/sources",
+   "desc": "LinkedIn Ads tile: Connecting…",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "linkedin tile",
+     "x": 1000,
+     "y": 312,
+     "w": 248,
+     "h": 56
+    }
+   ]
+  },
+  {
+   "file": "sources/03-linkedin-connected.webp",
+   "route": "#/sources",
+   "desc": "LinkedIn Ads connected (toast + 1 account connected)",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "linkedin tile",
+     "x": 740,
+     "y": 312,
+     "w": 248,
+     "h": 56
+    },
+    {
+     "label": "grid",
+     "x": 480,
+     "y": 192,
+     "w": 768,
+     "h": 708
+    }
+   ]
+  },
+  {
+   "file": "sources/04-home-chat.webp",
+   "route": "#/get-started",
+   "desc": "Home chat with the apps chip (1 app connected)",
+   "clickTo": {
+    "x": 604,
+    "y": 306,
+    "w": 86,
+    "h": 40
+   },
+   "focus": [
+    {
+     "label": "composer",
+     "x": 479,
+     "y": 229,
+     "w": 770,
+     "h": 134
+    },
+    {
+     "label": "apps chip",
+     "x": 604,
+     "y": 306,
+     "w": 86,
+     "h": 40
+    }
+   ]
+  },
+  {
+   "file": "sources/05-apps-panel.webp",
+   "route": "#/get-started",
+   "desc": "Apps panel: ad platforms, CRMs and Admira, each with + to connect",
+   "clickTo": {
+    "x": 487,
+    "y": 458,
+    "w": 243,
+    "h": 26
+   },
+   "focus": [
+    {
+     "label": "apps panel",
+     "x": 480,
+     "y": 370,
+     "w": 768,
+     "h": 301
+    },
+    {
+     "label": "facebook ads",
+     "x": 487,
+     "y": 458,
+     "w": 243,
+     "h": 26
+    }
+   ]
+  },
+  {
+   "file": "sources/06-connect-meta.webp",
+   "route": "#/get-started",
+   "desc": "\"Connect to Facebook Ads\" dialog",
+   "clickTo": {
+    "x": 508,
+    "y": 491,
+    "w": 424,
+    "h": 56
+   },
+   "focus": [
+    {
+     "label": "dialog",
+     "x": 460,
+     "y": 226,
+     "w": 520,
+     "h": 448
+    },
+    {
+     "label": "logos",
+     "x": 648,
+     "y": 282,
+     "w": 144,
+     "h": 48
+    },
+    {
+     "label": "continue",
+     "x": 508,
+     "y": 491,
+     "w": 424,
+     "h": 56
+    }
+   ]
+  },
+  {
+   "file": "sources/07-connecting.webp",
+   "route": "#/get-started",
+   "desc": "Connecting…",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "dialog",
+     "x": 460,
+     "y": 226,
+     "w": 520,
+     "h": 448
+    }
+   ]
+  },
+  {
+   "file": "sources/08-connected.webp",
+   "route": "#/get-started",
+   "desc": "Facebook Ads connected: check mark in the apps panel",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "apps panel",
+     "x": 480,
+     "y": 370,
+     "w": 768,
+     "h": 301
+    },
+    {
+     "label": "facebook ads",
+     "x": 487,
+     "y": 458,
+     "w": 243,
+     "h": 26
+    }
+   ]
+  },
+  {
+   "file": "sources/09-grid-after.webp",
+   "route": "#/sources",
+   "desc": "Sources after connecting: Facebook Ads and Google Ads show 1 account connected",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "grid",
+     "x": 480,
+     "y": 192,
+     "w": 768,
+     "h": 708
+    },
+    {
+     "label": "facebook ads tile",
+     "x": 1000,
+     "y": 244,
+     "w": 248,
+     "h": 56
+    }
+   ]
+  }
+ ],
+ "debugger": [
+  {
+   "file": "debugger/01-log.webp",
+   "route": "#/debugger",
+   "desc": "Debugger event log: page views, identify, clicks, purchases with UTMs",
+   "clickTo": {
+    "x": 353,
+    "y": 282,
+    "w": 557,
+    "h": 40
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 328,
+     "y": 40,
+     "w": 90,
+     "h": 27
+    },
+    {
+     "label": "event list",
+     "x": 353,
+     "y": 162,
+     "w": 557,
+     "h": 600
+    },
+    {
+     "label": "detail pane",
+     "x": 951,
+     "y": 87,
+     "w": 449,
+     "h": 370
+    }
+   ]
+  },
+  {
+   "file": "debugger/02-event.webp",
+   "route": "#/debugger",
+   "desc": "An event selected: URL, properties and payload",
+   "clickTo": {
+    "x": 353,
+    "y": 402,
+    "w": 557,
+    "h": 40
+   },
+   "focus": [
+    {
+     "label": "selected row",
+     "x": 353,
+     "y": 282,
+     "w": 557,
+     "h": 40
+    },
+    {
+     "label": "detail",
+     "x": 951,
+     "y": 87,
+     "w": 449,
+     "h": 813
+    },
+    {
+     "label": "event list",
+     "x": 353,
+     "y": 162,
+     "w": 557,
+     "h": 600
+    }
+   ]
+  },
+  {
+   "file": "debugger/03-event-2.webp",
+   "route": "#/debugger",
+   "desc": "Another event selected",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "selected row",
+     "x": 353,
+     "y": 402,
+     "w": 557,
+     "h": 40
+    },
+    {
+     "label": "detail",
+     "x": 951,
+     "y": 87,
+     "w": 449,
+     "h": 813
+    }
+   ]
+  },
+  {
+   "file": "debugger/04-event-failed.webp",
+   "route": "#/debugger",
+   "desc": "A failed event: what went wrong",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "selected row",
+     "x": 353,
+     "y": 522,
+     "w": 557,
+     "h": 40
+    },
+    {
+     "label": "detail",
+     "x": 951,
+     "y": 87,
+     "w": 449,
+     "h": 813
+    }
+   ]
+  },
+  {
+   "file": "debugger/05-business.webp",
+   "route": "#/debugger/business",
+   "desc": "Debugger › Business events from your own system (leads, deals, sales)",
+   "clickTo": {
+    "x": 353,
+    "y": 207,
+    "w": 557,
+    "h": 40
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 328,
+     "y": 43,
+     "w": 90,
+     "h": 27
+    },
+    {
+     "label": "event list",
+     "x": 353,
+     "y": 207,
+     "w": 557,
+     "h": 600
+    },
+    {
+     "label": "detail pane",
+     "x": 951,
+     "y": 92,
+     "w": 449,
+     "h": 370
+    }
+   ]
+  },
+  {
+   "file": "debugger/06-business-event.webp",
+   "route": "#/debugger/business",
+   "desc": "A business event selected",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "detail",
+     "x": 951,
+     "y": 92,
+     "w": 449,
+     "h": 808
+    },
+    {
+     "label": "event list",
+     "x": 353,
+     "y": 207,
+     "w": 557,
+     "h": 600
+    }
+   ]
+  }
+ ],
+ "goals": [
+  {
+   "file": "goals/01-list.webp",
+   "route": "#/goals",
+   "desc": "Goals: the funnel graph and goal rows with 90-day counts and monthly targets",
+   "clickTo": {
+    "x": 1294,
+    "y": 559,
+    "w": 64,
+    "h": 30
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 328,
+     "y": 40,
+     "w": 1072,
+     "h": 27
+    },
+    {
+     "label": "funnel",
+     "x": 353,
+     "y": 112,
+     "w": 1022,
+     "h": 301
+    },
+    {
+     "label": "goal rows",
+     "x": 422,
+     "y": 486,
+     "w": 506,
+     "h": 38
+    },
+    {
+     "label": "card",
+     "x": 328,
+     "y": 87,
+     "w": 1072,
+     "h": 813
+    }
+   ]
+  },
+  {
+   "file": "goals/02-edit.webp",
+   "route": "#/goals",
+   "desc": "A goal open: conditions (Where … And …) on CRM fields",
+   "clickTo": {
+    "x": 1245,
+    "y": 784,
+    "w": 113,
+    "h": 36
+   },
+   "focus": [
+    {
+     "label": "editor",
+     "x": 354,
+     "y": 484,
+     "w": 1020,
+     "h": 416
+    },
+    {
+     "label": "conditions",
+     "x": 422,
+     "y": 516,
+     "w": 936,
+     "h": 104
+    }
+   ]
+  },
+  {
+   "file": "goals/03-verified.webp",
+   "route": "#/goals",
+   "desc": "Goal verified: matches in the last 90 days with the latest ones",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "verify result",
+     "x": 434,
+     "y": 482,
+     "w": 912,
+     "h": 17
+    },
+    {
+     "label": "editor",
+     "x": 354,
+     "y": 120,
+     "w": 1020,
+     "h": 531
+    }
+   ]
+  },
+  {
+   "file": "goals/04-custom.webp",
+   "route": "#/goals",
+   "desc": "Custom goals: page views, clicks, form submits, CRM records",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "custom goals",
+     "x": 353,
+     "y": 618,
+     "w": 1022,
+     "h": 129
+    }
+   ]
+  }
+ ],
+ "deals": [
+  {
+   "file": "deals/01-list.webp",
+   "route": "#/deals",
+   "desc": "Deals: open pipeline, win probability, won/lost value, touchpoints per deal",
+   "clickTo": {
+    "x": 457,
+    "y": 214,
+    "w": 53,
+    "h": 30
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 328,
+     "y": 40,
+     "w": 1072,
+     "h": 27
+    },
+    {
+     "label": "stat strip",
+     "x": 353,
+     "y": 112,
+     "w": 1022,
+     "h": 83
+    },
+    {
+     "label": "table",
+     "x": 353,
+     "y": 263,
+     "w": 1022,
+     "h": 637
+    },
+    {
+     "label": "row",
+     "x": 353,
+     "y": 495,
+     "w": 1022,
+     "h": 64
+    }
+   ]
+  },
+  {
+   "file": "deals/02-won.webp",
+   "route": "#/deals",
+   "desc": "Deals filtered to Won",
+   "clickTo": {
+    "x": 353,
+    "y": 303,
+    "w": 1022,
+    "h": 64
+   },
+   "focus": [
+    {
+     "label": "table",
+     "x": 353,
+     "y": 263,
+     "w": 1022,
+     "h": 637
+    }
+   ]
+  },
+  {
+   "file": "deals/03-deal.webp",
+   "route": "#/deals/dl-1055",
+   "desc": "One deal: overview",
+   "clickTo": {
+    "x": 441,
+    "y": 98,
+    "w": 99,
+    "h": 38
+   },
+   "focus": [
+    {
+     "label": "header",
+     "x": 328,
+     "y": 40,
+     "w": 1072,
+     "h": 38
+    },
+    {
+     "label": "tabs",
+     "x": 328,
+     "y": 98,
+     "w": 1072,
+     "h": 37
+    }
+   ]
+  },
+  {
+   "file": "deals/04-deal-timeline.webp",
+   "route": "#/deals/dl-1055",
+   "desc": "One deal, Timeline tab",
+   "clickTo": {
+    "x": 548,
+    "y": 98,
+    "w": 186,
+    "h": 38
+   },
+   "focus": [
+    {
+     "label": "header",
+     "x": 328,
+     "y": 40,
+     "w": 1072,
+     "h": 38
+    },
+    {
+     "label": "content",
+     "x": 328,
+     "y": 151,
+     "w": 1072,
+     "h": 647
+    }
+   ]
+  },
+  {
+   "file": "deals/05-deal-associated-contacts.webp",
+   "route": "#/deals/dl-1055",
+   "desc": "One deal, Associated Contacts\n2 tab",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "header",
+     "x": 328,
+     "y": 40,
+     "w": 1072,
+     "h": 38
+    },
+    {
+     "label": "content",
+     "x": 328,
+     "y": 151,
+     "w": 1072,
+     "h": 601
+    }
+   ]
+  }
+ ],
+ "segments": [
+  {
+   "file": "segments/01-list.webp",
+   "route": "#/segments",
+   "desc": "Segments: your segments with conditions and sizes",
+   "clickTo": {
+    "x": 354,
+    "y": 260,
+    "w": 1020,
+    "h": 52
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 328,
+     "y": 45,
+     "w": 92,
+     "h": 27
+    },
+    {
+     "label": "table",
+     "x": 328,
+     "y": 96,
+     "w": 1072,
+     "h": 346
+    },
+    {
+     "label": "row",
+     "x": 354,
+     "y": 260,
+     "w": 1020,
+     "h": 52
+    }
+   ]
+  },
+  {
+   "file": "segments/02-open.webp",
+   "route": "#/segments",
+   "desc": "A segment open: Segment of, conditions, live size",
+   "clickTo": {
+    "x": 1256,
+    "y": 40,
+    "w": 144,
+    "h": 40
+   },
+   "focus": [
+    {
+     "label": "editor",
+     "x": 328,
+     "y": 96,
+     "w": 1072,
+     "h": 479
+    },
+    {
+     "label": "conditions",
+     "x": 353,
+     "y": 285,
+     "w": 1022,
+     "h": 152
+    }
+   ]
+  },
+  {
+   "file": "segments/03-new.webp",
+   "route": "#/segments",
+   "desc": "New segment",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "editor",
+     "x": 328,
+     "y": 96,
+     "w": 1072,
+     "h": 431
+    }
+   ]
+  }
+ ],
+ "start": [
+  {
+   "file": "start/01-get-started.webp",
+   "route": "#/get-started",
+   "desc": "Home › Get Started: chat first, setup strip, six-step checklist",
+   "clickTo": {
+    "x": 496,
+    "y": 246,
+    "w": 736,
+    "h": 48
+   },
+   "focus": [
+    {
+     "label": "headline",
+     "x": 733,
+     "y": 169,
+     "w": 262,
+     "h": 36
+    },
+    {
+     "label": "composer",
+     "x": 479,
+     "y": 229,
+     "w": 770,
+     "h": 134
+    },
+    {
+     "label": "ideas",
+     "x": 479,
+     "y": 371,
+     "w": 770,
+     "h": 36
+    },
+    {
+     "label": "checklist",
+     "x": 328,
+     "y": 488,
+     "w": 1072,
+     "h": 412
+    }
+   ]
+  },
+  {
+   "file": "start/02-typed.webp",
+   "route": "#/get-started",
+   "desc": "Question typed in the Home chat",
+   "clickTo": {
+    "x": 1192,
+    "y": 306,
+    "w": 40,
+    "h": 40
+   },
+   "focus": [
+    {
+     "label": "composer",
+     "x": 479,
+     "y": 229,
+     "w": 770,
+     "h": 134
+    }
+   ]
+  },
+  {
+   "file": "start/03-answer.webp",
+   "route": "#/get-started",
+   "desc": "Home chat answer: needs the ad platforms, Enable toolkit card inline",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "answer",
+     "x": 479,
+     "y": 229,
+     "w": 770,
+     "h": 372
+    },
+    {
+     "label": "toolkit card",
+     "x": 507,
+     "y": 357,
+     "w": 460,
+     "h": 244
+    }
+   ]
+  },
+  {
+   "file": "start/04-checklist.webp",
+   "route": "#/get-started",
+   "desc": "Get Started checklist with the current step open inline",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "checklist",
+     "x": 304,
+     "y": 16,
+     "w": 1120,
+     "h": 868
+    }
+   ]
+  },
+  {
+   "file": "start/05-get-started-done.webp",
+   "route": "#/get-started",
+   "desc": "Get Started with the setup complete (6 of 6)",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "composer",
+     "x": 479,
+     "y": 229,
+     "w": 770,
+     "h": 134
+    }
+   ]
+  },
+  {
+   "file": "start/06-first-question.webp",
+   "route": "#/onboarding/first-question",
+   "desc": "Welcome 3: \"What do you want to do first?\" with three suggestion rows",
+   "clickTo": {
+    "x": 368,
+    "y": 308,
+    "w": 705,
+    "h": 34
+   },
+   "focus": [
+    {
+     "label": "headline",
+     "x": 352,
+     "y": 118,
+     "w": 737,
+     "h": 38
+    },
+    {
+     "label": "suggestions",
+     "x": 352,
+     "y": 220,
+     "w": 737,
+     "h": 290
+    },
+    {
+     "label": "connect tools",
+     "x": 466,
+     "y": 606,
+     "w": 139,
+     "h": 22
+    },
+    {
+     "label": "pixel",
+     "x": 821,
+     "y": 606,
+     "w": 166,
+     "h": 22
+    }
+   ]
+  },
+  {
+   "file": "start/07-first-question-hover.webp",
+   "route": "#/onboarding/first-question",
+   "desc": "Welcome 3 with a suggestion row hovered",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "row",
+     "x": 368,
+     "y": 308,
+     "w": 705,
+     "h": 34
+    }
+   ]
+  },
+  {
+   "file": "start/08-onboarding-company.webp",
+   "route": "#/onboarding/company",
+   "desc": "Onboarding: company",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "headline",
+     "x": 454,
+     "y": 303,
+     "w": 532,
+     "h": 28
+    },
+    {
+     "label": "form",
+     "x": 422,
+     "y": 199,
+     "w": 596,
+     "h": 503
+    }
+   ]
+  },
+  {
+   "file": "start/09-onboarding-heard.webp",
+   "route": "#/onboarding/heard",
+   "desc": "Onboarding: heard",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "headline",
+     "x": 454,
+     "y": 270,
+     "w": 532,
+     "h": 28
+    },
+    {
+     "label": "form",
+     "x": 422,
+     "y": 158,
+     "w": 596,
+     "h": 585
+    }
+   ]
+  },
+  {
+   "file": "start/10-onboarding-signup.webp",
+   "route": "#/onboarding/signup",
+   "desc": "Onboarding: signup",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "headline",
+     "x": 454,
+     "y": 168,
+     "w": 532,
+     "h": 28
+    },
+    {
+     "label": "form",
+     "x": 422,
+     "y": 136,
+     "w": 596,
+     "h": 628
+    }
+   ]
+  },
+  {
+   "file": "start/11-reveal.webp",
+   "route": "#/reveal",
+   "desc": "First-insight reveal screen",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "dialog",
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 900
+    }
+   ]
+  }
+ ],
+ "channels": [
+  {
+   "file": "channels/01-mapping.webp",
+   "route": "#/get-started/mapping",
+   "desc": "Map lead source: CRM source values mapped to Admira channels",
+   "clickTo": {
+    "x": 1248,
+    "y": 435,
+    "w": 128,
+    "h": 30
+   },
+   "focus": [
+    {
+     "label": "summary",
+     "x": 616,
+     "y": 435,
+     "w": 760,
+     "h": 30
+    },
+    {
+     "label": "table",
+     "x": 616,
+     "y": 481,
+     "w": 760,
+     "h": 419
+    },
+    {
+     "label": "manage",
+     "x": 1248,
+     "y": 435,
+     "w": 128,
+     "h": 30
+    }
+   ]
+  },
+  {
+   "file": "channels/02-dialog.webp",
+   "route": "#/get-started/mapping",
+   "desc": "Channels dialog: channel list with rules and mapped values",
+   "clickTo": {
+    "x": 1037,
+    "y": 222,
+    "w": 89,
+    "h": 30
+   },
+   "focus": [
+    {
+     "label": "dialog",
+     "x": 258,
+     "y": 36,
+     "w": 924,
+     "h": 828
+    }
+   ]
+  }
+ ],
+ "ai-wide": [
+  {
+   "file": "ai-wide/01-ready.webp",
+   "route": "#/agents",
+   "desc": "Admira AI new chat: \"Ready when you are\", composer and three suggestions",
+   "clickTo": {
+    "x": 497,
+    "y": 297,
+    "w": 735,
+    "h": 48
+   },
+   "focus": [
+    {
+     "label": "headline",
+     "x": 720,
+     "y": 211,
+     "w": 288,
+     "h": 40
+    },
+    {
+     "label": "composer",
+     "x": 481,
+     "y": 283,
+     "w": 767,
+     "h": 114
+    },
+    {
+     "label": "suggestions",
+     "x": 481,
+     "y": 409,
+     "w": 767,
+     "h": 108
+    },
+    {
+     "label": "history",
+     "x": 80,
+     "y": 77,
+     "w": 192,
+     "h": 574
+    }
+   ]
+  },
+  {
+   "file": "ai-wide/02-typed.webp",
+   "route": "#/agents",
+   "desc": "Question typed in the composer, send button active",
+   "clickTo": {
+    "x": 1200,
+    "y": 353,
+    "w": 32,
+    "h": 32
+   },
+   "focus": [
+    {
+     "label": "composer",
+     "x": 481,
+     "y": 283,
+     "w": 767,
+     "h": 114
+    },
+    {
+     "label": "send",
+     "x": 1200,
+     "y": 353,
+     "w": 32,
+     "h": 32
+    }
+   ]
+  },
+  {
+   "file": "ai-wide/03-thinking.webp",
+   "route": "#/agents/chat/c1795722995488",
+   "desc": "Agent working: steps ticking (reading attribution, matching sales to channels)",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "question",
+     "x": 663,
+     "y": 72,
+     "w": 337,
+     "h": 38
+    },
+    {
+     "label": "steps",
+     "x": 364,
+     "y": 132,
+     "w": 303,
+     "h": 139
+    },
+    {
+     "label": "outputs panel",
+     "x": 1024,
+     "y": 16,
+     "w": 400,
+     "h": 688
+    }
+   ]
+  },
+  {
+   "file": "ai-wide/04-answer.webp",
+   "route": "#/agents/chat/c1795722995488",
+   "desc": "Answer with the report open in the Outputs panel (paid performance, last 30 days)",
+   "clickTo": {
+    "x": 1348,
+    "y": 27,
+    "w": 30,
+    "h": 30
+   },
+   "focus": [
+    {
+     "label": "answer",
+     "x": 328,
+     "y": 0,
+     "w": 672,
+     "h": 573
+    },
+    {
+     "label": "report panel",
+     "x": 1024,
+     "y": 16,
+     "w": 400,
+     "h": 688
+    },
+    {
+     "label": "panel body",
+     "x": 1025,
+     "y": 68,
+     "w": 399,
+     "h": 636
+    }
+   ]
+  },
+  {
+   "file": "ai-wide/05-report-wide.webp",
+   "route": "#/agents/chat/c1795722995488",
+   "desc": "Outputs panel expanded: the full report next to the chat",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "report panel",
+     "x": 842,
+     "y": 16,
+     "w": 582,
+     "h": 688
+    },
+    {
+     "label": "panel body",
+     "x": 843,
+     "y": 68,
+     "w": 581,
+     "h": 636
+    },
+    {
+     "label": "answer",
+     "x": 328,
+     "y": 0,
+     "w": 490,
+     "h": 634
+    }
+   ]
+  },
+  {
+   "file": "ai-wide/06-toolkit.webp",
+   "route": "#/agents/chat/c1795723008496",
+   "desc": "Asked about Facebook before Meta is connected: \"Enable toolkit\" card with + Connect",
+   "clickTo": {
+    "x": 866,
+    "y": 249,
+    "w": 84,
+    "h": 28
+   },
+   "focus": [
+    {
+     "label": "toolkit card",
+     "x": 517,
+     "y": 167,
+     "w": 460,
+     "h": 172
+    },
+    {
+     "label": "question",
+     "x": 848,
+     "y": 72,
+     "w": 400,
+     "h": 38
+    },
+    {
+     "label": "answer text",
+     "x": 517,
+     "y": 132,
+     "w": 731,
+     "h": 23
+    }
+   ]
+  },
+  {
+   "file": "ai-wide/07-connect-meta.webp",
+   "route": "#/agents/chat/c1795723008496",
+   "desc": "\"Connect to Facebook Ads\" dialog (Admira ••• Meta), dark Continue",
+   "clickTo": {
+    "x": 508,
+    "y": 401,
+    "w": 424,
+    "h": 56
+   },
+   "focus": [
+    {
+     "label": "dialog",
+     "x": 460,
+     "y": 136,
+     "w": 520,
+     "h": 448
+    },
+    {
+     "label": "logos",
+     "x": 648,
+     "y": 192,
+     "w": 144,
+     "h": 48
+    },
+    {
+     "label": "title",
+     "x": 547,
+     "y": 266,
+     "w": 345,
+     "h": 36
+    }
+   ]
+  },
+  {
+   "file": "ai-wide/08-connecting.webp",
+   "route": "#/agents/chat/c1795723008496",
+   "desc": "Continue pressed: \"Connecting...\" spinner",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "dialog",
+     "x": 460,
+     "y": 136,
+     "w": 520,
+     "h": 448
+    },
+    {
+     "label": "button",
+     "x": 508,
+     "y": 401,
+     "w": 424,
+     "h": 56
+    }
+   ]
+  },
+  {
+   "file": "ai-wide/09-connected.webp",
+   "route": "#/agents/chat/c1795723008496",
+   "desc": "Facebook Ads connected in the toolkit card, Enable ready",
+   "clickTo": {
+    "x": 530,
+    "y": 288,
+    "w": 76,
+    "h": 28
+   },
+   "focus": [
+    {
+     "label": "toolkit card",
+     "x": 517,
+     "y": 167,
+     "w": 460,
+     "h": 162
+    },
+    {
+     "label": "connected badge",
+     "x": 874,
+     "y": 250,
+     "w": 76,
+     "h": 16
+    }
+   ]
+  },
+  {
+   "file": "ai-wide/10-after-connect.webp",
+   "route": "#/agents/chat/c1795723008496",
+   "desc": "Toolkit enabled: the held answer runs and the report opens",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "answer",
+     "x": 328,
+     "y": 0,
+     "w": 672,
+     "h": 573
+    },
+    {
+     "label": "report panel",
+     "x": 1024,
+     "y": 16,
+     "w": 400,
+     "h": 688
+    }
+   ]
+  },
+  {
+   "file": "ai-wide/11-campaign-draft.webp",
+   "route": "#/agents/chat/c1795723027903",
+   "desc": "Launch a Meta campaign at MX$2,000/day: campaign draft in the panel, approval button",
+   "clickTo": {
+    "x": 878,
+    "y": 351,
+    "w": 110,
+    "h": 32
+   },
+   "focus": [
+    {
+     "label": "answer",
+     "x": 328,
+     "y": 132,
+     "w": 672,
+     "h": 303
+    },
+    {
+     "label": "draft panel",
+     "x": 1024,
+     "y": 16,
+     "w": 400,
+     "h": 688
+    },
+    {
+     "label": "approve",
+     "x": 878,
+     "y": 351,
+     "w": 110,
+     "h": 32
+    }
+   ]
+  },
+  {
+   "file": "ai-wide/12-campaign-live.webp",
+   "route": "#/agents/chat/c1795723027903",
+   "desc": "Approved: campaign created in Meta, budget and guardrail set",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "answer",
+     "x": 328,
+     "y": 132,
+     "w": 672,
+     "h": 329
+    },
+    {
+     "label": "draft panel",
+     "x": 1024,
+     "y": 16,
+     "w": 400,
+     "h": 688
+    }
+   ]
+  }
+ ],
+ "dash-wide": [
+  {
+   "file": "dash-wide/01-paid-growth.webp",
+   "route": "#/dashboards",
+   "desc": "Dashboard \"Paid growth weekly\": KPI cards, Spend vs Leads combo, Leads by source",
+   "clickTo": {
+    "x": 334,
+    "y": 458,
+    "w": 598,
+    "h": 262
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 316,
+     "y": 34,
+     "w": 218,
+     "h": 36
+    },
+    {
+     "label": "amount spent",
+     "x": 318,
+     "y": 142,
+     "w": 261,
+     "h": 168
+    },
+    {
+     "label": "pipeline gauge",
+     "x": 1149,
+     "y": 142,
+     "w": 261,
+     "h": 168
+    },
+    {
+     "label": "spend vs leads",
+     "x": 318,
+     "y": 326,
+     "w": 630,
+     "h": 394
+    },
+    {
+     "label": "leads by source",
+     "x": 964,
+     "y": 326,
+     "w": 446,
+     "h": 394
+    }
+   ]
+  },
+  {
+   "file": "dash-wide/02-tooltip.webp",
+   "route": "#/dashboards",
+   "desc": "Hover on Spend vs Leads: tooltip with the day values",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "spend vs leads",
+     "x": 318,
+     "y": 326,
+     "w": 630,
+     "h": 394
+    },
+    {
+     "label": "tooltip",
+     "x": 495,
+     "y": 599,
+     "w": 206,
+     "h": 84
+    }
+   ]
+  },
+  {
+   "file": "dash-wide/03-bar-hover.webp",
+   "route": "#/dashboards",
+   "desc": "Hover on Leads by source bar",
+   "clickTo": {
+    "x": 595,
+    "y": 142,
+    "w": 261,
+    "h": 168
+   },
+   "focus": [
+    {
+     "label": "leads by source",
+     "x": 964,
+     "y": 326,
+     "w": 446,
+     "h": 394
+    }
+   ]
+  },
+  {
+   "file": "dash-wide/04-drilldown.webp",
+   "route": "#/dashboards",
+   "desc": "Click a number: the leads behind it open in a side panel",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "drilldown panel",
+     "x": 1062,
+     "y": 0,
+     "w": 378,
+     "h": 720
+    },
+    {
+     "label": "list",
+     "x": 1086,
+     "y": 159,
+     "w": 330,
+     "h": 492
+    }
+   ]
+  },
+  {
+   "file": "dash-wide/05-pre-date.webp",
+   "route": "#/dashboards",
+   "desc": "Dashboard before changing the date range",
+   "clickTo": {
+    "x": 824,
+    "y": 32,
+    "w": 151,
+    "h": 40
+   },
+   "focus": [
+    {
+     "label": "date",
+     "x": 824,
+     "y": 32,
+     "w": 151,
+     "h": 40
+    }
+   ]
+  },
+  {
+   "file": "dash-wide/06-date-menu.webp",
+   "route": "#/dashboards",
+   "desc": "Date range menu open (presets with their dates)",
+   "clickTo": {
+    "x": 840,
+    "y": 378,
+    "w": 208,
+    "h": 36
+   },
+   "focus": [
+    {
+     "label": "menu",
+     "x": 824,
+     "y": 78,
+     "w": 240,
+     "h": 312
+    },
+    {
+     "label": "date",
+     "x": 824,
+     "y": 32,
+     "w": 151,
+     "h": 40
+    }
+   ]
+  },
+  {
+   "file": "dash-wide/07-last-90.webp",
+   "route": "#/dashboards",
+   "desc": "Date range switched to Last 90 days: every card recomputed",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "amount spent",
+     "x": 318,
+     "y": 142,
+     "w": 261,
+     "h": 168
+    },
+    {
+     "label": "spend vs leads",
+     "x": 318,
+     "y": 326,
+     "w": 630,
+     "h": 394
+    },
+    {
+     "label": "leads by source",
+     "x": 964,
+     "y": 326,
+     "w": 446,
+     "h": 394
+    }
+   ]
+  },
+  {
+   "file": "dash-wide/08-sankey.webp",
+   "route": "#/charts",
+   "desc": "All chart types gallery: Sankey with the funnel strip",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "Sankey card",
+     "x": 318,
+     "y": 20,
+     "w": 1092,
+     "h": 444
+    },
+    {
+     "label": "neighbour",
+     "x": 1390,
+     "y": 444,
+     "w": 20,
+     "h": 20
+    }
+   ]
+  },
+  {
+   "file": "dash-wide/09-map.webp",
+   "route": "#/charts",
+   "desc": "All chart types gallery: Map of leads by city",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "Map card",
+     "x": 318,
+     "y": 20,
+     "w": 538,
+     "h": 490
+    },
+    {
+     "label": "neighbour",
+     "x": 836,
+     "y": 490,
+     "w": 20,
+     "h": 20
+    }
+   ]
+  },
+  {
+   "file": "dash-wide/10-funnel.webp",
+   "route": "#/charts",
+   "desc": "All chart types gallery: Funnel to sale",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "Funnel card",
+     "x": 318,
+     "y": 20,
+     "w": 538,
+     "h": 444
+    },
+    {
+     "label": "neighbour",
+     "x": 836,
+     "y": 444,
+     "w": 20,
+     "h": 20
+    }
+   ]
+  },
+  {
+   "file": "dash-wide/11-journey-chart.webp",
+   "route": "#/charts",
+   "desc": "All chart types gallery: Journey chart",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "Journey card",
+     "x": 318,
+     "y": 20,
+     "w": 446,
+     "h": 536
+    },
+    {
+     "label": "neighbour",
+     "x": 744,
+     "y": 536,
+     "w": 20,
+     "h": 20
+    }
+   ]
+  }
+ ],
+ "journey-wide": [
+  {
+   "file": "journey-wide/01-report.webp",
+   "route": "#/report",
+   "desc": "Customer journey report: winning journeys lift + source → funnel → result Sankey",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "title",
+     "x": 316,
+     "y": 34,
+     "w": 269,
+     "h": 36
+    },
+    {
+     "label": "lift bars",
+     "x": 318,
+     "y": 142,
+     "w": 446,
+     "h": 578
+    },
+    {
+     "label": "sankey",
+     "x": 780,
+     "y": 142,
+     "w": 630,
+     "h": 578
+    },
+    {
+     "label": "funnel strip",
+     "x": 913,
+     "y": 223,
+     "w": 199,
+     "h": 17
+    }
+   ]
+  },
+  {
+   "file": "journey-wide/02-report-routes.webp",
+   "route": "#/report",
+   "desc": "Journey report scrolled: routes that sell the most and more journey reports",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "routes",
+     "x": 318,
+     "y": 96,
+     "w": 1092,
+     "h": 444
+    }
+   ]
+  },
+  {
+   "file": "journey-wide/03-report-more.webp",
+   "route": "#/report",
+   "desc": "Journey report further down: more journey reports",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "card",
+     "x": 318,
+     "y": 0,
+     "w": 1092,
+     "h": 88
+    },
+    {
+     "label": "card 2",
+     "x": 318,
+     "y": 104,
+     "w": 538,
+     "h": 536
+    }
+   ]
+  },
+  {
+   "file": "journey-wide/04-users.webp",
+   "route": "#/users",
+   "desc": "Users list: identified and anonymous visitors, first touch, location, events",
+   "clickTo": {
+    "x": 354,
+    "y": 370,
+    "w": 1020,
+    "h": 52
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 328,
+     "y": 45,
+     "w": 54,
+     "h": 27
+    },
+    {
+     "label": "table",
+     "x": 328,
+     "y": 96,
+     "w": 1072,
+     "h": 624
+    },
+    {
+     "label": "Luis Treviño row",
+     "x": 354,
+     "y": 370,
+     "w": 1020,
+     "h": 52
+    }
+   ]
+  },
+  {
+   "file": "journey-wide/05-profile-feed.webp",
+   "route": "#/users/40c830b7-3fc8",
+   "desc": "User profile, Feed tab",
+   "clickTo": {
+    "x": 414,
+    "y": 98,
+    "w": 105,
+    "h": 38
+   },
+   "focus": [
+    {
+     "label": "header",
+     "x": 328,
+     "y": 40,
+     "w": 1072,
+     "h": 38
+    },
+    {
+     "label": "tab content",
+     "x": 328,
+     "y": 151,
+     "w": 1072,
+     "h": 569
+    }
+   ]
+  },
+  {
+   "file": "journey-wide/06-profile-overview.webp",
+   "route": "#/users/40c830b7-3fc8",
+   "desc": "User profile, Overview tab",
+   "clickTo": {
+    "x": 527,
+    "y": 98,
+    "w": 97,
+    "h": 38
+   },
+   "focus": [
+    {
+     "label": "header",
+     "x": 328,
+     "y": 40,
+     "w": 1072,
+     "h": 38
+    },
+    {
+     "label": "tab content",
+     "x": 328,
+     "y": 151,
+     "w": 1072,
+     "h": 569
+    }
+   ]
+  },
+  {
+   "file": "journey-wide/07-profile-journey.webp",
+   "route": "#/users/40c830b7-3fc8",
+   "desc": "User profile, Journey tab",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "header",
+     "x": 328,
+     "y": 40,
+     "w": 1072,
+     "h": 38
+    },
+    {
+     "label": "tab content",
+     "x": 328,
+     "y": 151,
+     "w": 1072,
+     "h": 568
+    }
+   ]
+  }
+ ],
+ "sources-wide": [
+  {
+   "file": "sources-wide/01-grid.webp",
+   "route": "#/sources",
+   "desc": "Sources: 32 sources, Connected / Available / Coming soon",
+   "clickTo": {
+    "x": 1000,
+    "y": 312,
+    "w": 248,
+    "h": 56
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 480,
+     "y": 96,
+     "w": 768,
+     "h": 56
+    },
+    {
+     "label": "grid",
+     "x": 480,
+     "y": 192,
+     "w": 768,
+     "h": 528
+    },
+    {
+     "label": "facebook ads tile",
+     "x": 1000,
+     "y": 244,
+     "w": 248,
+     "h": 56
+    },
+    {
+     "label": "linkedin tile",
+     "x": 1000,
+     "y": 312,
+     "w": 248,
+     "h": 56
+    }
+   ]
+  },
+  {
+   "file": "sources-wide/02-linkedin-connecting.webp",
+   "route": "#/sources",
+   "desc": "LinkedIn Ads tile: Connecting…",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "linkedin tile",
+     "x": 1000,
+     "y": 312,
+     "w": 248,
+     "h": 56
+    }
+   ]
+  },
+  {
+   "file": "sources-wide/03-linkedin-connected.webp",
+   "route": "#/sources",
+   "desc": "LinkedIn Ads connected (toast + 1 account connected)",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "linkedin tile",
+     "x": 740,
+     "y": 312,
+     "w": 248,
+     "h": 56
+    },
+    {
+     "label": "grid",
+     "x": 480,
+     "y": 192,
+     "w": 768,
+     "h": 528
+    }
+   ]
+  },
+  {
+   "file": "sources-wide/04-home-chat.webp",
+   "route": "#/get-started",
+   "desc": "Home chat with the apps chip (1 app connected)",
+   "clickTo": {
+    "x": 604,
+    "y": 306,
+    "w": 86,
+    "h": 40
+   },
+   "focus": [
+    {
+     "label": "composer",
+     "x": 479,
+     "y": 229,
+     "w": 770,
+     "h": 134
+    },
+    {
+     "label": "apps chip",
+     "x": 604,
+     "y": 306,
+     "w": 86,
+     "h": 40
+    }
+   ]
+  },
+  {
+   "file": "sources-wide/05-apps-panel.webp",
+   "route": "#/get-started",
+   "desc": "Apps panel: ad platforms, CRMs and Admira, each with + to connect",
+   "clickTo": {
+    "x": 487,
+    "y": 458,
+    "w": 243,
+    "h": 26
+   },
+   "focus": [
+    {
+     "label": "apps panel",
+     "x": 480,
+     "y": 370,
+     "w": 768,
+     "h": 301
+    },
+    {
+     "label": "facebook ads",
+     "x": 487,
+     "y": 458,
+     "w": 243,
+     "h": 26
+    }
+   ]
+  },
+  {
+   "file": "sources-wide/06-connect-meta.webp",
+   "route": "#/get-started",
+   "desc": "\"Connect to Facebook Ads\" dialog",
+   "clickTo": {
+    "x": 508,
+    "y": 401,
+    "w": 424,
+    "h": 56
+   },
+   "focus": [
+    {
+     "label": "dialog",
+     "x": 460,
+     "y": 136,
+     "w": 520,
+     "h": 448
+    },
+    {
+     "label": "logos",
+     "x": 648,
+     "y": 192,
+     "w": 144,
+     "h": 48
+    },
+    {
+     "label": "continue",
+     "x": 508,
+     "y": 401,
+     "w": 424,
+     "h": 56
+    }
+   ]
+  },
+  {
+   "file": "sources-wide/07-connecting.webp",
+   "route": "#/get-started",
+   "desc": "Connecting…",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "dialog",
+     "x": 460,
+     "y": 136,
+     "w": 520,
+     "h": 448
+    }
+   ]
+  },
+  {
+   "file": "sources-wide/08-connected.webp",
+   "route": "#/get-started",
+   "desc": "Facebook Ads connected: check mark in the apps panel",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "apps panel",
+     "x": 480,
+     "y": 370,
+     "w": 768,
+     "h": 301
+    },
+    {
+     "label": "facebook ads",
+     "x": 487,
+     "y": 458,
+     "w": 243,
+     "h": 26
+    }
+   ]
+  },
+  {
+   "file": "sources-wide/09-grid-after.webp",
+   "route": "#/sources",
+   "desc": "Sources after connecting: Facebook Ads and Google Ads show 1 account connected",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "grid",
+     "x": 480,
+     "y": 192,
+     "w": 768,
+     "h": 528
+    },
+    {
+     "label": "facebook ads tile",
+     "x": 1000,
+     "y": 244,
+     "w": 248,
+     "h": 56
+    }
+   ]
+  }
+ ],
+ "debugger-wide": [
+  {
+   "file": "debugger-wide/01-log.webp",
+   "route": "#/debugger",
+   "desc": "Debugger event log: page views, identify, clicks, purchases with UTMs",
+   "clickTo": {
+    "x": 353,
+    "y": 282,
+    "w": 557,
+    "h": 40
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 328,
+     "y": 40,
+     "w": 90,
+     "h": 27
+    },
+    {
+     "label": "event list",
+     "x": 353,
+     "y": 162,
+     "w": 557,
+     "h": 558
+    },
+    {
+     "label": "detail pane",
+     "x": 951,
+     "y": 87,
+     "w": 449,
+     "h": 370
+    }
+   ]
+  },
+  {
+   "file": "debugger-wide/02-event.webp",
+   "route": "#/debugger",
+   "desc": "An event selected: URL, properties and payload",
+   "clickTo": {
+    "x": 353,
+    "y": 402,
+    "w": 557,
+    "h": 40
+   },
+   "focus": [
+    {
+     "label": "selected row",
+     "x": 353,
+     "y": 282,
+     "w": 557,
+     "h": 40
+    },
+    {
+     "label": "detail",
+     "x": 951,
+     "y": 87,
+     "w": 449,
+     "h": 633
+    },
+    {
+     "label": "event list",
+     "x": 353,
+     "y": 162,
+     "w": 557,
+     "h": 558
+    }
+   ]
+  },
+  {
+   "file": "debugger-wide/03-event-2.webp",
+   "route": "#/debugger",
+   "desc": "Another event selected",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "selected row",
+     "x": 353,
+     "y": 402,
+     "w": 557,
+     "h": 40
+    },
+    {
+     "label": "detail",
+     "x": 951,
+     "y": 87,
+     "w": 449,
+     "h": 633
+    }
+   ]
+  },
+  {
+   "file": "debugger-wide/04-event-failed.webp",
+   "route": "#/debugger",
+   "desc": "A failed event: what went wrong",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "selected row",
+     "x": 353,
+     "y": 522,
+     "w": 557,
+     "h": 40
+    },
+    {
+     "label": "detail",
+     "x": 951,
+     "y": 87,
+     "w": 449,
+     "h": 633
+    }
+   ]
+  },
+  {
+   "file": "debugger-wide/05-business.webp",
+   "route": "#/debugger/business",
+   "desc": "Debugger › Business events from your own system (leads, deals, sales)",
+   "clickTo": {
+    "x": 353,
+    "y": 207,
+    "w": 557,
+    "h": 40
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 328,
+     "y": 43,
+     "w": 90,
+     "h": 27
+    },
+    {
+     "label": "event list",
+     "x": 353,
+     "y": 207,
+     "w": 557,
+     "h": 513
+    },
+    {
+     "label": "detail pane",
+     "x": 951,
+     "y": 92,
+     "w": 449,
+     "h": 370
+    }
+   ]
+  },
+  {
+   "file": "debugger-wide/06-business-event.webp",
+   "route": "#/debugger/business",
+   "desc": "A business event selected",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "detail",
+     "x": 951,
+     "y": 92,
+     "w": 449,
+     "h": 628
+    },
+    {
+     "label": "event list",
+     "x": 353,
+     "y": 207,
+     "w": 557,
+     "h": 513
+    }
+   ]
+  }
+ ],
+ "goals-wide": [
+  {
+   "file": "goals-wide/01-list.webp",
+   "route": "#/goals",
+   "desc": "Goals: the funnel graph and goal rows with 90-day counts and monthly targets",
+   "clickTo": {
+    "x": 1294,
+    "y": 559,
+    "w": 64,
+    "h": 30
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 328,
+     "y": 40,
+     "w": 1072,
+     "h": 27
+    },
+    {
+     "label": "funnel",
+     "x": 353,
+     "y": 112,
+     "w": 1022,
+     "h": 301
+    },
+    {
+     "label": "goal rows",
+     "x": 422,
+     "y": 486,
+     "w": 506,
+     "h": 38
+    },
+    {
+     "label": "card",
+     "x": 328,
+     "y": 87,
+     "w": 1072,
+     "h": 633
+    }
+   ]
+  },
+  {
+   "file": "goals-wide/02-edit.webp",
+   "route": "#/goals",
+   "desc": "A goal open: conditions (Where … And …) on CRM fields",
+   "clickTo": {
+    "x": 1245,
+    "y": 694,
+    "w": 113,
+    "h": 26
+   },
+   "focus": [
+    {
+     "label": "editor",
+     "x": 354,
+     "y": 394,
+     "w": 1020,
+     "h": 326
+    },
+    {
+     "label": "conditions",
+     "x": 422,
+     "y": 426,
+     "w": 936,
+     "h": 104
+    }
+   ]
+  },
+  {
+   "file": "goals-wide/03-verified.webp",
+   "route": "#/goals",
+   "desc": "Goal verified: matches in the last 90 days with the latest ones",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "verify result",
+     "x": 434,
+     "y": 482,
+     "w": 912,
+     "h": 17
+    },
+    {
+     "label": "editor",
+     "x": 354,
+     "y": 120,
+     "w": 1020,
+     "h": 531
+    }
+   ]
+  },
+  {
+   "file": "goals-wide/04-custom.webp",
+   "route": "#/goals",
+   "desc": "Custom goals: page views, clicks, form submits, CRM records",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "custom goals",
+     "x": 353,
+     "y": 438,
+     "w": 1022,
+     "h": 129
+    }
+   ]
+  }
+ ],
+ "ai@hero": [
+  {
+   "file": "ai@hero/01-ready.webp",
+   "route": "#/agents",
+   "desc": "Admira AI new chat: \"Ready when you are\", composer and three suggestions",
+   "clickTo": {
+    "x": 265,
+    "y": 237,
+    "w": 735,
+    "h": 48
+   },
+   "focus": [
+    {
+     "label": "headline",
+     "x": 488,
+     "y": 151,
+     "w": 288,
+     "h": 40
+    },
+    {
+     "label": "composer",
+     "x": 249,
+     "y": 223,
+     "w": 767,
+     "h": 114
+    },
+    {
+     "label": "suggestions",
+     "x": 249,
+     "y": 349,
+     "w": 767,
+     "h": 108
+    }
+   ]
+  },
+  {
+   "file": "ai@hero/02-typed.webp",
+   "route": "#/agents",
+   "desc": "Question typed in the composer, send button active",
+   "clickTo": {
+    "x": 968,
+    "y": 293,
+    "w": 32,
+    "h": 32
+   },
+   "focus": [
+    {
+     "label": "composer",
+     "x": 249,
+     "y": 223,
+     "w": 767,
+     "h": 114
+    },
+    {
+     "label": "send",
+     "x": 968,
+     "y": 293,
+     "w": 32,
+     "h": 32
+    }
+   ]
+  },
+  {
+   "file": "ai@hero/03-thinking.webp",
+   "route": "#/agents/chat/c1795728142330",
+   "desc": "Agent working: steps ticking (reading attribution, matching sales to channels)",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "question",
+     "x": 423,
+     "y": 72,
+     "w": 337,
+     "h": 38
+    },
+    {
+     "label": "steps",
+     "x": 140,
+     "y": 132,
+     "w": 303,
+     "h": 139
+    },
+    {
+     "label": "outputs panel",
+     "x": 784,
+     "y": 16,
+     "w": 400,
+     "h": 568
+    }
+   ]
+  },
+  {
+   "file": "ai@hero/04-answer.webp",
+   "route": "#/agents/chat/c1795728142330",
+   "desc": "Answer with the report open in the Outputs panel (paid performance, last 30 days)",
+   "clickTo": {
+    "x": 1108,
+    "y": 27,
+    "w": 30,
+    "h": 30
+   },
+   "focus": [
+    {
+     "label": "answer",
+     "x": 104,
+     "y": 0,
+     "w": 656,
+     "h": 453
+    },
+    {
+     "label": "report panel",
+     "x": 784,
+     "y": 16,
+     "w": 400,
+     "h": 568
+    },
+    {
+     "label": "panel body",
+     "x": 785,
+     "y": 68,
+     "w": 399,
+     "h": 516
+    }
+   ]
+  },
+  {
+   "file": "ai@hero/05-report-wide.webp",
+   "route": "#/agents/chat/c1795728142330",
+   "desc": "Outputs panel expanded: the full report next to the chat",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "report panel",
+     "x": 610,
+     "y": 16,
+     "w": 574,
+     "h": 568
+    },
+    {
+     "label": "panel body",
+     "x": 611,
+     "y": 68,
+     "w": 573,
+     "h": 516
+    },
+    {
+     "label": "answer",
+     "x": 104,
+     "y": 0,
+     "w": 482,
+     "h": 469
+    }
+   ]
+  },
+  {
+   "file": "ai@hero/06-toolkit.webp",
+   "route": "#/agents/chat/c1795728155238",
+   "desc": "Asked about Facebook before Meta is connected: \"Enable toolkit\" card with + Connect",
+   "clickTo": {
+    "x": 634,
+    "y": 249,
+    "w": 84,
+    "h": 28
+   },
+   "focus": [
+    {
+     "label": "toolkit card",
+     "x": 285,
+     "y": 167,
+     "w": 460,
+     "h": 172
+    },
+    {
+     "label": "question",
+     "x": 616,
+     "y": 72,
+     "w": 400,
+     "h": 38
+    },
+    {
+     "label": "answer text",
+     "x": 285,
+     "y": 132,
+     "w": 731,
+     "h": 23
+    }
+   ]
+  },
+  {
+   "file": "ai@hero/07-connect-meta.webp",
+   "route": "#/agents/chat/c1795728155238",
+   "desc": "\"Connect to Facebook Ads\" dialog (Admira ••• Meta), dark Continue",
+   "clickTo": {
+    "x": 388,
+    "y": 341,
+    "w": 424,
+    "h": 56
+   },
+   "focus": [
+    {
+     "label": "dialog",
+     "x": 340,
+     "y": 76,
+     "w": 520,
+     "h": 448
+    },
+    {
+     "label": "logos",
+     "x": 528,
+     "y": 132,
+     "w": 144,
+     "h": 48
+    },
+    {
+     "label": "title",
+     "x": 427,
+     "y": 206,
+     "w": 345,
+     "h": 36
+    }
+   ]
+  },
+  {
+   "file": "ai@hero/08-connecting.webp",
+   "route": "#/agents/chat/c1795728155238",
+   "desc": "Continue pressed: \"Connecting...\" spinner",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "dialog",
+     "x": 340,
+     "y": 76,
+     "w": 520,
+     "h": 448
+    },
+    {
+     "label": "button",
+     "x": 388,
+     "y": 341,
+     "w": 424,
+     "h": 56
+    }
+   ]
+  },
+  {
+   "file": "ai@hero/09-connected.webp",
+   "route": "#/agents/chat/c1795728155238",
+   "desc": "Facebook Ads connected in the toolkit card, Enable ready",
+   "clickTo": {
+    "x": 298,
+    "y": 288,
+    "w": 76,
+    "h": 28
+   },
+   "focus": [
+    {
+     "label": "toolkit card",
+     "x": 285,
+     "y": 167,
+     "w": 460,
+     "h": 162
+    },
+    {
+     "label": "connected badge",
+     "x": 642,
+     "y": 250,
+     "w": 76,
+     "h": 16
+    }
+   ]
+  },
+  {
+   "file": "ai@hero/10-after-connect.webp",
+   "route": "#/agents/chat/c1795728155238",
+   "desc": "Toolkit enabled: the held answer runs and the report opens",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "answer",
+     "x": 104,
+     "y": 0,
+     "w": 656,
+     "h": 453
+    },
+    {
+     "label": "report panel",
+     "x": 784,
+     "y": 16,
+     "w": 400,
+     "h": 568
+    }
+   ]
+  },
+  {
+   "file": "ai@hero/11-campaign-draft.webp",
+   "route": "#/agents/chat/c1795728174967",
+   "desc": "Launch a Meta campaign at MX$2,000/day: campaign draft in the panel, approval button",
+   "clickTo": {
+    "x": 638,
+    "y": 338,
+    "w": 110,
+    "h": 32
+   },
+   "focus": [
+    {
+     "label": "answer",
+     "x": 104,
+     "y": 119,
+     "w": 656,
+     "h": 303
+    },
+    {
+     "label": "draft panel",
+     "x": 784,
+     "y": 16,
+     "w": 400,
+     "h": 568
+    },
+    {
+     "label": "approve",
+     "x": 638,
+     "y": 338,
+     "w": 110,
+     "h": 32
+    }
+   ]
+  },
+  {
+   "file": "ai@hero/12-campaign-live.webp",
+   "route": "#/agents/chat/c1795728174967",
+   "desc": "Approved: campaign created in Meta, budget and guardrail set",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "answer",
+     "x": 104,
+     "y": 70,
+     "w": 656,
+     "h": 352
+    },
+    {
+     "label": "draft panel",
+     "x": 784,
+     "y": 16,
+     "w": 400,
+     "h": 568
+    }
+   ]
+  }
+ ],
+ "dash@hero": [
+  {
+   "file": "dash@hero/01-paid-growth.webp",
+   "route": "#/dashboards",
+   "desc": "Dashboard \"Paid growth weekly\": KPI cards, Spend vs Leads combo, Leads by source",
+   "clickTo": {
+    "x": 110,
+    "y": 458,
+    "w": 589,
+    "h": 142
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 92,
+     "y": 34,
+     "w": 218,
+     "h": 36
+    },
+    {
+     "label": "amount spent",
+     "x": 94,
+     "y": 142,
+     "w": 257,
+     "h": 168
+    },
+    {
+     "label": "pipeline gauge",
+     "x": 913,
+     "y": 142,
+     "w": 257,
+     "h": 168
+    },
+    {
+     "label": "spend vs leads",
+     "x": 94,
+     "y": 326,
+     "w": 621,
+     "h": 274
+    },
+    {
+     "label": "leads by source",
+     "x": 731,
+     "y": 326,
+     "w": 439,
+     "h": 274
+    }
+   ]
+  },
+  {
+   "file": "dash@hero/02-tooltip.webp",
+   "route": "#/dashboards",
+   "desc": "Hover on Spend vs Leads: tooltip with the day values",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "spend vs leads",
+     "x": 94,
+     "y": 326,
+     "w": 621,
+     "h": 274
+    },
+    {
+     "label": "tooltip",
+     "x": 285,
+     "y": 539,
+     "w": 186,
+     "h": 61
+    }
+   ]
+  },
+  {
+   "file": "dash@hero/03-bar-hover.webp",
+   "route": "#/dashboards",
+   "desc": "Hover on Leads by source bar",
+   "clickTo": {
+    "x": 367,
+    "y": 142,
+    "w": 257,
+    "h": 168
+   },
+   "focus": [
+    {
+     "label": "leads by source",
+     "x": 731,
+     "y": 326,
+     "w": 439,
+     "h": 274
+    }
+   ]
+  },
+  {
+   "file": "dash@hero/04-drilldown.webp",
+   "route": "#/dashboards",
+   "desc": "Click a number: the leads behind it open in a side panel",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "drilldown panel",
+     "x": 822,
+     "y": 0,
+     "w": 378,
+     "h": 600
+    },
+    {
+     "label": "list",
+     "x": 846,
+     "y": 159,
+     "w": 330,
+     "h": 372
+    }
+   ]
+  },
+  {
+   "file": "dash@hero/05-pre-date.webp",
+   "route": "#/dashboards",
+   "desc": "Dashboard before changing the date range",
+   "clickTo": {
+    "x": 584,
+    "y": 32,
+    "w": 151,
+    "h": 40
+   },
+   "focus": [
+    {
+     "label": "date",
+     "x": 584,
+     "y": 32,
+     "w": 151,
+     "h": 40
+    }
+   ]
+  },
+  {
+   "file": "dash@hero/06-date-menu.webp",
+   "route": "#/dashboards",
+   "desc": "Date range menu open (presets with their dates)",
+   "clickTo": {
+    "x": 600,
+    "y": 378,
+    "w": 208,
+    "h": 36
+   },
+   "focus": [
+    {
+     "label": "menu",
+     "x": 584,
+     "y": 78,
+     "w": 240,
+     "h": 312
+    },
+    {
+     "label": "date",
+     "x": 584,
+     "y": 32,
+     "w": 151,
+     "h": 40
+    }
+   ]
+  },
+  {
+   "file": "dash@hero/07-last-90.webp",
+   "route": "#/dashboards",
+   "desc": "Date range switched to Last 90 days: every card recomputed",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "amount spent",
+     "x": 94,
+     "y": 142,
+     "w": 257,
+     "h": 168
+    },
+    {
+     "label": "spend vs leads",
+     "x": 94,
+     "y": 326,
+     "w": 621,
+     "h": 274
+    },
+    {
+     "label": "leads by source",
+     "x": 731,
+     "y": 326,
+     "w": 439,
+     "h": 274
+    }
+   ]
+  },
+  {
+   "file": "dash@hero/08-sankey.webp",
+   "route": "#/charts",
+   "desc": "All chart types gallery: Sankey with the funnel strip",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "Sankey card",
+     "x": 94,
+     "y": 20,
+     "w": 1076,
+     "h": 444
+    },
+    {
+     "label": "neighbour",
+     "x": 1150,
+     "y": 444,
+     "w": 20,
+     "h": 20
+    }
+   ]
+  },
+  {
+   "file": "dash@hero/09-map.webp",
+   "route": "#/charts",
+   "desc": "All chart types gallery: Map of leads by city",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "Map card",
+     "x": 94,
+     "y": 20,
+     "w": 530,
+     "h": 490
+    },
+    {
+     "label": "neighbour",
+     "x": 604,
+     "y": 490,
+     "w": 20,
+     "h": 20
+    }
+   ]
+  },
+  {
+   "file": "dash@hero/10-funnel.webp",
+   "route": "#/charts",
+   "desc": "All chart types gallery: Funnel to sale",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "Funnel card",
+     "x": 94,
+     "y": 20,
+     "w": 530,
+     "h": 444
+    },
+    {
+     "label": "neighbour",
+     "x": 604,
+     "y": 444,
+     "w": 20,
+     "h": 20
+    }
+   ]
+  },
+  {
+   "file": "dash@hero/11-journey-chart.webp",
+   "route": "#/charts",
+   "desc": "All chart types gallery: Journey chart",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "Journey card",
+     "x": 94,
+     "y": 20,
+     "w": 439,
+     "h": 536
+    },
+    {
+     "label": "neighbour",
+     "x": 513,
+     "y": 536,
+     "w": 20,
+     "h": 20
+    }
+   ]
+  }
+ ],
+ "journey@hero": [
+  {
+   "file": "journey@hero/01-report.webp",
+   "route": "#/report",
+   "desc": "Customer journey report: winning journeys lift + source → funnel → result Sankey",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "title",
+     "x": 92,
+     "y": 34,
+     "w": 269,
+     "h": 36
+    },
+    {
+     "label": "lift bars",
+     "x": 94,
+     "y": 142,
+     "w": 439,
+     "h": 458
+    },
+    {
+     "label": "sankey",
+     "x": 549,
+     "y": 142,
+     "w": 621,
+     "h": 458
+    },
+    {
+     "label": "funnel strip",
+     "x": 682,
+     "y": 223,
+     "w": 199,
+     "h": 17
+    }
+   ]
+  },
+  {
+   "file": "journey@hero/02-report-routes.webp",
+   "route": "#/report",
+   "desc": "Journey report scrolled: routes that sell the most and more journey reports",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "routes",
+     "x": 94,
+     "y": 96,
+     "w": 1076,
+     "h": 444
+    }
+   ]
+  },
+  {
+   "file": "journey@hero/03-report-more.webp",
+   "route": "#/report",
+   "desc": "Journey report further down: more journey reports",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "card",
+     "x": 94,
+     "y": 0,
+     "w": 1076,
+     "h": 88
+    },
+    {
+     "label": "card 2",
+     "x": 94,
+     "y": 104,
+     "w": 530,
+     "h": 496
+    }
+   ]
+  },
+  {
+   "file": "journey@hero/04-users.webp",
+   "route": "#/users",
+   "desc": "Users list: identified and anonymous visitors, first touch, location, events",
+   "clickTo": {
+    "x": 130,
+    "y": 422,
+    "w": 1004,
+    "h": 52
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 104,
+     "y": 45,
+     "w": 54,
+     "h": 27
+    },
+    {
+     "label": "table",
+     "x": 104,
+     "y": 96,
+     "w": 1056,
+     "h": 504
+    },
+    {
+     "label": "Luis Treviño row",
+     "x": 130,
+     "y": 422,
+     "w": 1004,
+     "h": 52
+    }
+   ]
+  },
+  {
+   "file": "journey@hero/05-profile-feed.webp",
+   "route": "#/users/40c830b7-3fc8",
+   "desc": "User profile, Feed tab",
+   "clickTo": {
+    "x": 190,
+    "y": 98,
+    "w": 105,
+    "h": 38
+   },
+   "focus": [
+    {
+     "label": "header",
+     "x": 104,
+     "y": 40,
+     "w": 1056,
+     "h": 38
+    },
+    {
+     "label": "tab content",
+     "x": 104,
+     "y": 151,
+     "w": 1056,
+     "h": 449
+    }
+   ]
+  },
+  {
+   "file": "journey@hero/06-profile-overview.webp",
+   "route": "#/users/40c830b7-3fc8",
+   "desc": "User profile, Overview tab",
+   "clickTo": {
+    "x": 303,
+    "y": 98,
+    "w": 97,
+    "h": 38
+   },
+   "focus": [
+    {
+     "label": "header",
+     "x": 104,
+     "y": 40,
+     "w": 1056,
+     "h": 38
+    },
+    {
+     "label": "tab content",
+     "x": 104,
+     "y": 151,
+     "w": 1056,
+     "h": 449
+    }
+   ]
+  },
+  {
+   "file": "journey@hero/07-profile-journey.webp",
+   "route": "#/users/40c830b7-3fc8",
+   "desc": "User profile, Journey tab",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "header",
+     "x": 104,
+     "y": 40,
+     "w": 1056,
+     "h": 38
+    },
+    {
+     "label": "tab content",
+     "x": 104,
+     "y": 151,
+     "w": 1056,
+     "h": 449
+    }
+   ]
+  }
+ ],
+ "sources@hero": [
+  {
+   "file": "sources@hero/01-grid.webp",
+   "route": "#/sources",
+   "desc": "Sources: 32 sources, Connected / Available / Coming soon",
+   "clickTo": {
+    "x": 768,
+    "y": 312,
+    "w": 248,
+    "h": 56
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 248,
+     "y": 96,
+     "w": 768,
+     "h": 56
+    },
+    {
+     "label": "grid",
+     "x": 248,
+     "y": 192,
+     "w": 768,
+     "h": 408
+    },
+    {
+     "label": "facebook ads tile",
+     "x": 768,
+     "y": 244,
+     "w": 248,
+     "h": 56
+    },
+    {
+     "label": "linkedin tile",
+     "x": 768,
+     "y": 312,
+     "w": 248,
+     "h": 56
+    }
+   ]
+  },
+  {
+   "file": "sources@hero/02-linkedin-connecting.webp",
+   "route": "#/sources",
+   "desc": "LinkedIn Ads tile: Connecting…",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "linkedin tile",
+     "x": 768,
+     "y": 312,
+     "w": 248,
+     "h": 56
+    }
+   ]
+  },
+  {
+   "file": "sources@hero/03-linkedin-connected.webp",
+   "route": "#/sources",
+   "desc": "LinkedIn Ads connected (toast + 1 account connected)",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "linkedin tile",
+     "x": 508,
+     "y": 312,
+     "w": 248,
+     "h": 56
+    },
+    {
+     "label": "grid",
+     "x": 248,
+     "y": 192,
+     "w": 768,
+     "h": 408
+    }
+   ]
+  },
+  {
+   "file": "sources@hero/04-home-chat.webp",
+   "route": "#/get-started",
+   "desc": "Home chat with the apps chip (1 app connected)",
+   "clickTo": {
+    "x": 372,
+    "y": 306,
+    "w": 86,
+    "h": 40
+   },
+   "focus": [
+    {
+     "label": "composer",
+     "x": 247,
+     "y": 229,
+     "w": 770,
+     "h": 134
+    },
+    {
+     "label": "apps chip",
+     "x": 372,
+     "y": 306,
+     "w": 86,
+     "h": 40
+    }
+   ]
+  },
+  {
+   "file": "sources@hero/05-apps-panel.webp",
+   "route": "#/get-started",
+   "desc": "Apps panel: ad platforms, CRMs and Admira, each with + to connect",
+   "clickTo": {
+    "x": 255,
+    "y": 458,
+    "w": 243,
+    "h": 26
+   },
+   "focus": [
+    {
+     "label": "apps panel",
+     "x": 248,
+     "y": 370,
+     "w": 768,
+     "h": 230
+    },
+    {
+     "label": "facebook ads",
+     "x": 255,
+     "y": 458,
+     "w": 243,
+     "h": 26
+    }
+   ]
+  },
+  {
+   "file": "sources@hero/06-connect-meta.webp",
+   "route": "#/get-started",
+   "desc": "\"Connect to Facebook Ads\" dialog",
+   "clickTo": {
+    "x": 388,
+    "y": 341,
+    "w": 424,
+    "h": 56
+   },
+   "focus": [
+    {
+     "label": "dialog",
+     "x": 340,
+     "y": 76,
+     "w": 520,
+     "h": 448
+    },
+    {
+     "label": "logos",
+     "x": 528,
+     "y": 132,
+     "w": 144,
+     "h": 48
+    },
+    {
+     "label": "continue",
+     "x": 388,
+     "y": 341,
+     "w": 424,
+     "h": 56
+    }
+   ]
+  },
+  {
+   "file": "sources@hero/07-connecting.webp",
+   "route": "#/get-started",
+   "desc": "Connecting…",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "dialog",
+     "x": 340,
+     "y": 76,
+     "w": 520,
+     "h": 448
+    }
+   ]
+  },
+  {
+   "file": "sources@hero/08-connected.webp",
+   "route": "#/get-started",
+   "desc": "Facebook Ads connected: check mark in the apps panel",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "apps panel",
+     "x": 248,
+     "y": 370,
+     "w": 768,
+     "h": 230
+    },
+    {
+     "label": "facebook ads",
+     "x": 255,
+     "y": 458,
+     "w": 243,
+     "h": 26
+    }
+   ]
+  },
+  {
+   "file": "sources@hero/09-grid-after.webp",
+   "route": "#/sources",
+   "desc": "Sources after connecting: Facebook Ads and Google Ads show 1 account connected",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "grid",
+     "x": 248,
+     "y": 192,
+     "w": 768,
+     "h": 408
+    },
+    {
+     "label": "facebook ads tile",
+     "x": 768,
+     "y": 244,
+     "w": 248,
+     "h": 56
+    }
+   ]
+  }
+ ],
+ "debugger@hero": [
+  {
+   "file": "debugger@hero/01-log.webp",
+   "route": "#/debugger",
+   "desc": "Debugger event log: page views, identify, clicks, purchases with UTMs",
+   "clickTo": {
+    "x": 129,
+    "y": 282,
+    "w": 557,
+    "h": 40
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 104,
+     "y": 40,
+     "w": 90,
+     "h": 27
+    },
+    {
+     "label": "event list",
+     "x": 129,
+     "y": 162,
+     "w": 557,
+     "h": 438
+    },
+    {
+     "label": "detail pane",
+     "x": 727,
+     "y": 87,
+     "w": 433,
+     "h": 370
+    }
+   ]
+  },
+  {
+   "file": "debugger@hero/02-event.webp",
+   "route": "#/debugger",
+   "desc": "An event selected: URL, properties and payload",
+   "clickTo": {
+    "x": 129,
+    "y": 402,
+    "w": 557,
+    "h": 40
+   },
+   "focus": [
+    {
+     "label": "selected row",
+     "x": 129,
+     "y": 282,
+     "w": 557,
+     "h": 40
+    },
+    {
+     "label": "detail",
+     "x": 727,
+     "y": 87,
+     "w": 433,
+     "h": 513
+    },
+    {
+     "label": "event list",
+     "x": 129,
+     "y": 162,
+     "w": 557,
+     "h": 438
+    }
+   ]
+  },
+  {
+   "file": "debugger@hero/03-event-2.webp",
+   "route": "#/debugger",
+   "desc": "Another event selected",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "selected row",
+     "x": 129,
+     "y": 402,
+     "w": 557,
+     "h": 40
+    },
+    {
+     "label": "detail",
+     "x": 727,
+     "y": 87,
+     "w": 433,
+     "h": 513
+    }
+   ]
+  },
+  {
+   "file": "debugger@hero/04-event-failed.webp",
+   "route": "#/debugger",
+   "desc": "A failed event: what went wrong",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "selected row",
+     "x": 129,
+     "y": 522,
+     "w": 557,
+     "h": 40
+    },
+    {
+     "label": "detail",
+     "x": 727,
+     "y": 87,
+     "w": 433,
+     "h": 513
+    }
+   ]
+  },
+  {
+   "file": "debugger@hero/05-business.webp",
+   "route": "#/debugger/business",
+   "desc": "Debugger › Business events from your own system (leads, deals, sales)",
+   "clickTo": {
+    "x": 129,
+    "y": 207,
+    "w": 557,
+    "h": 40
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 104,
+     "y": 43,
+     "w": 90,
+     "h": 27
+    },
+    {
+     "label": "event list",
+     "x": 129,
+     "y": 207,
+     "w": 557,
+     "h": 393
+    },
+    {
+     "label": "detail pane",
+     "x": 727,
+     "y": 92,
+     "w": 433,
+     "h": 370
+    }
+   ]
+  },
+  {
+   "file": "debugger@hero/06-business-event.webp",
+   "route": "#/debugger/business",
+   "desc": "A business event selected",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "detail",
+     "x": 727,
+     "y": 92,
+     "w": 433,
+     "h": 508
+    },
+    {
+     "label": "event list",
+     "x": 129,
+     "y": 207,
+     "w": 557,
+     "h": 393
+    }
+   ]
+  }
+ ],
+ "goals@hero": [
+  {
+   "file": "goals@hero/01-list.webp",
+   "route": "#/goals",
+   "desc": "Goals: the funnel graph and goal rows with 90-day counts and monthly targets",
+   "clickTo": {
+    "x": 1054,
+    "y": 559,
+    "w": 64,
+    "h": 30
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 104,
+     "y": 40,
+     "w": 1056,
+     "h": 27
+    },
+    {
+     "label": "funnel",
+     "x": 129,
+     "y": 112,
+     "w": 1006,
+     "h": 301
+    },
+    {
+     "label": "goal rows",
+     "x": 198,
+     "y": 486,
+     "w": 598,
+     "h": 38
+    },
+    {
+     "label": "card",
+     "x": 104,
+     "y": 87,
+     "w": 1056,
+     "h": 513
+    }
+   ]
+  },
+  {
+   "file": "goals@hero/02-edit.webp",
+   "route": "#/goals",
+   "desc": "A goal open: conditions (Where … And …) on CRM fields",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "editor",
+     "x": 130,
+     "y": 334,
+     "w": 1004,
+     "h": 266
+    },
+    {
+     "label": "conditions",
+     "x": 198,
+     "y": 366,
+     "w": 920,
+     "h": 104
+    }
+   ]
+  },
+  {
+   "file": "goals@hero/03-verified.webp",
+   "route": "#/goals",
+   "desc": "Goal verified: matches in the last 90 days with the latest ones",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "verify result",
+     "x": 210,
+     "y": 482,
+     "w": 896,
+     "h": 17
+    },
+    {
+     "label": "editor",
+     "x": 130,
+     "y": 120,
+     "w": 1004,
+     "h": 480
+    }
+   ]
+  },
+  {
+   "file": "goals@hero/04-custom.webp",
+   "route": "#/goals",
+   "desc": "Custom goals: page views, clicks, form submits, CRM records",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "custom goals",
+     "x": 129,
+     "y": 318,
+     "w": 1006,
+     "h": 129
+    }
+   ]
+  }
+ ],
+ "deals@hero": [
+  {
+   "file": "deals@hero/01-list.webp",
+   "route": "#/deals",
+   "desc": "Deals: open pipeline, win probability, won/lost value, touchpoints per deal",
+   "clickTo": {
+    "x": 233,
+    "y": 214,
+    "w": 53,
+    "h": 30
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 104,
+     "y": 40,
+     "w": 1056,
+     "h": 27
+    },
+    {
+     "label": "stat strip",
+     "x": 129,
+     "y": 112,
+     "w": 1006,
+     "h": 83
+    },
+    {
+     "label": "table",
+     "x": 129,
+     "y": 263,
+     "w": 1006,
+     "h": 337
+    },
+    {
+     "label": "row",
+     "x": 129,
+     "y": 495,
+     "w": 1006,
+     "h": 64
+    }
+   ]
+  },
+  {
+   "file": "deals@hero/02-won.webp",
+   "route": "#/deals",
+   "desc": "Deals filtered to Won",
+   "clickTo": {
+    "x": 129,
+    "y": 303,
+    "w": 1006,
+    "h": 64
+   },
+   "focus": [
+    {
+     "label": "table",
+     "x": 129,
+     "y": 263,
+     "w": 1006,
+     "h": 337
+    }
+   ]
+  },
+  {
+   "file": "deals@hero/03-deal.webp",
+   "route": "#/deals/dl-1055",
+   "desc": "One deal: overview",
+   "clickTo": {
+    "x": 217,
+    "y": 98,
+    "w": 99,
+    "h": 38
+   },
+   "focus": [
+    {
+     "label": "header",
+     "x": 104,
+     "y": 40,
+     "w": 1056,
+     "h": 38
+    },
+    {
+     "label": "tabs",
+     "x": 104,
+     "y": 98,
+     "w": 1056,
+     "h": 37
+    }
+   ]
+  },
+  {
+   "file": "deals@hero/04-deal-timeline.webp",
+   "route": "#/deals/dl-1055",
+   "desc": "One deal, Timeline tab",
+   "clickTo": {
+    "x": 324,
+    "y": 98,
+    "w": 186,
+    "h": 38
+   },
+   "focus": [
+    {
+     "label": "header",
+     "x": 104,
+     "y": 40,
+     "w": 1056,
+     "h": 38
+    },
+    {
+     "label": "content",
+     "x": 104,
+     "y": 151,
+     "w": 1056,
+     "h": 449
+    }
+   ]
+  },
+  {
+   "file": "deals@hero/05-deal-associated-contacts.webp",
+   "route": "#/deals/dl-1055",
+   "desc": "One deal, Associated Contacts\n2 tab",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "header",
+     "x": 104,
+     "y": 40,
+     "w": 1056,
+     "h": 38
+    },
+    {
+     "label": "content",
+     "x": 104,
+     "y": 151,
+     "w": 1056,
+     "h": 449
+    }
+   ]
+  }
+ ],
+ "segments@hero": [
+  {
+   "file": "segments@hero/01-list.webp",
+   "route": "#/segments",
+   "desc": "Segments: your segments with conditions and sizes",
+   "clickTo": {
+    "x": 130,
+    "y": 260,
+    "w": 1004,
+    "h": 52
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 104,
+     "y": 45,
+     "w": 92,
+     "h": 27
+    },
+    {
+     "label": "table",
+     "x": 104,
+     "y": 96,
+     "w": 1056,
+     "h": 346
+    },
+    {
+     "label": "row",
+     "x": 130,
+     "y": 260,
+     "w": 1004,
+     "h": 52
+    }
+   ]
+  },
+  {
+   "file": "segments@hero/02-open.webp",
+   "route": "#/segments",
+   "desc": "A segment open: Segment of, conditions, live size",
+   "clickTo": {
+    "x": 1016,
+    "y": 40,
+    "w": 144,
+    "h": 40
+   },
+   "focus": [
+    {
+     "label": "editor",
+     "x": 104,
+     "y": 96,
+     "w": 1056,
+     "h": 479
+    },
+    {
+     "label": "conditions",
+     "x": 129,
+     "y": 285,
+     "w": 1006,
+     "h": 152
+    }
+   ]
+  },
+  {
+   "file": "segments@hero/03-new.webp",
+   "route": "#/segments",
+   "desc": "New segment",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "editor",
+     "x": 104,
+     "y": 96,
+     "w": 1056,
+     "h": 431
+    }
+   ]
+  }
+ ],
+ "start@hero": [
+  {
+   "file": "start@hero/01-get-started.webp",
+   "route": "#/get-started",
+   "desc": "Home › Get Started: chat first, setup strip, six-step checklist",
+   "clickTo": {
+    "x": 264,
+    "y": 246,
+    "w": 736,
+    "h": 48
+   },
+   "focus": [
+    {
+     "label": "headline",
+     "x": 501,
+     "y": 169,
+     "w": 262,
+     "h": 36
+    },
+    {
+     "label": "composer",
+     "x": 247,
+     "y": 229,
+     "w": 770,
+     "h": 134
+    },
+    {
+     "label": "ideas",
+     "x": 247,
+     "y": 371,
+     "w": 770,
+     "h": 36
+    },
+    {
+     "label": "checklist",
+     "x": 104,
+     "y": 488,
+     "w": 1056,
+     "h": 112
+    }
+   ]
+  },
+  {
+   "file": "start@hero/02-typed.webp",
+   "route": "#/get-started",
+   "desc": "Question typed in the Home chat",
+   "clickTo": {
+    "x": 960,
+    "y": 306,
+    "w": 40,
+    "h": 40
+   },
+   "focus": [
+    {
+     "label": "composer",
+     "x": 247,
+     "y": 229,
+     "w": 770,
+     "h": 134
+    }
+   ]
+  },
+  {
+   "file": "start@hero/03-answer.webp",
+   "route": "#/get-started",
+   "desc": "Home chat answer: needs the ad platforms, Enable toolkit card inline",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "answer",
+     "x": 247,
+     "y": 229,
+     "w": 770,
+     "h": 371
+    },
+    {
+     "label": "toolkit card",
+     "x": 275,
+     "y": 357,
+     "w": 460,
+     "h": 243
+    }
+   ]
+  },
+  {
+   "file": "start@hero/04-checklist.webp",
+   "route": "#/get-started",
+   "desc": "Get Started checklist with the current step open inline",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "checklist",
+     "x": 80,
+     "y": 16,
+     "w": 1104,
+     "h": 568
+    }
+   ]
+  },
+  {
+   "file": "start@hero/05-get-started-done.webp",
+   "route": "#/get-started",
+   "desc": "Get Started with the setup complete (6 of 6)",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "composer",
+     "x": 247,
+     "y": 229,
+     "w": 770,
+     "h": 134
+    }
+   ]
+  },
+  {
+   "file": "start@hero/06-first-question.webp",
+   "route": "#/onboarding/first-question",
+   "desc": "Welcome 3: \"What do you want to do first?\" with three suggestion rows",
+   "clickTo": {
+    "x": 248,
+    "y": 308,
+    "w": 705,
+    "h": 34
+   },
+   "focus": [
+    {
+     "label": "headline",
+     "x": 232,
+     "y": 118,
+     "w": 737,
+     "h": 38
+    },
+    {
+     "label": "suggestions",
+     "x": 232,
+     "y": 220,
+     "w": 737,
+     "h": 290
+    }
+   ]
+  },
+  {
+   "file": "start@hero/07-first-question-hover.webp",
+   "route": "#/onboarding/first-question",
+   "desc": "Welcome 3 with a suggestion row hovered",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "row",
+     "x": 248,
+     "y": 308,
+     "w": 705,
+     "h": 34
+    }
+   ]
+  },
+  {
+   "file": "start@hero/08-onboarding-company.webp",
+   "route": "#/onboarding/company",
+   "desc": "Onboarding: company",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "headline",
+     "x": 334,
+     "y": 200,
+     "w": 532,
+     "h": 28
+    },
+    {
+     "label": "form",
+     "x": 302,
+     "y": 96,
+     "w": 596,
+     "h": 503
+    }
+   ]
+  },
+  {
+   "file": "start@hero/09-onboarding-heard.webp",
+   "route": "#/onboarding/heard",
+   "desc": "Onboarding: heard",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "headline",
+     "x": 334,
+     "y": 208,
+     "w": 532,
+     "h": 28
+    },
+    {
+     "label": "form",
+     "x": 302,
+     "y": 96,
+     "w": 596,
+     "h": 504
+    }
+   ]
+  },
+  {
+   "file": "start@hero/10-onboarding-signup.webp",
+   "route": "#/onboarding/signup",
+   "desc": "Onboarding: signup",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "headline",
+     "x": 334,
+     "y": 128,
+     "w": 532,
+     "h": 28
+    },
+    {
+     "label": "form",
+     "x": 302,
+     "y": 96,
+     "w": 596,
+     "h": 504
+    }
+   ]
+  },
+  {
+   "file": "start@hero/11-reveal.webp",
+   "route": "#/reveal",
+   "desc": "First-insight reveal screen",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "dialog",
+     "x": 0,
+     "y": 0,
+     "w": 1200,
+     "h": 600
+    }
+   ]
+  }
+ ],
+ "channels@hero": [
+  {
+   "file": "channels@hero/01-mapping.webp",
+   "route": "#/get-started/mapping",
+   "desc": "Map lead source: CRM source values mapped to Admira channels",
+   "clickTo": {
+    "x": 1008,
+    "y": 224,
+    "w": 128,
+    "h": 30
+   },
+   "focus": [
+    {
+     "label": "summary",
+     "x": 392,
+     "y": 224,
+     "w": 744,
+     "h": 30
+    },
+    {
+     "label": "table",
+     "x": 392,
+     "y": 270,
+     "w": 744,
+     "h": 330
+    },
+    {
+     "label": "manage",
+     "x": 1008,
+     "y": 224,
+     "w": 128,
+     "h": 30
+    }
+   ]
+  },
+  {
+   "file": "channels@hero/02-dialog.webp",
+   "route": "#/get-started/mapping",
+   "desc": "Channels dialog: channel list with rules and mapped values",
+   "clickTo": {
+    "x": 917,
+    "y": 210,
+    "w": 89,
+    "h": 30
+   },
+   "focus": [
+    {
+     "label": "dialog",
+     "x": 138,
+     "y": 24,
+     "w": 924,
+     "h": 552
+    }
+   ]
+  }
+ ],
+ "ai@panel": [
+  {
+   "file": "ai@panel/01-ready.webp",
+   "route": "#/agents",
+   "desc": "Admira AI new chat: \"Ready when you are\", composer and three suggestions",
+   "clickTo": {
+    "x": 209,
+    "y": 222,
+    "w": 735,
+    "h": 48
+   },
+   "focus": [
+    {
+     "label": "headline",
+     "x": 432,
+     "y": 136,
+     "w": 288,
+     "h": 40
+    },
+    {
+     "label": "composer",
+     "x": 193,
+     "y": 208,
+     "w": 767,
+     "h": 114
+    },
+    {
+     "label": "suggestions",
+     "x": 193,
+     "y": 334,
+     "w": 767,
+     "h": 108
+    }
+   ]
+  },
+  {
+   "file": "ai@panel/02-typed.webp",
+   "route": "#/agents",
+   "desc": "Question typed in the composer, send button active",
+   "clickTo": {
+    "x": 912,
+    "y": 278,
+    "w": 32,
+    "h": 32
+   },
+   "focus": [
+    {
+     "label": "composer",
+     "x": 193,
+     "y": 208,
+     "w": 767,
+     "h": 114
+    },
+    {
+     "label": "send",
+     "x": 912,
+     "y": 278,
+     "w": 32,
+     "h": 32
+    }
+   ]
+  },
+  {
+   "file": "ai@panel/03-thinking.webp",
+   "route": "#/agents/chat/c1795728214137",
+   "desc": "Agent working: steps ticking (reading attribution, matching sales to channels)",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "question",
+     "x": 371,
+     "y": 72,
+     "w": 337,
+     "h": 38
+    },
+    {
+     "label": "steps",
+     "x": 140,
+     "y": 132,
+     "w": 303,
+     "h": 139
+    },
+    {
+     "label": "outputs panel",
+     "x": 732,
+     "y": 16,
+     "w": 340,
+     "h": 538
+    }
+   ]
+  },
+  {
+   "file": "ai@panel/04-answer.webp",
+   "route": "#/agents/chat/c1795728214137",
+   "desc": "Answer with the report open in the Outputs panel (paid performance, last 30 days)",
+   "clickTo": {
+    "x": 996,
+    "y": 27,
+    "w": 30,
+    "h": 30
+   },
+   "focus": [
+    {
+     "label": "answer",
+     "x": 104,
+     "y": 0,
+     "w": 604,
+     "h": 423
+    },
+    {
+     "label": "report panel",
+     "x": 732,
+     "y": 16,
+     "w": 340,
+     "h": 538
+    },
+    {
+     "label": "panel body",
+     "x": 733,
+     "y": 68,
+     "w": 339,
+     "h": 486
+    }
+   ]
+  },
+  {
+   "file": "ai@panel/05-report-wide.webp",
+   "route": "#/agents/chat/c1795728214137",
+   "desc": "Outputs panel expanded: the full report next to the chat",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "report panel",
+     "x": 556,
+     "y": 16,
+     "w": 516,
+     "h": 538
+    },
+    {
+     "label": "panel body",
+     "x": 557,
+     "y": 68,
+     "w": 515,
+     "h": 486
+    },
+    {
+     "label": "answer",
+     "x": 104,
+     "y": 0,
+     "w": 428,
+     "h": 423
+    }
+   ]
+  },
+  {
+   "file": "ai@panel/06-toolkit.webp",
+   "route": "#/agents/chat/c1795728226848",
+   "desc": "Asked about Facebook before Meta is connected: \"Enable toolkit\" card with + Connect",
+   "clickTo": {
+    "x": 578,
+    "y": 249,
+    "w": 84,
+    "h": 28
+   },
+   "focus": [
+    {
+     "label": "toolkit card",
+     "x": 229,
+     "y": 167,
+     "w": 460,
+     "h": 172
+    },
+    {
+     "label": "question",
+     "x": 560,
+     "y": 72,
+     "w": 400,
+     "h": 38
+    },
+    {
+     "label": "answer text",
+     "x": 229,
+     "y": 132,
+     "w": 731,
+     "h": 23
+    }
+   ]
+  },
+  {
+   "file": "ai@panel/07-connect-meta.webp",
+   "route": "#/agents/chat/c1795728226848",
+   "desc": "\"Connect to Facebook Ads\" dialog (Admira ••• Meta), dark Continue",
+   "clickTo": {
+    "x": 332,
+    "y": 326,
+    "w": 424,
+    "h": 56
+   },
+   "focus": [
+    {
+     "label": "dialog",
+     "x": 284,
+     "y": 61,
+     "w": 520,
+     "h": 448
+    },
+    {
+     "label": "logos",
+     "x": 472,
+     "y": 117,
+     "w": 144,
+     "h": 48
+    },
+    {
+     "label": "title",
+     "x": 371,
+     "y": 191,
+     "w": 345,
+     "h": 36
+    }
+   ]
+  },
+  {
+   "file": "ai@panel/08-connecting.webp",
+   "route": "#/agents/chat/c1795728226848",
+   "desc": "Continue pressed: \"Connecting...\" spinner",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "dialog",
+     "x": 284,
+     "y": 61,
+     "w": 520,
+     "h": 448
+    },
+    {
+     "label": "button",
+     "x": 332,
+     "y": 326,
+     "w": 424,
+     "h": 56
+    }
+   ]
+  },
+  {
+   "file": "ai@panel/09-connected.webp",
+   "route": "#/agents/chat/c1795728226848",
+   "desc": "Facebook Ads connected in the toolkit card, Enable ready",
+   "clickTo": {
+    "x": 242,
+    "y": 288,
+    "w": 76,
+    "h": 28
+   },
+   "focus": [
+    {
+     "label": "toolkit card",
+     "x": 229,
+     "y": 167,
+     "w": 460,
+     "h": 162
+    },
+    {
+     "label": "connected badge",
+     "x": 586,
+     "y": 250,
+     "w": 76,
+     "h": 16
+    }
+   ]
+  },
+  {
+   "file": "ai@panel/10-after-connect.webp",
+   "route": "#/agents/chat/c1795728226848",
+   "desc": "Toolkit enabled: the held answer runs and the report opens",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "answer",
+     "x": 104,
+     "y": 0,
+     "w": 604,
+     "h": 423
+    },
+    {
+     "label": "report panel",
+     "x": 732,
+     "y": 16,
+     "w": 340,
+     "h": 538
+    }
+   ]
+  },
+  {
+   "file": "ai@panel/11-campaign-draft.webp",
+   "route": "#/agents/chat/c1795728246140",
+   "desc": "Launch a Meta campaign at MX$2,000/day: campaign draft in the panel, approval button",
+   "clickTo": {
+    "x": 586,
+    "y": 272,
+    "w": 110,
+    "h": 32
+   },
+   "focus": [
+    {
+     "label": "answer",
+     "x": 104,
+     "y": 53,
+     "w": 604,
+     "h": 339
+    },
+    {
+     "label": "draft panel",
+     "x": 732,
+     "y": 16,
+     "w": 340,
+     "h": 538
+    },
+    {
+     "label": "approve",
+     "x": 586,
+     "y": 272,
+     "w": 110,
+     "h": 32
+    }
+   ]
+  },
+  {
+   "file": "ai@panel/12-campaign-live.webp",
+   "route": "#/agents/chat/c1795728246140",
+   "desc": "Approved: campaign created in Meta, budget and guardrail set",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "answer",
+     "x": 104,
+     "y": 4,
+     "w": 604,
+     "h": 388
+    },
+    {
+     "label": "draft panel",
+     "x": 732,
+     "y": 16,
+     "w": 340,
+     "h": 538
+    }
+   ]
+  }
+ ],
+ "dash@panel": [
+  {
+   "file": "dash@panel/01-paid-growth.webp",
+   "route": "#/dashboards",
+   "desc": "Dashboard \"Paid growth weekly\": KPI cards, Spend vs Leads combo, Leads by source",
+   "clickTo": {
+    "x": 110,
+    "y": 458,
+    "w": 524,
+    "h": 112
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 92,
+     "y": 34,
+     "w": 218,
+     "h": 36
+    },
+    {
+     "label": "amount spent",
+     "x": 94,
+     "y": 142,
+     "w": 229,
+     "h": 168
+    },
+    {
+     "label": "pipeline gauge",
+     "x": 829,
+     "y": 142,
+     "w": 229,
+     "h": 168
+    },
+    {
+     "label": "spend vs leads",
+     "x": 94,
+     "y": 326,
+     "w": 556,
+     "h": 244
+    },
+    {
+     "label": "leads by source",
+     "x": 666,
+     "y": 326,
+     "w": 392,
+     "h": 244
+    }
+   ]
+  },
+  {
+   "file": "dash@panel/02-tooltip.webp",
+   "route": "#/dashboards",
+   "desc": "Hover on Spend vs Leads: tooltip with the day values",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "spend vs leads",
+     "x": 94,
+     "y": 326,
+     "w": 556,
+     "h": 244
+    },
+    {
+     "label": "tooltip",
+     "x": 243,
+     "y": 524,
+     "w": 186,
+     "h": 46
+    }
+   ]
+  },
+  {
+   "file": "dash@panel/03-bar-hover.webp",
+   "route": "#/dashboards",
+   "desc": "Hover on Leads by source bar",
+   "clickTo": {
+    "x": 339,
+    "y": 142,
+    "w": 229,
+    "h": 168
+   },
+   "focus": [
+    {
+     "label": "leads by source",
+     "x": 666,
+     "y": 326,
+     "w": 392,
+     "h": 244
+    }
+   ]
+  },
+  {
+   "file": "dash@panel/04-drilldown.webp",
+   "route": "#/dashboards",
+   "desc": "Click a number: the leads behind it open in a side panel",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "drilldown panel",
+     "x": 710,
+     "y": 0,
+     "w": 378,
+     "h": 570
+    },
+    {
+     "label": "list",
+     "x": 734,
+     "y": 159,
+     "w": 330,
+     "h": 342
+    }
+   ]
+  },
+  {
+   "file": "dash@panel/05-pre-date.webp",
+   "route": "#/dashboards",
+   "desc": "Dashboard before changing the date range",
+   "clickTo": {
+    "x": 472,
+    "y": 32,
+    "w": 151,
+    "h": 40
+   },
+   "focus": [
+    {
+     "label": "date",
+     "x": 472,
+     "y": 32,
+     "w": 151,
+     "h": 40
+    }
+   ]
+  },
+  {
+   "file": "dash@panel/06-date-menu.webp",
+   "route": "#/dashboards",
+   "desc": "Date range menu open (presets with their dates)",
+   "clickTo": {
+    "x": 488,
+    "y": 378,
+    "w": 208,
+    "h": 36
+   },
+   "focus": [
+    {
+     "label": "menu",
+     "x": 472,
+     "y": 78,
+     "w": 240,
+     "h": 312
+    },
+    {
+     "label": "date",
+     "x": 472,
+     "y": 32,
+     "w": 151,
+     "h": 40
+    }
+   ]
+  },
+  {
+   "file": "dash@panel/07-last-90.webp",
+   "route": "#/dashboards",
+   "desc": "Date range switched to Last 90 days: every card recomputed",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "amount spent",
+     "x": 94,
+     "y": 142,
+     "w": 229,
+     "h": 168
+    },
+    {
+     "label": "spend vs leads",
+     "x": 94,
+     "y": 326,
+     "w": 556,
+     "h": 244
+    },
+    {
+     "label": "leads by source",
+     "x": 666,
+     "y": 326,
+     "w": 392,
+     "h": 244
+    }
+   ]
+  },
+  {
+   "file": "dash@panel/08-sankey.webp",
+   "route": "#/charts",
+   "desc": "All chart types gallery: Sankey with the funnel strip",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "Sankey card",
+     "x": 94,
+     "y": 20,
+     "w": 964,
+     "h": 444
+    },
+    {
+     "label": "neighbour",
+     "x": 1038,
+     "y": 444,
+     "w": 20,
+     "h": 20
+    }
+   ]
+  },
+  {
+   "file": "dash@panel/09-map.webp",
+   "route": "#/charts",
+   "desc": "All chart types gallery: Map of leads by city",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "Map card",
+     "x": 94,
+     "y": 20,
+     "w": 474,
+     "h": 490
+    },
+    {
+     "label": "neighbour",
+     "x": 548,
+     "y": 490,
+     "w": 20,
+     "h": 20
+    }
+   ]
+  },
+  {
+   "file": "dash@panel/10-funnel.webp",
+   "route": "#/charts",
+   "desc": "All chart types gallery: Funnel to sale",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "Funnel card",
+     "x": 94,
+     "y": 20,
+     "w": 474,
+     "h": 444
+    },
+    {
+     "label": "neighbour",
+     "x": 548,
+     "y": 444,
+     "w": 20,
+     "h": 20
+    }
+   ]
+  },
+  {
+   "file": "dash@panel/11-journey-chart.webp",
+   "route": "#/charts",
+   "desc": "All chart types gallery: Journey chart",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "Journey card",
+     "x": 94,
+     "y": 20,
+     "w": 392,
+     "h": 536
+    },
+    {
+     "label": "neighbour",
+     "x": 466,
+     "y": 536,
+     "w": 20,
+     "h": 20
+    }
+   ]
+  }
+ ],
+ "journey@panel": [
+  {
+   "file": "journey@panel/01-report.webp",
+   "route": "#/report",
+   "desc": "Customer journey report: winning journeys lift + source → funnel → result Sankey",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "title",
+     "x": 92,
+     "y": 34,
+     "w": 269,
+     "h": 36
+    },
+    {
+     "label": "lift bars",
+     "x": 94,
+     "y": 142,
+     "w": 392,
+     "h": 428
+    },
+    {
+     "label": "sankey",
+     "x": 502,
+     "y": 142,
+     "w": 556,
+     "h": 428
+    },
+    {
+     "label": "funnel strip",
+     "x": 635,
+     "y": 223,
+     "w": 199,
+     "h": 17
+    }
+   ]
+  },
+  {
+   "file": "journey@panel/02-report-routes.webp",
+   "route": "#/report",
+   "desc": "Journey report scrolled: routes that sell the most and more journey reports",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "routes",
+     "x": 94,
+     "y": 96,
+     "w": 964,
+     "h": 444
+    }
+   ]
+  },
+  {
+   "file": "journey@panel/03-report-more.webp",
+   "route": "#/report",
+   "desc": "Journey report further down: more journey reports",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "card",
+     "x": 94,
+     "y": 0,
+     "w": 964,
+     "h": 88
+    },
+    {
+     "label": "card 2",
+     "x": 94,
+     "y": 104,
+     "w": 474,
+     "h": 466
+    }
+   ]
+  },
+  {
+   "file": "journey@panel/04-users.webp",
+   "route": "#/users",
+   "desc": "Users list: identified and anonymous visitors, first touch, location, events",
+   "clickTo": {
+    "x": 130,
+    "y": 422,
+    "w": 892,
+    "h": 52
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 104,
+     "y": 45,
+     "w": 54,
+     "h": 27
+    },
+    {
+     "label": "table",
+     "x": 104,
+     "y": 96,
+     "w": 944,
+     "h": 474
+    },
+    {
+     "label": "Luis Treviño row",
+     "x": 130,
+     "y": 422,
+     "w": 892,
+     "h": 52
+    }
+   ]
+  },
+  {
+   "file": "journey@panel/05-profile-feed.webp",
+   "route": "#/users/40c830b7-3fc8",
+   "desc": "User profile, Feed tab",
+   "clickTo": {
+    "x": 190,
+    "y": 98,
+    "w": 105,
+    "h": 38
+   },
+   "focus": [
+    {
+     "label": "header",
+     "x": 104,
+     "y": 40,
+     "w": 944,
+     "h": 38
+    },
+    {
+     "label": "tab content",
+     "x": 104,
+     "y": 151,
+     "w": 944,
+     "h": 419
+    }
+   ]
+  },
+  {
+   "file": "journey@panel/06-profile-overview.webp",
+   "route": "#/users/40c830b7-3fc8",
+   "desc": "User profile, Overview tab",
+   "clickTo": {
+    "x": 303,
+    "y": 98,
+    "w": 97,
+    "h": 38
+   },
+   "focus": [
+    {
+     "label": "header",
+     "x": 104,
+     "y": 40,
+     "w": 944,
+     "h": 38
+    },
+    {
+     "label": "tab content",
+     "x": 104,
+     "y": 151,
+     "w": 944,
+     "h": 419
+    }
+   ]
+  },
+  {
+   "file": "journey@panel/07-profile-journey.webp",
+   "route": "#/users/40c830b7-3fc8",
+   "desc": "User profile, Journey tab",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "header",
+     "x": 104,
+     "y": 40,
+     "w": 944,
+     "h": 38
+    },
+    {
+     "label": "tab content",
+     "x": 104,
+     "y": 151,
+     "w": 944,
+     "h": 419
+    }
+   ]
+  }
+ ],
+ "sources@panel": [
+  {
+   "file": "sources@panel/01-grid.webp",
+   "route": "#/sources",
+   "desc": "Sources: 32 sources, Connected / Available / Coming soon",
+   "clickTo": {
+    "x": 712,
+    "y": 312,
+    "w": 248,
+    "h": 56
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 192,
+     "y": 96,
+     "w": 768,
+     "h": 56
+    },
+    {
+     "label": "grid",
+     "x": 192,
+     "y": 192,
+     "w": 768,
+     "h": 378
+    },
+    {
+     "label": "facebook ads tile",
+     "x": 712,
+     "y": 244,
+     "w": 248,
+     "h": 56
+    },
+    {
+     "label": "linkedin tile",
+     "x": 712,
+     "y": 312,
+     "w": 248,
+     "h": 56
+    }
+   ]
+  },
+  {
+   "file": "sources@panel/02-linkedin-connecting.webp",
+   "route": "#/sources",
+   "desc": "LinkedIn Ads tile: Connecting…",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "linkedin tile",
+     "x": 712,
+     "y": 312,
+     "w": 248,
+     "h": 56
+    }
+   ]
+  },
+  {
+   "file": "sources@panel/03-linkedin-connected.webp",
+   "route": "#/sources",
+   "desc": "LinkedIn Ads connected (toast + 1 account connected)",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "linkedin tile",
+     "x": 452,
+     "y": 312,
+     "w": 248,
+     "h": 56
+    },
+    {
+     "label": "grid",
+     "x": 192,
+     "y": 192,
+     "w": 768,
+     "h": 378
+    }
+   ]
+  },
+  {
+   "file": "sources@panel/04-home-chat.webp",
+   "route": "#/get-started",
+   "desc": "Home chat with the apps chip (1 app connected)",
+   "clickTo": {
+    "x": 316,
+    "y": 306,
+    "w": 86,
+    "h": 40
+   },
+   "focus": [
+    {
+     "label": "composer",
+     "x": 191,
+     "y": 229,
+     "w": 770,
+     "h": 134
+    },
+    {
+     "label": "apps chip",
+     "x": 316,
+     "y": 306,
+     "w": 86,
+     "h": 40
+    }
+   ]
+  },
+  {
+   "file": "sources@panel/05-apps-panel.webp",
+   "route": "#/get-started",
+   "desc": "Apps panel: ad platforms, CRMs and Admira, each with + to connect",
+   "clickTo": {
+    "x": 199,
+    "y": 458,
+    "w": 243,
+    "h": 26
+   },
+   "focus": [
+    {
+     "label": "apps panel",
+     "x": 192,
+     "y": 370,
+     "w": 768,
+     "h": 200
+    },
+    {
+     "label": "facebook ads",
+     "x": 199,
+     "y": 458,
+     "w": 243,
+     "h": 26
+    }
+   ]
+  },
+  {
+   "file": "sources@panel/06-connect-meta.webp",
+   "route": "#/get-started",
+   "desc": "\"Connect to Facebook Ads\" dialog",
+   "clickTo": {
+    "x": 332,
+    "y": 326,
+    "w": 424,
+    "h": 56
+   },
+   "focus": [
+    {
+     "label": "dialog",
+     "x": 284,
+     "y": 61,
+     "w": 520,
+     "h": 448
+    },
+    {
+     "label": "logos",
+     "x": 472,
+     "y": 117,
+     "w": 144,
+     "h": 48
+    },
+    {
+     "label": "continue",
+     "x": 332,
+     "y": 326,
+     "w": 424,
+     "h": 56
+    }
+   ]
+  },
+  {
+   "file": "sources@panel/07-connecting.webp",
+   "route": "#/get-started",
+   "desc": "Connecting…",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "dialog",
+     "x": 284,
+     "y": 61,
+     "w": 520,
+     "h": 448
+    }
+   ]
+  },
+  {
+   "file": "sources@panel/08-connected.webp",
+   "route": "#/get-started",
+   "desc": "Facebook Ads connected: check mark in the apps panel",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "apps panel",
+     "x": 192,
+     "y": 370,
+     "w": 768,
+     "h": 200
+    },
+    {
+     "label": "facebook ads",
+     "x": 199,
+     "y": 458,
+     "w": 243,
+     "h": 26
+    }
+   ]
+  },
+  {
+   "file": "sources@panel/09-grid-after.webp",
+   "route": "#/sources",
+   "desc": "Sources after connecting: Facebook Ads and Google Ads show 1 account connected",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "grid",
+     "x": 192,
+     "y": 192,
+     "w": 768,
+     "h": 378
+    },
+    {
+     "label": "facebook ads tile",
+     "x": 712,
+     "y": 244,
+     "w": 248,
+     "h": 56
+    }
+   ]
+  }
+ ],
+ "debugger@panel": [
+  {
+   "file": "debugger@panel/01-log.webp",
+   "route": "#/debugger",
+   "desc": "Debugger event log: page views, identify, clicks, purchases with UTMs",
+   "clickTo": {
+    "x": 129,
+    "y": 282,
+    "w": 491,
+    "h": 40
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 104,
+     "y": 40,
+     "w": 90,
+     "h": 27
+    },
+    {
+     "label": "event list",
+     "x": 129,
+     "y": 162,
+     "w": 491,
+     "h": 408
+    },
+    {
+     "label": "detail pane",
+     "x": 661,
+     "y": 87,
+     "w": 387,
+     "h": 370
+    }
+   ]
+  },
+  {
+   "file": "debugger@panel/02-event.webp",
+   "route": "#/debugger",
+   "desc": "An event selected: URL, properties and payload",
+   "clickTo": {
+    "x": 129,
+    "y": 402,
+    "w": 491,
+    "h": 40
+   },
+   "focus": [
+    {
+     "label": "selected row",
+     "x": 129,
+     "y": 282,
+     "w": 491,
+     "h": 40
+    },
+    {
+     "label": "detail",
+     "x": 661,
+     "y": 87,
+     "w": 387,
+     "h": 483
+    },
+    {
+     "label": "event list",
+     "x": 129,
+     "y": 162,
+     "w": 491,
+     "h": 408
+    }
+   ]
+  },
+  {
+   "file": "debugger@panel/03-event-2.webp",
+   "route": "#/debugger",
+   "desc": "Another event selected",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "selected row",
+     "x": 129,
+     "y": 402,
+     "w": 491,
+     "h": 40
+    },
+    {
+     "label": "detail",
+     "x": 661,
+     "y": 87,
+     "w": 387,
+     "h": 483
+    }
+   ]
+  },
+  {
+   "file": "debugger@panel/04-event-failed.webp",
+   "route": "#/debugger",
+   "desc": "A failed event: what went wrong",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "selected row",
+     "x": 129,
+     "y": 514,
+     "w": 491,
+     "h": 40
+    },
+    {
+     "label": "detail",
+     "x": 661,
+     "y": 79,
+     "w": 387,
+     "h": 491
+    }
+   ]
+  },
+  {
+   "file": "debugger@panel/05-business.webp",
+   "route": "#/debugger/business",
+   "desc": "Debugger › Business events from your own system (leads, deals, sales)",
+   "clickTo": {
+    "x": 129,
+    "y": 207,
+    "w": 491,
+    "h": 40
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 104,
+     "y": 43,
+     "w": 90,
+     "h": 27
+    },
+    {
+     "label": "event list",
+     "x": 129,
+     "y": 207,
+     "w": 491,
+     "h": 363
+    },
+    {
+     "label": "detail pane",
+     "x": 661,
+     "y": 92,
+     "w": 387,
+     "h": 370
+    }
+   ]
+  },
+  {
+   "file": "debugger@panel/06-business-event.webp",
+   "route": "#/debugger/business",
+   "desc": "A business event selected",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "detail",
+     "x": 661,
+     "y": 92,
+     "w": 387,
+     "h": 478
+    },
+    {
+     "label": "event list",
+     "x": 129,
+     "y": 207,
+     "w": 491,
+     "h": 363
+    }
+   ]
+  }
+ ],
+ "goals@panel": [
+  {
+   "file": "goals@panel/01-list.webp",
+   "route": "#/goals",
+   "desc": "Goals: the funnel graph and goal rows with 90-day counts and monthly targets",
+   "clickTo": {
+    "x": 942,
+    "y": 559,
+    "w": 64,
+    "h": 11
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 104,
+     "y": 40,
+     "w": 944,
+     "h": 27
+    },
+    {
+     "label": "funnel",
+     "x": 129,
+     "y": 112,
+     "w": 894,
+     "h": 301
+    },
+    {
+     "label": "goal rows",
+     "x": 198,
+     "y": 486,
+     "w": 486,
+     "h": 38
+    },
+    {
+     "label": "card",
+     "x": 104,
+     "y": 87,
+     "w": 944,
+     "h": 483
+    }
+   ]
+  },
+  {
+   "file": "goals@panel/02-edit.webp",
+   "route": "#/goals",
+   "desc": "A goal open: conditions (Where … And …) on CRM fields",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "editor",
+     "x": 130,
+     "y": 319,
+     "w": 892,
+     "h": 251
+    },
+    {
+     "label": "conditions",
+     "x": 198,
+     "y": 351,
+     "w": 808,
+     "h": 104
+    }
+   ]
+  },
+  {
+   "file": "goals@panel/03-verified.webp",
+   "route": "#/goals",
+   "desc": "Goal verified: matches in the last 90 days with the latest ones",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "verify result",
+     "x": 210,
+     "y": 482,
+     "w": 784,
+     "h": 17
+    },
+    {
+     "label": "editor",
+     "x": 130,
+     "y": 120,
+     "w": 892,
+     "h": 450
+    }
+   ]
+  },
+  {
+   "file": "goals@panel/04-custom.webp",
+   "route": "#/goals",
+   "desc": "Custom goals: page views, clicks, form submits, CRM records",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "custom goals",
+     "x": 129,
+     "y": 269,
+     "w": 894,
+     "h": 148
+    }
+   ]
+  }
+ ],
+ "deals@panel": [
+  {
+   "file": "deals@panel/01-list.webp",
+   "route": "#/deals",
+   "desc": "Deals: open pipeline, win probability, won/lost value, touchpoints per deal",
+   "clickTo": {
+    "x": 233,
+    "y": 214,
+    "w": 53,
+    "h": 30
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 104,
+     "y": 40,
+     "w": 944,
+     "h": 27
+    },
+    {
+     "label": "stat strip",
+     "x": 129,
+     "y": 112,
+     "w": 894,
+     "h": 83
+    },
+    {
+     "label": "table",
+     "x": 129,
+     "y": 263,
+     "w": 894,
+     "h": 307
+    },
+    {
+     "label": "row",
+     "x": 129,
+     "y": 495,
+     "w": 894,
+     "h": 64
+    }
+   ]
+  },
+  {
+   "file": "deals@panel/02-won.webp",
+   "route": "#/deals",
+   "desc": "Deals filtered to Won",
+   "clickTo": {
+    "x": 129,
+    "y": 303,
+    "w": 894,
+    "h": 64
+   },
+   "focus": [
+    {
+     "label": "table",
+     "x": 129,
+     "y": 263,
+     "w": 894,
+     "h": 307
+    }
+   ]
+  },
+  {
+   "file": "deals@panel/03-deal.webp",
+   "route": "#/deals/dl-1055",
+   "desc": "One deal: overview",
+   "clickTo": {
+    "x": 217,
+    "y": 98,
+    "w": 99,
+    "h": 38
+   },
+   "focus": [
+    {
+     "label": "header",
+     "x": 104,
+     "y": 40,
+     "w": 944,
+     "h": 38
+    },
+    {
+     "label": "tabs",
+     "x": 104,
+     "y": 98,
+     "w": 944,
+     "h": 37
+    }
+   ]
+  },
+  {
+   "file": "deals@panel/04-deal-timeline.webp",
+   "route": "#/deals/dl-1055",
+   "desc": "One deal, Timeline tab",
+   "clickTo": {
+    "x": 324,
+    "y": 98,
+    "w": 186,
+    "h": 38
+   },
+   "focus": [
+    {
+     "label": "header",
+     "x": 104,
+     "y": 40,
+     "w": 944,
+     "h": 38
+    },
+    {
+     "label": "content",
+     "x": 104,
+     "y": 151,
+     "w": 944,
+     "h": 419
+    }
+   ]
+  },
+  {
+   "file": "deals@panel/05-deal-associated-contacts.webp",
+   "route": "#/deals/dl-1055",
+   "desc": "One deal, Associated Contacts\n2 tab",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "header",
+     "x": 104,
+     "y": 40,
+     "w": 944,
+     "h": 38
+    },
+    {
+     "label": "content",
+     "x": 104,
+     "y": 151,
+     "w": 944,
+     "h": 419
+    }
+   ]
+  }
+ ],
+ "segments@panel": [
+  {
+   "file": "segments@panel/01-list.webp",
+   "route": "#/segments",
+   "desc": "Segments: your segments with conditions and sizes",
+   "clickTo": {
+    "x": 130,
+    "y": 260,
+    "w": 892,
+    "h": 52
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 104,
+     "y": 45,
+     "w": 92,
+     "h": 27
+    },
+    {
+     "label": "table",
+     "x": 104,
+     "y": 96,
+     "w": 944,
+     "h": 346
+    },
+    {
+     "label": "row",
+     "x": 130,
+     "y": 260,
+     "w": 892,
+     "h": 52
+    }
+   ]
+  },
+  {
+   "file": "segments@panel/02-open.webp",
+   "route": "#/segments",
+   "desc": "A segment open: Segment of, conditions, live size",
+   "clickTo": {
+    "x": 904,
+    "y": 40,
+    "w": 144,
+    "h": 40
+   },
+   "focus": [
+    {
+     "label": "editor",
+     "x": 104,
+     "y": 96,
+     "w": 944,
+     "h": 474
+    },
+    {
+     "label": "conditions",
+     "x": 129,
+     "y": 285,
+     "w": 894,
+     "h": 152
+    }
+   ]
+  },
+  {
+   "file": "segments@panel/03-new.webp",
+   "route": "#/segments",
+   "desc": "New segment",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "editor",
+     "x": 104,
+     "y": 96,
+     "w": 944,
+     "h": 431
+    }
+   ]
+  }
+ ],
+ "start@panel": [
+  {
+   "file": "start@panel/01-get-started.webp",
+   "route": "#/get-started",
+   "desc": "Home › Get Started: chat first, setup strip, six-step checklist",
+   "clickTo": {
+    "x": 208,
+    "y": 246,
+    "w": 736,
+    "h": 48
+   },
+   "focus": [
+    {
+     "label": "headline",
+     "x": 445,
+     "y": 169,
+     "w": 262,
+     "h": 36
+    },
+    {
+     "label": "composer",
+     "x": 191,
+     "y": 229,
+     "w": 770,
+     "h": 134
+    },
+    {
+     "label": "ideas",
+     "x": 191,
+     "y": 371,
+     "w": 770,
+     "h": 36
+    },
+    {
+     "label": "checklist",
+     "x": 104,
+     "y": 488,
+     "w": 944,
+     "h": 82
+    }
+   ]
+  },
+  {
+   "file": "start@panel/02-typed.webp",
+   "route": "#/get-started",
+   "desc": "Question typed in the Home chat",
+   "clickTo": {
+    "x": 904,
+    "y": 306,
+    "w": 40,
+    "h": 40
+   },
+   "focus": [
+    {
+     "label": "composer",
+     "x": 191,
+     "y": 229,
+     "w": 770,
+     "h": 134
+    }
+   ]
+  },
+  {
+   "file": "start@panel/03-answer.webp",
+   "route": "#/get-started",
+   "desc": "Home chat answer: needs the ad platforms, Enable toolkit card inline",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "answer",
+     "x": 191,
+     "y": 229,
+     "w": 770,
+     "h": 341
+    },
+    {
+     "label": "toolkit card",
+     "x": 219,
+     "y": 357,
+     "w": 460,
+     "h": 213
+    }
+   ]
+  },
+  {
+   "file": "start@panel/04-checklist.webp",
+   "route": "#/get-started",
+   "desc": "Get Started checklist with the current step open inline",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "checklist",
+     "x": 80,
+     "y": 16,
+     "w": 992,
+     "h": 538
+    }
+   ]
+  },
+  {
+   "file": "start@panel/05-get-started-done.webp",
+   "route": "#/get-started",
+   "desc": "Get Started with the setup complete (6 of 6)",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "composer",
+     "x": 191,
+     "y": 229,
+     "w": 770,
+     "h": 134
+    }
+   ]
+  },
+  {
+   "file": "start@panel/06-first-question.webp",
+   "route": "#/onboarding/first-question",
+   "desc": "Welcome 3: \"What do you want to do first?\" with three suggestion rows",
+   "clickTo": {
+    "x": 192,
+    "y": 308,
+    "w": 705,
+    "h": 34
+   },
+   "focus": [
+    {
+     "label": "headline",
+     "x": 176,
+     "y": 118,
+     "w": 737,
+     "h": 38
+    },
+    {
+     "label": "suggestions",
+     "x": 176,
+     "y": 220,
+     "w": 737,
+     "h": 290
+    }
+   ]
+  },
+  {
+   "file": "start@panel/07-first-question-hover.webp",
+   "route": "#/onboarding/first-question",
+   "desc": "Welcome 3 with a suggestion row hovered",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "row",
+     "x": 192,
+     "y": 308,
+     "w": 705,
+     "h": 34
+    }
+   ]
+  },
+  {
+   "file": "start@panel/08-onboarding-company.webp",
+   "route": "#/onboarding/company",
+   "desc": "Onboarding: company",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "headline",
+     "x": 278,
+     "y": 200,
+     "w": 532,
+     "h": 28
+    },
+    {
+     "label": "form",
+     "x": 246,
+     "y": 96,
+     "w": 596,
+     "h": 474
+    }
+   ]
+  },
+  {
+   "file": "start@panel/09-onboarding-heard.webp",
+   "route": "#/onboarding/heard",
+   "desc": "Onboarding: heard",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "headline",
+     "x": 278,
+     "y": 208,
+     "w": 532,
+     "h": 28
+    },
+    {
+     "label": "form",
+     "x": 246,
+     "y": 96,
+     "w": 596,
+     "h": 474
+    }
+   ]
+  },
+  {
+   "file": "start@panel/10-onboarding-signup.webp",
+   "route": "#/onboarding/signup",
+   "desc": "Onboarding: signup",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "headline",
+     "x": 278,
+     "y": 128,
+     "w": 532,
+     "h": 28
+    },
+    {
+     "label": "form",
+     "x": 246,
+     "y": 96,
+     "w": 596,
+     "h": 474
+    }
+   ]
+  },
+  {
+   "file": "start@panel/11-reveal.webp",
+   "route": "#/reveal",
+   "desc": "First-insight reveal screen",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "dialog",
+     "x": 0,
+     "y": 0,
+     "w": 1088,
+     "h": 570
+    }
+   ]
+  }
+ ],
+ "channels@panel": [
+  {
+   "file": "channels@panel/01-mapping.webp",
+   "route": "#/get-started/mapping",
+   "desc": "Map lead source: CRM source values mapped to Admira channels",
+   "clickTo": {
+    "x": 896,
+    "y": 270,
+    "w": 128,
+    "h": 30
+   },
+   "focus": [
+    {
+     "label": "summary",
+     "x": 128,
+     "y": 270,
+     "w": 896,
+     "h": 30
+    },
+    {
+     "label": "table",
+     "x": 128,
+     "y": 316,
+     "w": 896,
+     "h": 254
+    },
+    {
+     "label": "manage",
+     "x": 896,
+     "y": 270,
+     "w": 128,
+     "h": 30
+    }
+   ]
+  },
+  {
+   "file": "channels@panel/02-dialog.webp",
+   "route": "#/get-started/mapping",
+   "desc": "Channels dialog: channel list with rules and mapped values",
+   "clickTo": {
+    "x": 861,
+    "y": 209,
+    "w": 89,
+    "h": 30
+   },
+   "focus": [
+    {
+     "label": "dialog",
+     "x": 82,
+     "y": 23,
+     "w": 924,
+     "h": 524
+    }
+   ]
+  }
+ ],
+ "person": [
+  {
+   "file": "person/01-users.webp",
+   "route": "#/users",
+   "desc": "Users list with Carlos Garcia on top (Guadalajara, first touch Google Ads, 19 events)",
+   "clickTo": {
+    "x": 354,
+    "y": 214,
+    "w": 1020,
+    "h": 52
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 328,
+     "y": 45,
+     "w": 54,
+     "h": 27
+    },
+    {
+     "label": "Carlos row",
+     "x": 354,
+     "y": 214,
+     "w": 1020,
+     "h": 52
+    },
+    {
+     "label": "table",
+     "x": 328,
+     "y": 96,
+     "w": 1072,
+     "h": 708
+    }
+   ]
+  },
+  {
+   "file": "person/02-feed.webp",
+   "route": "#/users/usr_j6k7l8m9n0",
+   "desc": "Carlos Garcia, Feed: Deal Won (HubSpot) today, page views, clicks, WhatsApp conversations; side card with touchpoints and activations",
+   "clickTo": {
+    "x": 400,
+    "y": 201,
+    "w": 52,
+    "h": 16
+   },
+   "focus": [
+    {
+     "label": "header",
+     "x": 328,
+     "y": 40,
+     "w": 1072,
+     "h": 38
+    },
+    {
+     "label": "feed",
+     "x": 328,
+     "y": 151,
+     "w": 676,
+     "h": 749
+    },
+    {
+     "label": "Deal Won",
+     "x": 352,
+     "y": 175,
+     "w": 628,
+     "h": 69
+    },
+    {
+     "label": "touchpoints by channel",
+     "x": 1036,
+     "y": 386,
+     "w": 348,
+     "h": 260
+    },
+    {
+     "label": "activations",
+     "x": 1020,
+     "y": 678,
+     "w": 380,
+     "h": 222
+    }
+   ]
+  },
+  {
+   "file": "person/02b-feed-tall.webp",
+   "route": "#/users/usr_j6k7l8m9n0",
+   "desc": "Feed, whole page in one tall image (all events, details collapsed)",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "header",
+     "x": 328,
+     "y": 40,
+     "w": 1072,
+     "h": 38
+    },
+    {
+     "label": "tabs",
+     "x": 328,
+     "y": 98,
+     "w": 1072,
+     "h": 37
+    },
+    {
+     "label": "feed",
+     "x": 328,
+     "y": 151,
+     "w": 676,
+     "h": 1531
+    },
+    {
+     "label": "touchpoints by channel",
+     "x": 1036,
+     "y": 386,
+     "w": 348,
+     "h": 260
+    },
+    {
+     "label": "activations",
+     "x": 1020,
+     "y": 678,
+     "w": 380,
+     "h": 241
+    }
+   ],
+   "tall": {
+    "height": 1754,
+    "heightPx": 3508,
+    "journeyTabY": 98
+   }
+  },
+  {
+   "file": "person/03-feed-deal-won.webp",
+   "route": "#/users/usr_j6k7l8m9n0",
+   "desc": "Deal Won details open: Campaign name, utm_source facebook, utm_campaign MX_GDL_CoordenadaCumbres_Prospecting_Leads",
+   "clickTo": {
+    "x": 527,
+    "y": 98,
+    "w": 97,
+    "h": 38
+   },
+   "focus": [
+    {
+     "label": "Deal Won",
+     "x": 352,
+     "y": 175,
+     "w": 628,
+     "h": 335
+    },
+    {
+     "label": "details",
+     "x": 400,
+     "y": 232,
+     "w": 580,
+     "h": 254
+    },
+    {
+     "label": "touchpoints by channel",
+     "x": 1036,
+     "y": 386,
+     "w": 348,
+     "h": 260
+    },
+    {
+     "label": "activations",
+     "x": 1020,
+     "y": 678,
+     "w": 380,
+     "h": 222
+    }
+   ]
+  },
+  {
+   "file": "person/04-journey.webp",
+   "route": "#/users/usr_j6k7l8m9n0",
+   "desc": "Journey grid, left part: Website, Meta, Google, TikTok by month (Nov, Oct, Sep 2026)",
+   "clickTo": {
+    "x": 328,
+    "y": 223,
+    "w": 1072,
+    "h": 613
+   },
+   "focus": [
+    {
+     "label": "website column",
+     "x": 448,
+     "y": 223,
+     "w": 240,
+     "h": 613
+    },
+    {
+     "label": "meta column",
+     "x": 688,
+     "y": 223,
+     "w": 240,
+     "h": 613
+    },
+    {
+     "label": "google column",
+     "x": 928,
+     "y": 223,
+     "w": 240,
+     "h": 613
+    },
+    {
+     "label": "tiktok column",
+     "x": 1168,
+     "y": 223,
+     "w": 240,
+     "h": 613
+    },
+    {
+     "label": "whatsapp column",
+     "x": 1408,
+     "y": 223,
+     "w": 32,
+     "h": 613
+    },
+    {
+     "label": "WhatsApp cells",
+     "x": 1408,
+     "y": 275,
+     "w": 32,
+     "h": 561
+    },
+    {
+     "label": "grid",
+     "x": 328,
+     "y": 223,
+     "w": 1072,
+     "h": 613
+    }
+   ]
+  },
+  {
+   "file": "person/05-journey-right.webp",
+   "route": "#/users/usr_j6k7l8m9n0",
+   "desc": "Journey grid scrolled right to WhatsApp and HubSpot: Deal Won Nov 26, Deal Created and Lead Created Nov 13",
+   "clickTo": {
+    "x": 414,
+    "y": 98,
+    "w": 105,
+    "h": 38
+   },
+   "focus": [
+    {
+     "label": "website column",
+     "x": 0,
+     "y": 223,
+     "w": 200,
+     "h": 613
+    },
+    {
+     "label": "meta column",
+     "x": 200,
+     "y": 223,
+     "w": 240,
+     "h": 613
+    },
+    {
+     "label": "google column",
+     "x": 440,
+     "y": 223,
+     "w": 240,
+     "h": 613
+    },
+    {
+     "label": "tiktok column",
+     "x": 680,
+     "y": 223,
+     "w": 240,
+     "h": 613
+    },
+    {
+     "label": "whatsapp column",
+     "x": 920,
+     "y": 223,
+     "w": 240,
+     "h": 613
+    },
+    {
+     "label": "hubspot column",
+     "x": 1160,
+     "y": 223,
+     "w": 240,
+     "h": 613
+    },
+    {
+     "label": "Deal Won cell",
+     "x": 1177,
+     "y": 292,
+     "w": 207,
+     "h": 32
+    },
+    {
+     "label": "WhatsApp cells",
+     "x": 920,
+     "y": 275,
+     "w": 240,
+     "h": 561
+    },
+    {
+     "label": "grid",
+     "x": 328,
+     "y": 223,
+     "w": 1072,
+     "h": 613
+    }
+   ]
+  },
+  {
+   "file": "person/05b-journey-tall.webp",
+   "route": "#/users/usr_j6k7l8m9n0",
+   "desc": "Journey tab, whole page in one tall image (left part of the grid)",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "website column",
+     "x": 448,
+     "y": 223,
+     "w": 240,
+     "h": 613
+    },
+    {
+     "label": "meta column",
+     "x": 688,
+     "y": 223,
+     "w": 240,
+     "h": 613
+    },
+    {
+     "label": "google column",
+     "x": 928,
+     "y": 223,
+     "w": 240,
+     "h": 613
+    },
+    {
+     "label": "tiktok column",
+     "x": 1168,
+     "y": 223,
+     "w": 240,
+     "h": 613
+    },
+    {
+     "label": "whatsapp column",
+     "x": 1408,
+     "y": 223,
+     "w": 32,
+     "h": 613
+    },
+    {
+     "label": "WhatsApp cells",
+     "x": 1408,
+     "y": 275,
+     "w": 32,
+     "h": 561
+    },
+    {
+     "label": "grid",
+     "x": 328,
+     "y": 223,
+     "w": 1072,
+     "h": 613
+    }
+   ],
+   "tall": {
+    "height": 908,
+    "heightPx": 1816,
+    "journeyTabY": 98
+   }
+  },
+  {
+   "file": "person/06-overview.webp",
+   "route": "#/users/usr_j6k7l8m9n0",
+   "desc": "Overview: event activity (last 14 days), most triggered events, touchpoints by channel, side card",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "header",
+     "x": 328,
+     "y": 40,
+     "w": 1072,
+     "h": 38
+    },
+    {
+     "label": "activity chart",
+     "x": 352,
+     "y": 231,
+     "w": 628,
+     "h": 180
+    },
+    {
+     "label": "tables",
+     "x": 352,
+     "y": 427,
+     "w": 628,
+     "h": 473
+    },
+    {
+     "label": "touchpoints by channel",
+     "x": 1036,
+     "y": 386,
+     "w": 348,
+     "h": 260
+    },
+    {
+     "label": "activations",
+     "x": 1020,
+     "y": 678,
+     "w": 380,
+     "h": 222
+    }
+   ]
+  }
+ ],
+ "aidash": [
+  {
+   "file": "aidash/01-empty-dashboard.webp",
+   "route": "#/dashboards",
+   "desc": "New dashboard, empty: \"New report\" or \"Ask Admira\"",
+   "clickTo": {
+    "x": 867,
+    "y": 489,
+    "w": 144,
+    "h": 44
+   },
+   "focus": [
+    {
+     "label": "empty state",
+     "x": 484,
+     "y": 156,
+     "w": 760,
+     "h": 590
+    },
+    {
+     "label": "Ask Admira",
+     "x": 867,
+     "y": 489,
+     "w": 144,
+     "h": 44
+    },
+    {
+     "label": "popular reports",
+     "x": 484,
+     "y": 577,
+     "w": 760,
+     "h": 169
+    }
+   ]
+  },
+  {
+   "file": "aidash/02-ask-admira.webp",
+   "route": "#/dashboards",
+   "desc": "Ask Admira: \"Ready when you are\" chat next to an empty report preview, five suggestions",
+   "clickTo": {
+    "x": 113,
+    "y": 389,
+    "w": 333,
+    "h": 61
+   },
+   "focus": [
+    {
+     "label": "chat panel",
+     "x": 80,
+     "y": 93,
+     "w": 400,
+     "h": 791
+    },
+    {
+     "label": "composer",
+     "x": 96,
+     "y": 372,
+     "w": 367,
+     "h": 140
+    },
+    {
+     "label": "suggestions",
+     "x": 96,
+     "y": 520,
+     "w": 367,
+     "h": 219
+    },
+    {
+     "label": "preview",
+     "x": 480,
+     "y": 93,
+     "w": 944,
+     "h": 791
+    }
+   ]
+  },
+  {
+   "file": "aidash/03-typed.webp",
+   "route": "#/dashboards",
+   "desc": "Prompt typed: \"Paid leads and spend by day for the last 30 days\"",
+   "clickTo": {
+    "x": 427,
+    "y": 463,
+    "w": 32,
+    "h": 32
+   },
+   "focus": [
+    {
+     "label": "composer",
+     "x": 96,
+     "y": 372,
+     "w": 367,
+     "h": 140
+    }
+   ]
+  },
+  {
+   "file": "aidash/04-building.webp",
+   "route": "#/dashboards",
+   "desc": "Admira building the report (typing dots)",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "chat panel",
+     "x": 80,
+     "y": 93,
+     "w": 400,
+     "h": 791
+    },
+    {
+     "label": "question",
+     "x": 151,
+     "y": 117,
+     "w": 312,
+     "h": 63
+    }
+   ]
+  },
+  {
+   "file": "aidash/05-built.webp",
+   "route": "#/dashboards",
+   "desc": "Report built: Spend vs Leads combo by day, steps and key insights in the chat",
+   "clickTo": {
+    "x": 128,
+    "y": 561,
+    "w": 136,
+    "h": 28
+   },
+   "focus": [
+    {
+     "label": "answer",
+     "x": 96,
+     "y": 198,
+     "w": 367,
+     "h": 391
+    },
+    {
+     "label": "preview",
+     "x": 480,
+     "y": 93,
+     "w": 944,
+     "h": 791
+    },
+    {
+     "label": "report name",
+     "x": 140,
+     "y": 49,
+     "w": 537,
+     "h": 27
+    },
+    {
+     "label": "save",
+     "x": 1152,
+     "y": 36,
+     "w": 256,
+     "h": 36
+    }
+   ]
+  },
+  {
+   "file": "aidash/06-refined.webp",
+   "route": "#/dashboards",
+   "desc": "Refine: \"Show it as a table by source\" turns it into a table by source",
+   "clickTo": {
+    "x": 1152,
+    "y": 36,
+    "w": 222,
+    "h": 36
+   },
+   "focus": [
+    {
+     "label": "answer",
+     "x": 96,
+     "y": 276,
+     "w": 367,
+     "h": 391
+    },
+    {
+     "label": "preview",
+     "x": 480,
+     "y": 93,
+     "w": 944,
+     "h": 791
+    }
+   ]
+  },
+  {
+   "file": "aidash/07-saved.webp",
+   "route": "#/dashboards",
+   "desc": "Saved to the new dashboard: the report is its first card",
+   "clickTo": {
+    "x": 1142,
+    "y": 32,
+    "w": 131,
+    "h": 40
+   },
+   "focus": [
+    {
+     "label": "card",
+     "x": 318,
+     "y": 142,
+     "w": 538,
+     "h": 444
+    },
+    {
+     "label": "title",
+     "x": 316,
+     "y": 34,
+     "w": 210,
+     "h": 36
+    }
+   ]
+  },
+  {
+   "file": "aidash/08-built-2.webp",
+   "route": "#/dashboards",
+   "desc": "Second prompt: \"Cost per lead by channel, last 30 days\" builds a bar by source",
+   "clickTo": {
+    "x": 1152,
+    "y": 36,
+    "w": 222,
+    "h": 36
+   },
+   "focus": [
+    {
+     "label": "answer",
+     "x": 96,
+     "y": 175,
+     "w": 367,
+     "h": 370
+    },
+    {
+     "label": "preview",
+     "x": 480,
+     "y": 93,
+     "w": 944,
+     "h": 791
+    }
+   ]
+  },
+  {
+   "file": "aidash/09-dashboard.webp",
+   "route": "#/dashboards",
+   "desc": "The dashboard with both Admira-built reports",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "card 1",
+     "x": 318,
+     "y": 142,
+     "w": 538,
+     "h": 444
+    },
+    {
+     "label": "card 2",
+     "x": 318,
+     "y": 602,
+     "w": 538,
+     "h": 298
+    },
+    {
+     "label": "title",
+     "x": 316,
+     "y": 34,
+     "w": 210,
+     "h": 36
+    }
+   ]
+  }
+ ],
+ "person@hero": [
+  {
+   "file": "person@hero/01-users.webp",
+   "route": "#/users",
+   "desc": "Users list with Carlos Garcia on top (Guadalajara, first touch Google Ads, 19 events)",
+   "clickTo": {
+    "x": 130,
+    "y": 214,
+    "w": 1004,
+    "h": 52
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 104,
+     "y": 45,
+     "w": 54,
+     "h": 27
+    },
+    {
+     "label": "Carlos row",
+     "x": 130,
+     "y": 214,
+     "w": 1004,
+     "h": 52
+    },
+    {
+     "label": "table",
+     "x": 104,
+     "y": 96,
+     "w": 1056,
+     "h": 504
+    }
+   ]
+  },
+  {
+   "file": "person@hero/02-feed.webp",
+   "route": "#/users/usr_j6k7l8m9n0",
+   "desc": "Carlos Garcia, Feed: Deal Won (HubSpot) today, page views, clicks, WhatsApp conversations; side card with touchpoints and activations",
+   "clickTo": {
+    "x": 176,
+    "y": 201,
+    "w": 52,
+    "h": 16
+   },
+   "focus": [
+    {
+     "label": "header",
+     "x": 104,
+     "y": 40,
+     "w": 1056,
+     "h": 38
+    },
+    {
+     "label": "feed",
+     "x": 104,
+     "y": 151,
+     "w": 720,
+     "h": 449
+    },
+    {
+     "label": "Deal Won",
+     "x": 128,
+     "y": 175,
+     "w": 672,
+     "h": 69
+    },
+    {
+     "label": "touchpoints by channel",
+     "x": 856,
+     "y": 405,
+     "w": 288,
+     "h": 195
+    }
+   ]
+  },
+  {
+   "file": "person@hero/02b-feed-tall.webp",
+   "route": "#/users/usr_j6k7l8m9n0",
+   "desc": "Feed, whole page in one tall image (all events, details collapsed)",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "header",
+     "x": 104,
+     "y": 40,
+     "w": 1056,
+     "h": 38
+    },
+    {
+     "label": "tabs",
+     "x": 104,
+     "y": 98,
+     "w": 1056,
+     "h": 37
+    },
+    {
+     "label": "feed",
+     "x": 104,
+     "y": 151,
+     "w": 720,
+     "h": 1531
+    },
+    {
+     "label": "touchpoints by channel",
+     "x": 856,
+     "y": 405,
+     "w": 288,
+     "h": 260
+    },
+    {
+     "label": "activations",
+     "x": 840,
+     "y": 697,
+     "w": 320,
+     "h": 241
+    }
+   ],
+   "tall": {
+    "height": 1754,
+    "heightPx": 3508,
+    "journeyTabY": 98
+   }
+  },
+  {
+   "file": "person@hero/03-feed-deal-won.webp",
+   "route": "#/users/usr_j6k7l8m9n0",
+   "desc": "Deal Won details open: Campaign name, utm_source facebook, utm_campaign MX_GDL_CoordenadaCumbres_Prospecting_Leads",
+   "clickTo": {
+    "x": 303,
+    "y": 98,
+    "w": 97,
+    "h": 38
+   },
+   "focus": [
+    {
+     "label": "Deal Won",
+     "x": 128,
+     "y": 175,
+     "w": 672,
+     "h": 335
+    },
+    {
+     "label": "details",
+     "x": 176,
+     "y": 232,
+     "w": 624,
+     "h": 254
+    },
+    {
+     "label": "touchpoints by channel",
+     "x": 856,
+     "y": 405,
+     "w": 288,
+     "h": 195
+    }
+   ]
+  },
+  {
+   "file": "person@hero/04-journey.webp",
+   "route": "#/users/usr_j6k7l8m9n0",
+   "desc": "Journey grid, left part: Website, Meta, Google, TikTok by month (Nov, Oct, Sep 2026)",
+   "clickTo": {
+    "x": 104,
+    "y": 223,
+    "w": 1056,
+    "h": 377
+   },
+   "focus": [
+    {
+     "label": "website column",
+     "x": 224,
+     "y": 223,
+     "w": 240,
+     "h": 377
+    },
+    {
+     "label": "meta column",
+     "x": 464,
+     "y": 223,
+     "w": 240,
+     "h": 377
+    },
+    {
+     "label": "google column",
+     "x": 704,
+     "y": 223,
+     "w": 240,
+     "h": 377
+    },
+    {
+     "label": "tiktok column",
+     "x": 944,
+     "y": 223,
+     "w": 240,
+     "h": 377
+    },
+    {
+     "label": "whatsapp column",
+     "x": 1184,
+     "y": 223,
+     "w": 16,
+     "h": 377
+    },
+    {
+     "label": "WhatsApp cells",
+     "x": 1184,
+     "y": 275,
+     "w": 16,
+     "h": 325
+    },
+    {
+     "label": "grid",
+     "x": 104,
+     "y": 223,
+     "w": 1056,
+     "h": 377
+    }
+   ]
+  },
+  {
+   "file": "person@hero/05-journey-right.webp",
+   "route": "#/users/usr_j6k7l8m9n0",
+   "desc": "Journey grid scrolled right to WhatsApp and HubSpot: Deal Won Nov 26, Deal Created and Lead Created Nov 13",
+   "clickTo": {
+    "x": 190,
+    "y": 98,
+    "w": 105,
+    "h": 38
+   },
+   "focus": [
+    {
+     "label": "meta column",
+     "x": 0,
+     "y": 223,
+     "w": 200,
+     "h": 377
+    },
+    {
+     "label": "google column",
+     "x": 200,
+     "y": 223,
+     "w": 240,
+     "h": 377
+    },
+    {
+     "label": "tiktok column",
+     "x": 440,
+     "y": 223,
+     "w": 240,
+     "h": 377
+    },
+    {
+     "label": "whatsapp column",
+     "x": 680,
+     "y": 223,
+     "w": 240,
+     "h": 377
+    },
+    {
+     "label": "hubspot column",
+     "x": 920,
+     "y": 223,
+     "w": 240,
+     "h": 377
+    },
+    {
+     "label": "Deal Won cell",
+     "x": 937,
+     "y": 292,
+     "w": 207,
+     "h": 32
+    },
+    {
+     "label": "WhatsApp cells",
+     "x": 680,
+     "y": 275,
+     "w": 240,
+     "h": 325
+    },
+    {
+     "label": "grid",
+     "x": 104,
+     "y": 223,
+     "w": 1056,
+     "h": 377
+    }
+   ]
+  },
+  {
+   "file": "person@hero/05b-journey-tall.webp",
+   "route": "#/users/usr_j6k7l8m9n0",
+   "desc": "Journey tab, whole page in one tall image (left part of the grid)",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "website column",
+     "x": 224,
+     "y": 223,
+     "w": 240,
+     "h": 613
+    },
+    {
+     "label": "meta column",
+     "x": 464,
+     "y": 223,
+     "w": 240,
+     "h": 613
+    },
+    {
+     "label": "google column",
+     "x": 704,
+     "y": 223,
+     "w": 240,
+     "h": 613
+    },
+    {
+     "label": "tiktok column",
+     "x": 944,
+     "y": 223,
+     "w": 240,
+     "h": 613
+    },
+    {
+     "label": "whatsapp column",
+     "x": 1184,
+     "y": 223,
+     "w": 16,
+     "h": 613
+    },
+    {
+     "label": "WhatsApp cells",
+     "x": 1184,
+     "y": 275,
+     "w": 16,
+     "h": 561
+    },
+    {
+     "label": "grid",
+     "x": 104,
+     "y": 223,
+     "w": 1056,
+     "h": 613
+    }
+   ],
+   "tall": {
+    "height": 908,
+    "heightPx": 1816,
+    "journeyTabY": 98
+   }
+  },
+  {
+   "file": "person@hero/06-overview.webp",
+   "route": "#/users/usr_j6k7l8m9n0",
+   "desc": "Overview: event activity (last 14 days), most triggered events, touchpoints by channel, side card",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "header",
+     "x": 104,
+     "y": 40,
+     "w": 1056,
+     "h": 38
+    },
+    {
+     "label": "activity chart",
+     "x": 128,
+     "y": 231,
+     "w": 672,
+     "h": 180
+    },
+    {
+     "label": "tables",
+     "x": 128,
+     "y": 427,
+     "w": 672,
+     "h": 173
+    },
+    {
+     "label": "touchpoints by channel",
+     "x": 856,
+     "y": 405,
+     "w": 288,
+     "h": 195
+    }
+   ]
+  }
+ ],
+ "aidash@hero": [
+  {
+   "file": "aidash@hero/01-empty-dashboard.webp",
+   "route": "#/dashboards",
+   "desc": "New dashboard, empty: \"New report\" or \"Ask Admira\"",
+   "clickTo": {
+    "x": 635,
+    "y": 489,
+    "w": 144,
+    "h": 44
+   },
+   "focus": [
+    {
+     "label": "empty state",
+     "x": 252,
+     "y": 156,
+     "w": 760,
+     "h": 444
+    },
+    {
+     "label": "Ask Admira",
+     "x": 635,
+     "y": 489,
+     "w": 144,
+     "h": 44
+    },
+    {
+     "label": "popular reports",
+     "x": 252,
+     "y": 577,
+     "w": 760,
+     "h": 23
+    }
+   ]
+  },
+  {
+   "file": "aidash@hero/02-ask-admira.webp",
+   "route": "#/dashboards",
+   "desc": "Ask Admira: \"Ready when you are\" chat next to an empty report preview, five suggestions",
+   "clickTo": {
+    "x": 113,
+    "y": 228,
+    "w": 333,
+    "h": 61
+   },
+   "focus": [
+    {
+     "label": "chat panel",
+     "x": 80,
+     "y": 93,
+     "w": 400,
+     "h": 491
+    },
+    {
+     "label": "composer",
+     "x": 96,
+     "y": 211,
+     "w": 367,
+     "h": 140
+    },
+    {
+     "label": "suggestions",
+     "x": 96,
+     "y": 359,
+     "w": 367,
+     "h": 219
+    },
+    {
+     "label": "preview",
+     "x": 480,
+     "y": 93,
+     "w": 704,
+     "h": 491
+    }
+   ]
+  },
+  {
+   "file": "aidash@hero/03-typed.webp",
+   "route": "#/dashboards",
+   "desc": "Prompt typed: \"Paid leads and spend by day for the last 30 days\"",
+   "clickTo": {
+    "x": 427,
+    "y": 302,
+    "w": 32,
+    "h": 32
+   },
+   "focus": [
+    {
+     "label": "composer",
+     "x": 96,
+     "y": 211,
+     "w": 367,
+     "h": 140
+    }
+   ]
+  },
+  {
+   "file": "aidash@hero/04-building.webp",
+   "route": "#/dashboards",
+   "desc": "Admira building the report (typing dots)",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "chat panel",
+     "x": 80,
+     "y": 93,
+     "w": 400,
+     "h": 491
+    },
+    {
+     "label": "question",
+     "x": 151,
+     "y": 117,
+     "w": 312,
+     "h": 63
+    }
+   ]
+  },
+  {
+   "file": "aidash@hero/05-built.webp",
+   "route": "#/dashboards",
+   "desc": "Report built: Spend vs Leads combo by day, steps and key insights in the chat",
+   "clickTo": {
+    "x": 128,
+    "y": 339,
+    "w": 136,
+    "h": 28
+   },
+   "focus": [
+    {
+     "label": "answer",
+     "x": 96,
+     "y": 0,
+     "w": 367,
+     "h": 367
+    },
+    {
+     "label": "preview",
+     "x": 480,
+     "y": 93,
+     "w": 704,
+     "h": 491
+    },
+    {
+     "label": "report name",
+     "x": 140,
+     "y": 49,
+     "w": 537,
+     "h": 27
+    },
+    {
+     "label": "save",
+     "x": 912,
+     "y": 36,
+     "w": 256,
+     "h": 36
+    }
+   ]
+  },
+  {
+   "file": "aidash@hero/06-refined.webp",
+   "route": "#/dashboards",
+   "desc": "Refine: \"Show it as a table by source\" turns it into a table by source",
+   "clickTo": {
+    "x": 912,
+    "y": 36,
+    "w": 222,
+    "h": 36
+   },
+   "focus": [
+    {
+     "label": "answer",
+     "x": 96,
+     "y": 0,
+     "w": 367,
+     "h": 367
+    },
+    {
+     "label": "preview",
+     "x": 480,
+     "y": 93,
+     "w": 704,
+     "h": 491
+    }
+   ]
+  },
+  {
+   "file": "aidash@hero/07-saved.webp",
+   "route": "#/dashboards",
+   "desc": "Saved to the new dashboard: the report is its first card",
+   "clickTo": {
+    "x": 902,
+    "y": 32,
+    "w": 131,
+    "h": 40
+   },
+   "focus": [
+    {
+     "label": "card",
+     "x": 94,
+     "y": 142,
+     "w": 530,
+     "h": 444
+    },
+    {
+     "label": "title",
+     "x": 92,
+     "y": 34,
+     "w": 210,
+     "h": 36
+    }
+   ]
+  },
+  {
+   "file": "aidash@hero/08-built-2.webp",
+   "route": "#/dashboards",
+   "desc": "Second prompt: \"Cost per lead by channel, last 30 days\" builds a bar by source",
+   "clickTo": {
+    "x": 912,
+    "y": 36,
+    "w": 222,
+    "h": 36
+   },
+   "focus": [
+    {
+     "label": "answer",
+     "x": 96,
+     "y": 0,
+     "w": 367,
+     "h": 367
+    },
+    {
+     "label": "preview",
+     "x": 480,
+     "y": 93,
+     "w": 704,
+     "h": 491
+    }
+   ]
+  },
+  {
+   "file": "aidash@hero/09-dashboard.webp",
+   "route": "#/dashboards",
+   "desc": "The dashboard with both Admira-built reports",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "card 1",
+     "x": 94,
+     "y": 142,
+     "w": 530,
+     "h": 444
+    },
+    {
+     "label": "title",
+     "x": 92,
+     "y": 34,
+     "w": 210,
+     "h": 36
+    }
+   ]
+  }
+ ],
+ "person@panel": [
+  {
+   "file": "person@panel/01-users.webp",
+   "route": "#/users",
+   "desc": "Users list with Carlos Garcia on top (Guadalajara, first touch Google Ads, 19 events)",
+   "clickTo": {
+    "x": 130,
+    "y": 214,
+    "w": 892,
+    "h": 52
+   },
+   "focus": [
+    {
+     "label": "title",
+     "x": 104,
+     "y": 45,
+     "w": 54,
+     "h": 27
+    },
+    {
+     "label": "Carlos row",
+     "x": 130,
+     "y": 214,
+     "w": 892,
+     "h": 52
+    },
+    {
+     "label": "table",
+     "x": 104,
+     "y": 96,
+     "w": 944,
+     "h": 474
+    }
+   ]
+  },
+  {
+   "file": "person@panel/02-feed.webp",
+   "route": "#/users/usr_j6k7l8m9n0",
+   "desc": "Carlos Garcia, Feed: Deal Won (HubSpot) today, page views, clicks, WhatsApp conversations; side card with touchpoints and activations",
+   "clickTo": {
+    "x": 176,
+    "y": 201,
+    "w": 52,
+    "h": 16
+   },
+   "focus": [
+    {
+     "label": "header",
+     "x": 104,
+     "y": 40,
+     "w": 944,
+     "h": 38
+    },
+    {
+     "label": "feed",
+     "x": 104,
+     "y": 151,
+     "w": 608,
+     "h": 419
+    },
+    {
+     "label": "Deal Won",
+     "x": 128,
+     "y": 175,
+     "w": 560,
+     "h": 69
+    },
+    {
+     "label": "touchpoints by channel",
+     "x": 744,
+     "y": 405,
+     "w": 288,
+     "h": 165
+    }
+   ]
+  },
+  {
+   "file": "person@panel/02b-feed-tall.webp",
+   "route": "#/users/usr_j6k7l8m9n0",
+   "desc": "Feed, whole page in one tall image (all events, details collapsed)",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "header",
+     "x": 104,
+     "y": 40,
+     "w": 944,
+     "h": 38
+    },
+    {
+     "label": "tabs",
+     "x": 104,
+     "y": 98,
+     "w": 944,
+     "h": 37
+    },
+    {
+     "label": "feed",
+     "x": 104,
+     "y": 151,
+     "w": 608,
+     "h": 1531
+    },
+    {
+     "label": "touchpoints by channel",
+     "x": 744,
+     "y": 405,
+     "w": 288,
+     "h": 260
+    },
+    {
+     "label": "activations",
+     "x": 728,
+     "y": 697,
+     "w": 320,
+     "h": 241
+    }
+   ],
+   "tall": {
+    "height": 1754,
+    "heightPx": 3508,
+    "journeyTabY": 98
+   }
+  },
+  {
+   "file": "person@panel/03-feed-deal-won.webp",
+   "route": "#/users/usr_j6k7l8m9n0",
+   "desc": "Deal Won details open: Campaign name, utm_source facebook, utm_campaign MX_GDL_CoordenadaCumbres_Prospecting_Leads",
+   "clickTo": {
+    "x": 303,
+    "y": 98,
+    "w": 97,
+    "h": 38
+   },
+   "focus": [
+    {
+     "label": "Deal Won",
+     "x": 128,
+     "y": 175,
+     "w": 560,
+     "h": 335
+    },
+    {
+     "label": "details",
+     "x": 176,
+     "y": 232,
+     "w": 512,
+     "h": 254
+    },
+    {
+     "label": "touchpoints by channel",
+     "x": 744,
+     "y": 405,
+     "w": 288,
+     "h": 165
+    }
+   ]
+  },
+  {
+   "file": "person@panel/04-journey.webp",
+   "route": "#/users/usr_j6k7l8m9n0",
+   "desc": "Journey grid, left part: Website, Meta, Google, TikTok by month (Nov, Oct, Sep 2026)",
+   "clickTo": {
+    "x": 104,
+    "y": 223,
+    "w": 944,
+    "h": 347
+   },
+   "focus": [
+    {
+     "label": "website column",
+     "x": 224,
+     "y": 223,
+     "w": 240,
+     "h": 347
+    },
+    {
+     "label": "meta column",
+     "x": 464,
+     "y": 223,
+     "w": 240,
+     "h": 347
+    },
+    {
+     "label": "google column",
+     "x": 704,
+     "y": 223,
+     "w": 240,
+     "h": 347
+    },
+    {
+     "label": "tiktok column",
+     "x": 944,
+     "y": 223,
+     "w": 144,
+     "h": 347
+    },
+    {
+     "label": "grid",
+     "x": 104,
+     "y": 223,
+     "w": 944,
+     "h": 347
+    }
+   ]
+  },
+  {
+   "file": "person@panel/05-journey-right.webp",
+   "route": "#/users/usr_j6k7l8m9n0",
+   "desc": "Journey grid scrolled right to WhatsApp and HubSpot: Deal Won Nov 26, Deal Created and Lead Created Nov 13",
+   "clickTo": {
+    "x": 190,
+    "y": 98,
+    "w": 105,
+    "h": 38
+   },
+   "focus": [
+    {
+     "label": "meta column",
+     "x": 0,
+     "y": 223,
+     "w": 88,
+     "h": 347
+    },
+    {
+     "label": "google column",
+     "x": 88,
+     "y": 223,
+     "w": 240,
+     "h": 347
+    },
+    {
+     "label": "tiktok column",
+     "x": 328,
+     "y": 223,
+     "w": 240,
+     "h": 347
+    },
+    {
+     "label": "whatsapp column",
+     "x": 568,
+     "y": 223,
+     "w": 240,
+     "h": 347
+    },
+    {
+     "label": "hubspot column",
+     "x": 808,
+     "y": 223,
+     "w": 240,
+     "h": 347
+    },
+    {
+     "label": "Deal Won cell",
+     "x": 825,
+     "y": 292,
+     "w": 207,
+     "h": 32
+    },
+    {
+     "label": "WhatsApp cells",
+     "x": 568,
+     "y": 275,
+     "w": 240,
+     "h": 295
+    },
+    {
+     "label": "grid",
+     "x": 104,
+     "y": 223,
+     "w": 944,
+     "h": 347
+    }
+   ]
+  },
+  {
+   "file": "person@panel/05b-journey-tall.webp",
+   "route": "#/users/usr_j6k7l8m9n0",
+   "desc": "Journey tab, whole page in one tall image (left part of the grid)",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "website column",
+     "x": 224,
+     "y": 223,
+     "w": 240,
+     "h": 613
+    },
+    {
+     "label": "meta column",
+     "x": 464,
+     "y": 223,
+     "w": 240,
+     "h": 613
+    },
+    {
+     "label": "google column",
+     "x": 704,
+     "y": 223,
+     "w": 240,
+     "h": 613
+    },
+    {
+     "label": "tiktok column",
+     "x": 944,
+     "y": 223,
+     "w": 144,
+     "h": 613
+    },
+    {
+     "label": "grid",
+     "x": 104,
+     "y": 223,
+     "w": 944,
+     "h": 613
+    }
+   ],
+   "tall": {
+    "height": 908,
+    "heightPx": 1816,
+    "journeyTabY": 98
+   }
+  },
+  {
+   "file": "person@panel/06-overview.webp",
+   "route": "#/users/usr_j6k7l8m9n0",
+   "desc": "Overview: event activity (last 14 days), most triggered events, touchpoints by channel, side card",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "header",
+     "x": 104,
+     "y": 40,
+     "w": 944,
+     "h": 38
+    },
+    {
+     "label": "activity chart",
+     "x": 128,
+     "y": 231,
+     "w": 560,
+     "h": 180
+    },
+    {
+     "label": "tables",
+     "x": 128,
+     "y": 427,
+     "w": 560,
+     "h": 143
+    },
+    {
+     "label": "touchpoints by channel",
+     "x": 744,
+     "y": 405,
+     "w": 288,
+     "h": 165
+    }
+   ]
+  }
+ ],
+ "aidash@panel": [
+  {
+   "file": "aidash@panel/01-empty-dashboard.webp",
+   "route": "#/dashboards",
+   "desc": "New dashboard, empty: \"New report\" or \"Ask Admira\"",
+   "clickTo": {
+    "x": 579,
+    "y": 489,
+    "w": 144,
+    "h": 44
+   },
+   "focus": [
+    {
+     "label": "empty state",
+     "x": 196,
+     "y": 156,
+     "w": 760,
+     "h": 414
+    },
+    {
+     "label": "Ask Admira",
+     "x": 579,
+     "y": 489,
+     "w": 144,
+     "h": 44
+    }
+   ]
+  },
+  {
+   "file": "aidash@panel/02-ask-admira.webp",
+   "route": "#/dashboards",
+   "desc": "Ask Admira: \"Ready when you are\" chat next to an empty report preview, five suggestions",
+   "clickTo": {
+    "x": 113,
+    "y": 198,
+    "w": 333,
+    "h": 61
+   },
+   "focus": [
+    {
+     "label": "chat panel",
+     "x": 80,
+     "y": 93,
+     "w": 400,
+     "h": 461
+    },
+    {
+     "label": "composer",
+     "x": 96,
+     "y": 181,
+     "w": 367,
+     "h": 140
+    },
+    {
+     "label": "suggestions",
+     "x": 96,
+     "y": 329,
+     "w": 367,
+     "h": 219
+    },
+    {
+     "label": "preview",
+     "x": 480,
+     "y": 93,
+     "w": 592,
+     "h": 461
+    }
+   ]
+  },
+  {
+   "file": "aidash@panel/03-typed.webp",
+   "route": "#/dashboards",
+   "desc": "Prompt typed: \"Paid leads and spend by day for the last 30 days\"",
+   "clickTo": {
+    "x": 427,
+    "y": 272,
+    "w": 32,
+    "h": 32
+   },
+   "focus": [
+    {
+     "label": "composer",
+     "x": 96,
+     "y": 181,
+     "w": 367,
+     "h": 140
+    }
+   ]
+  },
+  {
+   "file": "aidash@panel/04-building.webp",
+   "route": "#/dashboards",
+   "desc": "Admira building the report (typing dots)",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "chat panel",
+     "x": 80,
+     "y": 93,
+     "w": 400,
+     "h": 461
+    },
+    {
+     "label": "question",
+     "x": 151,
+     "y": 117,
+     "w": 312,
+     "h": 63
+    }
+   ]
+  },
+  {
+   "file": "aidash@panel/05-built.webp",
+   "route": "#/dashboards",
+   "desc": "Report built: Spend vs Leads combo by day, steps and key insights in the chat",
+   "clickTo": {
+    "x": 128,
+    "y": 309,
+    "w": 136,
+    "h": 28
+   },
+   "focus": [
+    {
+     "label": "answer",
+     "x": 96,
+     "y": 0,
+     "w": 367,
+     "h": 337
+    },
+    {
+     "label": "preview",
+     "x": 480,
+     "y": 93,
+     "w": 592,
+     "h": 461
+    },
+    {
+     "label": "report name",
+     "x": 140,
+     "y": 49,
+     "w": 537,
+     "h": 27
+    },
+    {
+     "label": "save",
+     "x": 800,
+     "y": 36,
+     "w": 256,
+     "h": 36
+    }
+   ]
+  },
+  {
+   "file": "aidash@panel/06-refined.webp",
+   "route": "#/dashboards",
+   "desc": "Refine: \"Show it as a table by source\" turns it into a table by source",
+   "clickTo": {
+    "x": 800,
+    "y": 36,
+    "w": 222,
+    "h": 36
+   },
+   "focus": [
+    {
+     "label": "answer",
+     "x": 96,
+     "y": 0,
+     "w": 367,
+     "h": 337
+    },
+    {
+     "label": "preview",
+     "x": 480,
+     "y": 93,
+     "w": 592,
+     "h": 461
+    }
+   ]
+  },
+  {
+   "file": "aidash@panel/07-saved.webp",
+   "route": "#/dashboards",
+   "desc": "Saved to the new dashboard: the report is its first card",
+   "clickTo": {
+    "x": 790,
+    "y": 32,
+    "w": 131,
+    "h": 40
+   },
+   "focus": [
+    {
+     "label": "card",
+     "x": 94,
+     "y": 142,
+     "w": 474,
+     "h": 428
+    },
+    {
+     "label": "title",
+     "x": 92,
+     "y": 34,
+     "w": 210,
+     "h": 36
+    }
+   ]
+  },
+  {
+   "file": "aidash@panel/08-built-2.webp",
+   "route": "#/dashboards",
+   "desc": "Second prompt: \"Cost per lead by channel, last 30 days\" builds a bar by source",
+   "clickTo": {
+    "x": 800,
+    "y": 36,
+    "w": 222,
+    "h": 36
+   },
+   "focus": [
+    {
+     "label": "answer",
+     "x": 96,
+     "y": 0,
+     "w": 367,
+     "h": 337
+    },
+    {
+     "label": "preview",
+     "x": 480,
+     "y": 93,
+     "w": 592,
+     "h": 461
+    }
+   ]
+  },
+  {
+   "file": "aidash@panel/09-dashboard.webp",
+   "route": "#/dashboards",
+   "desc": "The dashboard with both Admira-built reports",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "card 1",
+     "x": 94,
+     "y": 142,
+     "w": 474,
+     "h": 428
+    },
+    {
+     "label": "title",
+     "x": 92,
+     "y": 34,
+     "w": 210,
+     "h": 36
+    }
+   ]
+  }
+ ],
+ "mlads": [
+  {
+   "file": "mlads/01-typed.webp",
+   "route": "#/agents",
+   "desc": "Mercado Libre question typed in the Admira AI composer",
+   "clickTo": {
+    "x": 1200,
+    "y": 443,
+    "w": 32,
+    "h": 32
+   },
+   "focus": [
+    {
+     "label": "composer",
+     "x": 481,
+     "y": 373,
+     "w": 767,
+     "h": 114
+    },
+    {
+     "label": "send",
+     "x": 1200,
+     "y": 443,
+     "w": 32,
+     "h": 32
+    }
+   ]
+  },
+  {
+   "file": "mlads/02-thinking.webp",
+   "route": "#/agents/chat/c1795749615948",
+   "desc": "Agent reading Mercado Libre Ads: orders, spend, ACOS by campaign",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "question",
+     "x": 555,
+     "y": 72,
+     "w": 445,
+     "h": 38
+    },
+    {
+     "label": "steps",
+     "x": 364,
+     "y": 132,
+     "w": 359,
+     "h": 139
+    },
+    {
+     "label": "outputs panel",
+     "x": 1024,
+     "y": 16,
+     "w": 400,
+     "h": 868
+    }
+   ]
+  },
+  {
+   "file": "mlads/03-answer.webp",
+   "route": "#/agents/chat/c1795749615948",
+   "desc": "Answer with the Mercado Libre Ads report open: orders, ad spend, ACOS by campaign",
+   "clickTo": {
+    "x": 1348,
+    "y": 27,
+    "w": 30,
+    "h": 30
+   },
+   "focus": [
+    {
+     "label": "answer",
+     "x": 328,
+     "y": 132,
+     "w": 672,
+     "h": 584
+    },
+    {
+     "label": "report panel",
+     "x": 1024,
+     "y": 16,
+     "w": 400,
+     "h": 868
+    },
+    {
+     "label": "panel body",
+     "x": 1025,
+     "y": 68,
+     "w": 399,
+     "h": 816
+    }
+   ]
+  },
+  {
+   "file": "mlads/04-report-wide.webp",
+   "route": "#/agents/chat/c1795749615948",
+   "desc": "Mercado Libre Ads report expanded next to the chat",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "report panel",
+     "x": 842,
+     "y": 16,
+     "w": 582,
+     "h": 868
+    },
+    {
+     "label": "panel body",
+     "x": 843,
+     "y": 68,
+     "w": 581,
+     "h": 816
+    }
+   ]
+  }
+ ],
+ "mlads@panel": [
+  {
+   "file": "mlads@panel/01-typed.webp",
+   "route": "#/agents",
+   "desc": "Mercado Libre question typed in the Admira AI composer",
+   "clickTo": {
+    "x": 912,
+    "y": 278,
+    "w": 32,
+    "h": 32
+   },
+   "focus": [
+    {
+     "label": "composer",
+     "x": 193,
+     "y": 208,
+     "w": 767,
+     "h": 114
+    },
+    {
+     "label": "send",
+     "x": 912,
+     "y": 278,
+     "w": 32,
+     "h": 32
+    }
+   ]
+  },
+  {
+   "file": "mlads@panel/02-thinking.webp",
+   "route": "#/agents/chat/c1795749633956",
+   "desc": "Agent reading Mercado Libre Ads: orders, spend, ACOS by campaign",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "question",
+     "x": 263,
+     "y": 72,
+     "w": 445,
+     "h": 38
+    },
+    {
+     "label": "steps",
+     "x": 140,
+     "y": 132,
+     "w": 359,
+     "h": 139
+    },
+    {
+     "label": "outputs panel",
+     "x": 732,
+     "y": 16,
+     "w": 340,
+     "h": 538
+    }
+   ]
+  },
+  {
+   "file": "mlads@panel/03-answer.webp",
+   "route": "#/agents/chat/c1795749633956",
+   "desc": "Answer with the Mercado Libre Ads report open: orders, ad spend, ACOS by campaign",
+   "clickTo": {
+    "x": 996,
+    "y": 27,
+    "w": 30,
+    "h": 30
+   },
+   "focus": [
+    {
+     "label": "answer",
+     "x": 104,
+     "y": 0,
+     "w": 604,
+     "h": 423
+    },
+    {
+     "label": "report panel",
+     "x": 732,
+     "y": 16,
+     "w": 340,
+     "h": 538
+    },
+    {
+     "label": "panel body",
+     "x": 733,
+     "y": 68,
+     "w": 339,
+     "h": 486
+    }
+   ]
+  },
+  {
+   "file": "mlads@panel/04-report-wide.webp",
+   "route": "#/agents/chat/c1795749633956",
+   "desc": "Mercado Libre Ads report expanded next to the chat",
+   "clickTo": null,
+   "focus": [
+    {
+     "label": "report panel",
+     "x": 556,
+     "y": 16,
+     "w": 516,
+     "h": 538
+    },
+    {
+     "label": "panel body",
+     "x": 557,
+     "y": 68,
+     "w": 515,
+     "h": 486
+    }
+   ]
+  }
+ ]
+};
