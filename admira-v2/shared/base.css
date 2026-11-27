@@ -361,3 +361,4 @@ html.alm-lock{overflow:hidden}
 .alm.native .calendly-inline-widget{min-width:0!important;width:100%!important}
 
 @media(max-width:767px){.tx-film.portrait{height:560px!important;aspect-ratio:auto!important;max-height:none!important}.tx-film.portrait video{object-fit:contain!important;object-position:center!important;background:#f7f8fa}}
+#nh-form-holder{display:none!important}
