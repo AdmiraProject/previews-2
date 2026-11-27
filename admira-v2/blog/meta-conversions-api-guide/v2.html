@@ -1,0 +1,157 @@
+<div class="ann"><a href="/v2/home#inside">Admira AI is live — ask your ads and CRM anything <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a><button class="x" aria-label="Close" onclick="this.parentElement.remove()"><svg width="16" height="16" viewBox="0 0 16 16" stroke="currentColor" stroke-width="1.5"><path d="M4 4l8 8M12 4l-8 8"/></svg></button></div>
+
+<header class="hdr"><div class="in">
+<a class="logo" href="/v2/home"><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/brand/admira.svg" alt="Admira" width="83" height="21"></a>
+<nav class="nav">
+<button>Product <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 4.5l3 3 3-3"/></svg></button>
+<button>Solutions <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 4.5l3 3 3-3"/></svg></button>
+<a href="/v2/home#ai">Admira AI</a><a href="/v2/integrations">Integrations</a><a href="/v2/customers">Customers</a>
+<button>Resources <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 4.5l3 3 3-3"/></svg></button>
+</nav>
+<div class="r"><a class="login" href="https://app.getadmira.com">Log in</a><a class="btn dk sm" href="/v2/home">Book a demo</a>
+<button class="burger" aria-label="Menu"><svg width="18" height="18" viewBox="0 0 18 18" stroke="currentColor" stroke-width="1.6"><path d="M3 6h12M3 12h12"/></svg></button></div>
+</div></header>
+
+<main>
+<section class="rp bp"><div class="rw">
+<nav class="crumb rv" aria-label="Breadcrumb"><a href="/v2/blog"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 8H3M7 4 3 8l4 4"/></svg>Blog</a><span>/</span><span>Attribution</span></nav>
+<h1 class="rv">Meta Conversions API (CAPI): Setup Guide for Lead Gen</h1>
+<p class="sub rv">The Meta Conversions API sends events from your server or CRM to Meta. Learn setup paths, event_id dedup, match quality and what lead-gen should send.</p>
+<button class="act rv" type="button" data-copy><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="8.5" height="8.5" rx="1.5"/><path d="M10.5 5V3.5A1.5 1.5 0 0 0 9 2H3.5A1.5 1.5 0 0 0 2 3.5V9a1.5 1.5 0 0 0 1.5 1.5H5"/></svg><span>Copy link</span></button>
+<div class="cols">
+<aside class="side rv">
+<div class="toc"><p class="lb">On this page</p><a href="#what-is-the-meta-conversions-api">What is the Meta Conversions API?</a><a href="#which-conversions-api-setup-path-should-you-choose">Which Conversions API setup path should you choose?</a><a href="#how-does-conversions-api-deduplication-with-the-pixel-work">How does Conversions API deduplication with the Pixel work?</a><a href="#what-is-event-match-quality-in-the-conversions-api">What is Event Match Quality in the Conversions API?</a><a href="#what-should-lead-gen-businesses-send-through-the-conversions">What should lead-gen businesses send through the Conversions API?</a><a href="#how-do-you-set-up-the-conversions-api-step-by-step">How do you set up the Conversions API step by step?</a><a href="#example-what-changes-when-you-send-qualified-leads">Example: what changes when you send qualified leads</a><a href="#who-the-conversions-api-is-for-and-when-it-doesn-t-help-much">Who the Conversions API is for, and when it doesn't help much</a><a href="#faq">FAQ</a></div>
+<div class="promo"><b>Admira AI.</b><span>Ask your ads and CRM anything, in plain English.</span>
+<div class="pi"><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/proto/ai@panel/04-answer.webp" alt="" loading="lazy"></div>
+<a class="btn dk" href="/v2/home">Book a demo</a></div>
+</aside>
+<article class="art">
+<div class="wm rv"><span class="tg">Attribution</span><span class="dot"></span><span class="who"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6ab7f7fc64174af658d15333_662879e093c51bd48ddda61f_admirawebclip.png" alt=""><span>Andre Sottil</span></span><span class="dot"></span><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 4.5V8l2.5 1.5"/></svg>8 min read</span><span class="dot"></span><span>Nov 7</span></div>
+<figure class="cov rv"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6aef2ec8540d8d056ec6f90c_6aef2e52b78747b6660ba13d_meta-conversions-api-guide-hero.webp" alt=""></figure>
+<nav class="toc tm" aria-label="On this page"><p class="lb"><span>On this page</span><span>9 sections</span></p><a href="#what-is-the-meta-conversions-api"><span class="n">1</span>What is the Meta Conversions API?</a><a href="#which-conversions-api-setup-path-should-you-choose"><span class="n">2</span>Which Conversions API setup path should you choose?</a><a href="#how-does-conversions-api-deduplication-with-the-pixel-work"><span class="n">3</span>How does Conversions API deduplication with the Pixel work?</a><a href="#what-is-event-match-quality-in-the-conversions-api"><span class="n">4</span>What is Event Match Quality in the Conversions API?</a><a href="#what-should-lead-gen-businesses-send-through-the-conversions"><span class="n">5</span>What should lead-gen businesses send through the Conversions API?</a><a href="#how-do-you-set-up-the-conversions-api-step-by-step"><span class="n">6</span>How do you set up the Conversions API step by step?</a><a href="#example-what-changes-when-you-send-qualified-leads"><span class="n">7</span>Example: what changes when you send qualified leads</a><a href="#who-the-conversions-api-is-for-and-when-it-doesn-t-help-much"><span class="n">8</span>Who the Conversions API is for, and when it doesn't help much</a><a href="#faq"><span class="n">9</span>FAQ</a></nav>
+<div class="prose">
+<p>The Meta Conversions API (CAPI) is a server-to-server connection that sends conversion events from your website server, CRM or backend directly to Meta, instead of relying only on the browser Pixel. Meta recommends running it alongside the Pixel and deduplicating the two with a shared event_id. For lead-gen teams, its biggest value is not the form fill itself: it is sending later CRM stages, such as qualified lead or closed sale, so Meta can optimize for people who actually buy.</p>
+<p>This guide covers what CAPI is, the three main ways to set it up, how deduplication works, how to read Event Match Quality, and exactly which events a lead-gen business should send.</p>
+<h2 id="what-is-the-meta-conversions-api">What is the Meta Conversions API?</h2>
+<p>The Pixel runs in the visitor's browser. Ad blockers, browser privacy features, consent choices and slow pages can stop it from firing. The Conversions API sends the same kind of event from a server you control, so it does not depend on the browser.</p>
+<p>Each server event has a few required fields, according to <a href="https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/server-event" target="_blank" rel="noopener">Meta's server event parameters reference</a>:</p>
+<ul>
+<li><strong>event_name</strong>: a standard event such as Lead or Purchase, or a custom name.</li>
+<li><strong>event_time</strong>: a Unix timestamp in seconds. It can be up to 7 days before you send it. If any event in a request is older than that, the whole request fails.</li>
+<li><strong>user_data</strong>: customer information used for matching, such as hashed email and phone.</li>
+<li><strong>action_source</strong>: where the conversion happened. Allowed values include website, app, phone_call, chat, physical_store, system_generated, business_messaging, email and other.</li>
+<li><strong>event_source_url</strong>: required for website events.</li>
+</ul>
+<p>Because CAPI runs on your side, it can also send events the Pixel never sees: a lead marked qualified by sales, a signed contract, a payment recorded in your billing system.</p>
+<h2 id="which-conversions-api-setup-path-should-you-choose">Which Conversions API setup path should you choose?</h2>
+<p>There are three practical paths. They differ in effort, cost and how much control you get over the data.</p>
+<div class="tw"><table>
+<thead><tr><th>Path</th><th>How it works</th><th>Effort</th><th>Best for</th><th>Main limit</th></tr></thead>
+<tbody>
+<tr><td>Partner integration</td><td>A platform you already use (CRM, ecommerce, tag manager or attribution tool) connects to Meta from Events Manager</td><td>Low, often under a day</td><td>Teams without developers</td><td>You send only what the partner supports</td></tr>
+<tr><td>Conversions API Gateway</td><td>A Meta-provided server instance you host in a cloud account (Meta's setup guide offers a hosting region choice), which mirrors Pixel events server-side</td><td>Medium</td><td>Websites that want server copies of web events with little code</td><td>Mirrors web events; does not send CRM stages by itself</td></tr>
+<tr><td>Direct integration</td><td>Your developers call the API with an access token generated in Events Manager</td><td>High</td><td>Custom stacks, full control of CRM events</td><td>Needs engineering time and maintenance</td></tr>
+</tbody>
+</table></div>
+<p>Many teams combine two paths: the Gateway or a partner for web events, and a CRM-side integration for downstream stages. If you want to compare options for sending CRM events back to ad platforms, see our overview of <a href="/blog/connect-offline-conversions-crm-to-ad-platforms">connecting offline conversions from your CRM</a>.</p>
+<h2 id="how-does-conversions-api-deduplication-with-the-pixel-work">How does Conversions API deduplication with the Pixel work?</h2>
+<p>If you send the same event from the Pixel and from CAPI, Meta needs to know they are one conversion. Otherwise it counts two. Meta's <a href="https://developers.facebook.com/docs/marketing-api/conversions-api/deduplicate-pixel-and-server-events" target="_blank" rel="noopener">deduplication documentation</a> describes two methods.</p>
+<ol>
+<li><strong>event_id plus event_name (recommended).</strong> Generate one unique ID per conversion, for example a lead ID. Pass it to the Pixel as eventID (the fourth argument of the fbq track call) and to CAPI as event_id. The event names must match exactly, for example Lead and Lead.</li>
+<li><strong>fbp or external_id plus event_name.</strong> Send the same browser ID or your own user ID from both sides. This only works when the browser event arrives first. It cannot dedupe a server-only or browser-only stream.</li>
+</ol>
+<p>Meta deduplicates only within 48 hours of the first event with a given event_id. When the two copies do not differ in a meaningful way, Meta generally keeps the one it received first.</p>
+<p>A common mistake is generating the event_id twice, once in the browser and once on the server. The IDs then never match. Create the ID once (for example when the form is submitted), put it in the page so the Pixel can read it, and send the same value from your server. Our post on <a href="/blog/deduplicate-conversions-across-ad-platforms">deduplicating conversions across ad platforms</a> covers the wider problem of double counting.</p>
+<h2 id="what-is-event-match-quality-in-the-conversions-api">What is Event Match Quality in the Conversions API?</h2>
+<p>Event Match Quality (EMQ) estimates how well the customer information on your server events can be matched to a Meta account. Meta's developer documentation describes it as a score out of 10, shown per event in Events Manager. Third-party guides also describe labels such as Great, Good, Okay and Poor, so check what your Events Manager shows today.</p>
+<p>EMQ rises when you send more and better identifiers. The usual list:</p>
+<ul>
+<li>Email and phone, normalized (lowercase, no spaces, phone with country code such as 52 for Mexico) and SHA-256 hashed.</li>
+<li>fbc (built from the fbclid in the ad click URL) and fbp (the browser ID cookie), captured at form submit and stored with the lead.</li>
+<li>Client IP address and user agent for website events (these are sent unhashed).</li>
+<li>external_id: your own stable customer or lead ID, hashed.</li>
+<li>First name, last name, city and country where you have them.</li>
+</ul>
+<p>CRM events usually score lower than web events because the sale happens days later, away from the browser. The fix is to save fbc, fbp, email and phone on the lead record when the form is submitted, then send them with every later stage.</p>
+<h2 id="what-should-lead-gen-businesses-send-through-the-conversions">What should lead-gen businesses send through the Conversions API?</h2>
+<p>A form fill is a weak optimization signal. Many leads never answer the phone. If Meta only sees Lead events, it learns to find people who fill forms, not people who buy. CAPI lets you send the stages that matter.</p>
+<div class="tw"><table>
+<thead><tr><th>Funnel stage</th><th>Suggested event</th><th>Source</th><th>Use in ads</th></tr></thead>
+<tbody>
+<tr><td>Form submitted</td><td>Lead</td><td>Pixel + CAPI, deduped</td><td>Volume signal, early learning</td></tr>
+<tr><td>Lead qualified by sales</td><td>Custom event, e.g. QualifiedLead</td><td>CRM via CAPI</td><td>Optimization once volume allows</td></tr>
+<tr><td>Meeting or visit held</td><td>Schedule or custom event</td><td>CRM via CAPI</td><td>Reporting, audiences</td></tr>
+<tr><td>Closed won</td><td>Purchase with value and currency</td><td>CRM via CAPI</td><td>Revenue reporting, value signals</td></tr>
+</tbody>
+</table></div>
+<p>If you use Meta Lead Ads (Instant Forms), Meta also offers the <a href="https://developers.facebook.com/docs/marketing-api/conversions-api/conversion-leads-integration" target="_blank" rel="noopener">Conversion Leads integration</a>. Per Meta's guide, it needs the Meta lead ID stored in your CRM (recommended), at least 200 leads per month, uploads at least once a day, the optimized stage happening within 28 days of the lead, and a stage conversion rate between 1% and 40%. Meta estimates 2 to 4 weeks of learning after data verification.</p>
+<p>For WhatsApp leads from click-to-WhatsApp ads, the identifier is the conversation, not a web cookie. That flow is covered in our guide to <a href="/blog/whatsapp-ads-attribution">WhatsApp ads attribution</a>. For the strategy side of feeding better signals to Meta, read <a href="/blog/optimize-meta-ads-for-qualified-leads">how to optimize Meta Ads for qualified leads</a>.</p>
+<h2 id="how-do-you-set-up-the-conversions-api-step-by-step">How do you set up the Conversions API step by step?</h2>
+<ol>
+<li><strong>Audit your Pixel.</strong> In Events Manager, list the events firing today and confirm each has the right name and parameters.</li>
+<li><strong>Choose the path.</strong> Partner, Gateway or direct, using the table above.</li>
+<li><strong>Generate an event_id per conversion</strong> and pass it to both the Pixel and the server event.</li>
+<li><strong>Capture identifiers at form submit:</strong> email, phone, fbc, fbp, IP and user agent. Store them on the CRM record.</li>
+<li><strong>Send the web Lead event</strong> from the server and confirm in Test Events that Meta shows it as deduplicated.</li>
+<li><strong>Map CRM stages</strong> to events (QualifiedLead, Purchase) and send them as they happen, at least daily, within the 7-day event_time window.</li>
+<li><strong>Check EMQ and diagnostics</strong> after a few days. Add missing identifiers before you change campaign optimization.</li>
+<li><strong>Switch optimization gradually.</strong> Move one campaign to the deeper event once it has steady volume, and compare cost per qualified lead against the old setup.</li>
+</ol>
+<h2 id="example-what-changes-when-you-send-qualified-leads">Example: what changes when you send qualified leads</h2>
+<p><strong>Example (hypothetical numbers):</strong> a Monterrey real estate developer spends $6,000 a month on Meta and gets 600 form leads, a $10 cost per lead. Sales qualifies 90 of them (15%). The cost per qualified lead is $66.67.</p>
+<div class="tw"><table>
+<thead><tr><th>Metric</th><th>Pixel only, optimizing for Lead</th><th>CAPI with QualifiedLead sent from CRM</th></tr></thead>
+<tbody>
+<tr><td>Monthly spend</td><td>$6,000</td><td>$6,000</td></tr>
+<tr><td>Form leads</td><td>600</td><td>450</td></tr>
+<tr><td>Cost per lead</td><td>$10.00</td><td>$13.33</td></tr>
+<tr><td>Qualified leads</td><td>90 (15%)</td><td>99 (22%)</td></tr>
+<tr><td>Cost per qualified lead</td><td>$66.67</td><td>$60.61</td></tr>
+</tbody>
+</table></div>
+<p>In this illustration, cost per lead goes up while cost per qualified lead goes down. That is why you need CRM data to judge the change: Ads Manager alone would show the second setup as worse. Results vary by account; treat this as the pattern to look for, not a forecast.</p>
+<h2 id="who-the-conversions-api-is-for-and-when-it-doesn-t-help-much">Who the Conversions API is for, and when it doesn't help much</h2>
+<p><strong>It fits</strong> lead-gen, B2B and sales-led teams whose real conversion happens in a CRM, sites with heavy iOS or ad-blocker traffic, and any advertiser spending enough on Meta that signal quality affects results.</p>
+<p><strong>It helps less</strong> when you have very low volume (a handful of conversions a month gives Meta little to learn from), when your CRM stages are not updated reliably, or when you cannot capture contact data at the lead stage. CAPI also does not tell you what Meta caused; for that you need lift or holdout tests, covered in our <a href="/blog/incrementality-testing-holdout-geo-tests">incrementality testing guide</a>.</p>
+<p>Admira's <a href="/v2/conversions-api">Conversion API feature</a> sends CRM events back to ad platforms server-side, tied to the original ad click, for teams using HubSpot, Salesforce, Kommo or Clientify. It is one option among partners; if your CRM already has a reliable native Meta integration, that may be enough.</p>
+<h2 id="faq">FAQ</h2>
+<h3>Do I still need the Meta Pixel if I use the Conversions API?</h3>
+<p>Yes, in most cases. Meta describes running the Pixel and CAPI together, with deduplication, as the recommended setup.</p>
+<h3>Is the Conversions API free?</h3>
+<p>Meta does not charge for the API. Your cost is the partner tool, the cloud hosting for the Gateway, or developer time for a direct integration.</p>
+<h3>Why are my CAPI events counted twice?</h3>
+<p>Usually the event_id differs between browser and server, or the event names don't match exactly. Both must be identical and arrive within 48 hours.</p>
+<h3>What is a good Event Match Quality score?</h3>
+<p>Higher is better, and Meta does not publish one universal target. Focus on sending email, phone, fbc, fbp and external_id on every event, then watch the score trend.</p>
+<h3>Can I send events older than 7 days?</h3>
+<p>Not through a standard server event: Meta rejects the whole request if any event_time is more than 7 days old. Send CRM stages daily.</p>
+<h3>Does CAPI work for WhatsApp leads?</h3>
+<p>Yes, but matching relies on the phone number and conversation data rather than browser cookies. Use an action_source that reflects where the conversion happened.</p>
+</div>
+<div class="byl rv"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6ab7f7fc64174af658d15333_662879e093c51bd48ddda61f_admirawebclip.png" alt=""><div><b>Andre Sottil</b><span>Founder &amp; CEO, Admira</span></div></div>
+</article>
+</div>
+<div class="ri rel"><h2 class="rv">Keep reading</h2><div class="grid"><a class="card rv" href="/blog/why-roas-is-lying-platform-inflation"><div class="im"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6ab7f7fc64174af658d1532f_6ab7f67a8ea175d5fb73f14a_why-roas-is-lying-platform-inflation-hero-en.jpeg" alt=""></div>
+<div class="bd"><div class="meta"><span>Attribution</span><span class="dt">Sep 25</span></div><h2>Why Your ROAS Is Lying to You: Platform Inflation Explained</h2><p>Why platform ROAS is inflated by self-attribution, view-through and modeled conversions, how to measure the gap in 15 minutes, and what to trust instead.</p></div></a><a class="card rv" href="/blog/self-reported-attribution"><div class="im"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6aef2d6d3b284257bb6934a3_6aef2ad0c39bf0a3b5720ca0_self-reported-attribution-hero.webp" alt=""></div>
+<div class="bd"><div class="meta"><span>Attribution</span><span class="dt">Nov 7</span></div><h2>Self-Reported Attribution: How to Ask and Use It</h2><p>Self-reported attribution asks buyers how they found you. Learn the wording, placement and CRM setup, plus how to compare answers with tracked data.</p></div></a><a class="card rv" href="/blog/dark-social-attribution"><div class="im"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6aef2dd2f74b430573305b46_6aef2ad0dac7d040a253d430_dark-social-attribution-hero.webp" alt=""></div>
+<div class="bd"><div class="meta"><span>Attribution</span><span class="dt">Nov 7</span></div><h2>Dark Social Attribution: How to Measure Private Shares</h2><p>Dark social attribution estimates leads from WhatsApp, Slack and DM shares that show up as Direct. Use tagged links, landing-page splits and surveys.</p></div></a></div></div>
+</div></section>
+<section class="sec" data-examples="attribution,journeys,overview,ai-dashboard,reports" data-title="See Admira in action." data-sub="Follow the work from campaign to close."></section>
+<section class="cta"><h2 class="h1 rv">Ready to try Admira?</h2>
+<div class="bt rv"><a class="btn dk" href="/v2/home">Get started</a><a class="btn lt" href="/v2/home">Book a demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></div>
+<a class="sub rv" href="/v2/home#ai"><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/brand/admira-icon-gradient.svg" width="18" alt="">Ask Admira AI your first question <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+</section>
+</main>
+
+<footer class="ft"><div class="in">
+<div class="cols">
+<div><h3>Product</h3><ul><li><a href="/v2/home#ai">Admira AI</a></li><li><a href="/v2/multi-touch-attribution">Attribution</a></li><li><a href="/v2/marketing-dashboard">Dashboards</a></li><li><a href="/v2/conversion-tracking">Conversion tracking</a></li><li><a href="/v2/conversions-api">Conversions API</a></li><li><a href="/v2/ai-creative">AI creative</a></li><li><a href="/v2/integrations">Integrations</a></li><li><a href="/v2/pricing">Pricing</a></li></ul></div>
+<div><h3>Platforms</h3><ul><li><a href="/v2/integrations-meta-ads">Meta Ads</a></li><li><a href="/v2/integrations-google-ads">Google Ads</a></li><li><a href="/v2/integrations-tiktok-ads">TikTok Ads</a></li><li><a href="/v2/integrations-linkedin-ads">LinkedIn Ads</a></li><li><a href="/v2/integrations-microsoft-ads">Microsoft Ads</a></li><li><a href="/v2/integrations-amazon-ads">Amazon Ads</a></li><li><a href="/v2/integrations-x-ads">X Ads</a></li><li><a href="/v2/integrations-mercado-libre-ads">Mercado Libre Ads</a></li></ul></div>
+<div><h3>Connects to</h3><ul><li><a href="/v2/integrations-hubspot">HubSpot</a></li><li><a href="/v2/integrations-salesforce">Salesforce</a></li><li><a href="/v2/integrations-kommo">Kommo</a></li><li><a href="/v2/integrations-pipedrive">Pipedrive</a></li><li><a href="/v2/integrations-zoho-crm">Zoho CRM</a></li><li><a href="/v2/integrations-whatsapp">WhatsApp</a></li><li><a href="/v2/integrations-shopify">Shopify</a></li><li><a href="/v2/integrations-stripe">Stripe</a></li></ul></div>
+<div><h3>Solutions</h3><ul><li><a href="/v2/solutions-ecommerce">Ecommerce</a></li><li><a href="/v2/solutions-b2b-saas">B2B SaaS</a></li><li><a href="/v2/solutions-marketing-leaders">Marketing leaders</a></li><li><a href="/v2/solutions-agencies">Agencies</a></li><li><a href="/v2/solutions-real-estate">Real estate</a></li><li><a href="/v2/attribution-platform-latam">LATAM</a></li></ul></div>
+<div><h3>Resources</h3><ul><li><a href="/v2/customers">Customers</a></li><li><a href="/v2/webinars">Webinars</a></li><li><a href="/v2/blog">Blog</a></li><li><a href="/v2/book-demo">Book a demo</a></li><li><a href="mailto:support@getadmira.com">Support</a></li></ul></div>
+<div><div class="grp"><h3>Company</h3><ul><li><a href="/v2/book-demo">Contact</a></li><li><a href="https://www.linkedin.com/company/getadmira/jobs/">Careers</a></li><li><a href="https://app.getadmira.com">Log in</a></li></ul></div>
+<div class="grp"><h3>Legal</h3><ul><li><a href="/v2/terms-and-conditions">Terms of Service</a></li><li><a href="/v2/privacy">Privacy Policy</a></li><li><a href="/v2/sms">SMS Terms</a></li></ul></div></div>
+</div>
+<div class="bot"><a class="logo" href="/v2/home"><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/brand/admira.svg" alt="Admira"></a><small>© 2026 Admira Software, Inc. All rights reserved.</small></div>
+</div></footer>

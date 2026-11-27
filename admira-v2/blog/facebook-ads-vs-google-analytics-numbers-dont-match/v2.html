@@ -1,0 +1,105 @@
+<div class="ann"><a href="/v2/home#inside">Admira AI is live — ask your ads and CRM anything <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a><button class="x" aria-label="Close" onclick="this.parentElement.remove()"><svg width="16" height="16" viewBox="0 0 16 16" stroke="currentColor" stroke-width="1.5"><path d="M4 4l8 8M12 4l-8 8"/></svg></button></div>
+
+<header class="hdr"><div class="in">
+<a class="logo" href="/v2/home"><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/brand/admira.svg" alt="Admira" width="83" height="21"></a>
+<nav class="nav">
+<button>Product <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 4.5l3 3 3-3"/></svg></button>
+<button>Solutions <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 4.5l3 3 3-3"/></svg></button>
+<a href="/v2/home#ai">Admira AI</a><a href="/v2/integrations">Integrations</a><a href="/v2/customers">Customers</a>
+<button>Resources <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 4.5l3 3 3-3"/></svg></button>
+</nav>
+<div class="r"><a class="login" href="https://app.getadmira.com">Log in</a><a class="btn dk sm" href="/v2/home">Book a demo</a>
+<button class="burger" aria-label="Menu"><svg width="18" height="18" viewBox="0 0 18 18" stroke="currentColor" stroke-width="1.6"><path d="M3 6h12M3 12h12"/></svg></button></div>
+</div></header>
+
+<main>
+<section class="rp bp"><div class="rw">
+<nav class="crumb rv" aria-label="Breadcrumb"><a href="/v2/blog"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 8H3M7 4 3 8l4 4"/></svg>Blog</a><span>/</span><span>Analytics &amp; Reporting</span></nav>
+<h1 class="rv">Why Facebook Ads and Google Analytics Numbers Don’t Match</h1>
+<p class="sub rv">Why Facebook Ads and Google Analytics numbers don’t match: attribution windows, view-through, tracking loss, and which number you should actually trust.</p>
+<button class="act rv" type="button" data-copy><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="8.5" height="8.5" rx="1.5"/><path d="M10.5 5V3.5A1.5 1.5 0 0 0 9 2H3.5A1.5 1.5 0 0 0 2 3.5V9a1.5 1.5 0 0 0 1.5 1.5H5"/></svg><span>Copy link</span></button>
+<div class="cols">
+<aside class="side rv">
+<div class="toc"><p class="lb">On this page</p><a href="#the-seven-causes-of-the-gap">The seven causes of the gap</a><a href="#meta-vs-ga4-at-a-glance">Meta vs GA4 at a glance</a><a href="#a-worked-example-of-the-same-week">A worked example of the same week</a><a href="#which-number-should-you-trust">Which number should you trust?</a><a href="#how-to-shrink-the-gap-you-cannot-close-it">How to shrink the gap (you cannot close it)</a><a href="#where-a-unified-view-helps">Where a unified view helps</a><a href="#faq">FAQ</a></div>
+<div class="promo"><b>Admira AI.</b><span>Ask your ads and CRM anything, in plain English.</span>
+<div class="pi"><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/proto/ai@panel/04-answer.webp" alt="" loading="lazy"></div>
+<a class="btn dk" href="/v2/home">Book a demo</a></div>
+</aside>
+<article class="art">
+<div class="wm rv"><span class="tg">Analytics &amp; Reporting</span><span class="dot"></span><span class="who"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6ab7f7fc64174af658d15333_662879e093c51bd48ddda61f_admirawebclip.png" alt=""><span>Andre Sottil</span></span><span class="dot"></span><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 4.5V8l2.5 1.5"/></svg>5 min read</span><span class="dot"></span><span>Sep 13</span></div>
+<figure class="cov rv"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6ab7f7fd64174af658d153ad_6ab7f6ba1f4b99cd72cf1bb6_facebook-ads-vs-google-analytics-numbers-dont-match-hero-en.jpeg" alt=""></figure>
+<nav class="toc tm" aria-label="On this page"><p class="lb"><span>On this page</span><span>7 sections</span></p><a href="#the-seven-causes-of-the-gap"><span class="n">1</span>The seven causes of the gap</a><a href="#meta-vs-ga4-at-a-glance"><span class="n">2</span>Meta vs GA4 at a glance</a><a href="#a-worked-example-of-the-same-week"><span class="n">3</span>A worked example of the same week</a><a href="#which-number-should-you-trust"><span class="n">4</span>Which number should you trust?</a><a href="#how-to-shrink-the-gap-you-cannot-close-it"><span class="n">5</span>How to shrink the gap (you cannot close it)</a><a href="#where-a-unified-view-helps"><span class="n">6</span>Where a unified view helps</a><a href="#faq"><span class="n">7</span>FAQ</a></nav>
+<div class="prose">
+<p>Facebook Ads and Google Analytics will never match, because they measure different things with different rules. Meta reports conversions it attributes to ad clicks and views within its attribution window, counted on the date of the ad interaction. GA4 reports conversions from sessions it managed to track, attributed mostly last click, counted on the date the conversion happened. Add iOS privacy losses, ad blockers, and modeled data on both sides, and a perfect match is impossible by design.</p>
+<h2 id="the-seven-causes-of-the-gap">The seven causes of the gap</h2>
+<p>The mismatch is not one problem but seven overlapping ones. Understanding each makes the difference explainable instead of alarming.</p>
+<ul>
+<li><strong>Attribution scope.</strong> Meta credits itself for <a href="/blog/view-through-conversions-real-value-or-inflated-roas">view-through conversions</a>: someone saw the ad, never clicked, and bought later. GA4 has no idea that impression existed and credits whatever channel the final session came from.</li>
+<li><strong>Attribution window.</strong> Meta's default is <a href="/blog/meta-attribution-settings-7-day-click-vs-1-day-view">7-day click plus 1-day view</a>. GA4's paid-and-organic models look back up to 90 days, but only across sessions it can stitch together into a path.</li>
+<li><strong>Date of counting.</strong> Meta books the conversion on the day of the click or view; GA4 books it on the day of purchase. A Friday click that converts on Monday sits in different days, and different weeks, in each report.</li>
+<li><strong>Tracking loss.</strong> Safari's ITP, ad blockers, and consent banners strip a meaningful share of sessions before GA4 ever sees them. Meta's Conversions API keeps receiving server events for many of those same users.</li>
+<li><strong>Broken or missing UTMs.</strong> If links carry no UTMs, Meta traffic lands in GA4 as generic social or even direct. Link shorteners and in-app browsers make it worse.</li>
+<li><strong>Cross-device journeys.</strong> Someone clicks on their phone inside the Instagram app and buys on a laptop. Meta can often connect that through its logged-in identity graph; GA4 usually cannot.</li>
+<li><strong>Modeling on both sides.</strong> Meta models conversions for users who opted out of tracking; GA4 with consent mode models sessions and conversions too. Two different estimation systems will never land on the same number.</li>
+</ul>
+<h2 id="meta-vs-ga4-at-a-glance">Meta vs GA4 at a glance</h2>
+<div class="tw"><table><thead><tr><th>Dimension</th><th>Meta Ads Manager</th><th>GA4</th></tr></thead><tbody>
+<tr><td>Attribution logic</td><td>Own clicks and views, self-credited</td><td>Cross-channel, mostly last click or DDA</td></tr>
+<tr><td>View-through</td><td>Included by default</td><td>Not included for Meta impressions</td></tr>
+<tr><td>Conversion date</td><td>Date of ad interaction</td><td>Date of conversion</td></tr>
+<tr><td>Identity</td><td>Logged-in users, cross-device</td><td>Cookies and device IDs</td></tr>
+<tr><td>Incentive</td><td>Prove ad value</td><td>Neutral, but Google-visible bias</td></tr>
+</tbody></table></div>
+<h2 id="a-worked-example-of-the-same-week">A worked example of the same week</h2>
+<p>Picture one campaign in a single week. Meta reports 120 purchases: 90 from clicks and 30 from 1-day views, all booked on the interaction date. GA4 reports 74 conversions for the same source, counted on the purchase date, with roughly a fifth of sessions never captured because of consent and ITP loss, and another slice misfiled as direct for missing UTMs. Your backend, meanwhile, booked 68 orders that actually reference Meta as the first or last touch. Three numbers, one reality, zero contradiction once you know what each system is counting.</p>
+<h2 id="which-number-should-you-trust">Which number should you trust?</h2>
+<p>Neither is ground truth. Meta's number answers "what did Meta touch"; GA4's answers "what did my tags see"; and both are useful for the question they actually answer, not for the ones people force on them. The reliable reference is your backend: the orders and revenue booked in your store or CRM. It is common for <a href="/blog/why-roas-is-lying-platform-inflation">platform-reported conversions, summed across channels, to exceed real backend revenue</a>, because every platform claims the conversions it touched, and those claims overlap.</p>
+<p>The honest workflow is triangulation. Use Meta's numbers for in-platform optimization, GA4 for site behavior, backend revenue for the truth about totals, an independent <a href="/v2/multi-touch-attribution">multi-touch attribution</a> layer to deduplicate credit, and incrementality tests or marketing mix modeling to settle disputes about which channel actually drove growth. Tools like Triple Whale or Northbeam offer a click-based middle view; MMM and <a href="/blog/incrementality-testing-holdout-geo-tests">lift tests</a> answer the causal question none of the trackers can. No single dashboard is the referee, so stop asking one to be.</p>
+<h2 id="how-to-shrink-the-gap-you-cannot-close-it">How to shrink the gap (you cannot close it)</h2>
+<p>You will never make these two numbers equal, but you can make the gap smaller, stable, and explainable. Focus on the fixes that remove noise rather than the ones that chase a false match.</p>
+<ul>
+<li>Install Meta's Conversions API alongside the pixel, with deduplication configured through a shared event ID.</li>
+<li>Tag every ad with clean, lowercase UTMs so Meta traffic is identifiable in GA4 instead of falling into direct.</li>
+<li>Compare like with like: switch Meta reporting to 7-day click only when comparing against GA4, since GA4 sees no views.</li>
+<li>Compare weekly totals, not daily, to absorb the date-of-counting shift between interaction date and conversion date.</li>
+<li>Track the ratio between the two numbers over time. A stable gap is normal; a sudden change means something broke, and that is the signal worth chasing.</li>
+</ul>
+<h2 id="where-a-unified-view-helps">Where a unified view helps</h2>
+<p>If you are tired of refereeing between Meta and GA4, that is exactly the problem Admira is built to remove. It brings platform data, backend revenue, multi-touch attribution, MMM, and lift testing into one cookieless-first system, so the gap between two dashboards becomes an explained line item rather than a standing argument. To see your own Facebook-versus-GA4 gap reconciled against real orders, <a href="/v2/book-demo">book a demo</a>.</p>
+<h2 id="faq">FAQ</h2>
+<h3>How big a difference is normal?</h3>
+<p>There is no universal benchmark, and anyone quoting an exact percentage is guessing. What matters is that your own gap stays stable over time given your channel mix, tracking setup, and attribution windows. Investigate changes in the ratio between the two numbers, not the mere existence of a gap, which is guaranteed by how each system counts.</p>
+<h3>Does the Conversions API fix the mismatch?</h3>
+<p>No. CAPI recovers events the pixel loses, so Meta's own reporting becomes more complete and accurate. It does nothing for GA4, which is a separate measurement system with its own losses. In practice the gap versus GA4 often gets slightly larger after CAPI, not smaller, because Meta is now capturing more of what it always tried to claim.</p>
+<h3>Should I just optimize to GA4 instead of Meta's numbers?</h3>
+<p>Not for campaign delivery. Meta's algorithm optimizes on its own signal, and starving it by judging only through GA4's last click usually punishes prospecting and upper-funnel work that GA4 cannot see. Use GA4 as a cross-check on site behavior and channel trends, not as the bid signal that decides how Meta spends.</p>
+<h3>Why does GA4 show my Meta traffic as direct?</h3>
+<p>Usually missing UTMs, redirects that strip parameters, or in-app browser behavior that drops the referrer. Tag final URLs with clean UTMs, avoid intermediate redirects and link shorteners where you can, and the misclassified direct share drops noticeably within a reporting cycle.</p>
+</div>
+<div class="byl rv"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6ab7f7fc64174af658d15333_662879e093c51bd48ddda61f_admirawebclip.png" alt=""><div><b>Andre Sottil</b><span>Founder &amp; CEO, Admira</span></div></div>
+</article>
+</div>
+<div class="ri rel"><h2 class="rv">Keep reading</h2><div class="grid"><a class="card rv" href="/blog/agency-client-reporting-prove-roi"><div class="im"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6aef2d08d8fd63d2fd38404d_6aef2ad0f85f0165b355cde1_agency-client-reporting-prove-roi-hero.webp" alt=""></div>
+<div class="bd"><div class="meta"><span>Analytics &amp; Reporting</span><span class="dt">Nov 7</span></div><h2>How Agencies Prove ROI to Clients (With Examples)</h2><p>Agencies prove ROI by tying ad spend to CRM revenue and reporting profit after media and fees. Get the formula, a report template and a worked example.</p></div></a><a class="card rv" href="/blog/cac-by-channel"><div class="im"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6aef2d7c98b1dfc807034a12_6aef2acf4098f0625e4403a7_cac-by-channel-hero.webp" alt=""></div>
+<div class="bd"><div class="meta"><span>Analytics &amp; Reporting</span><span class="dt">Nov 7</span></div><h2>How to Calculate CAC by Channel (With Examples)</h2><p>CAC by channel = channel spend ÷ new customers attributed to it. Get the formulas, a 7-step process, a worked example and the mistakes that distort it.</p></div></a><a class="card rv" href="/blog/how-to-analyze-ad-campaigns"><div class="im"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6aef3bbb98b1dfc807055a6a_6aef2e534beb95db2c252850_how-to-analyze-ad-campaigns-hero.webp" alt=""></div>
+<div class="bd"><div class="meta"><span>Analytics &amp; Reporting</span><span class="dt">Nov 7</span></div><h2>How to Analyze Ad Campaigns: A Weekly Checklist</h2><p>How to analyze ad campaigns in 10 steps: check tracking, rank by cost per sale, diagnose the funnel and decide to scale, fix or pause. Example inside.</p></div></a></div></div>
+</div></section>
+<section class="sec" data-examples="attribution,journeys,overview,ai-dashboard,reports" data-title="See Admira in action." data-sub="Follow the work from campaign to close."></section>
+<section class="cta"><h2 class="h1 rv">Ready to try Admira?</h2>
+<div class="bt rv"><a class="btn dk" href="/v2/home">Get started</a><a class="btn lt" href="/v2/home">Book a demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></div>
+<a class="sub rv" href="/v2/home#ai"><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/brand/admira-icon-gradient.svg" width="18" alt="">Ask Admira AI your first question <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+</section>
+</main>
+
+<footer class="ft"><div class="in">
+<div class="cols">
+<div><h3>Product</h3><ul><li><a href="/v2/home#ai">Admira AI</a></li><li><a href="/v2/multi-touch-attribution">Attribution</a></li><li><a href="/v2/marketing-dashboard">Dashboards</a></li><li><a href="/v2/conversion-tracking">Conversion tracking</a></li><li><a href="/v2/conversions-api">Conversions API</a></li><li><a href="/v2/ai-creative">AI creative</a></li><li><a href="/v2/integrations">Integrations</a></li><li><a href="/v2/pricing">Pricing</a></li></ul></div>
+<div><h3>Platforms</h3><ul><li><a href="/v2/integrations-meta-ads">Meta Ads</a></li><li><a href="/v2/integrations-google-ads">Google Ads</a></li><li><a href="/v2/integrations-tiktok-ads">TikTok Ads</a></li><li><a href="/v2/integrations-linkedin-ads">LinkedIn Ads</a></li><li><a href="/v2/integrations-microsoft-ads">Microsoft Ads</a></li><li><a href="/v2/integrations-amazon-ads">Amazon Ads</a></li><li><a href="/v2/integrations-x-ads">X Ads</a></li><li><a href="/v2/integrations-mercado-libre-ads">Mercado Libre Ads</a></li></ul></div>
+<div><h3>Connects to</h3><ul><li><a href="/v2/integrations-hubspot">HubSpot</a></li><li><a href="/v2/integrations-salesforce">Salesforce</a></li><li><a href="/v2/integrations-kommo">Kommo</a></li><li><a href="/v2/integrations-pipedrive">Pipedrive</a></li><li><a href="/v2/integrations-zoho-crm">Zoho CRM</a></li><li><a href="/v2/integrations-whatsapp">WhatsApp</a></li><li><a href="/v2/integrations-shopify">Shopify</a></li><li><a href="/v2/integrations-stripe">Stripe</a></li></ul></div>
+<div><h3>Solutions</h3><ul><li><a href="/v2/solutions-ecommerce">Ecommerce</a></li><li><a href="/v2/solutions-b2b-saas">B2B SaaS</a></li><li><a href="/v2/solutions-marketing-leaders">Marketing leaders</a></li><li><a href="/v2/solutions-agencies">Agencies</a></li><li><a href="/v2/solutions-real-estate">Real estate</a></li><li><a href="/v2/attribution-platform-latam">LATAM</a></li></ul></div>
+<div><h3>Resources</h3><ul><li><a href="/v2/customers">Customers</a></li><li><a href="/v2/webinars">Webinars</a></li><li><a href="/v2/blog">Blog</a></li><li><a href="/v2/book-demo">Book a demo</a></li><li><a href="mailto:support@getadmira.com">Support</a></li></ul></div>
+<div><div class="grp"><h3>Company</h3><ul><li><a href="/v2/book-demo">Contact</a></li><li><a href="https://www.linkedin.com/company/getadmira/jobs/">Careers</a></li><li><a href="https://app.getadmira.com">Log in</a></li></ul></div>
+<div class="grp"><h3>Legal</h3><ul><li><a href="/v2/terms-and-conditions">Terms of Service</a></li><li><a href="/v2/privacy">Privacy Policy</a></li><li><a href="/v2/sms">SMS Terms</a></li></ul></div></div>
+</div>
+<div class="bot"><a class="logo" href="/v2/home"><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/brand/admira.svg" alt="Admira"></a><small>© 2026 Admira Software, Inc. All rights reserved.</small></div>
+</div></footer>

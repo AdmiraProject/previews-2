@@ -1,0 +1,152 @@
+<div class="ann"><a href="/v2/home#inside">Admira AI is live — ask your ads and CRM anything <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a><button class="x" aria-label="Close" onclick="this.parentElement.remove()"><svg width="16" height="16" viewBox="0 0 16 16" stroke="currentColor" stroke-width="1.5"><path d="M4 4l8 8M12 4l-8 8"/></svg></button></div>
+
+<header class="hdr"><div class="in">
+<a class="logo" href="/v2/home"><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/brand/admira.svg" alt="Admira" width="83" height="21"></a>
+<nav class="nav">
+<button>Product <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 4.5l3 3 3-3"/></svg></button>
+<button>Solutions <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 4.5l3 3 3-3"/></svg></button>
+<a href="/v2/home#ai">Admira AI</a><a href="/v2/integrations">Integrations</a><a href="/v2/customers">Customers</a>
+<button>Resources <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 4.5l3 3 3-3"/></svg></button>
+</nav>
+<div class="r"><a class="login" href="https://app.getadmira.com">Log in</a><a class="btn dk sm" href="/v2/home">Book a demo</a>
+<button class="burger" aria-label="Menu"><svg width="18" height="18" viewBox="0 0 18 18" stroke="currentColor" stroke-width="1.6"><path d="M3 6h12M3 12h12"/></svg></button></div>
+</div></header>
+
+<main>
+<section class="rp bp"><div class="rw">
+<nav class="crumb rv" aria-label="Breadcrumb"><a href="/v2/blog"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 8H3M7 4 3 8l4 4"/></svg>Blog</a><span>/</span><span>Guides</span></nav>
+<h1 class="rv">How to Set Up Conversion Tracking in Google Ads</h1>
+<p class="sub rv">Set up Google Ads conversion tracking step by step: Google tag vs GA4 import, primary vs secondary, count one vs every, windows and lead values explained.</p>
+<button class="act rv" type="button" data-copy><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="8.5" height="8.5" rx="1.5"/><path d="M10.5 5V3.5A1.5 1.5 0 0 0 9 2H3.5A1.5 1.5 0 0 0 2 3.5V9a1.5 1.5 0 0 0 1.5 1.5H5"/></svg><span>Copy link</span></button>
+<div class="cols">
+<aside class="side rv">
+<div class="toc"><p class="lb">On this page</p><a href="#what-do-you-need-before-you-start">What do you need before you start?</a><a href="#google-tag-or-ga4-import-which-should-you-use">Google tag or GA4 import: which should you use?</a><a href="#how-do-you-create-a-conversion-action-step-by-step">How do you create a conversion action step by step?</a><a href="#primary-vs-secondary-how-should-you-set-them">Primary vs secondary: how should you set them?</a><a href="#which-settings-checklist-should-you-follow">Which settings checklist should you follow?</a><a href="#how-do-you-set-conversion-values-for-leads-a-worked-example">How do you set conversion values for leads? A worked example</a><a href="#what-are-the-most-common-setup-mistakes">What are the most common setup mistakes?</a><a href="#when-is-native-google-ads-tracking-not-enough">When is native Google Ads tracking not enough?</a><a href="#who-this-guide-is-for-and-when-it-doesn-t-apply">Who this guide is for, and when it doesn't apply</a><a href="#faq">FAQ</a></div>
+<div class="promo"><b>Admira AI.</b><span>Ask your ads and CRM anything, in plain English.</span>
+<div class="pi"><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/proto/ai@panel/04-answer.webp" alt="" loading="lazy"></div>
+<a class="btn dk" href="/v2/home">Book a demo</a></div>
+</aside>
+<article class="art">
+<div class="wm rv"><span class="tg">Guides</span><span class="dot"></span><span class="who"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6ab7f7fc64174af658d15333_662879e093c51bd48ddda61f_admirawebclip.png" alt=""><span>Andre Duprat</span></span><span class="dot"></span><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 4.5V8l2.5 1.5"/></svg>6 min read</span><span class="dot"></span><span>Nov 7</span></div>
+<figure class="cov rv"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6aef3c22784da0fdfafecad2_6aef2e56dac7d040a254f1da_google-ads-conversion-tracking-setup-hero.webp" alt=""></figure>
+<nav class="toc tm" aria-label="On this page"><p class="lb"><span>On this page</span><span>10 sections</span></p><a href="#what-do-you-need-before-you-start"><span class="n">1</span>What do you need before you start?</a><a href="#google-tag-or-ga4-import-which-should-you-use"><span class="n">2</span>Google tag or GA4 import: which should you use?</a><a href="#how-do-you-create-a-conversion-action-step-by-step"><span class="n">3</span>How do you create a conversion action step by step?</a><a href="#primary-vs-secondary-how-should-you-set-them"><span class="n">4</span>Primary vs secondary: how should you set them?</a><a href="#which-settings-checklist-should-you-follow"><span class="n">5</span>Which settings checklist should you follow?</a><a href="#how-do-you-set-conversion-values-for-leads-a-worked-example"><span class="n">6</span>How do you set conversion values for leads? A worked example</a><a href="#what-are-the-most-common-setup-mistakes"><span class="n">7</span>What are the most common setup mistakes?</a><a href="#when-is-native-google-ads-tracking-not-enough"><span class="n">8</span>When is native Google Ads tracking not enough?</a><a href="#who-this-guide-is-for-and-when-it-doesn-t-apply"><span class="n">9</span>Who this guide is for, and when it doesn't apply</a><a href="#faq"><span class="n">10</span>FAQ</a></nav>
+<div class="prose">
+<p>To set up conversion tracking in Google Ads, create a conversion action under Goals, choose how to measure it (the Google tag on your site, Google Tag Manager, a no-code URL rule, or an import of GA4 key events), then set its value, count, conversion window and primary or secondary status before testing it. The settings matter as much as the tag: they decide what lands in the Conversions column and what Smart Bidding learns from. A lead form should usually count "one" conversion per click, a purchase "every".</p>
+<p>This guide walks through each choice in order, with a comparison of the Google tag and GA4 import, a settings checklist and a worked example for a lead-gen account.</p>
+<h2 id="what-do-you-need-before-you-start">What do you need before you start?</h2>
+<ul>
+<li>Admin access to the Google Ads account.</li>
+<li>Access to your website or Google Tag Manager container.</li>
+<li>Auto-tagging turned on, so every ad click carries a gclid.</li>
+<li>A list of the actions you want to measure, and which one represents real business value.</li>
+<li>If you plan to import from GA4: the GA4 property linked to Google Ads and Edit access to that property.</li>
+</ul>
+<p>If you are new to the concept, our pillar on <a href="/blog/what-is-conversion-tracking">what conversion tracking is</a> explains the methods and why they exist.</p>
+<h2 id="google-tag-or-ga4-import-which-should-you-use">Google tag or GA4 import: which should you use?</h2>
+<p>Both work. The right choice depends on what you need Google Ads to see.</p>
+<div class="tw"><table>
+<thead><tr><th>Question</th><th>Google Ads conversion via Google tag</th><th>Imported GA4 key event</th></tr></thead>
+<tbody>
+<tr><td>View-through conversions</td><td>Yes</td><td>No (native Google Ads measurement is required)</td></tr>
+<tr><td>Who gets credit</td><td>Google Ads attribution for Google Ads interactions</td><td>Set in GA4: Google paid channels only (default for new links since June 2023) or paid and organic</td></tr>
+<tr><td>Speed to appear</td><td>As soon as the tag fires</td><td>Import options can take 24 to 48 hours to appear after linking</td></tr>
+<tr><td>One definition for all reports</td><td>Separate from GA4</td><td>Same event in GA4 and Google Ads</td></tr>
+<tr><td>Best for</td><td>Bidding on lead and purchase actions with full Google Ads features</td><td>Teams that manage events centrally in GA4</td></tr>
+</tbody>
+</table></div>
+<p>Sources: <a href="https://support.google.com/google-ads/answer/10632359" target="_blank" rel="noopener">Google Ads Help on importing GA4 conversions</a> and <a href="https://support.google.com/google-ads/answer/16560108" target="_blank" rel="noopener">setting up web conversions</a>. Many accounts use the Google tag action as primary and keep the GA4 import as secondary for comparison. Never mark both as primary for the same action, or the Conversions column counts it twice.</p>
+<h2 id="how-do-you-create-a-conversion-action-step-by-step">How do you create a conversion action step by step?</h2>
+<ol>
+<li><strong>Open Goals in Google Ads.</strong> Start a new web conversion. Google scans your domain to check whether a Google tag is already installed.</li>
+<li><strong>Install or confirm the Google tag.</strong> If none is found, add it to every page directly or through Google Tag Manager.</li>
+<li><strong>Choose how the conversion fires.</strong> Use "automatically without code" with a URL rule (URL is, contains or starts with) for simple thank-you pages, or "manually using code" for button clicks, form submits and dynamic values.</li>
+<li><strong>Pick a goal category.</strong> For example Submit lead form, Book appointment or Purchase. This drives how Google groups and bids on the action.</li>
+<li><strong>Set the value.</strong> Same value for every conversion, a dynamic value from the page, or no value (more on this below).</li>
+<li><strong>Set the count.</strong> "One" for leads, "Every" for purchases.</li>
+<li><strong>Set the windows.</strong> The click-through window defaults to 30 days and can be set from 1 to 30, 60 or 90 days depending on the source (<a href="https://support.google.com/google-ads/answer/3123169" target="_blank" rel="noopener">Google Ads Help</a>). Match it to your real lead-to-conversion lag.</li>
+<li><strong>Set action optimization.</strong> Primary if Smart Bidding should optimize toward it, secondary if it is for reporting only.</li>
+<li><strong>Turn on enhanced conversions.</strong> They send hashed first-party data such as email to improve matching. See our guide to <a href="/blog/google-ads-enhanced-conversions">Google Ads enhanced conversions</a>.</li>
+<li><strong>Publish and test.</strong> Use Tag Assistant to fire a test conversion and check the action's status in Google Ads over the next days.</li>
+</ol>
+<h2 id="primary-vs-secondary-how-should-you-set-them">Primary vs secondary: how should you set them?</h2>
+<p>Primary actions are reported in the Conversions column and used for bidding. Secondary actions appear in All conversions and are not used for bidding, unless they are part of a custom goal (<a href="https://support.google.com/google-ads/answer/11461796" target="_blank" rel="noopener">Google Ads Help</a>).</p>
+<p>A practical rule: one primary action per funnel, and it should be the deepest stage that still happens often enough for the algorithm to learn. For lead-gen, the best primary is usually a qualified lead or booked meeting uploaded from your CRM, which is covered in our step-by-step on <a href="/blog/google-ads-offline-conversion-import">Google Ads offline conversion import</a>. Form submits, calls and WhatsApp clicks stay secondary so you still see them.</p>
+<h2 id="which-settings-checklist-should-you-follow">Which settings checklist should you follow?</h2>
+<div class="tw"><table>
+<thead><tr><th>Setting</th><th>Lead form</th><th>Booked meeting (from CRM)</th><th>Purchase</th></tr></thead>
+<tbody>
+<tr><td>Count</td><td>One</td><td>One</td><td>Every</td></tr>
+<tr><td>Value</td><td>Expected value (see formula)</td><td>Higher expected value</td><td>Dynamic order value</td></tr>
+<tr><td>Click-through window</td><td>30 days or your real lag</td><td>Up to 90 days for long cycles</td><td>30 days is a common start</td></tr>
+<tr><td>Optimization</td><td>Secondary once CRM data flows</td><td>Primary</td><td>Primary</td></tr>
+<tr><td>Enhanced conversions</td><td>On</td><td>Use with the offline upload</td><td>On</td></tr>
+</tbody>
+</table></div>
+<p>Count changes only apply to future reporting, so decide before you collect months of data.</p>
+<h2 id="how-do-you-set-conversion-values-for-leads-a-worked-example">How do you set conversion values for leads? A worked example</h2>
+<p>Values tell Google which conversions matter more. For ecommerce, pass the order value. For lead-gen, use expected value: average deal value multiplied by the probability that a lead at this stage becomes a customer.</p>
+<p><strong>Formula:</strong> expected value = average deal value x close rate from that stage.</p>
+<p><strong>Example (hypothetical numbers):</strong> a B2B training company sells courses averaging $3,000. Out of 100 form leads, 25 book a meeting and 6 buy.</p>
+<div class="tw"><table>
+<thead><tr><th>Conversion action</th><th>Close rate to sale</th><th>Expected value</th></tr></thead>
+<tbody>
+<tr><td>Form submit</td><td>6 / 100 = 6%</td><td>$3,000 x 0.06 = $180</td></tr>
+<tr><td>Meeting booked</td><td>6 / 25 = 24%</td><td>$3,000 x 0.24 = $720</td></tr>
+<tr><td>Sale (offline upload)</td><td>100%</td><td>$3,000</td></tr>
+</tbody>
+</table></div>
+<p>With these values, a campaign that drives 10 meetings ($7,200 in conversion value) ranks above one that drives 30 forms ($5,400), which matches what sales would tell you. Revisit the rates each quarter. If you are deciding what to optimize toward, read <a href="/blog/cost-per-sale-vs-cost-per-lead">cost per lead vs cost per sale</a>.</p>
+<h2 id="what-are-the-most-common-setup-mistakes">What are the most common setup mistakes?</h2>
+<ul>
+<li>Counting "every" on lead forms, so one person submitting twice becomes two conversions.</li>
+<li>Primary status on both the Google tag action and the GA4 import of the same event.</li>
+<li>Thank-you page rules that fire on reloads or on pages reachable without submitting.</li>
+<li>All actions valued at 1, so Smart Bidding treats a newsletter signup like a sale.</li>
+<li>A 30-day window on a business whose leads take 60 days to close.</li>
+<li>Calls and WhatsApp chats not tracked at all, which hides a large share of LATAM leads.</li>
+</ul>
+<h2 id="when-is-native-google-ads-tracking-not-enough">When is native Google Ads tracking not enough?</h2>
+<p>Google Ads only sees Google Ads. If you also run Meta, TikTok and Click-to-WhatsApp, each platform reports its own version, and the totals rarely match your CRM. That is where a cross-channel tool helps. Admira ties leads from Meta, Google Ads, TikTok and WhatsApp to CRM revenue, and its <a href="/v2/conversions-api">Conversion API</a> sends CRM stages back to the platforms server-side, so Google can bid on qualified leads without a manual upload routine. It starts at $199/month and needs no engineering for setup, though as a young brand it has few public reviews. If you only run Google Ads and sell online, the native tag plus GA4 may be all you need.</p>
+<h2 id="who-this-guide-is-for-and-when-it-doesn-t-apply">Who this guide is for, and when it doesn't apply</h2>
+<p><strong>For:</strong> advertisers and agencies setting up or cleaning up Google Ads conversions, especially lead-gen accounts.</p>
+<p><strong>Not covered:</strong> app conversions through Firebase, store visits, and Shopify's native Google channel, which installs its own tags. Check those setups separately so you do not double count.</p>
+<h2 id="faq">FAQ</h2>
+<h3>How long does Google Ads conversion tracking take to show data?</h3>
+<p>A tag-based action records conversions as soon as it fires, but its status can take a few days to update. GA4 import options can take 24 to 48 hours to appear after linking.</p>
+<h3>Should I import GA4 conversions or use the Google Ads tag?</h3>
+<p>Use the Google Ads tag for bidding if you want view-through data and full Google Ads features. Use GA4 import if you manage events in GA4, and never mark both as primary for the same action.</p>
+<h3>What is the default conversion window in Google Ads?</h3>
+<p>30 days for click-through conversions, adjustable from 1 up to 90 days depending on the conversion source.</p>
+<h3>Should leads count one or every conversion?</h3>
+<p>One. It counts one lead per ad click, which matches how lead value works. Use every for purchases.</p>
+<h3>Can I track phone calls and WhatsApp clicks?</h3>
+<p>Yes. Google Ads supports call conversions, and you can track WhatsApp button clicks as a website event. For chats that turn into sales, upload the outcome from your CRM.</p>
+<h3>Do I need enhanced conversions?</h3>
+<p>It is optional but recommended. It improves matching by sending hashed first-party data such as email, which helps when cookies are limited.</p>
+</div>
+<div class="byl rv"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6ab7f7fc64174af658d15333_662879e093c51bd48ddda61f_admirawebclip.png" alt=""><div><b>Andre Duprat</b><span>Founder &amp; CEO, Admira</span></div></div>
+</article>
+</div>
+<div class="ri rel"><h2 class="rv">Keep reading</h2><div class="grid"><a class="card rv" href="/blog/admira-vs-hyros"><div class="im"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6aef2db29e09424cba197357_6aef2acec9beee10a0c2bd83_admira-vs-hyros-hero.webp" alt=""></div>
+<div class="bd"><div class="meta"><span>Guides</span><span class="dt">Nov 7</span></div><h2>Admira vs Hyros: Honest Comparison for Lead-Gen Teams</h2><p>Admira vs Hyros: Admira suits CRM and WhatsApp sales with flat pricing from $199/mo; Hyros suits funnels with revenue pricing. See where each one wins.</p></div></a><a class="card rv" href="/blog/agency-reporting-tools"><div class="im"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6aef39d19e09424cba1a4c08_6aef2e53fae98be0d42960d5_agency-reporting-tools-hero.webp" alt=""></div>
+<div class="bd"><div class="meta"><span>Guides</span><span class="dt">Nov 7</span></div><h2>Agency Reporting Tools 2026: 7 Options Compared</h2><p>Compare 7 agency reporting tools for 2026 with prices checked Nov 2026: AgencyAnalytics, DashThis, Whatagraph, Databox, Reportei, Looker Studio and Admira.</p></div></a><a class="card rv" href="/blog/agencyanalytics-alternatives"><div class="im"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6aef3ae661688fae49155c66_6aef2e53883aab66d8b71884_agencyanalytics-alternatives-hero.webp" alt=""></div>
+<div class="bd"><div class="meta"><span>Guides</span><span class="dt">Nov 7</span></div><h2>AgencyAnalytics Alternatives 2026: 7 Tools Compared</h2><p>Compare 7 AgencyAnalytics alternatives in 2026: DashThis, Swydo, Databox, Whatagraph, Looker Studio, Reportei and Admira, with prices checked in November.</p></div></a></div></div>
+</div></section>
+<section class="sec" data-examples="attribution,journeys,overview,ai-dashboard,reports" data-title="See Admira in action." data-sub="Follow the work from campaign to close."></section>
+<section class="cta"><h2 class="h1 rv">Ready to try Admira?</h2>
+<div class="bt rv"><a class="btn dk" href="/v2/home">Get started</a><a class="btn lt" href="/v2/home">Book a demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></div>
+<a class="sub rv" href="/v2/home#ai"><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/brand/admira-icon-gradient.svg" width="18" alt="">Ask Admira AI your first question <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+</section>
+</main>
+
+<footer class="ft"><div class="in">
+<div class="cols">
+<div><h3>Product</h3><ul><li><a href="/v2/home#ai">Admira AI</a></li><li><a href="/v2/multi-touch-attribution">Attribution</a></li><li><a href="/v2/marketing-dashboard">Dashboards</a></li><li><a href="/v2/conversion-tracking">Conversion tracking</a></li><li><a href="/v2/conversions-api">Conversions API</a></li><li><a href="/v2/ai-creative">AI creative</a></li><li><a href="/v2/integrations">Integrations</a></li><li><a href="/v2/pricing">Pricing</a></li></ul></div>
+<div><h3>Platforms</h3><ul><li><a href="/v2/integrations-meta-ads">Meta Ads</a></li><li><a href="/v2/integrations-google-ads">Google Ads</a></li><li><a href="/v2/integrations-tiktok-ads">TikTok Ads</a></li><li><a href="/v2/integrations-linkedin-ads">LinkedIn Ads</a></li><li><a href="/v2/integrations-microsoft-ads">Microsoft Ads</a></li><li><a href="/v2/integrations-amazon-ads">Amazon Ads</a></li><li><a href="/v2/integrations-x-ads">X Ads</a></li><li><a href="/v2/integrations-mercado-libre-ads">Mercado Libre Ads</a></li></ul></div>
+<div><h3>Connects to</h3><ul><li><a href="/v2/integrations-hubspot">HubSpot</a></li><li><a href="/v2/integrations-salesforce">Salesforce</a></li><li><a href="/v2/integrations-kommo">Kommo</a></li><li><a href="/v2/integrations-pipedrive">Pipedrive</a></li><li><a href="/v2/integrations-zoho-crm">Zoho CRM</a></li><li><a href="/v2/integrations-whatsapp">WhatsApp</a></li><li><a href="/v2/integrations-shopify">Shopify</a></li><li><a href="/v2/integrations-stripe">Stripe</a></li></ul></div>
+<div><h3>Solutions</h3><ul><li><a href="/v2/solutions-ecommerce">Ecommerce</a></li><li><a href="/v2/solutions-b2b-saas">B2B SaaS</a></li><li><a href="/v2/solutions-marketing-leaders">Marketing leaders</a></li><li><a href="/v2/solutions-agencies">Agencies</a></li><li><a href="/v2/solutions-real-estate">Real estate</a></li><li><a href="/v2/attribution-platform-latam">LATAM</a></li></ul></div>
+<div><h3>Resources</h3><ul><li><a href="/v2/customers">Customers</a></li><li><a href="/v2/webinars">Webinars</a></li><li><a href="/v2/blog">Blog</a></li><li><a href="/v2/book-demo">Book a demo</a></li><li><a href="mailto:support@getadmira.com">Support</a></li></ul></div>
+<div><div class="grp"><h3>Company</h3><ul><li><a href="/v2/book-demo">Contact</a></li><li><a href="https://www.linkedin.com/company/getadmira/jobs/">Careers</a></li><li><a href="https://app.getadmira.com">Log in</a></li></ul></div>
+<div class="grp"><h3>Legal</h3><ul><li><a href="/v2/terms-and-conditions">Terms of Service</a></li><li><a href="/v2/privacy">Privacy Policy</a></li><li><a href="/v2/sms">SMS Terms</a></li></ul></div></div>
+</div>
+<div class="bot"><a class="logo" href="/v2/home"><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/brand/admira.svg" alt="Admira"></a><small>© 2026 Admira Software, Inc. All rights reserved.</small></div>
+</div></footer>

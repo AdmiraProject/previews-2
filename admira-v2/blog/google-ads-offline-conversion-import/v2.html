@@ -1,0 +1,155 @@
+<div class="ann"><a href="/v2/home#inside">Admira AI is live — ask your ads and CRM anything <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a><button class="x" aria-label="Close" onclick="this.parentElement.remove()"><svg width="16" height="16" viewBox="0 0 16 16" stroke="currentColor" stroke-width="1.5"><path d="M4 4l8 8M12 4l-8 8"/></svg></button></div>
+
+<header class="hdr"><div class="in">
+<a class="logo" href="/v2/home"><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/brand/admira.svg" alt="Admira" width="83" height="21"></a>
+<nav class="nav">
+<button>Product <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 4.5l3 3 3-3"/></svg></button>
+<button>Solutions <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 4.5l3 3 3-3"/></svg></button>
+<a href="/v2/home#ai">Admira AI</a><a href="/v2/integrations">Integrations</a><a href="/v2/customers">Customers</a>
+<button>Resources <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 4.5l3 3 3-3"/></svg></button>
+</nav>
+<div class="r"><a class="login" href="https://app.getadmira.com">Log in</a><a class="btn dk sm" href="/v2/home">Book a demo</a>
+<button class="burger" aria-label="Menu"><svg width="18" height="18" viewBox="0 0 18 18" stroke="currentColor" stroke-width="1.6"><path d="M3 6h12M3 12h12"/></svg></button></div>
+</div></header>
+
+<main>
+<section class="rp bp"><div class="rw">
+<nav class="crumb rv" aria-label="Breadcrumb"><a href="/v2/blog"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 8H3M7 4 3 8l4 4"/></svg>Blog</a><span>/</span><span>Guides</span></nav>
+<h1 class="rv">How to Import Offline Conversions Into Google Ads</h1>
+<p class="sub rv">Import offline conversions to Google Ads: capture the GCLID, create the offline action, pick a data source and send CRM sales back so bidding sees sales.</p>
+<button class="act rv" type="button" data-copy><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="8.5" height="8.5" rx="1.5"/><path d="M10.5 5V3.5A1.5 1.5 0 0 0 9 2H3.5A1.5 1.5 0 0 0 2 3.5V9a1.5 1.5 0 0 0 1.5 1.5H5"/></svg><span>Copy link</span></button>
+<div class="cols">
+<aside class="side rv">
+<div class="toc"><p class="lb">On this page</p><a href="#what-is-offline-conversion-import-in-google-ads">What is offline conversion import in Google Ads?</a><a href="#what-do-you-need-before-you-import-offline-conversions">What do you need before you import offline conversions?</a><a href="#how-do-you-capture-the-gclid-in-your-forms-and-crm">How do you capture the GCLID in your forms and CRM?</a><a href="#how-do-you-create-the-offline-conversion-action-in-google-ad">How do you create the offline conversion action in Google Ads?</a><a href="#which-data-source-should-you-use-to-import-offline-conversio">Which data source should you use to import offline conversions?</a><a href="#what-fields-does-each-offline-conversion-need">What fields does each offline conversion need?</a><a href="#example-importing-offline-conversions-for-a-real-estate-deve">Example: importing offline conversions for a real estate developer</a><a href="#why-do-offline-conversion-imports-fail">Why do offline conversion imports fail?</a><a href="#when-offline-conversion-import-isn-t-the-right-tool">When offline conversion import isn't the right tool</a><a href="#faq">FAQ</a></div>
+<div class="promo"><b>Admira AI.</b><span>Ask your ads and CRM anything, in plain English.</span>
+<div class="pi"><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/proto/ai@panel/04-answer.webp" alt="" loading="lazy"></div>
+<a class="btn dk" href="/v2/home">Book a demo</a></div>
+</aside>
+<article class="art">
+<div class="wm rv"><span class="tg">Guides</span><span class="dot"></span><span class="who"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6ab7f7fc64174af658d15333_662879e093c51bd48ddda61f_admirawebclip.png" alt=""><span>Andre Duprat</span></span><span class="dot"></span><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 4.5V8l2.5 1.5"/></svg>7 min read</span><span class="dot"></span><span>Nov 7</span></div>
+<figure class="cov rv"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6aef3955c3d3dfbbdc2bd59a_6aef2e520ed9f44e1fc32b84_google-ads-offline-conversion-import-hero.webp" alt=""></figure>
+<nav class="toc tm" aria-label="On this page"><p class="lb"><span>On this page</span><span>10 sections</span></p><a href="#what-is-offline-conversion-import-in-google-ads"><span class="n">1</span>What is offline conversion import in Google Ads?</a><a href="#what-do-you-need-before-you-import-offline-conversions"><span class="n">2</span>What do you need before you import offline conversions?</a><a href="#how-do-you-capture-the-gclid-in-your-forms-and-crm"><span class="n">3</span>How do you capture the GCLID in your forms and CRM?</a><a href="#how-do-you-create-the-offline-conversion-action-in-google-ad"><span class="n">4</span>How do you create the offline conversion action in Google Ads?</a><a href="#which-data-source-should-you-use-to-import-offline-conversio"><span class="n">5</span>Which data source should you use to import offline conversions?</a><a href="#what-fields-does-each-offline-conversion-need"><span class="n">6</span>What fields does each offline conversion need?</a><a href="#example-importing-offline-conversions-for-a-real-estate-deve"><span class="n">7</span>Example: importing offline conversions for a real estate developer</a><a href="#why-do-offline-conversion-imports-fail"><span class="n">8</span>Why do offline conversion imports fail?</a><a href="#when-offline-conversion-import-isn-t-the-right-tool"><span class="n">9</span>When offline conversion import isn't the right tool</a><a href="#faq"><span class="n">10</span>FAQ</a></nav>
+<div class="prose">
+<p>To import offline conversions into Google Ads, you turn on auto-tagging, capture the Google Click ID (GCLID) from each ad click into a hidden form field, store it on the lead in your CRM, create a "Conversions offline" action in Google Ads, and then send each closed sale back with its GCLID, conversion name and time. Google now routes these imports through Data Manager, and it recommends adding hashed email (enhanced conversions for leads) to match more sales. Once connected, Smart Bidding can optimize for real sales instead of form fills.</p>
+<p>This is the Google-specific, step-by-step version. For the general picture across Meta, TikTok and other platforms, read our overview on <a href="/blog/connect-offline-conversions-crm-to-ad-platforms">connecting offline conversions from your CRM to ad platforms</a>.</p>
+<h2 id="what-is-offline-conversion-import-in-google-ads">What is offline conversion import in Google Ads?</h2>
+<p>Many valuable conversions don't happen on your website. A lead fills a form, then a salesperson calls, visits happen, and the deal closes days or weeks later in your CRM. Google's <a href="https://support.google.com/google-ads/answer/2998031?hl=en" target="_blank" rel="noopener">offline conversion overview</a> describes the mechanism: Google assigns a GCLID to every ad click, you store it with the lead, and when the lead converts you send the GCLID back with the conversion type and timestamp.</p>
+<p>Google Ads then credits the sale to the campaign, ad group and keyword behind that click. That is the only way Search or Performance Max can learn which clicks become customers, not just which clicks fill forms.</p>
+<h2 id="what-do-you-need-before-you-import-offline-conversions">What do you need before you import offline conversions?</h2>
+<div class="tw"><table>
+<thead><tr><th>Requirement</th><th>Why it matters</th><th>How to check</th></tr></thead>
+<tbody>
+<tr><td>Auto-tagging on</td><td>Without it, there is no GCLID in the landing page URL</td><td>Google Ads account settings; click an ad and look for gclid= in the URL</td></tr>
+<tr><td>Hidden GCLID field on every lead form</td><td>Carries the click ID to your backend</td><td>Submit a test lead from an ad click URL</td></tr>
+<tr><td>A CRM field for the GCLID</td><td>Keeps the ID with the lead until the sale</td><td>Open the test lead in the CRM</td></tr>
+<tr><td>Clear sales stages and dates</td><td>Each import needs a conversion time</td><td>Check that closed deals have a close date</td></tr>
+<tr><td>Consent handling</td><td>Storing click IDs in cookies follows local cookie rules</td><td>Review your consent banner and privacy notice</td></tr>
+</tbody>
+</table></div>
+<p>Two details from <a href="https://support.google.com/google-ads/answer/7012522?hl=en-GB" target="_blank" rel="noopener">Google's GCLID setup guide</a> trip up many teams: the GCLID is case sensitive, so never lowercase it; and the sample script stores it in a cookie for 90 days so it survives when the visitor browses several pages before submitting.</p>
+<h2 id="how-do-you-capture-the-gclid-in-your-forms-and-crm">How do you capture the GCLID in your forms and CRM?</h2>
+<ol>
+<li><strong>Add a hidden field</strong> named something like gclid_field to every lead form, including landing page builders and pop-ups.</li>
+<li><strong>Add a script on every page</strong>, ideally just before the closing body tag, that reads the gclid URL parameter, saves it in a first-party cookie or local storage, and fills the hidden field. Google Tag Manager can deploy it as a Custom HTML tag on all pages.</li>
+<li><strong>Map the field to the CRM.</strong> In HubSpot, Salesforce, Kommo or Clientify, create a text property for GCLID and map the form field to it.</li>
+<li><strong>Capture UTMs at the same time.</strong> They help you report on non-Google channels and on Google clicks that lack a GCLID. Our guide on <a href="/blog/pass-utm-parameters-into-crm">passing UTM parameters into your CRM</a> covers the hidden field setup.</li>
+<li><strong>Test end to end.</strong> Click a real ad (or add ?gclid=test123 to a URL), submit, and confirm the value lands on the CRM record exactly as it appeared.</li>
+</ol>
+<h2 id="how-do-you-create-the-offline-conversion-action-in-google-ad">How do you create the offline conversion action in Google Ads?</h2>
+<p>These are the steps in Google's current guide:</p>
+<ol>
+<li>Go to <strong>Goals</strong>, then <strong>Summary</strong>.</li>
+<li>Select <strong>+ Create conversion action</strong>, then <strong>Conversions offline</strong>.</li>
+<li>Select <strong>Add data source</strong> and choose a connection: a direct connection, Zapier, or a partner integration. You can skip it for now, but the setup won't be active until a source is connected.</li>
+<li>Choose a conversion category, such as Qualified lead or Purchase.</li>
+<li>Select the fields to import.</li>
+<li>Set the action as <strong>primary</strong> (used for bidding) or <strong>secondary</strong> (observation only). Google warns that getting this wrong can hurt Smart Bidding.</li>
+<li>Select <strong>Save and continue</strong>, then <strong>Agree and finish</strong>.</li>
+</ol>
+<p>Wait 4 to 6 hours after creating a new action before uploading to it. Google notes that uploads made inside that window may take two days to show in reports.</p>
+<h2 id="which-data-source-should-you-use-to-import-offline-conversio">Which data source should you use to import offline conversions?</h2>
+<p>How far back each import reaches depends on the source. Per Google's guide:</p>
+<div class="tw"><table>
+<thead><tr><th>Data source</th><th>Lookback per run</th><th>Good fit</th></tr></thead>
+<tbody>
+<tr><td>Google Sheets, Google Cloud Storage, Amazon S3, HTTP, SFTP</td><td>90 days each run</td><td>Small teams exporting from a CRM on a schedule</td></tr>
+<tr><td>Salesforce, HubSpot (native)</td><td>Last 14 days on the first run, then changes since the last run</td><td>Teams whose deals live in those CRMs</td></tr>
+<tr><td>BigQuery, Redshift, Snowflake, MySQL, PostgreSQL</td><td>14 days each run</td><td>Teams with a data warehouse</td></tr>
+<tr><td>Zapier or a partner tool</td><td>Depends on the tool</td><td>CRMs without a native connector, such as Kommo or Clientify</td></tr>
+</tbody>
+</table></div>
+<p>Manual file uploads still exist, but Google labels file-based offline conversion import as legacy and recommends upgrading to enhanced conversions for leads. Also note the API change: from June 15, 2026, offline conversion uploads go through the Data Manager API and are blocked in the Google Ads API. If an old script or tool used the Google Ads API endpoint, confirm it was migrated.</p>
+<h2 id="what-fields-does-each-offline-conversion-need">What fields does each offline conversion need?</h2>
+<ul>
+<li><strong>Google Click ID</strong>: the GCLID stored on the lead.</li>
+<li><strong>Conversion name</strong>: must match the conversion action name exactly, with the same spelling and capitalization.</li>
+<li><strong>Conversion time</strong>: when the sale or stage happened, with a time zone. You can set the time zone in the parameters row of the template, in the time value itself, or both.</li>
+<li><strong>Conversion value and currency</strong> (optional but recommended): the deal amount, for example in MXN or USD.</li>
+<li><strong>Order or deal ID</strong> (optional): helps avoid importing the same sale twice.</li>
+</ul>
+<p>If you also send hashed email or phone, the import becomes enhanced conversions for leads, which can match sales even when the GCLID is missing. We explain that variant in our guide to <a href="/blog/google-ads-enhanced-conversions">Google Ads enhanced conversions</a>.</p>
+<h2 id="example-importing-offline-conversions-for-a-real-estate-deve">Example: importing offline conversions for a real estate developer</h2>
+<p><strong>Example (hypothetical numbers):</strong> a developer in Querétaro spends $12,000 a month on Google Ads. It gets 300 leads at $40 each. Sales books 60 visits, takes 15 reservations (apartados) and signs 6 contracts averaging $90,000.</p>
+<div class="tw"><table>
+<thead><tr><th>Stage</th><th>Count</th><th>Cost per stage</th><th>Import as</th></tr></thead>
+<tbody>
+<tr><td>Form lead</td><td>300</td><td>$40</td><td>Website tag (secondary once offline data flows)</td></tr>
+<tr><td>Visit held</td><td>60</td><td>$200</td><td>Offline, secondary</td></tr>
+<tr><td>Reservation</td><td>15</td><td>$800</td><td>Offline, primary (enough volume to bid on)</td></tr>
+<tr><td>Signed contract</td><td>6</td><td>$2,000</td><td>Offline, secondary, with value $90,000</td></tr>
+</tbody>
+</table></div>
+<p>Six contracts a month is too few for bidding, so the team bids on reservations and reports on contracts. Revenue of $540,000 on $12,000 of spend is visible in Google Ads with values attached. For the sector-specific version of this math, see <a href="/blog/real-estate-cost-per-sale-measurement">how to measure cost per sale in real estate</a>.</p>
+<h2 id="why-do-offline-conversion-imports-fail">Why do offline conversion imports fail?</h2>
+<ul>
+<li><strong>GCLID changed.</strong> A CRM or spreadsheet lowercased it, trimmed it, or turned it into scientific notation.</li>
+<li><strong>Name mismatch.</strong> "Qualified Lead" in the file vs "Qualified lead" in Google Ads.</li>
+<li><strong>Time zone wrong.</strong> An error saying the conversion happened before the click usually means the time zone is off.</li>
+<li><strong>Too old.</strong> The click is outside the lookback your source supports.</li>
+<li><strong>Uploaded too soon.</strong> You uploaded within 4 to 6 hours of creating the action.</li>
+<li><strong>No GCLID at all.</strong> The lead came from Meta, organic, WhatsApp or a Google click where the field wasn't captured. Add hashed email to recover some of these.</li>
+</ul>
+<h2 id="when-offline-conversion-import-isn-t-the-right-tool">When offline conversion import isn't the right tool</h2>
+<p>It fits lead-gen and B2B teams that close sales in a CRM and spend enough on Google Ads for the signal to matter. It's less useful if most of your sales come by phone with no form (use call conversion tracking), if you close only a handful of deals a quarter, or if your sales team doesn't update stages. It also shows only Google's share. For long cycles, our post on <a href="/blog/b2b-saas-attribution-long-sales-cycles">attribution for long B2B sales cycles</a> explains how to read the gap between click and close.</p>
+<p>If you run several ad platforms, maintaining one import per platform gets heavy. Admira connects to the CRM once, ties each deal to its ad click, and sends CRM events back to ad platforms with its <a href="/v2/conversions-api">Conversion API</a>; its <a href="/v2/lead-tracking">lead tracking</a> captures click IDs and UTMs automatically. If Google is your only paid channel and you use HubSpot or Salesforce, the native connector may be enough.</p>
+<h2 id="faq">FAQ</h2>
+<h3>How long after the click can I import a conversion?</h3>
+<p>It depends on the data source. Google's guide lists 90 days for sources like Google Sheets, SFTP and cloud storage, and 14-day windows for warehouse and native CRM sources.</p>
+<h3>Can I import offline conversions without a GCLID?</h3>
+<p>Yes, with enhanced conversions for leads, which matches on hashed email or phone. Google still recommends including the GCLID when you have it.</p>
+<h3>Should the offline conversion be primary or secondary?</h3>
+<p>Make it primary only for the stage you want Smart Bidding to optimize and that has steady volume. Keep other stages secondary for reporting.</p>
+<h3>How often should I upload?</h3>
+<p>Google's guide doesn't set one frequency. Daily scheduled imports are a common choice because they keep bidding signals fresh.</p>
+<h3>Is manual CSV upload still supported?</h3>
+<p>Google labels file-based imports as legacy and recommends Data Manager with enhanced conversions for leads.</p>
+<h3>Why are my offline conversions not showing?</h3>
+<p>Check the upload diagnostics, the exact conversion name, the time zone and the GCLID format. Uploads in the first hours after creating an action can take two days to appear.</p>
+</div>
+<div class="byl rv"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6ab7f7fc64174af658d15333_662879e093c51bd48ddda61f_admirawebclip.png" alt=""><div><b>Andre Duprat</b><span>Founder &amp; CEO, Admira</span></div></div>
+</article>
+</div>
+<div class="ri rel"><h2 class="rv">Keep reading</h2><div class="grid"><a class="card rv" href="/blog/admira-vs-hyros"><div class="im"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6aef2db29e09424cba197357_6aef2acec9beee10a0c2bd83_admira-vs-hyros-hero.webp" alt=""></div>
+<div class="bd"><div class="meta"><span>Guides</span><span class="dt">Nov 7</span></div><h2>Admira vs Hyros: Honest Comparison for Lead-Gen Teams</h2><p>Admira vs Hyros: Admira suits CRM and WhatsApp sales with flat pricing from $199/mo; Hyros suits funnels with revenue pricing. See where each one wins.</p></div></a><a class="card rv" href="/blog/agency-reporting-tools"><div class="im"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6aef39d19e09424cba1a4c08_6aef2e53fae98be0d42960d5_agency-reporting-tools-hero.webp" alt=""></div>
+<div class="bd"><div class="meta"><span>Guides</span><span class="dt">Nov 7</span></div><h2>Agency Reporting Tools 2026: 7 Options Compared</h2><p>Compare 7 agency reporting tools for 2026 with prices checked Nov 2026: AgencyAnalytics, DashThis, Whatagraph, Databox, Reportei, Looker Studio and Admira.</p></div></a><a class="card rv" href="/blog/agencyanalytics-alternatives"><div class="im"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6aef3ae661688fae49155c66_6aef2e53883aab66d8b71884_agencyanalytics-alternatives-hero.webp" alt=""></div>
+<div class="bd"><div class="meta"><span>Guides</span><span class="dt">Nov 7</span></div><h2>AgencyAnalytics Alternatives 2026: 7 Tools Compared</h2><p>Compare 7 AgencyAnalytics alternatives in 2026: DashThis, Swydo, Databox, Whatagraph, Looker Studio, Reportei and Admira, with prices checked in November.</p></div></a></div></div>
+</div></section>
+<section class="sec" data-examples="attribution,journeys,overview,ai-dashboard,reports" data-title="See Admira in action." data-sub="Follow the work from campaign to close."></section>
+<section class="cta"><h2 class="h1 rv">Ready to try Admira?</h2>
+<div class="bt rv"><a class="btn dk" href="/v2/home">Get started</a><a class="btn lt" href="/v2/home">Book a demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></div>
+<a class="sub rv" href="/v2/home#ai"><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/brand/admira-icon-gradient.svg" width="18" alt="">Ask Admira AI your first question <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+</section>
+</main>
+
+<footer class="ft"><div class="in">
+<div class="cols">
+<div><h3>Product</h3><ul><li><a href="/v2/home#ai">Admira AI</a></li><li><a href="/v2/multi-touch-attribution">Attribution</a></li><li><a href="/v2/marketing-dashboard">Dashboards</a></li><li><a href="/v2/conversion-tracking">Conversion tracking</a></li><li><a href="/v2/conversions-api">Conversions API</a></li><li><a href="/v2/ai-creative">AI creative</a></li><li><a href="/v2/integrations">Integrations</a></li><li><a href="/v2/pricing">Pricing</a></li></ul></div>
+<div><h3>Platforms</h3><ul><li><a href="/v2/integrations-meta-ads">Meta Ads</a></li><li><a href="/v2/integrations-google-ads">Google Ads</a></li><li><a href="/v2/integrations-tiktok-ads">TikTok Ads</a></li><li><a href="/v2/integrations-linkedin-ads">LinkedIn Ads</a></li><li><a href="/v2/integrations-microsoft-ads">Microsoft Ads</a></li><li><a href="/v2/integrations-amazon-ads">Amazon Ads</a></li><li><a href="/v2/integrations-x-ads">X Ads</a></li><li><a href="/v2/integrations-mercado-libre-ads">Mercado Libre Ads</a></li></ul></div>
+<div><h3>Connects to</h3><ul><li><a href="/v2/integrations-hubspot">HubSpot</a></li><li><a href="/v2/integrations-salesforce">Salesforce</a></li><li><a href="/v2/integrations-kommo">Kommo</a></li><li><a href="/v2/integrations-pipedrive">Pipedrive</a></li><li><a href="/v2/integrations-zoho-crm">Zoho CRM</a></li><li><a href="/v2/integrations-whatsapp">WhatsApp</a></li><li><a href="/v2/integrations-shopify">Shopify</a></li><li><a href="/v2/integrations-stripe">Stripe</a></li></ul></div>
+<div><h3>Solutions</h3><ul><li><a href="/v2/solutions-ecommerce">Ecommerce</a></li><li><a href="/v2/solutions-b2b-saas">B2B SaaS</a></li><li><a href="/v2/solutions-marketing-leaders">Marketing leaders</a></li><li><a href="/v2/solutions-agencies">Agencies</a></li><li><a href="/v2/solutions-real-estate">Real estate</a></li><li><a href="/v2/attribution-platform-latam">LATAM</a></li></ul></div>
+<div><h3>Resources</h3><ul><li><a href="/v2/customers">Customers</a></li><li><a href="/v2/webinars">Webinars</a></li><li><a href="/v2/blog">Blog</a></li><li><a href="/v2/book-demo">Book a demo</a></li><li><a href="mailto:support@getadmira.com">Support</a></li></ul></div>
+<div><div class="grp"><h3>Company</h3><ul><li><a href="/v2/book-demo">Contact</a></li><li><a href="https://www.linkedin.com/company/getadmira/jobs/">Careers</a></li><li><a href="https://app.getadmira.com">Log in</a></li></ul></div>
+<div class="grp"><h3>Legal</h3><ul><li><a href="/v2/terms-and-conditions">Terms of Service</a></li><li><a href="/v2/privacy">Privacy Policy</a></li><li><a href="/v2/sms">SMS Terms</a></li></ul></div></div>
+</div>
+<div class="bot"><a class="logo" href="/v2/home"><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/brand/admira.svg" alt="Admira"></a><small>© 2026 Admira Software, Inc. All rights reserved.</small></div>
+</div></footer>

@@ -1,0 +1,98 @@
+<div class="ann"><a href="/v2/home#inside">Admira AI is live — ask your ads and CRM anything <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a><button class="x" aria-label="Close" onclick="this.parentElement.remove()"><svg width="16" height="16" viewBox="0 0 16 16" stroke="currentColor" stroke-width="1.5"><path d="M4 4l8 8M12 4l-8 8"/></svg></button></div>
+
+<header class="hdr"><div class="in">
+<a class="logo" href="/v2/home"><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/brand/admira.svg" alt="Admira" width="83" height="21"></a>
+<nav class="nav">
+<button>Product <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 4.5l3 3 3-3"/></svg></button>
+<button>Solutions <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 4.5l3 3 3-3"/></svg></button>
+<a href="/v2/home#ai">Admira AI</a><a href="/v2/integrations">Integrations</a><a href="/v2/customers">Customers</a>
+<button>Resources <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 4.5l3 3 3-3"/></svg></button>
+</nav>
+<div class="r"><a class="login" href="https://app.getadmira.com">Log in</a><a class="btn dk sm" href="/v2/home">Book a demo</a>
+<button class="burger" aria-label="Menu"><svg width="18" height="18" viewBox="0 0 18 18" stroke="currentColor" stroke-width="1.6"><path d="M3 6h12M3 12h12"/></svg></button></div>
+</div></header>
+
+<main>
+<section class="rp bp"><div class="rw">
+<nav class="crumb rv" aria-label="Breadcrumb"><a href="/v2/blog"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 8H3M7 4 3 8l4 4"/></svg>Blog</a><span>/</span><span>Attribution</span></nav>
+<h1 class="rv">How to Deduplicate Conversions Across Ad Platforms</h1>
+<p class="sub rv">How to deduplicate conversions across ad platforms: build a backend source of truth, pass event IDs, attribute centrally and reconcile every month.</p>
+<button class="act rv" type="button" data-copy><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="8.5" height="8.5" rx="1.5"/><path d="M10.5 5V3.5A1.5 1.5 0 0 0 9 2H3.5A1.5 1.5 0 0 0 2 3.5V9a1.5 1.5 0 0 0 1.5 1.5H5"/></svg><span>Copy link</span></button>
+<div class="cols">
+<aside class="side rv">
+<div class="toc"><p class="lb">On this page</p><a href="#why-duplication-happens-in-the-first-place">Why duplication happens in the first place</a><a href="#step-1-make-your-backend-the-referee">Step 1: Make your backend the referee</a><a href="#step-2-standardize-conversion-definitions">Step 2: Standardize conversion definitions</a><a href="#step-3-pass-unique-ids-everywhere">Step 3: Pass unique IDs everywhere</a><a href="#step-4-attribute-once-centrally">Step 4: Attribute once, centrally</a><a href="#step-5-reconcile-monthly">Step 5: Reconcile monthly</a><a href="#what-not-to-do">What not to do</a><a href="#faq">FAQ</a></div>
+<div class="promo"><b>Admira AI.</b><span>Ask your ads and CRM anything, in plain English.</span>
+<div class="pi"><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/proto/ai@panel/04-answer.webp" alt="" loading="lazy"></div>
+<a class="btn dk" href="/v2/home">Book a demo</a></div>
+</aside>
+<article class="art">
+<div class="wm rv"><span class="tg">Attribution</span><span class="dot"></span><span class="who"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6ab7f7fc64174af658d15333_662879e093c51bd48ddda61f_admirawebclip.png" alt=""><span>Andre Sottil</span></span><span class="dot"></span><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 4.5V8l2.5 1.5"/></svg>5 min read</span><span class="dot"></span><span>Aug 2</span></div>
+<figure class="cov rv"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6ab7f8aedf00b2e3886446aa_6ab7f744aeafa3f4418756ba_deduplicate-conversions-across-ad-platforms-hero-en.jpeg" alt=""></figure>
+<nav class="toc tm" aria-label="On this page"><p class="lb"><span>On this page</span><span>8 sections</span></p><a href="#why-duplication-happens-in-the-first-place"><span class="n">1</span>Why duplication happens in the first place</a><a href="#step-1-make-your-backend-the-referee"><span class="n">2</span>Step 1: Make your backend the referee</a><a href="#step-2-standardize-conversion-definitions"><span class="n">3</span>Step 2: Standardize conversion definitions</a><a href="#step-3-pass-unique-ids-everywhere"><span class="n">4</span>Step 3: Pass unique IDs everywhere</a><a href="#step-4-attribute-once-centrally"><span class="n">5</span>Step 4: Attribute once, centrally</a><a href="#step-5-reconcile-monthly"><span class="n">6</span>Step 5: Reconcile monthly</a><a href="#what-not-to-do"><span class="n">7</span>What not to do</a><a href="#faq"><span class="n">8</span>FAQ</a></nav>
+<div class="prose">
+<p>To deduplicate conversions across ad platforms, you need one source of truth outside the platforms (your backend or CRM), consistent event definitions, unique transaction or event IDs passed with every conversion, and an attribution layer that assigns each real order to touchpoints under a single model. The platforms will never deduplicate against each other, because each one is built to claim every conversion it touched. Deduplication is something you impose from outside, not something they do for you.</p>
+<h2 id="why-duplication-happens-in-the-first-place">Why duplication happens in the first place</h2>
+<p>Meta, Google, TikTok, and LinkedIn each track conversions independently, with their own pixels, <a href="/blog/attribution-windows-meta-google-ga4">attribution windows</a>, and view-through rules. A buyer who touched three platforms before purchasing produces three claimed conversions for one order. Sum the platforms' reporting and you overstate conversions whenever your channels overlap, which for any real media mix is always.</p>
+<p>The problem compounds because the overlap is not constant. Retargeting-heavy accounts double-count far more than pure prospecting, and the ratio swings with season, promotions, and how aggressively each platform counts view-through. That is why a single fudge factor never fixes it, and why you need a repeatable method rather than a one-time cleanup.</p>
+<h2 id="step-1-make-your-backend-the-referee">Step 1: Make your backend the referee</h2>
+<p>Your store platform, billing system, or CRM records what actually happened: one order, one value, one timestamp. Every deduplication effort anchors here. Before touching pixels, confirm your backend order count and revenue are trustworthy, including refunds, cancellations, and partial returns. If the referee is wrong, everything downstream is wrong, so this is not a step to rush.</p>
+<p>Decide the exact denominator you will reconcile against: net revenue after refunds, or gross booked revenue. Whichever you pick, use it consistently, because switching mid-analysis is one of the most common ways teams convince themselves duplication got better or worse when nothing actually changed.</p>
+<h2 id="step-2-standardize-conversion-definitions">Step 2: Standardize conversion definitions</h2>
+<p>Duplication is worse when platforms are not even counting the same thing. Decide precisely what a "purchase" or "qualified lead" means: paid orders only, net of refunds, first-time customers only, or some other rule. Then configure every platform's conversion event to match that definition exactly.</p>
+<p>Kill legacy events that still fire from old tags, and stop importing the same conversion into a platform twice, for example through both the pixel and an offline upload. A surprising share of "duplication" is really one platform counting a single order two or three times inside its own account, before any cross-platform overlap even enters the picture.</p>
+<h2 id="step-3-pass-unique-ids-everywhere">Step 3: Pass unique IDs everywhere</h2>
+<ul>
+<li><strong>Within one platform:</strong> use deduplication keys so browser and server events do not double count. For Meta, send the same event_id from the pixel and the Conversions API. For Google, send a consistent transaction_id so repeated tags do not create repeated conversions.</li>
+<li><strong>Across platforms:</strong> pass your backend order ID as a custom parameter with every conversion event. This does not stop platforms from double-claiming, but it lets your measurement layer join every claim back to one real order, which is the join key deduplication depends on.</li>
+</ul>
+<p>Treat the order ID as sacred. If it is missing, malformed, or inconsistent between your site and your server events, your measurement layer cannot stitch claims together and you are back to guessing.</p>
+<h2 id="step-4-attribute-once-centrally">Step 4: Attribute once, centrally</h2>
+<p>With clean orders and consistent IDs, a <a href="/blog/multi-touch-attribution-models-explained">multi-touch attribution</a> system can assign each order fractional credit across the touchpoints that actually preceded it. One order, one unit of credit, split among channels. This is the step platform dashboards structurally cannot perform, because none of them can see the others' impressions and clicks.</p>
+<p>This is where tools built for cross-channel measurement earn their keep. Triple Whale and Northbeam approach it through their own pixels for ecommerce; Dreamdata and Ruler do the equivalent for B2B journeys; Admira combines attribution with MMM and lift testing so the deduplicated view also survives cookie loss and consent gaps rather than degrading as tracking shrinks.</p>
+<h2 id="step-5-reconcile-monthly">Step 5: Reconcile monthly</h2>
+<ol>
+<li>Sum platform-claimed conversions and revenue for the month.</li>
+<li>Compare that total to backend orders and revenue for the same window.</li>
+<li>Track the ratio over time. It will not reach 1.0, but it should be stable; a sudden jump means a new duplication source, a broken tag, or a changed attribution window.</li>
+</ol>
+<p>The ratio itself matters less than its stability. A steady 1.6 tells you your channels overlap predictably and your <a href="/blog/mer-and-blended-roas-sanity-check-metrics">MER math</a> can account for it. A ratio that lurches from 1.4 to 2.1 in a month is a tracking alarm, not a performance story, and it should trigger an audit before anyone reallocates budget.</p>
+<h2 id="what-not-to-do">What not to do</h2>
+<p>Do not "fix" duplication by dividing every platform's numbers by a constant fudge factor; overlap varies by channel and season. Do not shorten every window to 1-day click just to reduce overlap, because you also starve the optimization systems of the signal they need to find buyers. And do not crown the platform with the biggest claimed number the winner. That usually just identifies the most aggressive attributor, not the most valuable channel.</p>
+<p>Admira was built to be that central referee: it deduplicates conversions across your channels with cookieless <a href="/v2/multi-touch-attribution">multi-touch attribution</a>, validates the picture with MMM and <a href="/blog/incrementality-testing-holdout-geo-tests">lift tests</a>, and gets you live in about two weeks without engineering work. If summed platform numbers keep overstating your real orders, <a href="/v2/book-demo">book a demo</a> and see every sale counted once.</p>
+<h2 id="faq">FAQ</h2>
+<h3>Does server-side tracking fix cross-platform duplication?</h3>
+<p>No. Server-side tracking, such as Meta's Conversions API or Google's Enhanced Conversions, improves data quality and deduplicates browser-versus-server events within a single platform. It does nothing across platforms: each one still claims every conversion it touched. Server-side is a data-quality upgrade, not a cross-channel deduplication solution, and treating it as the latter leaves the double-counting fully intact.</p>
+<h3>Can GA4 act as the deduplication layer?</h3>
+<p>Partially. GA4 sees one converting session path across click-based channels, which helps collapse some overlap. But it misses ad impressions entirely, loses journeys to consent gaps and cross-device breaks, and applies its own modeling on top. Treat GA4 as a useful cross-check that catches obvious problems, not as the referee that decides final credit across every paid channel.</p>
+<h3>How much duplication is normal?</h3>
+<p>It depends on channel overlap, retargeting share, and view-through settings, so there is no universal benchmark. Platform-reported conversions commonly exceed backend totals by a meaningful margin when summed across channels. The right move is to measure your own ratio, watch whether it stays stable, and investigate changes rather than chasing someone else's number.</p>
+<h3>Do I still need lift tests if I deduplicate?</h3>
+<p>Yes. Deduplication ensures each order is counted once and credited under one model, but it cannot tell you whether an order would have happened without the ad. That is a causal question, and only incrementality testing, through holdouts or geo experiments, answers it. Deduplication and lift testing solve different problems, and mature measurement programs run both together.</p>
+</div>
+<div class="byl rv"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6ab7f7fc64174af658d15333_662879e093c51bd48ddda61f_admirawebclip.png" alt=""><div><b>Andre Sottil</b><span>Founder &amp; CEO, Admira</span></div></div>
+</article>
+</div>
+<div class="ri rel"><h2 class="rv">Keep reading</h2><div class="grid"><a class="card rv" href="/blog/why-roas-is-lying-platform-inflation"><div class="im"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6ab7f7fc64174af658d1532f_6ab7f67a8ea175d5fb73f14a_why-roas-is-lying-platform-inflation-hero-en.jpeg" alt=""></div>
+<div class="bd"><div class="meta"><span>Attribution</span><span class="dt">Sep 25</span></div><h2>Why Your ROAS Is Lying to You: Platform Inflation Explained</h2><p>Why platform ROAS is inflated by self-attribution, view-through and modeled conversions, how to measure the gap in 15 minutes, and what to trust instead.</p></div></a><a class="card rv" href="/blog/meta-conversions-api-guide"><div class="im"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6aef2ec8540d8d056ec6f90c_6aef2e52b78747b6660ba13d_meta-conversions-api-guide-hero.webp" alt=""></div>
+<div class="bd"><div class="meta"><span>Attribution</span><span class="dt">Nov 7</span></div><h2>Meta Conversions API (CAPI): Setup Guide for Lead Gen</h2><p>The Meta Conversions API sends events from your server or CRM to Meta. Learn setup paths, event_id dedup, match quality and what lead-gen should send.</p></div></a><a class="card rv" href="/blog/self-reported-attribution"><div class="im"><img src="https://cdn.prod.website-files.com/661ca0eff5f19d80c4c6377f/6aef2d6d3b284257bb6934a3_6aef2ad0c39bf0a3b5720ca0_self-reported-attribution-hero.webp" alt=""></div>
+<div class="bd"><div class="meta"><span>Attribution</span><span class="dt">Nov 7</span></div><h2>Self-Reported Attribution: How to Ask and Use It</h2><p>Self-reported attribution asks buyers how they found you. Learn the wording, placement and CRM setup, plus how to compare answers with tracked data.</p></div></a></div></div>
+</div></section>
+<section class="sec" data-examples="attribution,journeys,overview,ai-dashboard,reports" data-title="See Admira in action." data-sub="Follow the work from campaign to close."></section>
+<section class="cta"><h2 class="h1 rv">Ready to try Admira?</h2>
+<div class="bt rv"><a class="btn dk" href="/v2/home">Get started</a><a class="btn lt" href="/v2/home">Book a demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></div>
+<a class="sub rv" href="/v2/home#ai"><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/brand/admira-icon-gradient.svg" width="18" alt="">Ask Admira AI your first question <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+</section>
+</main>
+
+<footer class="ft"><div class="in">
+<div class="cols">
+<div><h3>Product</h3><ul><li><a href="/v2/home#ai">Admira AI</a></li><li><a href="/v2/multi-touch-attribution">Attribution</a></li><li><a href="/v2/marketing-dashboard">Dashboards</a></li><li><a href="/v2/conversion-tracking">Conversion tracking</a></li><li><a href="/v2/conversions-api">Conversions API</a></li><li><a href="/v2/ai-creative">AI creative</a></li><li><a href="/v2/integrations">Integrations</a></li><li><a href="/v2/pricing">Pricing</a></li></ul></div>
+<div><h3>Platforms</h3><ul><li><a href="/v2/integrations-meta-ads">Meta Ads</a></li><li><a href="/v2/integrations-google-ads">Google Ads</a></li><li><a href="/v2/integrations-tiktok-ads">TikTok Ads</a></li><li><a href="/v2/integrations-linkedin-ads">LinkedIn Ads</a></li><li><a href="/v2/integrations-microsoft-ads">Microsoft Ads</a></li><li><a href="/v2/integrations-amazon-ads">Amazon Ads</a></li><li><a href="/v2/integrations-x-ads">X Ads</a></li><li><a href="/v2/integrations-mercado-libre-ads">Mercado Libre Ads</a></li></ul></div>
+<div><h3>Connects to</h3><ul><li><a href="/v2/integrations-hubspot">HubSpot</a></li><li><a href="/v2/integrations-salesforce">Salesforce</a></li><li><a href="/v2/integrations-kommo">Kommo</a></li><li><a href="/v2/integrations-pipedrive">Pipedrive</a></li><li><a href="/v2/integrations-zoho-crm">Zoho CRM</a></li><li><a href="/v2/integrations-whatsapp">WhatsApp</a></li><li><a href="/v2/integrations-shopify">Shopify</a></li><li><a href="/v2/integrations-stripe">Stripe</a></li></ul></div>
+<div><h3>Solutions</h3><ul><li><a href="/v2/solutions-ecommerce">Ecommerce</a></li><li><a href="/v2/solutions-b2b-saas">B2B SaaS</a></li><li><a href="/v2/solutions-marketing-leaders">Marketing leaders</a></li><li><a href="/v2/solutions-agencies">Agencies</a></li><li><a href="/v2/solutions-real-estate">Real estate</a></li><li><a href="/v2/attribution-platform-latam">LATAM</a></li></ul></div>
+<div><h3>Resources</h3><ul><li><a href="/v2/customers">Customers</a></li><li><a href="/v2/webinars">Webinars</a></li><li><a href="/v2/blog">Blog</a></li><li><a href="/v2/book-demo">Book a demo</a></li><li><a href="mailto:support@getadmira.com">Support</a></li></ul></div>
+<div><div class="grp"><h3>Company</h3><ul><li><a href="/v2/book-demo">Contact</a></li><li><a href="https://www.linkedin.com/company/getadmira/jobs/">Careers</a></li><li><a href="https://app.getadmira.com">Log in</a></li></ul></div>
+<div class="grp"><h3>Legal</h3><ul><li><a href="/v2/terms-and-conditions">Terms of Service</a></li><li><a href="/v2/privacy">Privacy Policy</a></li><li><a href="/v2/sms">SMS Terms</a></li></ul></div></div>
+</div>
+<div class="bot"><a class="logo" href="/v2/home"><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/brand/admira.svg" alt="Admira"></a><small>© 2026 Admira Software, Inc. All rights reserved.</small></div>
+</div></footer>
