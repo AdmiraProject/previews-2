@@ -1,6 +1,6 @@
 
 (function () {
-  const A = new URL('../assets/', document.currentScript.src).href, $ = (s) => document.querySelector(s);
+  const A = new URL('https://admiraproject.github.io/previews-2/admira-v2/assets/', document.currentScript.src).href, $ = (s) => document.querySelector(s);
   const js = (src) => new Promise((res, rej) => { const s = document.createElement('script'); s.src = src; s.onload = res; s.onerror = rej; document.head.appendChild(s); });
   const acc = $('#acc'), pn = $('#lpn');
   if (acc && pn) {

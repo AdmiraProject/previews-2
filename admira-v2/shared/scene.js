@@ -150,7 +150,7 @@ AdmScene.people = (P, size = '@hero') => {
 };
 
 
-AdmScene.fig = (key, base = '../assets/fig2x/') => {
+AdmScene.fig = (key, base = 'https://admiraproject.github.io/previews-2/admira-v2/assets/fig2x/') => {
   const S = (d, a) => a.map(n => `${base}${d}/${n}.webp`);
   const F = {
     launch: { states: S('launch', ['launch-selected', 'launch', 'launch-optimize-for', 'launch-audience', 'launch-budget', 'launch-destination-url', 'launch-loading', 'launch-success', 'launch-live-hover', 'launch-iterate-winner', 'launch-iterate-winner-created']),

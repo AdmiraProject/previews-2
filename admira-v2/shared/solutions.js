@@ -1,6 +1,6 @@
 
 (async function () {
-  const A = '../../assets/', P = A + 'proto/', $ = (s) => document.querySelector(s), D = window.SOL || {};
+  const A = 'https://admiraproject.github.io/previews-2/admira-v2/assets/', P = A + 'proto/', $ = (s) => document.querySelector(s), D = window.SOL || {};
   AdmUI.faq(); AdmUI.header(); AdmUI.reveal();
 
   

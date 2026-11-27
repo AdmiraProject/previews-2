@@ -1,5 +1,5 @@
 (async function () {
-  const P = '../assets/proto/', $ = (s, r = document) => r.querySelector(s);
+  const P = 'https://admiraproject.github.io/previews-2/admira-v2/assets/proto/', $ = (s, r = document) => r.querySelector(s);
   const M = await AdmScene.manifest(P + 'manifest.json');
 
   const SZ = { '@hero': [1200, 600], '@panel': [1088, 570], '': [1440, 900] };
@@ -51,16 +51,16 @@
     check: '<path d="M4 10.5l3.5 3.5L16 5.5"/>', bolt: '<path d="M11 2L4 11h5l-1 7 7-9h-5z"/>', layers: '<path d="M10 3l7 4-7 4-7-4zM3 11l7 4 7-4"/>', spark: '<path d="M10 2v4M10 14v4M2 10h4M14 10h4M4.5 4.5l2.5 2.5M13 13l2.5 2.5M15.5 4.5L13 7M7 13l-2.5 2.5"/>',
   };
   const cap = (i, t, s) => `<div class="cap"><span class="ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">${CAPI[i]}</svg></span><div><b>${t}</b><small>${s}</small></div></div>`;
-  const POP = `<div class="pop p1" style="left:640px;top:250px;width:470px"><div class="who"><img src="../assets/brand/admira-icon-gradient.svg" alt="">Admira AI</div>
+  const POP = `<div class="pop p1" style="left:640px;top:250px;width:470px"><div class="who"><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/brand/admira-icon-gradient.svg" alt="">Admira AI</div>
       <p>Display – Remarketing spent $18.4K with no attributed deals in 30 days, so I paused it. Its <mark>$300 a day</mark> now goes to Search – Brand, which closes leads at $21.</p>
       <div class="tags"><span class="tag">Budget +$300/day</span><span class="tag w">1 campaign paused</span></div><div class="acts"><b>Keep changes</b><span>↺ Undo</span></div></div>
-    <div class="pop p2" style="left:820px;top:120px;width:460px"><div class="who"><img src="../assets/brand/admira-icon-gradient.svg" alt="">Admira AI <span class="live" style="margin-left:auto">Live</span></div>
+    <div class="pop p2" style="left:820px;top:120px;width:460px"><div class="who"><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/brand/admira-icon-gradient.svg" alt="">Admira AI <span class="live" style="margin-left:auto">Live</span></div>
       <p style="margin-bottom:8px">Budget moved. Weekly report sent to #marketing.</p>
       <table><tr><th>Campaign</th><th>Daily budget</th><th>Deals (30d)</th></tr>
-      <tr><td><img src="../assets/logos/googleads.svg" alt="">Search – Brand</td><td>$900</td><td>48</td></tr>
-      <tr><td><img src="../assets/logos/meta.svg" alt="">Lookalike 1%</td><td>$600</td><td>31</td></tr>
-      <tr><td><img src="../assets/logos/linkedin.svg" alt="">Directors</td><td>$250</td><td>12</td></tr>
-      <tr><td><img src="../assets/logos/googleads.svg" alt="">Display – Remarketing</td><td style="color:#B91C1C">Paused</td><td>0</td></tr></table></div>`;
+      <tr><td><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/logos/googleads.svg" alt="">Search – Brand</td><td>$900</td><td>48</td></tr>
+      <tr><td><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/logos/meta.svg" alt="">Lookalike 1%</td><td>$600</td><td>31</td></tr>
+      <tr><td><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/logos/linkedin.svg" alt="">Directors</td><td>$250</td><td>12</td></tr>
+      <tr><td><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/logos/googleads.svg" alt="">Display – Remarketing</td><td style="color:#B91C1C">Paused</td><td>0</td></tr></table></div>`;
   const FEATS = [
     ['Admira AI', 'Ask about your ads, CRM and revenue in plain words. Admira answers with your numbers and can launch the campaign for you.', 'ai', [6, 7, 8, 9, 10, 11, 12], { zoom: 1.25 },
       [['chat', 'Ask in plain words', 'Admira AI'], ['chart', 'Reports in seconds', 'Admira AI'], ['bolt', 'Launch campaigns', 'Admira AI'], ['plug', 'Connect in chat', 'Admira AI'], ['check', 'Approve changes', 'Admira AI'], ['layers', 'Sources on every answer', 'Admira AI']]],
@@ -143,7 +143,7 @@
     [P + 'debugger/02-event.webp', 'An event debugger that shows exactly what your pixel and CRM sent.'],
   ];
   $('#extr').innerHTML = EX.map(([s, c]) => s === 'bl'
-    ? `<div class="c"><div class="th bl"><span class="t"><img src="../assets/brand/admira-white.svg" style="width:auto;height:16px" alt="Admira"></span><h4>30+ integrations,<br>one source of truth</h4><img class="mini" src="${P}sources/05-apps-panel.webp" alt="" style="object-position:34% 42%"></div><p class="cap2">${c}</p></div>`
+    ? `<div class="c"><div class="th bl"><span class="t"><img src="https://admiraproject.github.io/previews-2/admira-v2/assets/brand/admira-white.svg" style="width:auto;height:16px" alt="Admira"></span><h4>30+ integrations,<br>one source of truth</h4><img class="mini" src="${P}sources/05-apps-panel.webp" alt="" style="object-position:34% 42%"></div><p class="cap2">${c}</p></div>`
     : `<div class="c"><div class="th"><img src="${s}" alt="" loading="lazy"></div><p class="cap2">${c}</p></div>`).join('');
   let ex = 0; const tr = $('#extr'), maxEx = EX.length - 3;
   const mv = () => { tr.style.transform = `translateX(${-ex * 354}px)`; $('#exp').disabled = ex === 0; $('#exn').disabled = ex >= maxEx; };

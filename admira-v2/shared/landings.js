@@ -1,6 +1,6 @@
 
 (async function () {
-  const A = '../assets/', P = A + 'proto/', $ = (s) => document.querySelector(s), D = window.LND || {};
+  const A = 'https://admiraproject.github.io/previews-2/admira-v2/assets/', P = A + 'proto/', $ = (s) => document.querySelector(s), D = window.LND || {};
   AdmUI.faq(); AdmUI.header(); AdmUI.reveal();
   if (!$('#shw')) return; // heroes now play the home-3 film (data-film, pop.js); scene kept only as a fallback
 
