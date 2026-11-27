@@ -72,7 +72,7 @@
   const EXP = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9V4h5m6 0h5v5m0 6v5h-5M9 20H4v-5"/></svg>';
   function film(el) {
     const k = el.dataset.film, m = M[k]; if (!m) return;
-    el.classList.add('tx-film'); if (matchMedia('(max-width: 767px)').matches && m.mvideo) { el.classList.add('portrait'); }
+    el.classList.add('tx-film'); const wide = el.hasAttribute('data-wide'); if (!wide && matchMedia('(max-width: 767px)').matches && m.mvideo) { el.classList.add('portrait'); }
     el.innerHTML = `<video muted playsinline loop preload="none" poster="${el.classList.contains('portrait') ? (m.mposter || m.poster) : m.poster}" aria-label="${esc(m.title)}"></video>
       <div class="tx-fc"><button type="button" class="tx-fp" aria-label="Pause ${esc(m.title)}" title="Pause or play">${PAUSE}</button><button type="button" data-watch="${k}" aria-label="Enlarge ${esc(m.title)}" title="Open full video">${EXP}</button></div>`;
     const v = el.querySelector('video'), b = el.querySelector('.tx-fp'); let user = false, seen = false;
@@ -80,7 +80,7 @@
     b.onclick = () => { user = !v.paused; v.paused ? v.play().catch(() => {}) : v.pause(); setTimeout(ico, 30); };
     v.addEventListener('play', ico); v.addEventListener('pause', ico);
     new IntersectionObserver((es) => es.forEach((e) => {
-      if (e.isIntersecting) { if (!seen) { const ph = matchMedia('(max-width: 767px)').matches && m.mvideo; v.src = ph ? m.mvideo : m.video; if (ph) { v.poster = m.mposter || v.poster; el.classList.add('portrait'); } seen = true; } if (!user) v.play().catch(() => {}); } else v.pause();
+      if (e.isIntersecting) { if (!seen) { const ph = !wide && matchMedia('(max-width: 767px)').matches && m.mvideo; v.src = ph ? m.mvideo : m.video; if (ph) { v.poster = m.mposter || v.poster; el.classList.add('portrait'); } seen = true; } if (!user) v.play().catch(() => {}); } else v.pause();
     }), { threshold: 0.25 }).observe(el);
   }
   const init = () => { document.querySelectorAll('[data-examples]').forEach(rail); document.querySelectorAll('[data-film]').forEach(film); };
