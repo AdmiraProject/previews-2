@@ -1,11 +1,13 @@
-
+/* Admira lead flow (mirrors getadmira.com): every "Get started" / "Book a demo" opens
+   step 1 = "Ready to try Admira?" form → step 2 = Calendly (admira-intro) prefilled with name/email.
+   Field names match the live Webflow form (wf-form-Modal-Form) so it can be wired to the same form. */
 (function () {
   const CAL = 'https://calendly.com/d/cmqk-k8w-3vs/admira-intro';
   const SPEND = ['$0 - $1,999 USD', '$2,000 - $4,999 USD', '$5,000 - $24,999 USD', '$25,000 - $99,999 USD', '$100,000 - $249,999 USD', '$250,000 - $499,999 USD', '$500,000+ USD'];
   const CC = [['🇲🇽', '+52'], ['🇺🇸', '+1'], ['🇨🇴', '+57'], ['🇨🇱', '+56'], ['🇵🇪', '+51'], ['🇦🇷', '+54'], ['🇪🇸', '+34'], ['🇧🇷', '+55']];
   const BASE = new URL('..', document.currentScript ? document.currentScript.src : location.href).href; // site root, works at any depth
   const ICON = `<img src="${BASE}assets/brand/admira-icon-gradient.svg" alt="" width="32" height="32">`;
-
+  // Same structure + measurements as admira.webflow.io/home-v2 #booking-dialog (native <dialog>, no open animation)
   const el = document.createElement('dialog'); el.className = 'alm'; el.id = 'booking-dialog';
   el.setAttribute('aria-labelledby', 'alm-t'); el.setAttribute('aria-describedby', 'alm-s');
   el.innerHTML = `<div class="alm-box">
@@ -24,8 +26,8 @@
     <div class="alm-cal" hidden></div>
   </div>`;
   document.body.appendChild(el);
-
-
+  // On Webflow: use the site's native Main Form component ("Modal Form" → same Zapier automations, UTMs and Calendly handoff
+  // as the live home/LPs). The page places it in #nh-form-holder (or anywhere as .main-form-wrapper); we move it into the dialog.
   const native = document.querySelector('#nh-form-holder .main-form-wrapper, .main-form-wrapper');
   if (native) { el.classList.add('native'); el.querySelector('.alm-f').replaceWith(native); el.querySelector('.alm-cal').remove(); }
   const f = native ? null : el.querySelector('form'), cal = el.querySelector('.alm-cal'), err = el.querySelector('.alm-err');
@@ -63,16 +65,16 @@
       Calendly.initInlineWidget({ url: CAL + '?hide_gdpr_banner=1&primary_color=124aff', parentElement: cal, prefill: { name, email, customAnswers: { a1: phone } }, utm: utm() });
     } catch (_) { cal.innerHTML = `<div class="alm-load">Couldn't load the calendar. <a href="${CAL}" target="_blank" rel="noopener">Open it in a new tab</a></div>`; }
   });
-
+  // every Get started / Book a demo / Schedule your demo on the page opens the flow
   document.addEventListener('click', e => {
     const a = e.target.closest('a,button,.mcp .core,#mcp .core'); if (!a || el.contains(a)) return;
-    if (a.matches('.core,[data-lead],[data-book-demo]') || /^(get started|book a demo|book a live demo|schedule your demo|talk to sales)\b/i.test(a.textContent.trim())) {
+    if (a.matches('.core,[data-lead],[data-book-demo]') || /^(get started|book a demo|book a live demo|schedule your demo|talk to sales|comienza|agenda una demo|agenda tu demo|habla con ventas)(?![a-záéíóúñ])/i.test(a.textContent.trim())) {
       if (a.type === 'submit' && a.form) return;
       if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
       e.preventDefault(); open();
     }
   });
-
+  // the router's center "Admira" pill books a demo (as on admira.webflow.io/home-3)
   document.querySelectorAll('.mcp .core,#mcp .core').forEach(c => { c.setAttribute('role', 'button'); c.tabIndex = 0; c.setAttribute('aria-label', 'Book a demo'); c.addEventListener('keydown', ev => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); open(); } }); });
   document.querySelectorAll('form.ask').forEach(fm => fm.addEventListener('submit', e => { e.preventDefault(); e.stopImmediatePropagation(); open(); }, true));
   window.AdmLead = { open, close, isOpen };
